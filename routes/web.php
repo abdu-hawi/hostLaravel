@@ -28,3 +28,9 @@ Route::get('media_partners', function () {
 Route::get('sponsors', function () {
     return view('sponsors');
 })->name('sponsors');
+Route::get('news', function () {
+    return view('news');
+})->name('news');
+Route::get('register', function () {
+    return view('register');
+})->name('register');

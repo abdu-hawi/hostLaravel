@@ -618,119 +618,7 @@ var nbcpf = { "ajaxurl": "https:\/\/scesummit-sa.com\/wp-admin\/admin-ajax.php" 
 </script>
 <script src='wp-content/plugins/country-phone-field-contact-form-7/assets/js/countrySelect.min.js@ver=6.2.2'
 id='nbcpf-countryFlag-script-js'></script> --}}
-<script id='nbcpf-countryFlag-script-js-after'>
-(function ($) {
-$(function () {
-
-    function render_country_flags() {
-
-        $(".wpcf7-countrytext").countrySelect({
-
-        });
-        $(".wpcf7-phonetext").intlTelInput({
-            autoHideDialCode: false,
-            autoPlaceholder: "off",
-            nationalMode: false,
-            separateDialCode: false,
-            hiddenInput: "full_number",
-
-        });
-
-        $(".wpcf7-phonetext").each(function () {
-            var hiddenInput = $(this).attr('name');
-            //console.log(hiddenInput);
-            $("input[name=" + hiddenInput + "-country-code]").val($(this).val());
-        });
-
-        $(".wpcf7-phonetext").on("countrychange", function () {
-            // do something with iti.getSelectedCountryData()
-            //console.log(this.value);
-            var hiddenInput = $(this).attr("name");
-            $("input[name=" + hiddenInput + "-country-code]").val(this.value);
-
-        }); $(".wpcf7-phonetext").on("keyup", function () {
-            var dial_code = $(this).siblings(".flag-container").find(".country-list li.active span.dial-code").text();
-            if (dial_code == "")
-                var dial_code = $(this).siblings(".flag-container").find(".country-list li.highlight span.dial-code").text();
-            var value = $(this).val();
-            console.log(dial_code, value);
-            $(this).val(dial_code + value.substring(dial_code.length));
-        }); $(".wpcf7-countrytext").on("keyup", function () {
-            var country_name = $(this).siblings(".flag-dropdown").find(".country-list li.active span.country-name").text();
-            if (country_name == "")
-                var country_name = $(this).siblings(".flag-dropdown").find(".country-list li.highlight span.country-name").text();
-
-            var value = $(this).val();
-            //console.log(country_name, value);
-            $(this).val(country_name + value.substring(country_name.length));
-        });
-    }
-
-    var ip_address = "";
-
-    jQuery.ajax({
-        //url: "https://ipwho.is/",
-        url: "https://reallyfreegeoip.org/json/",
-        success: function (response) {
-
-            //console.log(response);
-            //var location = JSON.parse(response);
-            console.log(response.country_code);
-            if (response.country_code !== undefined) {
-                //console.log("here");
-                $(".wpcf7-countrytext").countrySelect({
-                });
-                $(".wpcf7-phonetext").intlTelInput({
-                    autoHideDialCode: false,
-                    autoPlaceholder: "off",
-                    nationalMode: false,
-                    separateDialCode: false,
-                    hiddenInput: "full_number", initialCountry: response.country_code.toLowerCase(),
-                });
-
-                $(".wpcf7-phonetext").each(function () {
-                    var hiddenInput = $(this).attr('name');
-                    //console.log(hiddenInput);
-                    $("input[name=" + hiddenInput + "-country-code]").val($(this).val());
-                });
-
-                $(".wpcf7-phonetext").on("countrychange", function () {
-                    // do something with iti.getSelectedCountryData()
-                    //console.log(this.value);
-                    var hiddenInput = $(this).attr("name");
-                    $("input[name=" + hiddenInput + "-country-code]").val(this.value);
-
-                }); $(".wpcf7-phonetext").on("keyup", function () {
-                    var dial_code = $(this).siblings(".flag-container").find(".country-list li.active span.dial-code").text();
-                    if (dial_code == "")
-                        var dial_code = $(this).siblings(".flag-container").find(".country-list li.highlight span.dial-code").text();
-                    var value = $(this).val();
-                    console.log(dial_code, value);
-                    $(this).val(dial_code + value.substring(dial_code.length));
-                }); $(".wpcf7-countrytext").on("keyup", function () {
-                    var country_name = $(this).siblings(".flag-dropdown").find(".country-list li.active span.country-name").text();
-                    if (country_name == "")
-                        var country_name = $(this).siblings(".flag-dropdown").find(".country-list li.highlight span.country-name").text();
-
-                    var value = $(this).val();
-                    //console.log(country_name, value);
-                    $(this).val(country_name + value.substring(country_name.length));
-                });
-
-            } else {
-
-                render_country_flags();
-
-            }
-
-        },
-        error: function () {
-            render_country_flags();
-        }
-    });
-});
-})(jQuery);
-</script>
+@stack('country-select')
 <script src='wp-content/plugins/honeypot/includes/js/wpa.js@ver=2.1.1' id='wpascript-js'></script>
 <script id='wpascript-js-after'>
 wpa_field_info = { "wpa_field_name": "zkoacl8272", "wpa_field_value": 52273, "wpa_add_test": "no" }
@@ -825,13 +713,13 @@ var ekit_config = { "ajaxurl": "https:\/\/scesummit-sa.com\/wp-admin\/admin-ajax
 </script>
 <script src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js@ver=2.8.5'
 id='elementskit-elementor-js'></script>
-<script id="webpushr-script">
+{{-- <script id="webpushr-script">
 (function (w, d, s, id) {
 w.webpushr = w.webpushr || function () { (w.webpushr.q = w.webpushr.q || []).push(arguments) }; var js, fjs = d.getElementsByTagName(s)[0]; js = d.createElement(s); js.async = 1; js.id = id; js.src = "https://cdn.webpushr.com/app.min.js";
 d.body.appendChild(js);
 }(window, document, 'script', 'webpushr-jssdk'));
 webpushr('setup', { 'key': 'BLGZ5IswvT4yD22HK3vhJGSadXtdWasHPybPQ5VcvagGYyAUX60vPo_BfuEXGevID5Sz3r7nBLUj4FhxTOzMUGY', 'sw': 'https://scesummit-sa.com/wp-content/plugins/webpushr-web-push-notifications/sdk_files/webpushr-sw.js.php' });
-</script>
+</script> --}}
 </body>
 
 </html><!-- WP Fastest Cache file was created in 0.81304788589478 seconds, on 15-07-23 11:15:46 -->

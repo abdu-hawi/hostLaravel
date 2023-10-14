@@ -1,9 +1,8 @@
 @extends('layout.main')
+@push('country-select')
+
+@endpush
 @section('content')
-
-
-
-
         <main id="main" class="site-main clr" role="main">
 
 
@@ -76,7 +75,7 @@
                                                                                 class="eael-creative-button-wrapper">
 
                                                                                 <a class="eael-creative-button eael-creative-button--rayen"
-                                                                                    href="index.html@p=707.html"
+                                                                                    href="{{ route('register') }}"
                                                                                     data-text="Now!">
 
 
@@ -417,7 +416,7 @@
                                                             class="elementor-container elementor-column-gap-default">
                                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f421098"
                                                                 data-id="f421098" data-element_type="column"
-                                                                data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:2167,&quot;url&quot;:&quot;https:\/\/scesummit-sa.com\/wp-content\/uploads\/2023\/07\/overview_bg.jpg&quot;}],&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+                                                                data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[],&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
                                                                 <div class="elementor-widget-wrap">
                                                                 </div>
                                                             </div>
@@ -676,7 +675,7 @@
                                                             <div class="eael-creative-button-wrapper">
 
                                                                 <a class="eael-creative-button eael-creative-button--rayen"
-                                                                    href="index.html@p=707.html" data-text="Now!">
+                                                                    href="{{ route('register') }}" data-text="Now!">
 
 
                                                                     <div class="creative-button-inner">
@@ -1250,7 +1249,7 @@
                                                             <div class="eael-creative-button-wrapper">
 
                                                                 <a class="eael-creative-button eael-creative-button--rayen"
-                                                                    href="index.html@p=707.html" data-text="Now!">
+                                                                    href="{{ route('register') }}" data-text="Now!">
 
 
                                                                     <div class="creative-button-inner">
@@ -1911,7 +1910,7 @@
                                                             <div class="eael-creative-button-wrapper">
 
                                                                 <a class="eael-creative-button eael-creative-button--rayen"
-                                                                    href="index.html@p=707.html" data-text="Now!">
+                                                                    href="{{ route('register') }}" data-text="Now!">
 
 
                                                                     <div class="creative-button-inner">
@@ -2613,7 +2612,7 @@
                                                             <div class="eael-creative-button-wrapper">
 
                                                                 <a class="eael-creative-button eael-creative-button--rayen"
-                                                                    href="index.html@p=707.html" data-text="Now!">
+                                                                    href="{{ route('register') }}" data-text="Now!">
 
 
                                                                     <div class="creative-button-inner">

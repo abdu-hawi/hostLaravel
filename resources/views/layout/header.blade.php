@@ -563,11 +563,11 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                             class="hfe-menu-item">SPONSORS</a></li>
                                                     <li id="menu-item-672"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                        <a href="index.html@p=624.html"
+                                                        <a href="{{ route('news') }}"
                                                             class="hfe-menu-item">NEWS</a></li>
                                                     <li id="menu-item-754"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                        <a href="index.html@p=707.html"
+                                                        <a href="{{ route('register') }}"
                                                             class="hfe-menu-item">REGISTER NOW</a></li>
                                                 </ul>
                                             </nav>
@@ -739,12 +739,12 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                 </li>
                                                                                 <li id="menu-item-672"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="index.html@p=624.html"
+                                                                                    <a href="{{ route('news') }}"
                                                                                         class="hfe-menu-item">NEWS</a>
                                                                                 </li>
                                                                                 <li id="menu-item-754"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="index.html@p=707.html"
+                                                                                    <a href="{{ route('register') }}"
                                                                                         class="hfe-menu-item">REGISTER
                                                                                         NOW</a></li>
                                                                             </ul>
