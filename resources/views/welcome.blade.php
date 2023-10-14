@@ -1,140 +1,3059 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layout.main')
+@section('content')
 
-        <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
-        <!-- Styles -->
-        <style>
-            /* ! tailwindcss v3.2.4 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Figtree, sans-serif;font-feature-settings:normal}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::-webkit-backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.relative{position:relative}.mx-auto{margin-left:auto;margin-right:auto}.mx-6{margin-left:1.5rem;margin-right:1.5rem}.ml-4{margin-left:1rem}.mt-16{margin-top:4rem}.mt-6{margin-top:1.5rem}.mt-4{margin-top:1rem}.-mt-px{margin-top:-1px}.mr-1{margin-right:0.25rem}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.h-16{height:4rem}.h-7{height:1.75rem}.h-6{height:1.5rem}.h-5{height:1.25rem}.min-h-screen{min-height:100vh}.w-auto{width:auto}.w-16{width:4rem}.w-7{width:1.75rem}.w-6{width:1.5rem}.w-5{width:1.25rem}.max-w-7xl{max-width:80rem}.shrink-0{flex-shrink:0}.scale-100{--tw-scale-x:1;--tw-scale-y:1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.items-center{align-items:center}.justify-center{justify-content:center}.gap-6{gap:1.5rem}.gap-4{gap:1rem}.self-center{align-self:center}.rounded-lg{border-radius:0.5rem}.rounded-full{border-radius:9999px}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246 / var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity))}.bg-red-50{--tw-bg-opacity:1;background-color:rgb(254 242 242 / var(--tw-bg-opacity))}.bg-dots-darker{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(0,0,0,0.07)'/%3E%3C/svg%3E")}.from-gray-700\/50{--tw-gradient-from:rgb(55 65 81 / 0.5);--tw-gradient-to:rgb(55 65 81 / 0);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-transparent{--tw-gradient-to:rgb(0 0 0 / 0);--tw-gradient-stops:var(--tw-gradient-from), transparent, var(--tw-gradient-to)}.bg-center{background-position:center}.stroke-red-500{stroke:#ef4444}.stroke-gray-400{stroke:#9ca3af}.p-6{padding:1.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.text-center{text-align:center}.text-right{text-align:right}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.font-semibold{font-weight:600}.leading-relaxed{line-height:1.625}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity))}.text-gray-900{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128 / var(--tw-text-opacity))}.underline{-webkit-text-decoration-line:underline;text-decoration-line:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-gray-500\/20{--tw-shadow-color:rgb(107 114 128 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-red-500 *::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.selection\:bg-red-500::selection{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39 / var(--tw-text-opacity))}.hover\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity))}.focus\:rounded-sm:focus{border-radius:0.125rem}.focus\:outline:focus{outline-style:solid}.focus\:outline-2:focus{outline-width:2px}.focus\:outline-red-500:focus{outline-color:#ef4444}.group:hover .group-hover\:stroke-gray-600{stroke:#4b5563}.z-10{z-index: 10}@media (prefers-reduced-motion: no-preference){.motion-safe\:hover\:scale-\[1\.01\]:hover{--tw-scale-x:1.01;--tw-scale-y:1.01;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}}@media (prefers-color-scheme: dark){.dark\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39 / var(--tw-bg-opacity))}.dark\:bg-gray-800\/50{background-color:rgb(31 41 55 / 0.5)}.dark\:bg-red-800\/20{background-color:rgb(153 27 27 / 0.2)}.dark\:bg-dots-lighter{background-image:url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.22676 0C1.91374 0 2.45351 0.539773 2.45351 1.22676C2.45351 1.91374 1.91374 2.45351 1.22676 2.45351C0.539773 2.45351 0 1.91374 0 1.22676C0 0.539773 0.539773 0 1.22676 0Z' fill='rgba(255,255,255,0.07)'/%3E%3C/svg%3E")}.dark\:bg-gradient-to-bl{background-image:linear-gradient(to bottom left, var(--tw-gradient-stops))}.dark\:stroke-gray-600{stroke:#4b5563}.dark\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175 / var(--tw-text-opacity))}.dark\:text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.dark\:shadow-none{--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.dark\:ring-1{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}.dark\:ring-inset{--tw-ring-inset:inset}.dark\:ring-white\/5{--tw-ring-color:rgb(255 255 255 / 0.05)}.dark\:hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity))}.group:hover .dark\:group-hover\:stroke-gray-400{stroke:#9ca3af}}@media (min-width: 640px){.sm\:fixed{position:fixed}.sm\:top-0{top:0px}.sm\:right-0{right:0px}.sm\:ml-0{margin-left:0px}.sm\:flex{display:flex}.sm\:items-center{align-items:center}.sm\:justify-center{justify-content:center}.sm\:justify-between{justify-content:space-between}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:gap-8{gap:2rem}.lg\:p-8{padding:2rem}}
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
-            @if (Route::has('login'))
-                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right z-10">
-                    @auth
-                        <a href="{{ url('/home') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
+        <main id="main" class="site-main clr" role="main">
 
-            <div class="max-w-7xl mx-auto p-6 lg:p-8">
-                <div class="flex justify-center">
-                    <svg viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto bg-gray-100 dark:bg-gray-900">
-                        <path d="M61.8548 14.6253C61.8778 14.7102 61.8895 14.7978 61.8897 14.8858V28.5615C61.8898 28.737 61.8434 28.9095 61.7554 29.0614C61.6675 29.2132 61.5409 29.3392 61.3887 29.4265L49.9104 36.0351V49.1337C49.9104 49.4902 49.7209 49.8192 49.4118 49.9987L25.4519 63.7916C25.3971 63.8227 25.3372 63.8427 25.2774 63.8639C25.255 63.8714 25.2338 63.8851 25.2101 63.8913C25.0426 63.9354 24.8666 63.9354 24.6991 63.8913C24.6716 63.8838 24.6467 63.8689 24.6205 63.8589C24.5657 63.8389 24.5084 63.8215 24.456 63.7916L0.501061 49.9987C0.348882 49.9113 0.222437 49.7853 0.134469 49.6334C0.0465019 49.4816 0.000120578 49.3092 0 49.1337L0 8.10652C0 8.01678 0.0124642 7.92953 0.0348998 7.84477C0.0423783 7.8161 0.0598282 7.78993 0.0697995 7.76126C0.0884958 7.70891 0.105946 7.65531 0.133367 7.6067C0.152063 7.5743 0.179485 7.54812 0.20192 7.51821C0.230588 7.47832 0.256763 7.43719 0.290416 7.40229C0.319084 7.37362 0.356476 7.35243 0.388883 7.32751C0.425029 7.29759 0.457436 7.26518 0.498568 7.2415L12.4779 0.345059C12.6296 0.257786 12.8015 0.211853 12.9765 0.211853C13.1515 0.211853 13.3234 0.257786 13.475 0.345059L25.4531 7.2415H25.4556C25.4955 7.26643 25.5292 7.29759 25.5653 7.32626C25.5977 7.35119 25.6339 7.37362 25.6625 7.40104C25.6974 7.43719 25.7224 7.47832 25.7523 7.51821C25.7735 7.54812 25.8021 7.5743 25.8196 7.6067C25.8483 7.65656 25.8645 7.70891 25.8844 7.76126C25.8944 7.78993 25.9118 7.8161 25.9193 7.84602C25.9423 7.93096 25.954 8.01853 25.9542 8.10652V33.7317L35.9355 27.9844V14.8846C35.9355 14.7973 35.948 14.7088 35.9704 14.6253C35.9792 14.5954 35.9954 14.5692 36.0053 14.5405C36.0253 14.4882 36.0427 14.4346 36.0702 14.386C36.0888 14.3536 36.1163 14.3274 36.1375 14.2975C36.1674 14.2576 36.1923 14.2165 36.2272 14.1816C36.2559 14.1529 36.292 14.1317 36.3244 14.1068C36.3618 14.0769 36.3942 14.0445 36.4341 14.0208L48.4147 7.12434C48.5663 7.03694 48.7383 6.99094 48.9133 6.99094C49.0883 6.99094 49.2602 7.03694 49.4118 7.12434L61.3899 14.0208C61.4323 14.0457 61.4647 14.0769 61.5021 14.1055C61.5333 14.1305 61.5694 14.1529 61.5981 14.1803C61.633 14.2165 61.6579 14.2576 61.6878 14.2975C61.7103 14.3274 61.7377 14.3536 61.7551 14.386C61.7838 14.4346 61.8 14.4882 61.8199 14.5405C61.8312 14.5692 61.8474 14.5954 61.8548 14.6253ZM59.893 27.9844V16.6121L55.7013 19.0252L49.9104 22.3593V33.7317L59.8942 27.9844H59.893ZM47.9149 48.5566V37.1768L42.2187 40.4299L25.953 49.7133V61.2003L47.9149 48.5566ZM1.99677 9.83281V48.5566L23.9562 61.199V49.7145L12.4841 43.2219L12.4804 43.2194L12.4754 43.2169C12.4368 43.1945 12.4044 43.1621 12.3682 43.1347C12.3371 43.1097 12.3009 43.0898 12.2735 43.0624L12.271 43.0586C12.2386 43.0275 12.2162 42.9888 12.1887 42.9539C12.1638 42.9203 12.1339 42.8916 12.114 42.8567L12.1127 42.853C12.0903 42.8156 12.0766 42.7707 12.0604 42.7283C12.0442 42.6909 12.023 42.656 12.013 42.6161C12.0005 42.5688 11.998 42.5177 11.9931 42.4691C11.9881 42.4317 11.9781 42.3943 11.9781 42.3569V15.5801L6.18848 12.2446L1.99677 9.83281ZM12.9777 2.36177L2.99764 8.10652L12.9752 13.8513L22.9541 8.10527L12.9752 2.36177H12.9777ZM18.1678 38.2138L23.9574 34.8809V9.83281L19.7657 12.2459L13.9749 15.5801V40.6281L18.1678 38.2138ZM48.9133 9.14105L38.9344 14.8858L48.9133 20.6305L58.8909 14.8846L48.9133 9.14105ZM47.9149 22.3593L42.124 19.0252L37.9323 16.6121V27.9844L43.7219 31.3174L47.9149 33.7317V22.3593ZM24.9533 47.987L39.59 39.631L46.9065 35.4555L36.9352 29.7145L25.4544 36.3242L14.9907 42.3482L24.9533 47.987Z" fill="#FF2D20"/>
-                    </svg>
-                </div>
 
-                <div class="mt-16">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-                        <a href="https://laravel.com/docs" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                                    </svg>
+
+            <div id="content-wrap" class="container clr">
+
+
+                <div id="primary" class="content-area clr">
+
+
+                    <div id="content" class="site-content clr">
+
+
+
+                        <article class="single-page-article clr">
+
+
+                            <div class="entry clr" itemprop="text">
+
+
+                                <div data-elementor-type="wp-page" data-elementor-id="674"
+                                    class="elementor elementor-674">
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-2a16f3a elementor-section-height-min-height elementor-section-full_width elementor-section-height-default elementor-section-items-middle"
+                                        data-id="2a16f3a" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;video&quot;,&quot;background_video_link&quot;:&quot;https:\/\/youtu.be\/7jKvbmerOg0&quot;,&quot;background_play_on_mobile&quot;:&quot;yes&quot;}">
+                                        <div class="elementor-background-video-container">
+                                            <div class="elementor-background-video-embed"></div>
+                                        </div>
+                                        <div class="elementor-background-overlay"></div>
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-13e3477"
+                                                data-id="13e3477" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-bd6cd7f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="bd6cd7f" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3604778"
+                                                                data-id="3604778" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-46fae01 elementor-widget elementor-widget-heading"
+                                                                        data-id="46fae01" data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                SAUDI CONSTRUCTION EXCELLENCE SUMMIT
+                                                                            </h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-2891c96 elementor-widget elementor-widget-heading"
+                                                                        data-id="2891c96" data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h4
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                Achieving construction excellence
+                                                                                through future technologies &
+                                                                                strategies</h4>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-9b7c3ac elementor-widget elementor-widget-eael-creative-button"
+                                                                        data-id="9b7c3ac" data-element_type="widget"
+                                                                        data-widget_type="eael-creative-button.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div
+                                                                                class="eael-creative-button-wrapper">
+
+                                                                                <a class="eael-creative-button eael-creative-button--rayen"
+                                                                                    href="index.html@p=707.html"
+                                                                                    data-text="Now!">
+
+
+                                                                                    <div
+                                                                                        class="creative-button-inner">
+
+
+                                                                                        <span
+                                                                                            class="cretive-button-text">Register</span>
+
+                                                                                    </div>
+                                                                                </a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-b33f0cb elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="b33f0cb" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e02365b"
+                                                data-id="e02365b" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-ceb1fe2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="ceb1fe2" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-2c14d65"
+                                                                data-id="2c14d65" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-26f0612 elementor-widget elementor-widget-counter"
+                                                                        data-id="26f0612" data-element_type="widget"
+                                                                        data-widget_type="counter.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <style>
+                                                                                /*! elementor - v3.11.3 - 07-03-2023 */
+                                                                                .elementor-counter .elementor-counter-number-wrapper {
+                                                                                    display: flex;
+                                                                                    font-size: 69px;
+                                                                                    font-weight: 600;
+                                                                                    line-height: 1
+                                                                                }
+
+                                                                                .elementor-counter .elementor-counter-number-prefix,
+                                                                                .elementor-counter .elementor-counter-number-suffix {
+                                                                                    flex-grow: 1;
+                                                                                    white-space: pre-wrap
+                                                                                }
+
+                                                                                .elementor-counter .elementor-counter-number-prefix {
+                                                                                    text-align: right
+                                                                                }
+
+                                                                                .elementor-counter .elementor-counter-number-suffix {
+                                                                                    text-align: left
+                                                                                }
+
+                                                                                .elementor-counter .elementor-counter-title {
+                                                                                    text-align: center;
+                                                                                    font-size: 19px;
+                                                                                    font-weight: 400;
+                                                                                    line-height: 2.5
+                                                                                }
+                                                                            </style>
+                                                                            <div class="elementor-counter">
+                                                                                <div
+                                                                                    class="elementor-counter-number-wrapper">
+                                                                                    <span
+                                                                                        class="elementor-counter-number-prefix"></span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number"
+                                                                                        data-duration="2000"
+                                                                                        data-to-value="500"
+                                                                                        data-from-value="0">0</span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number-suffix">+</span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-counter-title">
+                                                                                    Attendees</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-0355969"
+                                                                data-id="0355969" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-05c7ac3 elementor-widget elementor-widget-counter"
+                                                                        data-id="05c7ac3" data-element_type="widget"
+                                                                        data-widget_type="counter.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-counter">
+                                                                                <div
+                                                                                    class="elementor-counter-number-wrapper">
+                                                                                    <span
+                                                                                        class="elementor-counter-number-prefix"></span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number"
+                                                                                        data-duration="2000"
+                                                                                        data-to-value="40"
+                                                                                        data-from-value="0"
+                                                                                        data-delimiter=",">0</span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number-suffix">+</span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-counter-title">
+                                                                                    Speakers</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-7a5f073"
+                                                                data-id="7a5f073" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-5250fb9 elementor-widget elementor-widget-counter"
+                                                                        data-id="5250fb9" data-element_type="widget"
+                                                                        data-widget_type="counter.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-counter">
+                                                                                <div
+                                                                                    class="elementor-counter-number-wrapper">
+                                                                                    <span
+                                                                                        class="elementor-counter-number-prefix"></span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number"
+                                                                                        data-duration="2000"
+                                                                                        data-to-value="15"
+                                                                                        data-from-value="0"
+                                                                                        data-delimiter=",">0</span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number-suffix">+</span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-counter-title">
+                                                                                    Panel Discussions</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-d1b5ffc"
+                                                                data-id="d1b5ffc" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-b4f2720 elementor-widget elementor-widget-counter"
+                                                                        data-id="b4f2720" data-element_type="widget"
+                                                                        data-widget_type="counter.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-counter">
+                                                                                <div
+                                                                                    class="elementor-counter-number-wrapper">
+                                                                                    <span
+                                                                                        class="elementor-counter-number-prefix"></span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number"
+                                                                                        data-duration="2000"
+                                                                                        data-to-value="4"
+                                                                                        data-from-value="0"
+                                                                                        data-delimiter=",">0</span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number-suffix">+</span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-counter-title">
+                                                                                    Workshops</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-ef298dd"
+                                                                data-id="ef298dd" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-ec58936 elementor-widget elementor-widget-counter"
+                                                                        data-id="ec58936" data-element_type="widget"
+                                                                        data-widget_type="counter.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-counter">
+                                                                                <div
+                                                                                    class="elementor-counter-number-wrapper">
+                                                                                    <span
+                                                                                        class="elementor-counter-number-prefix"></span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number"
+                                                                                        data-duration="2000"
+                                                                                        data-to-value="10"
+                                                                                        data-from-value="0"
+                                                                                        data-delimiter=",">0</span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number-suffix">+</span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-counter-title">
+                                                                                    Associations</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-4219c3b"
+                                                                data-id="4219c3b" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-9cb0846 elementor-widget elementor-widget-counter"
+                                                                        data-id="9cb0846" data-element_type="widget"
+                                                                        data-widget_type="counter.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-counter">
+                                                                                <div
+                                                                                    class="elementor-counter-number-wrapper">
+                                                                                    <span
+                                                                                        class="elementor-counter-number-prefix"></span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number"
+                                                                                        data-duration="2000"
+                                                                                        data-to-value="100"
+                                                                                        data-from-value="0"
+                                                                                        data-delimiter=",">0</span>
+                                                                                    <span
+                                                                                        class="elementor-counter-number-suffix">+</span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-counter-title">
+                                                                                    Media Partners</div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-56574ad1 elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="56574ad1" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-39cbb907 elementor-invisible"
+                                                data-id="39cbb907" data-element_type="column"
+                                                data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-76598fde elementor-invisible elementor-widget elementor-widget-heading"
+                                                        data-id="76598fde" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                Under the Patronage of</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-69b1977b elementor-invisible elementor-widget elementor-widget-heading"
+                                                        data-id="69b1977b" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                H.E Mr. Majed Bin Abdullah<br> Al-Hogail</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-4aa56b8e elementor-invisible elementor-widget elementor-widget-heading"
+                                                        data-id="4aa56b8e" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                Minister of Municipal & Rural Affairs & Housing</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-724d5a08 elementor-invisible elementor-widget elementor-widget-image"
+                                                        data-id="724d5a08" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}"
+                                                        data-widget_type="image.default">
+                                                        <div class="elementor-widget-container">
+                                                            <a href="https://momrah.gov.sa/en" target="_blank">
+                                                                <img decoding="async"
+                                                                    src="wp-content/uploads/elementor/thumbs/minister-logo-q3w2o9o2c9zadg451vqsxl2uau2y4cgizezhvzjywe.jpg"
+                                                                    title="minister-logo" alt="minister-logo"
+                                                                    class="elementor-animation-grow"
+                                                                    loading="lazy" /> </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-77d7618e"
+                                                data-id="77d7618e" data-element_type="column"
+                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-6eb8322b elementor-invisible elementor-widget elementor-widget-image"
+                                                        data-id="6eb8322b" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInRight&quot;}"
+                                                        data-widget_type="image.default">
+                                                        <div class="elementor-widget-container">
+                                                            <img decoding="async" width="362" height="419"
+                                                                src="wp-content/uploads/2023/01/minister-pic-1.jpg"
+                                                                class="attachment-full size-full wp-image-28" alt=""
+                                                                loading="lazy"
+                                                                srcset="wp-content/uploads/2023/01/minister-pic-1.jpg 362w, wp-content/uploads/2023/01/minister-pic-1-259x300.jpg 259w"
+                                                                sizes="(max-width: 362px) 100vw, 362px" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-75924b0a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="75924b0a" data-element_type="section" id="overview"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-no">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-13bc66b7"
+                                                data-id="13bc66b7" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-13c26dc5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="13c26dc5" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f421098"
+                                                                data-id="f421098" data-element_type="column"
+                                                                data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[{&quot;id&quot;:2167,&quot;url&quot;:&quot;https:\/\/scesummit-sa.com\/wp-content\/uploads\/2023\/07\/overview_bg.jpg&quot;}],&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+                                                                <div class="elementor-widget-wrap">
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5e2d7765"
+                                                                data-id="5e2d7765" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-3b754d49 elementor-widget elementor-widget-heading"
+                                                                        data-id="3b754d49"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                Overview</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1c2c42f9 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                                        data-id="1c2c42f9"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="divider.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <style>
+                                                                                /*! elementor - v3.11.3 - 07-03-2023 */
+                                                                                .elementor-widget-divider {
+                                                                                    --divider-border-style: none;
+                                                                                    --divider-border-width: 1px;
+                                                                                    --divider-color: #2c2c2c;
+                                                                                    --divider-icon-size: 20px;
+                                                                                    --divider-element-spacing: 10px;
+                                                                                    --divider-pattern-height: 24px;
+                                                                                    --divider-pattern-size: 20px;
+                                                                                    --divider-pattern-url: none;
+                                                                                    --divider-pattern-repeat: repeat-x
+                                                                                }
+
+                                                                                .elementor-widget-divider .elementor-divider {
+                                                                                    display: flex
+                                                                                }
+
+                                                                                .elementor-widget-divider .elementor-divider__text {
+                                                                                    font-size: 15px;
+                                                                                    line-height: 1;
+                                                                                    max-width: 95%
+                                                                                }
+
+                                                                                .elementor-widget-divider .elementor-divider__element {
+                                                                                    margin: 0 var(--divider-element-spacing);
+                                                                                    flex-shrink: 0
+                                                                                }
+
+                                                                                .elementor-widget-divider .elementor-icon {
+                                                                                    font-size: var(--divider-icon-size)
+                                                                                }
+
+                                                                                .elementor-widget-divider .elementor-divider-separator {
+                                                                                    display: flex;
+                                                                                    margin: 0;
+                                                                                    direction: ltr
+                                                                                }
+
+                                                                                .elementor-widget-divider--view-line_icon .elementor-divider-separator,
+                                                                                .elementor-widget-divider--view-line_text .elementor-divider-separator {
+                                                                                    align-items: center
+                                                                                }
+
+                                                                                .elementor-widget-divider--view-line_icon .elementor-divider-separator:after,
+                                                                                .elementor-widget-divider--view-line_icon .elementor-divider-separator:before,
+                                                                                .elementor-widget-divider--view-line_text .elementor-divider-separator:after,
+                                                                                .elementor-widget-divider--view-line_text .elementor-divider-separator:before {
+                                                                                    display: block;
+                                                                                    content: "";
+                                                                                    border-bottom: 0;
+                                                                                    flex-grow: 1;
+                                                                                    border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                                                                }
+
+                                                                                .elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type {
+                                                                                    flex-grow: 0;
+                                                                                    flex-shrink: 100
+                                                                                }
+
+                                                                                .elementor-widget-divider--element-align-left .elementor-divider-separator:before {
+                                                                                    content: none
+                                                                                }
+
+                                                                                .elementor-widget-divider--element-align-left .elementor-divider__element {
+                                                                                    margin-left: 0
+                                                                                }
+
+                                                                                .elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type {
+                                                                                    flex-grow: 0;
+                                                                                    flex-shrink: 100
+                                                                                }
+
+                                                                                .elementor-widget-divider--element-align-right .elementor-divider-separator:after {
+                                                                                    content: none
+                                                                                }
+
+                                                                                .elementor-widget-divider--element-align-right .elementor-divider__element {
+                                                                                    margin-right: 0
+                                                                                }
+
+                                                                                .elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator {
+                                                                                    border-top: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                                                                }
+
+                                                                                .elementor-widget-divider--separator-type-pattern {
+                                                                                    --divider-border-style: none
+                                                                                }
+
+                                                                                .elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,
+                                                                                .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,
+                                                                                .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
+                                                                                .elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator {
+                                                                                    width: 100%;
+                                                                                    min-height: var(--divider-pattern-height);
+                                                                                    -webkit-mask-size: var(--divider-pattern-size) 100%;
+                                                                                    mask-size: var(--divider-pattern-size) 100%;
+                                                                                    -webkit-mask-repeat: var(--divider-pattern-repeat);
+                                                                                    mask-repeat: var(--divider-pattern-repeat);
+                                                                                    background-color: var(--divider-color);
+                                                                                    -webkit-mask-image: var(--divider-pattern-url);
+                                                                                    mask-image: var(--divider-pattern-url)
+                                                                                }
+
+                                                                                .elementor-widget-divider--no-spacing {
+                                                                                    --divider-pattern-size: auto
+                                                                                }
+
+                                                                                .elementor-widget-divider--bg-round {
+                                                                                    --divider-pattern-repeat: round
+                                                                                }
+
+                                                                                .rtl .elementor-widget-divider .elementor-divider__text {
+                                                                                    direction: rtl
+                                                                                }
+
+                                                                                .e-con-inner>.elementor-widget-divider,
+                                                                                .e-con>.elementor-widget-divider {
+                                                                                    width: var(--container-widget-width, 100%);
+                                                                                    --flex-grow: var(--container-widget-flex-grow)
+                                                                                }
+                                                                            </style>
+                                                                            <div class="elementor-divider">
+                                                                                <span
+                                                                                    class="elementor-divider-separator">
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-5e74d609 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="5e74d609"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <style>
+                                                                                /*! elementor - v3.11.3 - 07-03-2023 */
+                                                                                .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                                                                    background-color: #818a91;
+                                                                                    color: #fff
+                                                                                }
+
+                                                                                .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                                                                    color: #818a91;
+                                                                                    border: 3px solid;
+                                                                                    background-color: transparent
+                                                                                }
+
+                                                                                .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                                                                    margin-top: 8px
+                                                                                }
+
+                                                                                .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                                                                    width: 1em;
+                                                                                    height: 1em
+                                                                                }
+
+                                                                                .elementor-widget-text-editor .elementor-drop-cap {
+                                                                                    float: left;
+                                                                                    text-align: center;
+                                                                                    line-height: 1;
+                                                                                    font-size: 50px
+                                                                                }
+
+                                                                                .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                                                                    display: inline-block
+                                                                                }
+                                                                            </style>
+                                                                            <p>Saudi Arabia’s infrastructure and
+                                                                                construction industry is amongst the
+                                                                                largest in the region, with over
+                                                                                825$ billion worth of planned and
+                                                                                unawarded projects. In the recent
+                                                                                years the industry has seen
+                                                                                consistent growth output which is
+                                                                                destined to grow in line with the
+                                                                                kingdom’s vision 2030. The kingdom’s
+                                                                                construction boom is entrenched in
+                                                                                its continued investments in diverse
+                                                                                projects, ranging from “Giga
+                                                                                Projects” to social and urban
+                                                                                development programs.</p>
+                                                                            <p><strong>Saudi Construction Excellence
+                                                                                    Summit</strong> is an exclusive
+                                                                                event, with a mandate to give
+                                                                                insights into the thriving
+                                                                                opportunities in the infrastructure
+                                                                                and construction sector in the
+                                                                                country, and to explore emerging
+                                                                                trends and innovations which are
+                                                                                disrupting the construction
+                                                                                industry. The event will showcase
+                                                                                expert speakers, panelists, industry
+                                                                                leaders and thought leaders who will
+                                                                                bring into focus various
+                                                                                construction technologies,
+                                                                                investment opportunities, regulatory
+                                                                                frameworks and insightful case
+                                                                                studies which will define the future
+                                                                                of construction in the nation. The
+                                                                                Saudi Construction Excellence Summit
+                                                                                (SCES 2023) with its main purpose to
+                                                                                &#8220;Achieving construction
+                                                                                excellence through future
+                                                                                technologies &amp; strategies&#8221;
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="elementor-element elementor-element-56e71f41 elementor-widget elementor-widget-text-editor"
+                                                        data-id="56e71f41" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>Under the Patronage of H.E <strong>Mr. Majed Bin
+                                                                    Abdullah Al-Hogail,</strong> the Minister of
+                                                                Municipal &amp; Rural Affairs &amp; Housing, the
+                                                                Conference will provide a fantastic platform for
+                                                                senior industry representatives to cross share their
+                                                                visions, ideas and ambitions.</p>
+                                                            <p>These two days Summit will feature a series of case
+                                                                studypresentations, highly interactive panel
+                                                                discussions and technology driven workshops led by
+                                                                our panel of globally renowned construction experts
+                                                                and technology providers to help achieve excellence
+                                                                across construction sector globally.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-e16f50f elementor-widget elementor-widget-eael-creative-button"
+                                                        data-id="e16f50f" data-element_type="widget"
+                                                        data-widget_type="eael-creative-button.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="eael-creative-button-wrapper">
+
+                                                                <a class="eael-creative-button eael-creative-button--rayen"
+                                                                    href="index.html@p=707.html" data-text="Now!">
+
+
+                                                                    <div class="creative-button-inner">
+
+
+                                                                        <span
+                                                                            class="cretive-button-text">Register</span>
+
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-13afe6a elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                        data-id="13afe6a" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7bfdca1"
+                                                data-id="7bfdca1" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-e1b42e1 elementor-widget elementor-widget-heading"
+                                                        data-id="e1b42e1" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                Organized by Leaders in the Construction Industry
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-b0e552c elementor-widget elementor-widget-text-editor"
+                                                        data-id="b0e552c" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>Organized to promote innovation and excellence in the
+                                                                construction industry, the Saudi Construction
+                                                                Excellence Summit offers a platform for industry
+                                                                leaders to connect, share knowledge, and showcase
+                                                                the latest advancements in construction technology
+                                                                and practices</p>
+                                                        </div>
+                                                    </div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-b30deca elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="b30deca" data-element_type="section"
+                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                        <div class="elementor-container elementor-column-gap-no">
+                                                            <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-b169364"
+                                                                data-id="b169364" data-element_type="column"
+                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-2e1fe90 elementor-widget elementor-widget-image"
+                                                                        data-id="2e1fe90" data-element_type="widget"
+                                                                        data-widget_type="image.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <a href="https://www.xs-conferences.com/"
+                                                                                target="_blank">
+                                                                                <img decoding="async" width="450"
+                                                                                    height="177"
+                                                                                    src="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg"
+                                                                                    class="attachment-full size-full wp-image-65"
+                                                                                    alt="" loading="lazy"
+                                                                                    srcset="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg 450w, wp-content/uploads/2023/01/xs-conference-1-e1675154741737-300x118.jpg 300w"
+                                                                                    sizes="(max-width: 450px) 100vw, 450px" />
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-64d2597c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="64d2597c" data-element_type="section" id="whysaudi"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-background-overlay"></div>
+                                        <div class="elementor-container elementor-column-gap-no">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3fb54779"
+                                                data-id="3fb54779" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-6e66e1fb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="6e66e1fb" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5a8fa365"
+                                                                data-id="5a8fa365" data-element_type="column"
+                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-f9521b2 elementor-widget elementor-widget-spacer"
+                                                                        data-id="f9521b2" data-element_type="widget"
+                                                                        data-widget_type="spacer.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <style>
+                                                                                /*! elementor - v3.11.3 - 07-03-2023 */
+                                                                                .elementor-column .elementor-spacer-inner {
+                                                                                    height: var(--spacer-size)
+                                                                                }
+
+                                                                                .e-con {
+                                                                                    --container-widget-width: 100%
+                                                                                }
+
+                                                                                .e-con-inner>.elementor-widget-spacer,
+                                                                                .e-con>.elementor-widget-spacer {
+                                                                                    width: var(--container-widget-width, var(--spacer-size));
+                                                                                    --align-self: var(--container-widget-align-self, initial);
+                                                                                    --flex-shrink: 0
+                                                                                }
+
+                                                                                .e-con-inner>.elementor-widget-spacer>.elementor-widget-container,
+                                                                                .e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,
+                                                                                .e-con>.elementor-widget-spacer>.elementor-widget-container,
+                                                                                .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer {
+                                                                                    height: 100%
+                                                                                }
+
+                                                                                .e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,
+                                                                                .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+                                                                                    height: var(--container-widget-height, var(--spacer-size))
+                                                                                }
+                                                                            </style>
+                                                                            <div class="elementor-spacer">
+                                                                                <div class="elementor-spacer-inner">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-5ed673c5"
+                                                                data-id="5ed673c5" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-5f3ef371 elementor-widget elementor-widget-heading"
+                                                                        data-id="5f3ef371"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                Why Saudi Arabia?</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-3cc16e9e elementor-widget elementor-widget-text-editor"
+                                                                        data-id="3cc16e9e"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p>Saudi Arabia is geographically well
+                                                                                positioned as a country to create a
+                                                                                new digitalized global city, that
+                                                                                will be situated at the crossroad of
+                                                                                three continents Asia, Europe, and
+                                                                                Africa with half the world&#8217;s
+                                                                                population accessible within a
+                                                                                five-hour flight. KSA is also a key
+                                                                                state in the MENA region. Saudi
+                                                                                Arabia spends more than 20 billion
+                                                                                dollars per year in ICT Investment
+                                                                                and that doesn&#8217;t account for
+                                                                                the corpo- rate and foreign
+                                                                                investments the Kingdom&#8217;s
+                                                                                digital revolution attracts.<br />As
+                                                                                a key regional leader in the
+                                                                                development of next generation
+                                                                                solutions and technology, the
+                                                                                country presents lucrative
+                                                                                investment opportunities for
+                                                                                international investors.
+                                                                                Technologies such as 5G Mobile
+                                                                                Networks, BIM, 3D Printing, BAS,
+                                                                                ITS, Smart Energy Management
+                                                                                Systems, Smart Metering, Renewable
+                                                                                Energy, Autonomous Vehicles, Drones,
+                                                                                Biometrics and Low-cost space
+                                                                                exploration and micro-satellites
+                                                                                will play a very vital role in the
+                                                                                development of smart and sustainable
+                                                                                cities across Saudi Arabia.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-39b34f1f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="39b34f1f" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-narrow">
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-d52dd74"
+                                                                data-id="d52dd74" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-74f6a00f elementor-widget elementor-widget-heading"
+                                                                        data-id="74f6a00f"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                USD 37 billion</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-623565bf elementor-widget elementor-widget-text-editor"
+                                                                        data-id="623565bf"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p>Expected CAGR of 5.2%
+                                                                                2021-2026<br />Saudi Arabian
+                                                                                construction market valued</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-2c1c8f02"
+                                                                data-id="2c1c8f02" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-1c2290e4 elementor-widget elementor-widget-heading"
+                                                                        data-id="1c2290e4"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                USD 825 billion</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-2a02ab30 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="2a02ab30"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p>Planned &amp; unawarded
+                                                                                projects<br />Largest in Gulf
+                                                                                Cooperation Council (GCC) region</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7447af24"
+                                                                data-id="7447af24" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-4d0e71f5 elementor-widget elementor-widget-heading"
+                                                                        data-id="4d0e71f5"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                USD 819 billion</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-15a587bd elementor-widget elementor-widget-text-editor"
+                                                                        data-id="15a587bd"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p>35% of total value of active projects
+                                                                                across GCC 5,200 construction
+                                                                                projects are currently ongoing</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-7f74284b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="7f74284b" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-55ff0255"
+                                                data-id="55ff0255" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-7fed6fca elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="7fed6fca" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-59e11531"
+                                                                data-id="59e11531" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-19f3319e elementor-widget elementor-widget-heading"
+                                                                        data-id="19f3319e"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                EVENT OBJECTIVES</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-2bc3038e elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                                        data-id="2bc3038e"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-list.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <link rel="stylesheet"
+                                                                                href="wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
+                                                                            <ul class="elementor-icon-list-items">
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Support
+                                                                                        the Kingdom's Vision
+                                                                                        2030</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Create
+                                                                                        Job Opportunities</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Build
+                                                                                        Better Infrastructure</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Improve
+                                                                                        the Quality of Life of
+                                                                                        Citizens</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Achieve
+                                                                                        Excellence</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Fast
+                                                                                        Track Construction
+                                                                                        Projects</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Promote
+                                                                                        Investment
+                                                                                        Opportunities</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Identify
+                                                                                        Smart Construction
+                                                                                        Technology</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Promote
+                                                                                        Sustainable
+                                                                                        Developments</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-31ffc417"
+                                                                data-id="31ffc417" data-element_type="column"
+                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-bba89b9 elementor-widget elementor-widget-spacer"
+                                                                        data-id="bba89b9" data-element_type="widget"
+                                                                        data-widget_type="spacer.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-spacer">
+                                                                                <div class="elementor-spacer-inner">
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-155a4d4e"
+                                                                data-id="155a4d4e" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-4a5264ae elementor-widget elementor-widget-heading"
+                                                                        data-id="4a5264ae"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                Hybrid Event (Physical + Virtual)
+                                                                            </h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-5ad52035 elementor-align-left elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                                        data-id="5ad52035"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-list.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <ul class="elementor-icon-list-items">
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">
+                                                                                        Case Study & Technical
+                                                                                        Presentations</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Exclusive
+                                                                                        Marketing and
+                                                                                        Branding</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Technology
+                                                                                        Showcase & Exhibition</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Technical
+                                                                                        Workshops</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Unlimited
+                                                                                        Access to Decision
+                                                                                        Makers</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Innovation
+                                                                                        Hub</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Interactive
+                                                                                        Panel Discussions</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-check-circle"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Networking
+                                                                                        and Business Meetings</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="elementor-element elementor-element-ac5c69b elementor-widget elementor-widget-eael-creative-button"
+                                                        data-id="ac5c69b" data-element_type="widget"
+                                                        data-widget_type="eael-creative-button.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="eael-creative-button-wrapper">
+
+                                                                <a class="eael-creative-button eael-creative-button--rayen"
+                                                                    href="index.html@p=707.html" data-text="Now!">
+
+
+                                                                    <div class="creative-button-inner">
+
+
+                                                                        <span
+                                                                            class="cretive-button-text">Register</span>
+
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-9033d9b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="9033d9b" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7554cd0c"
+                                                data-id="7554cd0c" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-5c587020 elementor-widget elementor-widget-heading"
+                                                        data-id="5c587020" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                Attendees Benefits</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-238b4bf5 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                        data-id="238b4bf5" data-element_type="widget"
+                                                        data-widget_type="divider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-divider">
+                                                                <span class="elementor-divider-separator">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-59565468 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="59565468" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3835819a"
+                                                                data-id="3835819a" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-2dcf9fff elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="2dcf9fff"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <link rel="stylesheet"
+                                                                                href="wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Hear from our
+                                                                                            international panel of
+                                                                                            experts about ongoing
+                                                                                            and upcoming
+                                                                                            construction projects.
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-10a3e9f elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="10a3e9f" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Learn about the latest
+                                                                                            construction strategies
+                                                                                            and leading technology.
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-66a6b370 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="66a6b370"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Identify smart and
+                                                                                            futuristic construction
+                                                                                            technologies and
+                                                                                            solutions for your
+                                                                                            ongoing and upcoming
+                                                                                            construction projects.
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-31a5c04c elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="31a5c04c"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Share your views and
+                                                                                            experiences with
+                                                                                            industry peers and
+                                                                                            thought leaders. </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-7070b96 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="7070b96" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Participate in our
+                                                                                            highly interactive panel
+                                                                                            discussions. </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4a98ebe5"
+                                                                data-id="4a98ebe5" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-42f6a1bd elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="42f6a1bd"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Gain technical insights
+                                                                                            on some of the latest
+                                                                                            technology and software
+                                                                                            by attending our
+                                                                                            technical workshops.
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-25147ff2 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="25147ff2"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Get a real-time
+                                                                                            experience with leading
+                                                                                            technologies at our
+                                                                                            innovation hub. </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-14921367 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="14921367"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Sign business deals and
+                                                                                            procure the latest
+                                                                                            technology and solutions
+                                                                                            for your ongoing and
+                                                                                            upcoming projects.
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-21d4ed78 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="21d4ed78"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Secure investments for
+                                                                                            your ongoing and
+                                                                                            upcoming projects.
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-6040bdd9 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="6040bdd9"
+                                                                        data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_box-checked"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Explore new and exciting
+                                                                                            business opportunities
+                                                                                            across the construction
+                                                                                            sector. </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-6d16f4f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="6d16f4f" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fea083c"
+                                                data-id="fea083c" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-2e466af elementor-widget elementor-widget-heading"
+                                                        data-id="2e466af" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                Ongoing & Upcoming KSA Projects</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-e001739 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                        data-id="e001739" data-element_type="widget"
+                                                        data-widget_type="divider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-divider">
+                                                                <span class="elementor-divider-separator">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-96db926 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="96db926" data-element_type="section">
+                                                        <div class="elementor-container elementor-column-gap-no">
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-e6e1c95"
+                                                                data-id="e6e1c95" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-e2917d5 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                                        data-id="e2917d5" data-element_type="widget"
+                                                                        data-widget_type="icon-list.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <ul class="elementor-icon-list-items">
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">NEOM</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Al
+                                                                                        WIDYAN</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">THE
+                                                                                        RED SEA PROJECT</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">AL
+                                                                                        FAISALIYAH</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">KING
+                                                                                        SALMAN ENERGY PARK</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">JEDDAH
+                                                                                        TOWER</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">KING
+                                                                                        ABDULLAH FINANCIAL
+                                                                                        DISTRICT</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-ef6496e"
+                                                                data-id="ef6496e" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-c4f2507 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                                        data-id="c4f2507" data-element_type="widget"
+                                                                        data-widget_type="icon-list.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <ul class="elementor-icon-list-items">
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">AL
+                                                                                        QIDDIYA ENTERTAINMET
+                                                                                        CITY</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">AMAALA</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">MALL
+                                                                                        OF SAUDI</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">JABAL
+                                                                                        OMAR</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">THE
+                                                                                        AVENUES MALL</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">KING
+                                                                                        ABDULLAH ECONOMIC
+                                                                                        CITY</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">THE
+                                                                                        MUKAAB</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0e7e519"
+                                                                data-id="0e7e519" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-22f2be5 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                                        data-id="22f2be5" data-element_type="widget"
+                                                                        data-widget_type="icon-list.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <ul class="elementor-icon-list-items">
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">RIYADH
+                                                                                        METRO</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">THE
+                                                                                        KNOWLEDGE ECONOMIC
+                                                                                        CITY</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">AD
+                                                                                        DIRIYAH</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">JEDDAH
+                                                                                        METRO</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">MAKKAH
+                                                                                        PUBLIC TRANSPORT
+                                                                                        PROGRAMME</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="icon icon-construction-tool-vehicle-with-crane-lifting-materials"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">SHARAN
+                                                                                        NATURE RESERVE</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                    <div class="elementor-element elementor-element-6c6197d elementor-widget elementor-widget-eael-creative-button"
+                                                        data-id="6c6197d" data-element_type="widget"
+                                                        data-widget_type="eael-creative-button.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="eael-creative-button-wrapper">
+
+                                                                <a class="eael-creative-button eael-creative-button--rayen"
+                                                                    href="index.html@p=707.html" data-text="Now!">
+
+
+                                                                    <div class="creative-button-inner">
+
+
+                                                                        <span
+                                                                            class="cretive-button-text">Register</span>
+
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-f6acdc8 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="f6acdc8" data-element_type="section" id="whoattend"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-background-overlay"></div>
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-dd11b85"
+                                                data-id="dd11b85" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-fbfe6de elementor-widget elementor-widget-heading"
+                                                        data-id="fbfe6de" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                Who Will Attend?</h2>
+                                                        </div>
+                                                    </div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-2fb8920 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="2fb8920" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4bbcec6"
+                                                                data-id="4bbcec6" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-b112a29 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="b112a29" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Mayors / Goverors &
+                                                                                            Deputy Mayors / Deputy
+                                                                                            Governors </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-ed4f2d5 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="ed4f2d5" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Chairman & Vice
+                                                                                            Chairman's </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-4e32f93 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="4e32f93" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            President & Vice
+                                                                                            President's </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-6c1d67e elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="6c1d67e" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            CEOs / COOs / CTOs
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-3da1809 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="3da1809" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Managing Director's
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-8323574 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="8323574" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Project Director's &
+                                                                                            Heads of Projects
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-8a34254 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="8a34254" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Chief Procurement
+                                                                                            Officers & Heads of
+                                                                                            Procurement </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-36551d8 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="36551d8" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Chief Purchasing
+                                                                                            Officers & Heads of
+                                                                                            Purchasing </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1ffff8d elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="1ffff8d" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Heads of Marketing &
+                                                                                            Business Development
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-c8498d6 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="c8498d6" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Chief Investment
+                                                                                            Officers </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-16304ba"
+                                                                data-id="16304ba" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-09c7c7c elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="09c7c7c" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Partners & Lawyers
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-196b280 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="196b280" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Consultants </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-0dfbd83 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="0dfbd83" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Principal Architects &
+                                                                                            Senior Architects
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-21b7ca6 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="21b7ca6" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Contractors </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-bd0f6d2 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="bd0f6d2" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Developers </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-09f8132 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="09f8132" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Chief Financial
+                                                                                            Officer's & Heads of
+                                                                                            Finance </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-2572692 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="2572692" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Heads of IT & ICT
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-81bf075 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="81bf075" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Systom Integrators &
+                                                                                            Heads of Technology
+                                                                                            Implementation </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1a24757 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="1a24757" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Heads of Smart City
+                                                                                            Projects & Fleads of
+                                                                                            Digitalization </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-8120a83 elementor-position-left elementor-mobile-position-left elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                                                                        data-id="8120a83" data-element_type="widget"
+                                                                        data-widget_type="icon-box.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="elementor-icon-box-wrapper">
+                                                                                <div
+                                                                                    class="elementor-icon-box-icon">
+                                                                                    <span
+                                                                                        class="elementor-icon elementor-animation-">
+                                                                                        <i aria-hidden="true"
+                                                                                            class=" icon_stop"></i>
+                                                                                    </span>
+                                                                                </div>
+                                                                                <div
+                                                                                    class="elementor-icon-box-content">
+                                                                                    <h5
+                                                                                        class="elementor-icon-box-title">
+                                                                                        <span>
+                                                                                            Directors & Heads of
+                                                                                            Transportation &
+                                                                                            Infrastructure Projects
+                                                                                        </span>
+                                                                                    </h5>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-fb5fd62 elementor-section-height-min-height elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                        data-id="fb5fd62" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-aba6009"
+                                                data-id="aba6009" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-38de908 elementor-widget elementor-widget-heading"
+                                                        data-id="38de908" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                Success Partners
+                                                            </h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-a66b6e0 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                        data-id="a66b6e0" data-element_type="widget"
+                                                        data-widget_type="divider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-divider">
+                                                                <span class="elementor-divider-separator">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-df561c3 elementor-widget elementor-widget-text-editor"
+                                                        data-id="df561c3" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>Success partners in the Saudi Construction Excellence
+                                                                Summit are likely to be organizations and
+                                                                individuals from the construction industry who
+                                                                participate in the summit to exchange ideas, learn
+                                                                from experts, network with peers, and explore
+                                                                opportunities for growth and success in the Saudi
+                                                                market.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-299d2ca elementor-widget elementor-widget-qi_addons_for_elementor_clients_slider"
+                                                        data-id="299d2ca" data-element_type="widget"
+                                                        data-widget_type="qi_addons_for_elementor_clients_slider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="qodef-shortcode qodef-m  qodef-qi-clients-slider  qodef--hover-scale   qodef-qi-grid qodef-qi-swiper-container        "
+                                                                data-options="{&quot;direction&quot;:&quot;horizontal&quot;,&quot;slidesPerView&quot;:&quot;4&quot;,&quot;spaceBetween&quot;:30,&quot;spaceBetweenTablet&quot;:30,&quot;spaceBetweenMobile&quot;:30,&quot;effect&quot;:&quot;&quot;,&quot;loop&quot;:true,&quot;autoplay&quot;:true,&quot;centeredSlides&quot;:false,&quot;speed&quot;:&quot;&quot;,&quot;speedAnimation&quot;:&quot;&quot;,&quot;outsideNavigation&quot;:&quot;no&quot;,&quot;outsidePagination&quot;:&quot;no&quot;,&quot;unique&quot;:&quot;1&quot;,&quot;partialValue&quot;:0,&quot;disablePartialValue&quot;:&quot;&quot;}">
+                                                                <div class="swiper-wrapper">
+                                                                    <div class="qodef-e swiper-slide">
+                                                                        <div class="qodef-e-inner">
+                                                                            <a href="https://saso.gov.sa/en/pages/default.aspx"
+                                                                                target="_blank">
+                                                                                <div class="qodef-e-images-holder">
+                                                                                    <div class="qodef-e-main-image">
+                                                                                        <img width="450"
+                                                                                            height="450"
+                                                                                            src="wp-content/uploads/2023/02/saso.jpg"
+                                                                                            class="attachment-full size-full"
+                                                                                            alt="" decoding="async"
+                                                                                            loading="lazy"
+                                                                                            srcset="wp-content/uploads/2023/02/saso.jpg 450w, wp-content/uploads/2023/02/saso-300x300.jpg 300w, wp-content/uploads/2023/02/saso-150x150.jpg 150w"
+                                                                                            sizes="(max-width: 450px) 100vw, 450px" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-e swiper-slide">
+                                                                        <div class="qodef-e-inner">
+                                                                            <a href="https://sbc.gov.sa/En/Pages/default.aspx"
+                                                                                target="_blank">
+                                                                                <div class="qodef-e-images-holder">
+                                                                                    <div class="qodef-e-main-image">
+                                                                                        <img width="450"
+                                                                                            height="450"
+                                                                                            src="wp-content/uploads/2023/02/SBCNC.jpg"
+                                                                                            class="attachment-full size-full"
+                                                                                            alt="" decoding="async"
+                                                                                            loading="lazy"
+                                                                                            srcset="wp-content/uploads/2023/02/SBCNC.jpg 450w, wp-content/uploads/2023/02/SBCNC-300x300.jpg 300w, wp-content/uploads/2023/02/SBCNC-150x150.jpg 150w"
+                                                                                            sizes="(max-width: 450px) 100vw, 450px" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-e swiper-slide">
+                                                                        <div class="qodef-e-inner">
+                                                                            <a href="https://sca.sa/en"
+                                                                                target="_blank">
+                                                                                <div class="qodef-e-images-holder">
+                                                                                    <div class="qodef-e-main-image">
+                                                                                        <img width="450"
+                                                                                            height="450"
+                                                                                            src="wp-content/uploads/2023/02/SCA.jpg"
+                                                                                            class="attachment-full size-full"
+                                                                                            alt="" decoding="async"
+                                                                                            loading="lazy"
+                                                                                            srcset="wp-content/uploads/2023/02/SCA.jpg 450w, wp-content/uploads/2023/02/SCA-300x300.jpg 300w, wp-content/uploads/2023/02/SCA-150x150.jpg 150w"
+                                                                                            sizes="(max-width: 450px) 100vw, 450px" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-e swiper-slide">
+                                                                        <div class="qodef-e-inner">
+                                                                            <a href="https://www.saudieng.sa/English/pages/default.aspx"
+                                                                                target="_blank">
+                                                                                <div class="qodef-e-images-holder">
+                                                                                    <div class="qodef-e-main-image">
+                                                                                        <img width="450"
+                                                                                            height="450"
+                                                                                            src="wp-content/uploads/2023/02/Untitled-1.jpg"
+                                                                                            class="attachment-full size-full"
+                                                                                            alt="" decoding="async"
+                                                                                            loading="lazy"
+                                                                                            srcset="wp-content/uploads/2023/02/Untitled-1.jpg 450w, wp-content/uploads/2023/02/Untitled-1-300x300.jpg 300w, wp-content/uploads/2023/02/Untitled-1-150x150.jpg 150w"
+                                                                                            sizes="(max-width: 450px) 100vw, 450px" />
+                                                                                    </div>
+                                                                                </div>
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-d2cc500 elementor-widget elementor-widget-eael-creative-button"
+                                                        data-id="d2cc500" data-element_type="widget"
+                                                        data-widget_type="eael-creative-button.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="eael-creative-button-wrapper">
+
+                                                                <a class="eael-creative-button eael-creative-button--rayen"
+                                                                    href="index.html@p=707.html" data-text="Now!">
+
+
+                                                                    <div class="creative-button-inner">
+
+
+                                                                        <span
+                                                                            class="cretive-button-text">Register</span>
+
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-7b41b480 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="7b41b480" data-element_type="section" id="venue">
+                                        <div class="elementor-container elementor-column-gap-no">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4e1bd73b"
+                                                data-id="4e1bd73b" data-element_type="column"
+                                                data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[],&quot;background_slideshow_loop&quot;:&quot;yes&quot;,&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-d82e11c elementor-widget elementor-widget-image"
+                                                        data-id="d82e11c" data-element_type="widget"
+                                                        data-widget_type="image.default">
+                                                        <div class="elementor-widget-container">
+                                                            <img decoding="async" width="1440" height="957"
+                                                                src="wp-content/uploads/2023/07/Ritz_carlton_riyadh_bg.jpg"
+                                                                class="attachment-full size-full wp-image-2172"
+                                                                alt="" loading="lazy"
+                                                                srcset="wp-content/uploads/2023/07/Ritz_carlton_riyadh_bg.jpg 1440w, wp-content/uploads/2023/07/Ritz_carlton_riyadh_bg-300x199.jpg 300w, wp-content/uploads/2023/07/Ritz_carlton_riyadh_bg-1024x681.jpg 1024w, wp-content/uploads/2023/07/Ritz_carlton_riyadh_bg-768x510.jpg 768w"
+                                                                sizes="(max-width: 1440px) 100vw, 1440px" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-1a2230a elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="1a2230a" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-no">
+                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-85da99e"
+                                                data-id="85da99e" data-element_type="column"
+                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-background-overlay"></div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-9b5396b elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
+                                                        data-id="9b5396b" data-element_type="section">
+                                                        <div
+                                                            class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-99d56db"
+                                                                data-id="99d56db" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-de151c6 elementor-widget elementor-widget-image"
+                                                                        data-id="de151c6" data-element_type="widget"
+                                                                        data-widget_type="image.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <img decoding="async" width="1200"
+                                                                                height="1200"
+                                                                                src="wp-content/uploads/2023/02/Ritz-carlton-1.jpg"
+                                                                                class="attachment-full size-full wp-image-518"
+                                                                                alt="" loading="lazy"
+                                                                                srcset="wp-content/uploads/2023/02/Ritz-carlton-1.jpg 1200w, wp-content/uploads/2023/02/Ritz-carlton-1-300x300.jpg 300w, wp-content/uploads/2023/02/Ritz-carlton-1-1024x1024.jpg 1024w, wp-content/uploads/2023/02/Ritz-carlton-1-150x150.jpg 150w, wp-content/uploads/2023/02/Ritz-carlton-1-768x768.jpg 768w, wp-content/uploads/2023/02/Ritz-carlton-1-600x600.jpg 600w, wp-content/uploads/2023/02/Ritz-carlton-1-650x650.jpg 650w"
+                                                                                sizes="(max-width: 1200px) 100vw, 1200px" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-392b3f7"
+                                                                data-id="392b3f7" data-element_type="column">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-ee36eb4 elementor-widget elementor-widget-heading"
+                                                                        data-id="ee36eb4" data-element_type="widget"
+                                                                        data-widget_type="heading.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <h2
+                                                                                class="elementor-heading-title elementor-size-default">
+                                                                                Event Venue</h2>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-c237508 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+                                                                        data-id="c237508" data-element_type="widget"
+                                                                        data-widget_type="icon-list.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <ul class="elementor-icon-list-items">
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-map-marker-alt"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Ritz
+                                                                                        Carlton, Riyadh, Saudi
+                                                                                        Arabia</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="far fa-calendar-alt"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">Nov
+                                                                                        13-14, 2023</span>
+                                                                                </li>
+                                                                                <li
+                                                                                    class="elementor-icon-list-item">
+                                                                                    <span
+                                                                                        class="elementor-icon-list-icon">
+                                                                                        <i aria-hidden="true"
+                                                                                            class="fas fa-clock"></i>
+                                                                                    </span>
+                                                                                    <span
+                                                                                        class="elementor-icon-list-text">08:00
+                                                                                        A.M - 05:00 P.M</span>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-9fb340b"
+                                                data-id="9fb340b" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-f3828f2 elementor-widget elementor-widget-google_maps"
+                                                        data-id="f3828f2" data-element_type="widget"
+                                                        data-widget_type="google_maps.default">
+                                                        <div class="elementor-widget-container">
+                                                            <style>
+                                                                /*! elementor - v3.11.3 - 07-03-2023 */
+                                                                .elementor-widget-google_maps .elementor-widget-container {
+                                                                    overflow: hidden
+                                                                }
+
+                                                                .elementor-widget-google_maps .elementor-custom-embed {
+                                                                    line-height: 0
+                                                                }
+
+                                                                .elementor-widget-google_maps iframe {
+                                                                    height: 300px
+                                                                }
+                                                            </style>
+                                                            <div class="elementor-custom-embed">
+                                                                <iframe loading="lazy"
+                                                                    src="https://maps.google.com/maps?q=Ritz%20carlton%20Riyadh&#038;t=m&#038;z=11&#038;output=embed&#038;iwloc=near"
+                                                                    title="Ritz carlton Riyadh"
+                                                                    aria-label="Ritz carlton Riyadh"></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-d1169c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="d1169c2" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1297686"
+                                                data-id="1297686" data-element_type="column">
+                                                <div class="elementor-widget-wrap">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-d291ab0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="d291ab0" data-element_type="section">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b15bb28"
+                                                data-id="b15bb28" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-0191551 elementor-widget elementor-widget-heading"
+                                                        data-id="0191551" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2
+                                                                class="elementor-heading-title elementor-size-default">
+                                                                News and Updates</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-4ff7cae elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                        data-id="4ff7cae" data-element_type="widget"
+                                                        data-widget_type="divider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-divider">
+                                                                <span class="elementor-divider-separator">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-9ba3a86 elementor-widget elementor-widget-text-editor"
+                                                        data-id="9ba3a86" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>Stay up-to-date with the latest news and developments
+                                                                in the construction industry, and get exclusive
+                                                                updates on the Saudi Construction Excellence Summit,
+                                                                the premier event for construction professionals in
+                                                                Saudi Arabia and beyond.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-c7a2962 premium-blog-align-left elementor-widget elementor-widget-premium-addon-blog"
+                                                        data-id="c7a2962" data-element_type="widget"
+                                                        data-settings="{&quot;force_height&quot;:&quot;true&quot;,&quot;premium_blog_columns_number&quot;:&quot;33.33%&quot;,&quot;premium_blog_grid&quot;:&quot;yes&quot;,&quot;premium_blog_layout&quot;:&quot;even&quot;,&quot;premium_blog_columns_number_tablet&quot;:&quot;50%&quot;,&quot;premium_blog_columns_number_mobile&quot;:&quot;100%&quot;,&quot;scroll_to_offset&quot;:&quot;yes&quot;}"
+                                                        data-widget_type="premium-addon-blog.default">
+                                                        <div class="elementor-widget-container">
+
+                                                            <div class="premium-blog-wrap  premium-blog-even"
+                                                                data-page="674">
+                                                                <div class="premium-blog-post-outer-container"
+                                                                    data-total="1">
+                                                                    <div
+                                                                        class="premium-blog-post-container premium-blog-skin-modern">
+                                                                        <div
+                                                                            class="premium-blog-thumb-effect-wrapper">
+                                                                            <div
+                                                                                class="premium-blog-thumbnail-container premium-blog-zoomin-effect">
+                                                                                <a href="index.html@p=634.html"
+                                                                                    target="_blank">
+                                                                                    <img decoding="async"
+                                                                                        width="2560" height="1707"
+                                                                                        src="wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-scaled.jpg"
+                                                                                        class="attachment-full size-full wp-image-655"
+                                                                                        alt="" loading="lazy"
+                                                                                        srcset="wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-scaled.jpg 2560w, wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-300x200.jpg 300w, wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-1024x683.jpg 1024w, wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-768x512.jpg 768w, wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-1536x1024.jpg 1536w, wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-2048x1366.jpg 2048w"
+                                                                                        sizes="(max-width: 2560px) 100vw, 2560px" />
+                                                                                </a>
+                                                                            </div>
+                                                                            <div
+                                                                                class="premium-blog-effect-container premium-blog-framed-effect">
+                                                                                <a class="premium-blog-post-link"
+                                                                                    href="index.html@p=634.html"
+                                                                                    target="_blank"></a>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="premium-blog-content-wrapper ">
+
+                                                                            <div
+                                                                                class="premium-blog-inner-container">
+
+                                                                                <h2
+                                                                                    class="premium-blog-entry-title">
+                                                                                    <a href="index.html@p=634.html"
+                                                                                        target="_blank">
+                                                                                        The other four giga-projects
+                                                                                        are NEOM, Red Sea, Qiddiya
+                                                                                        and ROSHN </a>
+                                                                                </h2>
+                                                                                <div
+                                                                                    class="premium-blog-entry-meta">
+
+                                                                                    <span
+                                                                                        class="premium-blog-meta-separator">•</span>
+                                                                                    <div
+                                                                                        class="premium-blog-post-time premium-blog-meta-data">
+                                                                                        <i class="fa fa-clock-o"
+                                                                                            aria-hidden="true"></i>
+                                                                                        <span>February 7,
+                                                                                            2023</span>
+                                                                                    </div>
+
+
+                                                                                </div>
+
+                                                                            </div>
+
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-e2e2300 elementor-widget elementor-widget-image"
+                                                        data-id="e2e2300" data-element_type="widget"
+                                                        data-widget_type="image.default">
+                                                        <div class="elementor-widget-container">
+                                                            <a href="https://www.xs-conferences.com/"
+                                                                target="_blank">
+                                                                <img decoding="async" width="476" height="196"
+                                                                    src="wp-content/uploads/2023/07/logo_black.jpg"
+                                                                    class="attachment-full size-full wp-image-2157"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="wp-content/uploads/2023/07/logo_black.jpg 476w, wp-content/uploads/2023/07/logo_black-300x124.jpg 300w"
+                                                                    sizes="(max-width: 476px) 100vw, 476px" /> </a>
+                                                        </div>
+                                                    </div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-e012e15 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="e012e15" data-element_type="section"
+                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                        <div class="elementor-background-overlay"></div>
+                                                        <div class="elementor-container elementor-column-gap-no">
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b26280b"
+                                                                data-id="b26280b" data-element_type="column"
+                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-background-overlay"></div>
+                                                                    <div class="elementor-element elementor-element-fddf659 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="fddf659" data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p><strong>Organised By</strong></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-237dea0 elementor-widget elementor-widget-image"
+                                                                        data-id="237dea0" data-element_type="widget"
+                                                                        data-widget_type="image.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <a href="https://www.xs-conferences.com/"
+                                                                                target="_blank">
+                                                                                <img decoding="async" width="450"
+                                                                                    height="177"
+                                                                                    src="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg"
+                                                                                    class="attachment-full size-full wp-image-65"
+                                                                                    alt="" loading="lazy"
+                                                                                    srcset="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg 450w, wp-content/uploads/2023/01/xs-conference-1-e1675154741737-300x118.jpg 300w"
+                                                                                    sizes="(max-width: 450px) 100vw, 450px" />
+                                                                            </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-9f6c3d0 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="9f6c3d0" data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p>Riyadh, KSA<br /><span
+                                                                                    style="color: #000000;">+966-50-56-85126</span><br /><span
+                                                                                    style="color: #000000;">info@xs-conferences.com</span><br /><span
+                                                                                    style="color: #000000;">adel@xs-conferences.com</span><br /><span
+                                                                                    style="color: #000000;">www.xs-conferences.com</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5183015 elementor-hidden-mobile"
+                                                                data-id="5183015" data-element_type="column"
+                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-3a1c47b elementor-widget elementor-widget-text-editor"
+                                                                        data-id="3a1c47b" data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <style>
+                                                                                .vl {
+                                                                                    border-left: 2px solid black;
+                                                                                    height: 400px;
+                                                                                }
+                                                                            </style>
+
+                                                                            <div class="vl"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5317da5"
+                                                                data-id="5317da5" data-element_type="column"
+                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-076a299 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="076a299" data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p><strong>International
+                                                                                    Offices</strong></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-1ada209 elementor-widget elementor-widget-image"
+                                                                        data-id="1ada209" data-element_type="widget"
+                                                                        data-widget_type="image.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <a href="https://www.xs-conferences.com/"
+                                                                                target="_blank">
+                                                                                <img decoding="async" width="150"
+                                                                                    height="150"
+                                                                                    src="wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg"
+                                                                                    class="attachment-thumbnail size-thumbnail wp-image-63"
+                                                                                    alt="" loading="lazy" /> </a>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="elementor-element elementor-element-805f273 elementor-widget elementor-widget-text-editor"
+                                                                        data-id="805f273" data-element_type="widget"
+                                                                        data-widget_type="text-editor.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <p>New York, USA<br /><span
+                                                                                    style="color: #000000;">ranselpotter@xs-conferences.com</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
                                 </div>
 
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Documentation</h2>
 
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                </p>
                             </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
+                        </article>
 
-                        <a href="https://laracasts.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" d="M15.75 10.5l4.72-4.72a.75.75 0 011.28.53v11.38a.75.75 0 01-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25h-9A2.25 2.25 0 002.25 7.5v9a2.25 2.25 0 002.25 2.25z" />
-                                    </svg>
-                                </div>
 
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laracasts</h2>
+                    </div><!-- #content -->
 
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </p>
-                            </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
+                </div><!-- #primary -->
 
-                        <a href="https://laravel-news.com" class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
-                                    </svg>
-                                </div>
 
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Laravel News</h2>
+            </div><!-- #content-wrap -->
 
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </p>
-                            </div>
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="self-center shrink-0 stroke-red-500 w-6 h-6 mx-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
-                            </svg>
-                        </a>
 
-                        <div class="scale-100 p-6 bg-white dark:bg-gray-800/50 dark:bg-gradient-to-bl from-gray-700/50 via-transparent dark:ring-1 dark:ring-inset dark:ring-white/5 rounded-lg shadow-2xl shadow-gray-500/20 dark:shadow-none flex motion-safe:hover:scale-[1.01] transition-all duration-250 focus:outline focus:outline-2 focus:outline-red-500">
-                            <div>
-                                <div class="h-16 w-16 bg-red-50 dark:bg-red-800/20 flex items-center justify-center rounded-full">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="w-7 h-7 stroke-red-500">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.115 5.19l.319 1.913A6 6 0 008.11 10.36L9.75 12l-.387.775c-.217.433-.132.956.21 1.298l1.348 1.348c.21.21.329.497.329.795v1.089c0 .426.24.815.622 1.006l.153.076c.433.217.956.132 1.298-.21l.723-.723a8.7 8.7 0 002.288-4.042 1.087 1.087 0 00-.358-1.099l-1.33-1.108c-.251-.21-.582-.299-.905-.245l-1.17.195a1.125 1.125 0 01-.98-.314l-.295-.295a1.125 1.125 0 010-1.591l.13-.132a1.125 1.125 0 011.3-.21l.603.302a.809.809 0 001.086-1.086L14.25 7.5l1.256-.837a4.5 4.5 0 001.528-1.732l.146-.292M6.115 5.19A9 9 0 1017.18 4.64M6.115 5.19A8.965 8.965 0 0112 3c1.929 0 3.716.607 5.18 1.64" />
-                                    </svg>
-                                </div>
+        </main><!-- #main -->
 
-                                <h2 class="mt-6 text-xl font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</h2>
 
-                                <p class="mt-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Forge</a>, <a href="https://vapor.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Vapor</a>, <a href="https://nova.laravel.com" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Nova</a>, and <a href="https://envoyer.io" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Telescope</a>, and more.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="flex justify-center mt-16 px-0 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-left">
-                        <div class="flex items-center gap-4">
-                            <a href="https://github.com/sponsors/taylorotwell" class="group inline-flex items-center hover:text-gray-700 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" class="-mt-px mr-1 w-5 h-5 stroke-gray-400 dark:stroke-gray-600 group-hover:stroke-gray-600 dark:group-hover:stroke-gray-400">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
-                                </svg>
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
 
-                    <div class="ml-4 text-center text-sm text-gray-500 dark:text-gray-400 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
+
+@endsection
