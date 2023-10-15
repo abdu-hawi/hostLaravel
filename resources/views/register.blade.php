@@ -163,11 +163,29 @@
                                         </div>
                                     </div>
                                 </section>
+
+                                @if(Session::has('success'))
+                                    <div class="alert alert-success fade in alert-dismissible" style="margin-top: 18px;
+                                    color: #3c763d;
+                                    background-color: #dff0d8;
+                                    border-color: #d6e9c6;
+                                    opacity: 1;
+                                    text-align: center;
+                                    padding: 0.5rem;">
+                                        <strong>{{ Session::get('success') }}</strong>
+                                    </div>
+                                @endif
+
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-795f462 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="795f462" data-element_type="section"
                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                     <div class="elementor-background-overlay"></div>
+
+
+
+
+
                                     <div class="elementor-container elementor-column-gap-default">
                                         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-425a2d2f elementor-invisible"
                                             data-id="425a2d2f" data-element_type="column"
@@ -187,50 +205,45 @@
                                                                             aria-atomic="true"></p>
                                                                         <ul></ul>
                                                                     </div>
-                                                                    <form action="{{ route('register') }}#wpcf7-f730-p707-o1"
+                                                                    <form action="{{ route('clients') }}"
                                                                         method="post" class="wpcf7-form init"
                                                                         aria-label="Contact form" novalidate="novalidate"
                                                                         data-status="init">
-                                                                        <div style="display: none;">
-                                                                            <input type="hidden" name="_wpcf7"
-                                                                                value="730" />
-                                                                            <input type="hidden" name="_wpcf7_version"
-                                                                                value="5.7.4" />
-                                                                            <input type="hidden" name="_wpcf7_locale"
-                                                                                value="en_US" />
-                                                                            <input type="hidden" name="_wpcf7_unit_tag"
-                                                                                value="wpcf7-f730-p707-o1" />
-                                                                            <input type="hidden"
-                                                                                name="_wpcf7_container_post"
-                                                                                value="707" />
-                                                                            <input type="hidden"
-                                                                                name="_wpcf7_posted_data_hash"
-                                                                                value="" />
-                                                                        </div>
+                                                                        @csrf
                                                                         <div class="row-name">
                                                                             <div class="fname">
                                                                                 <label>First Name*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="Name"><input size="40"
+                                                                                <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                                                    <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="First name"
-                                                                                        value="" type="text"
-                                                                                        name="Name" /></span>
+                                                                                        value="{{ old('first_name') ?? '' }}" type="text"
+                                                                                        name="first_name" required
+                                                                                        @error('first_name') style="border-color: #e70c0c;" @enderror />
+                                                                                    @error('first_name')
+                                                                                    <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
 
                                                                             <div class="lname">
                                                                                 <label>Last Name*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="LastName"><input
+                                                                                <span class="wpcf7-form-control-wrap" data-name="LastName">
+                                                                                    <input
                                                                                         size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Last Name"
-                                                                                        value="" type="text"
-                                                                                        name="LastName" /></span>
+                                                                                        value="{{ old('last_name') ?? '' }}" type="text"
+                                                                                        name="last_name" required
+                                                                                        @error('last_name') style="border-color: #e70c0c;" @enderror />
+                                                                                    @error('last_name')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
                                                                         </div>
 
@@ -244,8 +257,13 @@
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Job title"
-                                                                                        value="" type="text"
-                                                                                        name="Jobtitle" /></span>
+                                                                                        value="{{ old('job_title') ?? '' }}" type="text"
+                                                                                        name="job_title" required
+                                                                                        @error('job_title') style="border-color: #e70c0c;" @enderror />
+                                                                                    @error('job_title')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
 
                                                                             <div class="company">
@@ -257,27 +275,38 @@
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Company name"
-                                                                                        value="" type="text"
-                                                                                        name="Companyname" /></span>
+                                                                                        value="{{ old('company_name') ?? '' }}" type="text"
+                                                                                        name="company_name" required
+                                                                                        @error('company_name') style="border-color: #e70c0c;" @enderror />
+                                                                                    @error('company_name')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row-email">
                                                                             <div class="mobilenum">
                                                                                 <label>Mobile Number*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="mobile"><input
+                                                                                <span class="wpcf7-form-control-wrap" data-name="mobile">
+                                                                                    <input
                                                                                         size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-phonetext wpcf7-validates-as-required wpcf7-validates-as-phonetext"
                                                                                         data-numberonly="true"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Phone number"
-                                                                                        value="" type="text"
-                                                                                        name="mobile" /><input
+                                                                                        value="{{ old('mobile') ?? '' }}" type="text"
+                                                                                        name="mobile" required
+                                                                                        @error('full_number') style="border-color: #e70c0c;" @enderror />
+                                                                                    <input
                                                                                         type="hidden"
                                                                                         name="mobile-country-code"
-                                                                                        class="wpcf7-phonetext-country-code" /></span>
+                                                                                        class="wpcf7-phonetext-country-code" />
+                                                                                    @error('full_number')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
 
                                                                             <div class="email">
@@ -289,8 +318,13 @@
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
                                                                                         placeholder="Official email address"
-                                                                                        value="" type="email"
-                                                                                        name="your-email" /></span>
+                                                                                        value="{{ old('email') ?? '' }}" type="email"
+                                                                                        name="email" required
+                                                                                        @error('email') style="border-color: #e70c0c;" @enderror />
+                                                                                    @error('email')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
                                                                         </div>
 
@@ -298,12 +332,14 @@
                                                                             <div class="ticket">
                                                                                 <label>Industry*</label>
                                                                                 <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="Industry"><select
+                                                                                    data-name="Industry">
+                                                                                    <select
                                                                                         class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        name="Industry">
-                                                                                        <option value="">
+                                                                                        name="industry" required
+                                                                                        @error('industry') style="border-color: #e70c0c;" @enderror>
+                                                                                        <option value="" hidden>
                                                                                             &#8212;Please choose an
                                                                                             option&#8212;</option>
                                                                                         <option value="Building Envelope">
@@ -399,18 +435,24 @@
                                                                                         </option>
                                                                                         <option value="Other">Other
                                                                                         </option>
-                                                                                    </select></span>
+                                                                                    </select>
+                                                                                    @error('industry')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
 
                                                                             <div class="interest">
                                                                                 <label>Interested in*</label>
                                                                                 <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="interest"><select
+                                                                                    data-name="interest">
+                                                                                    <select
                                                                                         class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        name="interest">
-                                                                                        <option value="">
+                                                                                        name="interested" required
+                                                                                        @error('interested') style="border-color: #e70c0c;" @enderror>
+                                                                                        <option value="" hidden>
                                                                                             &#8212;Please choose an
                                                                                             option&#8212;</option>
                                                                                         <option value="Sponsorship">
@@ -423,28 +465,39 @@
                                                                                         </option>
                                                                                         <option value="Media Partner">Media
                                                                                             Partner</option>
-                                                                                    </select></span>
+                                                                                    </select>
+                                                                                    @error('interested')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
                                                                             </div>
                                                                         </div>
 
                                                                         <div class="row-gdrp">
                                                                             <span class="wpcf7-form-control-wrap"
                                                                                 data-name="GDRP"><span
-                                                                                    class="wpcf7-form-control wpcf7-acceptance"><span
-                                                                                        class="wpcf7-list-item"><label><input
+                                                                                    class="wpcf7-form-control wpcf7-acceptance">
+                                                                                    <span class="wpcf7-list-item" @error('GDRP') style="border: solid 1px #e70c0c;" @enderror>
+                                                                                        <label>
+                                                                                            <input
                                                                                                 type="checkbox"
                                                                                                 name="GDRP"
                                                                                                 value="1"
                                                                                                 id="gdrp"
-                                                                                                aria-invalid="false" /><span
-                                                                                                class="wpcf7-list-item-label"><span
+                                                                                                aria-invalid="false" required />
+                                                                                            <span class="wpcf7-list-item-label">
+                                                                                                <span
                                                                                                     style="gdrptext"> I
-                                                                                                    acknowledge that Nispana
-                                                                                                    Global will process my
+                                                                                                    acknowledge that will process my
                                                                                                     personal data in
-                                                                                                    accordance with Nispana
-                                                                                                    Global’s Privacy Policy
-                                                                                                </span></span></label></span></span></span>
+                                                                                                    accordance with Summit’s Privacy Policy
+                                                                                                </span>
+                                                                                            </span>
+                                                                                        </label>
+                                                                                    @error('GDRP')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                    </span></span></span>
                                                                         </div>
 
                                                                         <div class="row">
