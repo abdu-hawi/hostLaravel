@@ -1182,7 +1182,7 @@
                                                     data-widget_type="button.default">
                                                     <div class="elementor-widget-container">
                                                         <div class="elementor-button-wrapper">
-                                                            <a href="index.html#overview"
+                                                            <a href="{{ route('home') }}#overview"
                                                                 class="elementor-button-link elementor-button elementor-size-md"
                                                                 role="button">
                                                                 <span class="elementor-button-content-wrapper">

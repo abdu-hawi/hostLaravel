@@ -1,28 +1,55 @@
 @extends('layout.main')
 @push('country-select')
+<script>
 
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    const box = document.querySelector('#ah_counter');
+    var startingCount = false
+    var startedCount = false
+    countUp()
+    document.addEventListener('scroll', function () {
+        countUp()
+    }, {
+        passive: true
+    });
+    function countUp(){
+        if(!startingCount){
+            if(isInViewport(box)) startingCount = true ;
+        }
+
+        if(startingCount && !startedCount){
+            startedCount = true
+            // start count
+            const els_count_number = document.querySelectorAll('.elementor-counter-number')
+            els_count_number.forEach(async el_count => {
+                var finalValue = el_count.getAttribute('data-to-value')
+                for (let i = 0; i < Number(finalValue) + 1; i++) {
+                    await new Promise(r => setTimeout(r, 10));
+                    el_count.innerText = i;
+                }
+            });
+        }
+    }
+</script>
+<script src='wp-content/plugins/elementor/assets/js/frontend-modules.min.js@ver=3.11.3'
+id='elementor-frontend-modules-js'></script>
 @endpush
 @section('content')
         <main id="main" class="site-main clr" role="main">
-
-
-
             <div id="content-wrap" class="container clr">
-
-
                 <div id="primary" class="content-area clr">
-
-
                     <div id="content" class="site-content clr">
-
-
-
                         <article class="single-page-article clr">
-
-
                             <div class="entry clr" itemprop="text">
-
-
                                 <div data-elementor-type="wp-page" data-elementor-id="674"
                                     class="elementor elementor-674">
                                     <section
@@ -102,7 +129,8 @@
                                     <section
                                         class="elementor-section elementor-top-section elementor-element elementor-element-b33f0cb elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                                         data-id="b33f0cb" data-element_type="section"
-                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}"
+                                        id="ah_counter">
                                         <div class="elementor-container elementor-column-gap-default">
                                             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e02365b"
                                                 data-id="e02365b" data-element_type="column">
@@ -417,6 +445,7 @@
                                                             <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f421098"
                                                                 data-id="f421098" data-element_type="column"
                                                                 data-settings="{&quot;background_background&quot;:&quot;slideshow&quot;,&quot;background_slideshow_gallery&quot;:[],&quot;background_slideshow_slide_duration&quot;:5000,&quot;background_slideshow_slide_transition&quot;:&quot;fade&quot;,&quot;background_slideshow_transition_duration&quot;:500}">
+                                                                <div class="elementor-background-slideshow swiper-container" dir="rtl"><div class="swiper-wrapper"><div class="elementor-background-slideshow__slide swiper-slide"><div class="elementor-background-slideshow__slide__image" style="background-image: url({{ asset('wp-content/uploads/2023/07/overview_bg.jpg') }});"></div></div></div></div>
                                                                 <div class="elementor-widget-wrap">
                                                                 </div>
                                                             </div>
