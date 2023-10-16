@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">List of users</div>
+                <div class="card-header">Clients register</div>
 
                 <div class="card-body">
                     <table class="table table-bordered table-responsive">

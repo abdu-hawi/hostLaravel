@@ -2,6 +2,7 @@
 @push('css')
     <link rel='stylesheet' id='elementor-post-707-css' href='wp-content/uploads/elementor/css/post-707.css@ver=1684750170.css'
         media='all' />
+    {!! htmlScriptTagJsApi() !!}
 @endpush
 @push('country-select')
 <script id='nbcpf-countryFlag-script-js-after'>

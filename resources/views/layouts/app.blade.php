@@ -3,7 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" href="{{ asset("wp-content/uploads/2023/02/cropped-building-pattern-32x32.jpg") }}" sizes="32x32" />
+	<link rel="icon" href="{{ asset("wp-content/uploads/2023/02/cropped-building-pattern-192x192.jpg") }}" sizes="192x192" />
+	<link rel="apple-touch-icon" href="{{ asset("wp-content/uploads/2023/02/cropped-building-pattern-180x180.jpg") }}" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
