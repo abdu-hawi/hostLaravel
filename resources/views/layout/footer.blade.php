@@ -141,35 +141,35 @@
                                                 <div class="elementor-widget-container">
                                                     <ul class="elementor-icon-list-items">
                                                         <li class="elementor-icon-list-item">
-                                                            <a href="register.1.html">
+                                                            <a href="{{ route('register') }}">
 
                                                                 <span
                                                                     class="elementor-icon-list-text">Sponsor</span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
-                                                            <a href="register.1.html">
+                                                            <a href="{{ route('register') }}">
 
                                                                 <span
                                                                     class="elementor-icon-list-text">Exhibition</span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
-                                                            <a href="register.1.html">
+                                                            <a href="{{ route('register') }}">
 
                                                                 <span
                                                                     class="elementor-icon-list-text">Delegate</span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
-                                                            <a href="register.1.html">
+                                                            <a href="{{ route('register') }}">
 
                                                                 <span
                                                                     class="elementor-icon-list-text">Speaker</span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
-                                                            <a href="register.1.html">
+                                                            <a href="{{ route('register') }}">
 
                                                                 <span class="elementor-icon-list-text">Media
                                                                     partner</span>
@@ -561,7 +561,7 @@
                                 data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
                                     <h2 class="elementor-heading-title elementor-size-default"><a
-                                            href="https://nispanaglobal.com/" target="_blank">© 2023 | Saudi
+                                            href="javascript:void(0)" target="_blank">© 2023 | Saudi
                                             Construction Excellence Summit | Copyrights Reserved</a></h2>
                                 </div>
                             </div>
