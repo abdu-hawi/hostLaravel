@@ -126,7 +126,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
 <div id="outer-wrap" class="site clr">
 
-    <a class="skip-link screen-reader-text" href="{{ route('home') }}#main">Skip to content</a>
+    <a class="skip-link screen-reader-text" href="{{ route('index') }}#main">Skip to content</a>
 
 
     <div id="wrap" class="clr">
@@ -488,56 +488,56 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                 <ul id="menu-1-26f745b" class="hfe-nav-menu">
                                                     <li id="menu-item-679"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-674 current_page_item parent hfe-creative-menu">
-                                                        <a href="{{ route('home') }}" class="hfe-menu-item">HOME</a></li>
+                                                        <a href="{{ route('index') }}" class="hfe-menu-item">HOME</a></li>
                                                     <li id="menu-item-1074"
                                                         class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
                                                         <div class="hfe-has-submenu-container"><a
-                                                                href="{{ route('home') }}#overview"
+                                                                href="{{ route('index') }}#overview"
                                                                 class="hfe-menu-item">OVERVIEW<span
                                                                     class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
                                                                         class='fa'></i></span></a></div>
                                                         <ul class="sub-menu">
                                                             <li id="menu-item-1075"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                <a href="{{ route('home') }}#whysaudi"
+                                                                <a href="{{ route('index') }}#whysaudi"
                                                                     class="hfe-sub-menu-item hfe-sub-menu-item-active">Why
                                                                     Saudi Arabia?</a></li>
                                                             <li id="menu-item-1076"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                <a href="{{ route('home') }}#whoattend"
+                                                                <a href="{{ route('index') }}#whoattend"
                                                                     class="hfe-sub-menu-item hfe-sub-menu-item-active">Who
                                                                     Will Attend?</a></li>
                                                             <li id="menu-item-1077"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                <a href="{{ route('home') }}#venue"
+                                                                <a href="{{ route('index') }}#venue"
                                                                     class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
                                                             </li>
                                                             <li id="menu-item-1400"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                <a href="{{ route('home') }}#"
+                                                                <a href="{{ route('index') }}#"
                                                                     class="hfe-sub-menu-item">Visa, Travel &#038;
                                                                     Hotel</a></li>
                                                             <li id="menu-item-1401"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children hfe-has-submenu hfe-creative-menu">
                                                                 <div class="hfe-has-submenu-container"><a
-                                                                        href="{{ route('home') }}#"
+                                                                        href="{{ route('index') }}#"
                                                                         class="hfe-sub-menu-item">Media Center<span
                                                                             class='hfe-menu-toggle sub-arrow hfe-menu-child-1'><i
                                                                                 class='fa'></i></span></a></div>
                                                                 <ul class="sub-menu">
                                                                     <li id="menu-item-1402"
                                                                         class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                        <a href="{{ route('home') }}#"
+                                                                        <a href="{{ route('index') }}#"
                                                                             class="hfe-sub-menu-item">Photo
                                                                             Gallary</a></li>
                                                                     <li id="menu-item-1403"
                                                                         class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                        <a href="{{ route('home') }}#"
+                                                                        <a href="{{ route('index') }}#"
                                                                             class="hfe-sub-menu-item">Video
                                                                             Gallary</a></li>
                                                                     <li id="menu-item-1404"
                                                                         class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                        <a href="{{ route('home') }}#"
+                                                                        <a href="{{ route('index') }}#"
                                                                             class="hfe-sub-menu-item">Press
                                                                             Release</a></li>
                                                                 </ul>
@@ -654,7 +654,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
                                                                                     <div
                                                                                         class="hfe-has-submenu-container">
-                                                                                        <a href="{{ route('home') }}#overview"
+                                                                                        <a href="{{ route('index') }}#overview"
                                                                                             class="hfe-menu-item">OVERVIEW<span
                                                                                                 class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
                                                                                                     class='fa'></i></span></a>
@@ -662,24 +662,24 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                     <ul class="sub-menu">
                                                                                         <li id="menu-item-1075"
                                                                                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                                            <a href="{{ route('home') }}#whysaudi"
+                                                                                            <a href="{{ route('index') }}#whysaudi"
                                                                                                 class="hfe-sub-menu-item hfe-sub-menu-item-active">Why
                                                                                                 Saudi Arabia?</a>
                                                                                         </li>
                                                                                         <li id="menu-item-1076"
                                                                                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                                            <a href="{{ route('home') }}#whoattend"
+                                                                                            <a href="{{ route('index') }}#whoattend"
                                                                                                 class="hfe-sub-menu-item hfe-sub-menu-item-active">Who
                                                                                                 Will Attend?</a>
                                                                                         </li>
                                                                                         <li id="menu-item-1077"
                                                                                             class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                                            <a href="{{ route('home') }}#venue"
+                                                                                            <a href="{{ route('index') }}#venue"
                                                                                                 class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
                                                                                         </li>
                                                                                         <li id="menu-item-1400"
                                                                                             class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                                            <a href="{{ route('home') }}#"
+                                                                                            <a href="{{ route('index') }}#"
                                                                                                 class="hfe-sub-menu-item">Visa,
                                                                                                 Travel &#038;
                                                                                                 Hotel</a></li>
@@ -687,7 +687,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                             class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children hfe-has-submenu hfe-creative-menu">
                                                                                             <div
                                                                                                 class="hfe-has-submenu-container">
-                                                                                                <a href="{{ route('home') }}#"
+                                                                                                <a href="{{ route('index') }}#"
                                                                                                     class="hfe-sub-menu-item">Media
                                                                                                     Center<span
                                                                                                         class='hfe-menu-toggle sub-arrow hfe-menu-child-1'><i
@@ -696,19 +696,19 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                             <ul class="sub-menu">
                                                                                                 <li id="menu-item-1402"
                                                                                                     class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                                                    <a href="{{ route('home') }}#"
+                                                                                                    <a href="{{ route('index') }}#"
                                                                                                         class="hfe-sub-menu-item">Photo
                                                                                                         Gallary</a>
                                                                                                 </li>
                                                                                                 <li id="menu-item-1403"
                                                                                                     class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                                                    <a href="{{ route('home') }}#"
+                                                                                                    <a href="{{ route('index') }}#"
                                                                                                         class="hfe-sub-menu-item">Video
                                                                                                         Gallary</a>
                                                                                                 </li>
                                                                                                 <li id="menu-item-1404"
                                                                                                     class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                                                    <a href="{{ route('home') }}#"
+                                                                                                    <a href="{{ route('index') }}#"
                                                                                                         class="hfe-sub-menu-item">Press
                                                                                                         Release</a>
                                                                                                 </li>

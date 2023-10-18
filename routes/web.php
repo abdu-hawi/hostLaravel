@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-})->name('home');
+})->name('index');
 Route::get('speakers', function () {
     return view('speakers');
 })->name('speakers');

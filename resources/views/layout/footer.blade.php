@@ -92,7 +92,7 @@
                                                 <div class="elementor-widget-container">
                                                     <ul class="elementor-icon-list-items">
                                                         <li class="elementor-icon-list-item">
-                                                            <a href="{{ route('home') }}#overview">
+                                                            <a href="{{ route('index') }}#overview">
                                                                 <span class="elementor-icon-list-text">Overview</span>
                                                             </a>
                                                         </li>
@@ -516,7 +516,7 @@
                                                         </span>
                                                         <span class="elementor-grid-item">
                                                             <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-8c67c15"
-                                                                href="{{ route('home') }}#" target="_blank">
+                                                                href="{{ route('index') }}#" target="_blank">
                                                                 <span
                                                                     class="elementor-screen-only">Twitter</span>
                                                                 <i class="fab fa-twitter"></i> </a>
@@ -582,7 +582,7 @@
 
 
 
-<a aria-label="Scroll to the top of the page" href="{{ route('home') }}#" id="scroll-top" class="scroll-top-right"><i
+<a aria-label="Scroll to the top of the page" href="{{ route('index') }}#" id="scroll-top" class="scroll-top-right"><i
 class=" fa fa-angle-up" aria-hidden="true" role="img"></i></a>
 
 

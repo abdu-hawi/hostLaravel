@@ -2683,6 +2683,9 @@ id='elementor-frontend-modules-js'></script>
                                             </div>
                                         </div>
                                     </section>
+
+                                    <br>
+                                    {{-- Time And MAP --}}
                                     <section
                                         class="elementor-section elementor-top-section elementor-element elementor-element-1a2230a elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                                         data-id="1a2230a" data-element_type="section">
@@ -2810,8 +2813,12 @@ id='elementor-frontend-modules-js'></script>
                                             </div>
                                         </div>
                                     </section>
+                                    {{-- End Time And MAP --}}
+
+
                                     <section
-                                        class="elementor-section elementor-top-section elementor-element elementor-element-d1169c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-d1169c2
+                                        elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                         data-id="d1169c2" data-element_type="section">
                                         <div class="elementor-container elementor-column-gap-default">
                                             <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1297686"
@@ -2821,6 +2828,32 @@ id='elementor-frontend-modules-js'></script>
                                             </div>
                                         </div>
                                     </section>
+
+
+                                    {{-- Contact us --}}
+                                    <section
+                                    class="elementor-section elementor-top-section elementor-element elementor-element-d1169c2
+                                    elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                    data-id="d1169c2" data-element_type="section">
+
+                                        <div class="elementor-element elementor-element-e2e2300 elementor-widget elementor-widget-image"
+                                            data-id="e2e2300" data-element_type="widget"
+                                            data-widget_type="image.default">
+                                            <div class="elementor-widget-container">
+                                                <a href="https://www.xs-conferences.com/"
+                                                    target="_blank">
+                                                    <img decoding="async" width="476" height="196"
+                                                        src="wp-content/uploads/2023/07/logo_black.jpg"
+                                                        class="attachment-full size-full wp-image-2157"
+                                                        alt="" loading="lazy"
+                                                        srcset="wp-content/uploads/2023/07/logo_black.jpg 476w, wp-content/uploads/2023/07/logo_black-300x124.jpg 300w"
+                                                        sizes="(max-width: 476px) 100vw, 476px" /> </a>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    {{-- End Contact us --}}
+
+                                    {{-- New and Update --}}
                                     <section
                                         class="elementor-section elementor-top-section elementor-element elementor-element-d291ab0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                         data-id="d291ab0" data-element_type="section">
@@ -2932,134 +2965,126 @@ id='elementor-frontend-modules-js'></script>
 
                                                         </div>
                                                     </div>
-                                                    <div class="elementor-element elementor-element-e2e2300 elementor-widget elementor-widget-image"
-                                                        data-id="e2e2300" data-element_type="widget"
-                                                        data-widget_type="image.default">
-                                                        <div class="elementor-widget-container">
-                                                            <a href="https://www.xs-conferences.com/"
-                                                                target="_blank">
-                                                                <img decoding="async" width="476" height="196"
-                                                                    src="wp-content/uploads/2023/07/logo_black.jpg"
-                                                                    class="attachment-full size-full wp-image-2157"
-                                                                    alt="" loading="lazy"
-                                                                    srcset="wp-content/uploads/2023/07/logo_black.jpg 476w, wp-content/uploads/2023/07/logo_black-300x124.jpg 300w"
-                                                                    sizes="(max-width: 476px) 100vw, 476px" /> </a>
-                                                        </div>
-                                                    </div>
-                                                    <section
-                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-e012e15 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                                        data-id="e012e15" data-element_type="section"
-                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                        <div class="elementor-background-overlay"></div>
-                                                        <div class="elementor-container elementor-column-gap-no">
-                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b26280b"
-                                                                data-id="b26280b" data-element_type="column"
-                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                                <div
-                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                    <div class="elementor-background-overlay"></div>
-                                                                    <div class="elementor-element elementor-element-fddf659 elementor-widget elementor-widget-text-editor"
-                                                                        data-id="fddf659" data-element_type="widget"
-                                                                        data-widget_type="text-editor.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <p><strong>Organised By</strong></p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-237dea0 elementor-widget elementor-widget-image"
-                                                                        data-id="237dea0" data-element_type="widget"
-                                                                        data-widget_type="image.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <a href="https://www.xs-conferences.com/"
-                                                                                target="_blank">
-                                                                                <img decoding="async" width="450"
-                                                                                    height="177"
-                                                                                    src="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg"
-                                                                                    class="attachment-full size-full wp-image-65"
-                                                                                    alt="" loading="lazy"
-                                                                                    srcset="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg 450w, wp-content/uploads/2023/01/xs-conference-1-e1675154741737-300x118.jpg 300w"
-                                                                                    sizes="(max-width: 450px) 100vw, 450px" />
-                                                                            </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-9f6c3d0 elementor-widget elementor-widget-text-editor"
-                                                                        data-id="9f6c3d0" data-element_type="widget"
-                                                                        data-widget_type="text-editor.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <p>Riyadh, KSA<br /><span
-                                                                                    style="color: #000000;">+966-50-56-85126</span><br /><span
-                                                                                    style="color: #000000;">info@xs-conferences.com</span><br /><span
-                                                                                    style="color: #000000;">adel@xs-conferences.com</span><br /><span
-                                                                                    style="color: #000000;">www.xs-conferences.com</span>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5183015 elementor-hidden-mobile"
-                                                                data-id="5183015" data-element_type="column"
-                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                                <div
-                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                    <div class="elementor-element elementor-element-3a1c47b elementor-widget elementor-widget-text-editor"
-                                                                        data-id="3a1c47b" data-element_type="widget"
-                                                                        data-widget_type="text-editor.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <style>
-                                                                                .vl {
-                                                                                    border-left: 2px solid black;
-                                                                                    height: 400px;
-                                                                                }
-                                                                            </style>
-
-                                                                            <div class="vl"></div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5317da5"
-                                                                data-id="5317da5" data-element_type="column"
-                                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                                <div
-                                                                    class="elementor-widget-wrap elementor-element-populated">
-                                                                    <div class="elementor-element elementor-element-076a299 elementor-widget elementor-widget-text-editor"
-                                                                        data-id="076a299" data-element_type="widget"
-                                                                        data-widget_type="text-editor.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <p><strong>International
-                                                                                    Offices</strong></p>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-1ada209 elementor-widget elementor-widget-image"
-                                                                        data-id="1ada209" data-element_type="widget"
-                                                                        data-widget_type="image.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <a href="https://www.xs-conferences.com/"
-                                                                                target="_blank">
-                                                                                <img decoding="async" width="150"
-                                                                                    height="150"
-                                                                                    src="wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg"
-                                                                                    class="attachment-thumbnail size-thumbnail wp-image-63"
-                                                                                    alt="" loading="lazy" /> </a>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="elementor-element elementor-element-805f273 elementor-widget elementor-widget-text-editor"
-                                                                        data-id="805f273" data-element_type="widget"
-                                                                        data-widget_type="text-editor.default">
-                                                                        <div class="elementor-widget-container">
-                                                                            <p>New York, USA<br /><span
-                                                                                    style="color: #000000;">ranselpotter@xs-conferences.com</span>
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
                                                 </div>
                                             </div>
                                         </div>
                                     </section>
+                                    {{-- END New and Update --}}
+
+
+                                    {{-- xs --}}
+                                    <section
+                                        class="elementor-section elementor-inner-section elementor-element elementor-element-e012e15 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="e012e15" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-background-overlay"></div>
+                                        <div class="elementor-container elementor-column-gap-no">
+                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b26280b"
+                                                data-id="b26280b" data-element_type="column"
+                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                <div
+                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-background-overlay"></div>
+                                                    <div class="elementor-element elementor-element-fddf659 elementor-widget elementor-widget-text-editor"
+                                                        data-id="fddf659" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p><strong>Organised By</strong></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-237dea0 elementor-widget elementor-widget-image"
+                                                        data-id="237dea0" data-element_type="widget"
+                                                        data-widget_type="image.default">
+                                                        <div class="elementor-widget-container">
+                                                            <a href="https://www.xs-conferences.com/"
+                                                                target="_blank">
+                                                                <img decoding="async" width="450"
+                                                                    height="177"
+                                                                    src="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg"
+                                                                    class="attachment-full size-full wp-image-65"
+                                                                    alt="" loading="lazy"
+                                                                    srcset="wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg 450w, wp-content/uploads/2023/01/xs-conference-1-e1675154741737-300x118.jpg 300w"
+                                                                    sizes="(max-width: 450px) 100vw, 450px" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-9f6c3d0 elementor-widget elementor-widget-text-editor"
+                                                        data-id="9f6c3d0" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>Riyadh, KSA<br /><span
+                                                                    style="color: #000000;">+966-50-56-85126</span><br /><span
+                                                                    style="color: #000000;">info@xs-conferences.com</span><br /><span
+                                                                    style="color: #000000;">adel@xs-conferences.com</span><br /><span
+                                                                    style="color: #000000;">www.xs-conferences.com</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5183015 elementor-hidden-mobile"
+                                                data-id="5183015" data-element_type="column"
+                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                <div
+                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-3a1c47b elementor-widget elementor-widget-text-editor"
+                                                        data-id="3a1c47b" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <style>
+                                                                .vl {
+                                                                    border-left: 2px solid black;
+                                                                    height: 400px;
+                                                                }
+                                                            </style>
+
+                                                            <div class="vl"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5317da5"
+                                                data-id="5317da5" data-element_type="column"
+                                                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                <div
+                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-076a299 elementor-widget elementor-widget-text-editor"
+                                                        data-id="076a299" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p><strong>International
+                                                                    Offices</strong></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-1ada209 elementor-widget elementor-widget-image"
+                                                        data-id="1ada209" data-element_type="widget"
+                                                        data-widget_type="image.default">
+                                                        <div class="elementor-widget-container">
+                                                            <a href="https://www.xs-conferences.com/"
+                                                                target="_blank">
+                                                                <img decoding="async" width="150"
+                                                                    height="150"
+                                                                    src="wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg"
+                                                                    class="attachment-thumbnail size-thumbnail wp-image-63"
+                                                                    alt="" loading="lazy" /> </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-805f273 elementor-widget elementor-widget-text-editor"
+                                                        data-id="805f273" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>New York, USA<br /><span
+                                                                    style="color: #000000;">ranselpotter@xs-conferences.com</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    {{-- end xs --}}
+
                                 </div>
 
 
