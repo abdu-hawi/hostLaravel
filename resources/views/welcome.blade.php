@@ -2830,28 +2830,7 @@ id='elementor-frontend-modules-js'></script>
                                     </section>
 
 
-                                    {{-- Contact us --}}
-                                    <section
-                                    class="elementor-section elementor-top-section elementor-element elementor-element-d1169c2
-                                    elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                    data-id="d1169c2" data-element_type="section">
 
-                                        <div class="elementor-element elementor-element-e2e2300 elementor-widget elementor-widget-image"
-                                            data-id="e2e2300" data-element_type="widget"
-                                            data-widget_type="image.default">
-                                            <div class="elementor-widget-container">
-                                                <a href="https://www.xs-conferences.com/"
-                                                    target="_blank">
-                                                    <img decoding="async" width="476" height="196"
-                                                        src="wp-content/uploads/2023/07/logo_black.jpg"
-                                                        class="attachment-full size-full wp-image-2157"
-                                                        alt="" loading="lazy"
-                                                        srcset="wp-content/uploads/2023/07/logo_black.jpg 476w, wp-content/uploads/2023/07/logo_black-300x124.jpg 300w"
-                                                        sizes="(max-width: 476px) 100vw, 476px" /> </a>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    {{-- End Contact us --}}
 
                                     {{-- New and Update --}}
                                     <section
