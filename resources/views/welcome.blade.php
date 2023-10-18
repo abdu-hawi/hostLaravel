@@ -1,4 +1,9 @@
 @extends('layout.main')
+{{-- @push('css')
+    <link rel='stylesheet' id='elementor-post-707-css' href='wp-content/uploads/elementor/css/post-707.css@ver=1684750170.css'
+        media='all' />
+    {!! htmlScriptTagJsApi() !!}
+@endpush --}}
 @push('country-select')
 <script>
 
@@ -2949,6 +2954,166 @@ id='elementor-frontend-modules-js'></script>
                                         </div>
                                     </section>
                                     {{-- END New and Update --}}
+
+
+                                    {{-- Contact us --}}
+                                    <style>
+                                        .contact-us{
+                                            background-color: #E6F4FF;
+                                            margin-bottom: 60px;
+                                            padding: 3rem;
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: space-between;
+                                        }
+                                        .fname, .lname, .job, .company, .industry, .email, .number, .interest, .mobilenum, .ticket {
+                                            width: 100%;
+                                            padding-right: 10px;
+                                        }
+                                        .ah-form{
+                                            border-radius: 5px;
+                                            padding: 2rem 6.5rem;
+                                            box-shadow: 0 0 3px #0003;
+                                            width: 85dvw;
+                                            background: #d9e8f369;
+                                        }
+                                        .ah-form input, .ah-form textarea{
+                                            min-height: 40px;
+                                            width: 100%;
+                                        }
+                                        @media (max-width: 992px){
+                                            .ah-form{
+                                                padding: 1rem 1.5rem;
+                                            }
+                                        }
+                                        @media (max-width: 768px){
+                                            .contact-us{
+                                                flex-direction: column;
+                                            }
+                                            .contact-us .elementor-widget-image img{
+                                                height: 150px;
+                                                width: auto;
+                                            }
+                                        }
+                                        .text-red{
+                                            color: #e70c0c;
+                                        }
+                                        .row-name{
+                                            margin-top: 0.75rem;
+                                        }
+                                        .ah-form button{
+                                            width: 200px;
+                                            color: #000000;
+                                            font-size: 18px;
+                                        }
+                                        .fbutton{
+                                            display: flex;
+                                            justify-content: center;
+                                        }
+                                        .success-msg{
+                                            color: #0a7e00;
+                                            font-weight: 600;
+                                            font-size: 18px;
+                                            text-align: center;
+                                            width: 100%;
+                                            background: #0a7e0020;
+                                            padding: 0.5rem;
+                                            border-radius: 5px;
+                                            display: none;
+                                        }
+                                    </style>
+                                    <section
+                                    class="elementor-section elementor-top-section elementor-element elementor-element-d1169c2
+                                    elementor-section-boxed elementor-section-height-default elementor-section-height-default contact-us"
+                                    data-id="d1169c2" data-element_type="section">
+
+                                        <div class="elementor-element elementor-element-e2e2300 elementor-widget elementor-widget-image"
+                                            data-id="e2e2300" data-element_type="widget"
+                                            data-widget_type="image.default">
+                                            <div class="elementor-widget-container col-lg-6 col-md-12">
+                                                <a href="https://www.xs-conferences.com/"
+                                                    target="_blank">
+                                                    <img decoding="async" width="476" height="196"
+                                                        src="wp-content/uploads/2023/07/logo_black.jpg"
+                                                        class="attachment-full size-full wp-image-2157"
+                                                        alt="" loading="lazy"
+                                                        srcset="wp-content/uploads/2023/07/logo_black.jpg 476w, wp-content/uploads/2023/07/logo_black-300x124.jpg 300w"
+                                                        sizes="(max-width: 476px) 100vw, 476px" /> </a>
+                                            </div>
+                                        </div>
+
+
+                                        <form class="elementor-widget-container col-lg-6 col-md-12 ah-form" id="ah_form">
+                                            <div class="success-msg">
+                                                Error msg
+                                            </div>
+                                            <div class="row-name">
+                                                <div class="fname">
+                                                    <label><span class="text-red">*</span> Full Name</label>
+                                                    <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                        <input size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                            aria-required="true"
+                                                            aria-invalid="false"
+                                                            placeholder="Full name"
+                                                            value="" type="text"
+                                                            name="full_name" required
+                                                            @error('first_name') style="border-color: #e70c0c;" @enderror />
+                                                            <span id="full_name_error" style="color: #e70c0c; display:none">Required</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row-name">
+                                                <div class="fname">
+                                                    <label><span class="text-red">*</span> Email</label>
+                                                    <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                        <input size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                            aria-required="true"
+                                                            aria-invalid="false"
+                                                            placeholder="Email"
+                                                            value="" type="email"
+                                                            name="email" required
+                                                            @error('first_name') style="border-color: #e70c0c;" @enderror />
+                                                            <span id="email_error" style="color: #e70c0c; display:none">Required</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row-name">
+                                                <div class="fname">
+                                                    <label><span class="text-red">*</span> Subject</label>
+                                                    <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                        <input size="40"
+                                                            class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                            aria-required="true"
+                                                            aria-invalid="false"
+                                                            placeholder="Subject"
+                                                            value="" type="text"
+                                                            name="subject" required
+                                                            @error('first_name') style="border-color: #e70c0c;" @enderror />
+                                                            <span id="subject_error" style="color: #e70c0c; display:none">Required</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row-name">
+                                                <div class="fname">
+                                                    <label><span class="text-red">*</span> Message</label>
+                                                    <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                        <textarea rows="5"></textarea>
+                                                            <span id="subject_error" style="color: #e70c0c; display:none">Required</span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="row-name">
+                                                <div class="fname fbutton">
+                                                    <button type="submit">Send</button>
+                                                </div>
+                                            </div>
+                                        </form>
+
+
+                                    </section>
+                                    {{-- End Contact us --}}
 
 
                                     {{-- xs --}}
