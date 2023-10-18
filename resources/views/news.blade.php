@@ -65,7 +65,7 @@
                                                                     <div class="elementskit-blog-block-post">
                                                                         <div class="row no-gutters">
                                                                             <div class="col-md-6 order-1">
-                                                                                <a href="index.html@p=634.html"
+                                                                                <a href="javascript:void(0)"
                                                                                     class="elementskit-entry-thumb">
                                                                                     <img decoding="async"
                                                                                         src="wp-content/uploads/2023/02/dl.beatsnoop.com-3000-cJN6DSt0bC-scaled.jpg"
