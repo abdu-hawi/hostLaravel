@@ -2766,7 +2766,7 @@ id='elementor-frontend-modules-js'></script>
                                                                                     </span>
                                                                                     <span
                                                                                         class="elementor-icon-list-text">08:00
-                                                                                        A.M - 05:00 P.M</span>
+                                                                                        A.M - 05:30 P.M</span>
                                                                                 </li>
                                                                             </ul>
                                                                         </div>
