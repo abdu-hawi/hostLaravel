@@ -101,8 +101,8 @@ if (!function_exists('sendMail')) {
                                                                 <td>&nbsp;</td>
 
 
-                                                                <td style="direction: rtl;">
-                                                                    <div style="direction: rtl;">
+                                                                <td style="direction:rtl; text-align:right; ">
+                                                                    <div style="direction:rtl; text-align:right; ">
                                                                         <p>
                                                                             <b>
                                                                                 مرحبا, ' . $name . '
