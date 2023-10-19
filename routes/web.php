@@ -42,7 +42,9 @@ Route::get('email', function () {
         "last_name" => "Hawi",
         "email" => "ahhh42@gmail.com",
     ];
-    dispatch(new \App\Jobs\SendEmailsJob($data));
+    //dispatch(new \App\Jobs\SendEmailsJob($data));
+    sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
+    return "Done";
 });
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');

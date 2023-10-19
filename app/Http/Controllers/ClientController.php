@@ -28,7 +28,8 @@ class ClientController extends Controller
         ]);
 
         Client::query()->create($data);
-        dispatch(new SendEmailsJob($data));
+        //dispatch(new SendEmailsJob($data));
+        sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
         Session::flash('success', 'The form send successfully');
         return redirect(route('register'));
     }
