@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\SendEmailsJob;
 use App\Models\Client;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
@@ -27,6 +28,7 @@ class ClientController extends Controller
         ]);
 
         Client::query()->create($data);
+        dispatch(new SendEmailsJob($data));
         Session::flash('success', 'The form send successfully');
         return redirect(route('register'));
     }

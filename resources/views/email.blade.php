@@ -1,29 +1,4 @@
-<?php
-
-if (!function_exists('sendResetPassword')) {
-    function sendResetPassword($email, $name): void
-    {
-        $headers = email_header();
-        $msg = emailTemplate($name);
-        mail($email, "Thanks you for register", $msg, $headers);
-    }
-}
-
-if (!function_exists('email_header')) {
-    function email_header(): string
-    {
-        $headers = "From: no_reply@scesummit-sa.com\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
-        return $headers;
-    }
-}
-
-if (!function_exists('emailTemplate')) {
-    function emailTemplate($name): string
-    {
-        return '
-        <div style="Margin: 0; background: #fefefe !important; background-color: #fefefe !important; box-sizing: border-box; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px;font-weight: normal;line-height: 1.5;margin: 0;min-width: 100%;padding: 0;text-align: left;width: 100% !important;word-break: keep-all;">
+<div style="Margin: 0; background: #fefefe !important; background-color: #fefefe !important; box-sizing: border-box; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px;font-weight: normal;line-height: 1.5;margin: 0;min-width: 100%;padding: 0;text-align: left;width: 100% !important;word-break: keep-all;">
     <table style="Margin: 0;background: #fefefe !important;background-color: #fefefe !important;border-collapse: collapse;border-spacing: 0;color: #3f3f44;font-family: Helvetica,Arial,sans-serif;font-size: 14px;font-weight: normal;height: 100%;line-height: 1.5;margin: 0;padding: 0;text-align: left;vertical-align: top;width: 100%;word-break: keep-all;">
         <tbody>
         <tr style = "padding: 0; text-align: left; vertical-align: top; word-break: keep-all;">
@@ -85,17 +60,18 @@ if (!function_exists('emailTemplate')) {
 
                                                                 <td style="direction: ltr;">
                                                                     <div style="direction: ltr;">
-                                                                        <p><b>Hello, ' . $name . '</b></p>
+                                                                        <p><b>Hello, Abdu</b></p>
                                                                         <p>
                                                                             Thank you for registering for the Saudi Excellence Contracting Conference, which will be held at the Ritz-Carlton, Riyadh from November 13 - 14, 2023 from 8 a.m. - 5:30 p.m.
                                                                         </p>
                                                                         <p>
-                                                                            <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
+                                                                            Please click on the link to reach the location
+                                                                            <span><a href="{{ route('index') }}" target="_blank">{{ route('index') }}</a></span>
                                                                         </p>
 
                                                                         <p>
                                                                             If you have any suggestions or inquiries, please fill out the contact form at the following link
-                                                                            <a href="' . route('index') . '#contact_us" target="_blank">Contact form</a>
+                                                                            <a href="{{ route('index') }}" target="_blank">{{ route('index') }}</a>
                                                                         </p>
                                                                     </div>
                                                                 </td>
@@ -107,18 +83,19 @@ if (!function_exists('emailTemplate')) {
                                                                     <div style="direction: rtl;">
                                                                         <p>
                                                                             <b>
-                                                                                مرحبا, ' . $name . '
+                                                                                مرحبا, عبده
                                                                             </b>
                                                                         </p>
                                                                         <p>
                                                                             نشكرك على التسجيل في المؤتمر السعودي للمقاولات المتميزة، والذي سيقام في الريتز كارلتون، الرياض من تاريخ 13 – 14 نوفمبر 2023 من الساعة 8 ص- 5:30 م
                                                                         </p>
                                                                         <p>
-                                                                            <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">انقر هنا للوصول للموقع على الخريطة</a>
+                                                                            للوصول لموقع المؤتمر نرجو منك الضغط على الرابط ادناه
+                                                                            <span><a href="{{ route('index') }}" target="_blank">{{ route('index') }}</a></span>
                                                                         </p>
                                                                         <p>
                                                                             في حالة وجود أي مقترحات أو استفسارات نرجوا منكم تعبئة نموذج التواصل على الرابط التالي
-                                                                            <a href="' . route('index') . '#contact_us" target="_blank">نموذج التواصل</a>
+                                                                            <a href="{{ route('index') }}" target="_blank">{{ route('index') }}</a>
                                                                         </p>
                                                                     </div>
                                                                 </td>
@@ -184,7 +161,7 @@ if (!function_exists('emailTemplate')) {
                         </tbody>
                     </table>
                 </center>
-                <table style="Margin: 0 auto; background: 0 0; background-color: #18253E !important; border-collapse: collapse; border-radius: 0 0 6px 6px; border-spacing: 0; border-top: 1px solid #546dcf; float: none; margin: 0 auto; padding: 0; table-layout: fixed !important; text-align: center; vertical-align: top; width: 100%;">
+                <table style="Margin: 0 auto; background: 0 0; background-color: #18253E !important; border-collapse: collapse; border-radius: 0 0 6px 6px; border-spacing: 0; border-top: 1px solid #546dcf; float: none; margin: 0 auto; padding: 0; table-layout: fixed !important; text-align: center; vertical-align: top; width: 80%;">
                     <tbody>
                     <tr style="padding: 0; text-align: left; vertical-align: top;">
                         <td style="Margin: 0;border-collapse: collapse !important;color: #3f3f44;font-family: Helvetica,Arial,sans-serif;font-size: 14px;font-weight: 400;line-height: 1.5;margin: 0;padding: 0;text-align: left;vertical-align: top;word-wrap: break-word;">
@@ -209,7 +186,7 @@ if (!function_exists('emailTemplate')) {
                                             <tr>
                                                 <td>
                                                     <a href="">
-                                                        <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="' . url('wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg') . '">
+                                                        <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="' . url('dist/img/logo.png') . '">
                                                     </a>
                                                 </td>
                                                 <td style="border-right:#f5f1e1 solid 3px;">
@@ -234,7 +211,7 @@ if (!function_exists('emailTemplate')) {
                                             <tr>
                                                 <td>
                                                     <a href="">
-                                                        <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="' . url('wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg') . '">
+                                                        <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="' . url('dist/img/logo.png') . '">
                                                     </a>
                                                 </td>
                                                 <td>
@@ -263,7 +240,3 @@ if (!function_exists('emailTemplate')) {
         </tbody>
     </table>
 </div>
-
-        ';
-    }
-}
