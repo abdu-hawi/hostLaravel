@@ -222,6 +222,9 @@
 			margin-top: 0;
 			padding: 1.25em 2.375em
 		}
+        .menu-item a.active{
+            border-bottom: #38B4B8 solid 3px;
+        }
 	</style>
 	<link rel='stylesheet' id='classic-theme-styles-css' href='{{ asset("wp-includes/css/classic-themes.min.css@ver=6.2.2.css") }}'
 		media='all' />

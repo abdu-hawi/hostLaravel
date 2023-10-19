@@ -131,13 +131,12 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
     <div id="wrap" class="clr">
 
-
         <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
-            <p class="main-title bhf-hidden" itemprop="headline"><a href="index.html"
+            <p class="main-title bhf-hidden" itemprop="headline"><a href="{{ route('index') }}"
                     title="Saudi Construction Excellence Summit 2023" rel="home">Saudi Construction Excellence
                     Summit 2023</a></p>
             <div data-elementor-type="wp-post" data-elementor-id="10" class="elementor elementor-10">
-                <section
+                {{--<section
                     class="elementor-section elementor-top-section elementor-element elementor-element-c38ed11 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="c38ed11" data-element_type="section"
                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -261,7 +260,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                             </div>
                         </div>
                     </div>
-                </section>
+                </section>--}}
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-c4221ad elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="c4221ad" data-element_type="section"
@@ -488,7 +487,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                 <ul id="menu-1-26f745b" class="hfe-nav-menu">
                                                     <li id="menu-item-679"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-674 current_page_item parent hfe-creative-menu">
-                                                        <a href="{{ route('index') }}" class="hfe-menu-item">HOME</a></li>
+                                                        <a href="{{ route('index') }}" class="hfe-menu-item {{ active_menu('index') }}">HOME</a></li>
                                                     <li id="menu-item-1074"
                                                         class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
                                                         <div class="hfe-has-submenu-container"><a
@@ -512,7 +511,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                 <a href="{{ route('index') }}#venue"
                                                                     class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
                                                             </li>
-                                                            <li id="menu-item-1400"
+                                                            {{-- <li id="menu-item-1400"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
                                                                 <a href="{{ route('index') }}#"
                                                                     class="hfe-sub-menu-item">Visa, Travel &#038;
@@ -541,30 +540,30 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                             class="hfe-sub-menu-item">Press
                                                                             Release</a></li>
                                                                 </ul>
-                                                            </li>
+                                                            </li> --}}
                                                         </ul>
                                                     </li>
-                                                    <li id="menu-item-1334"
+                                                    {{-- <li id="menu-item-1334"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('speakers') }}"
-                                                            class="hfe-menu-item">SPEAKERS</a></li>
+                                                            class="hfe-menu-item  {{ active_menu('speakers') }}">SPEAKERS</a></li> --}}
                                                     <li id="menu-item-1316"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('agenda') }}"
-                                                            class="hfe-menu-item">AGENDA</a></li>
+                                                            class="hfe-menu-item {{ active_menu('agenda') }}">AGENDA</a></li>
                                                     <li id="menu-item-1940"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('media_partners') }}"
-                                                            class="hfe-menu-item">ASSOCIATION &#038; MEDIA
+                                                            class="hfe-menu-item {{ active_menu('media_partners') }}">{{-- ASSOCIATION &#038;  --}}MEDIA
                                                             PARTNERS</a></li>
                                                     <li id="menu-item-560"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('sponsors') }}"
-                                                            class="hfe-menu-item">SPONSORS</a></li>
-                                                    <li id="menu-item-672"
+                                                            class="hfe-menu-item {{ active_menu('sponsors') }}">SPONSORS</a></li>
+                                                    {{-- <li id="menu-item-672"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('news') }}"
-                                                            class="hfe-menu-item">NEWS</a></li>
+                                                            class="hfe-menu-item {{ active_menu('news') }}">NEWS</a></li> --}}
                                                     <li id="menu-item-754"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('register') }}"
@@ -600,7 +599,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     <div class="elementor-widget-container">
                                                         <div class="hfe-site-logo">
                                                             <a data-elementor-open-lightbox=""
-                                                                class='elementor-clickable' href="index.html">
+                                                                class='elementor-clickable' href="{{ route('index') }}">
                                                                 <div class="hfe-site-logo-set">
                                                                     <div class="hfe-site-logo-container">
                                                                         <img class="hfe-site-logo-img elementor-animation-"
@@ -647,8 +646,8 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                 class="hfe-nav-menu">
                                                                                 <li id="menu-item-679"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-674 current_page_item parent hfe-creative-menu">
-                                                                                    <a href="index.html"
-                                                                                        class="hfe-menu-item">HOME</a>
+                                                                                    <a href="{{ route('index') }}"
+                                                                                        class="hfe-menu-item {{ active_menu('index') }}">HOME</a>
                                                                                 </li>
                                                                                 <li id="menu-item-1074"
                                                                                     class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
@@ -677,7 +676,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                             <a href="{{ route('index') }}#venue"
                                                                                                 class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
                                                                                         </li>
-                                                                                        <li id="menu-item-1400"
+                                                                                        {{-- <li id="menu-item-1400"
                                                                                             class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
                                                                                             <a href="{{ route('index') }}#"
                                                                                                 class="hfe-sub-menu-item">Visa,
@@ -713,35 +712,35 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                                         Release</a>
                                                                                                 </li>
                                                                                             </ul>
-                                                                                        </li>
+                                                                                        </li> --}}
                                                                                     </ul>
                                                                                 </li>
-                                                                                <li id="menu-item-1334"
+                                                                                {{-- <li id="menu-item-1334"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                     <a href="{{ route('speakers') }}"
-                                                                                        class="hfe-menu-item">SPEAKERS</a>
-                                                                                </li>
+                                                                                        class="hfe-menu-item {{ active_menu('speakers') }}">SPEAKERS</a>
+                                                                                </li> --}}
                                                                                 <li id="menu-item-1316"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                     <a href="{{ route('agenda') }}"
-                                                                                        class="hfe-menu-item">AGENDA</a>
+                                                                                        class="hfe-menu-item {{ active_menu('agenda') }}">AGENDA</a>
                                                                                 </li>
                                                                                 <li id="menu-item-1940"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                     <a href="{{ route('media_partners') }}"
-                                                                                        class="hfe-menu-item">ASSOCIATION
+                                                                                        class="hfe-menu-item {{ active_menu('media_partners') }}">ASSOCIATION
                                                                                         &#038; MEDIA PARTNERS</a>
                                                                                 </li>
                                                                                 <li id="menu-item-560"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                     <a href="{{ route('sponsors') }}"
-                                                                                        class="hfe-menu-item">SPONSORS</a>
+                                                                                        class="hfe-menu-item {{ active_menu('sponsors') }}">SPONSORS</a>
                                                                                 </li>
-                                                                                <li id="menu-item-672"
+                                                                                {{-- <li id="menu-item-672"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                     <a href="{{ route('news') }}"
-                                                                                        class="hfe-menu-item">NEWS</a>
-                                                                                </li>
+                                                                                        class="hfe-menu-item {{ active_menu('news') }}">NEWS</a>
+                                                                                </li> --}}
                                                                                 <li id="menu-item-754"
                                                                                     class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                     <a href="{{ route('register') }}"

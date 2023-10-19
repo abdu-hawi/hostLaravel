@@ -2837,7 +2837,7 @@ id='elementor-frontend-modules-js'></script>
 
 
 
-                                    {{-- New and Update --}}
+                                    {{-- New and Update
                                     <section
                                         class="elementor-section elementor-top-section elementor-element elementor-element-d291ab0 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                         data-id="d291ab0" data-element_type="section">
