@@ -21,7 +21,7 @@ if (!function_exists('sendMail')) {
         $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
         $msg = '
 
-        <div style="Margin: 0; background: #fefefe !important; background-color: #fefefe !important; box-sizing: border-box; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px;font-weight: normal;line-height: 1.5;margin: 0;min-width: 100%;padding: 0;text-align: left;width: 100% !important;word-break: keep-all;">
+        <div style="direction:ltr; Margin: 0; background: #fefefe !important; background-color: #fefefe !important; box-sizing: border-box; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px;font-weight: normal;line-height: 1.5;margin: 0;min-width: 100%;padding: 0;text-align: left;width: 100% !important;word-break: keep-all;">
     <table style="Margin: 0;background: #fefefe !important;background-color: #fefefe !important;border-collapse: collapse;border-spacing: 0;color: #3f3f44;font-family: Helvetica,Arial,sans-serif;font-size: 14px;font-weight: normal;height: 100%;line-height: 1.5;margin: 0;padding: 0;text-align: left;vertical-align: top;width: 100%;word-break: keep-all;">
         <tbody>
         <tr style = "padding: 0; text-align: left; vertical-align: top; word-break: keep-all;">
