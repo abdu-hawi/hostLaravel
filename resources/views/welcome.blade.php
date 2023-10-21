@@ -52,10 +52,45 @@
         sendContact();
     } );
     function sendContact(){
+        $jq.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
         $jq(".btn-submit").click(function(e){
             e.preventDefault();
-            alert("aa")
+            //name email subject massege border-color e70c0c
+            //serialize()
+            var vContact = validationContact()
         })
+    }
+    function validationContact() {
+        var isErrorValidation = false
+        const arr = ["name", "email", "subject", "massege"]
+        arr.forEach(element => {
+            if (element != "massege") {
+                if ($jq("input[name="+element+"]").val().length < 1) {
+                    isErrorValidation = true
+                    $jq("input[name="+element+"]").css("border-color","e70c0c")
+                    $jq("#"+element+"_error").css("display","block")
+                }else{
+                    $jq("input[name="+element+"]").css("border-color","dcdcde")
+                    $jq(""+element+"_error").css("display","none")
+                    $jq(""+element+"_error").text("This field required")
+                }
+            } else {
+                if ($jq("textarea[name="+element+"]").val().length < 1) {
+                    isErrorValidation = true
+                    $jq("textarea[name="+element+"]").css("border-color","e70c0c")
+                    $jq(""+element+"_error").css("display","block")
+                }else{
+                    $jq("textarea[name="+element+"]").css("border-color","dcdcde")
+                    $jq("#"+element+"_error").css("display","none")
+                    $jq("#"+element+"_error").text("This field required")
+                }
+            }
+        });
+        return isErrorValidation
     }
 </script>
 {{-- <script src='wp-content/plugins/elementor/assets/js/frontend-modules.min.js@ver=3.11.3'
@@ -3107,10 +3142,10 @@ id='elementor-frontend-modules-js'></script> --}}
                                             </div>
                                             <div class="row-name">
                                                 <div class="fname">
-                                                    <label><span class="text-red">*</span> Message</label>
+                                                    <label><span class="text-red">*</span> Massege</label>
                                                     <span class="wpcf7-form-control-wrap" data-name="Name">
-                                                        <textarea name="message" rows="5"></textarea>
-                                                            <span id="message_error" style="color: #e70c0c; display:none">Required</span>
+                                                        <textarea name="massege" rows="5"></textarea>
+                                                            <span id="massege_error" style="color: #e70c0c; display:none">Required</span>
                                                     </span>
                                                 </div>
                                             </div>
