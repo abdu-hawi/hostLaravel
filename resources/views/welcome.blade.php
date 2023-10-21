@@ -44,9 +44,22 @@
             });
         }
     }
+
+    var $jq = jQuery.noConflict();
+
+    $jq( document ).ready( function() {
+        "use strict";
+        sendContact();
+    } );
+    function sendContact(){
+        $jq(".btn-submit").click(function(e){
+            e.preventDefault();
+            alert("aa")
+        })
+    }
 </script>
-<script src='wp-content/plugins/elementor/assets/js/frontend-modules.min.js@ver=3.11.3'
-id='elementor-frontend-modules-js'></script>
+{{-- <script src='wp-content/plugins/elementor/assets/js/frontend-modules.min.js@ver=3.11.3'
+id='elementor-frontend-modules-js'></script> --}}
 @endpush
 @section('content')
         <main id="main" class="site-main clr" role="main">
@@ -3043,7 +3056,7 @@ id='elementor-frontend-modules-js'></script>
                                         </div>
 
 
-                                        <form class="elementor-widget-container col-lg-6 col-md-12 ah-form" id="ah_form">
+                                        <form class="elementor-widget-container col-lg-6 col-md-12 ah-form" method="POST" id="ah_form">
                                             <div class="success-msg">
                                                 Error msg
                                             </div>
@@ -3057,9 +3070,8 @@ id='elementor-frontend-modules-js'></script>
                                                             aria-invalid="false"
                                                             placeholder="Full name"
                                                             value="" type="text"
-                                                            name="full_name" required
-                                                            @error('first_name') style="border-color: #e70c0c;" @enderror />
-                                                            <span id="full_name_error" style="color: #e70c0c; display:none">Required</span>
+                                                            name="name" required />
+                                                            <span id="name_error" style="color: #e70c0c; display:none">Required</span>
                                                     </span>
                                                 </div>
                                             </div>
@@ -3073,8 +3085,7 @@ id='elementor-frontend-modules-js'></script>
                                                             aria-invalid="false"
                                                             placeholder="Email"
                                                             value="" type="email"
-                                                            name="email" required
-                                                            @error('first_name') style="border-color: #e70c0c;" @enderror />
+                                                            name="email" required />
                                                             <span id="email_error" style="color: #e70c0c; display:none">Required</span>
                                                     </span>
                                                 </div>
@@ -3089,8 +3100,7 @@ id='elementor-frontend-modules-js'></script>
                                                             aria-invalid="false"
                                                             placeholder="Subject"
                                                             value="" type="text"
-                                                            name="subject" required
-                                                            @error('first_name') style="border-color: #e70c0c;" @enderror />
+                                                            name="subject" required />
                                                             <span id="subject_error" style="color: #e70c0c; display:none">Required</span>
                                                     </span>
                                                 </div>
@@ -3099,14 +3109,14 @@ id='elementor-frontend-modules-js'></script>
                                                 <div class="fname">
                                                     <label><span class="text-red">*</span> Message</label>
                                                     <span class="wpcf7-form-control-wrap" data-name="Name">
-                                                        <textarea rows="5"></textarea>
-                                                            <span id="subject_error" style="color: #e70c0c; display:none">Required</span>
+                                                        <textarea name="message" rows="5"></textarea>
+                                                            <span id="message_error" style="color: #e70c0c; display:none">Required</span>
                                                     </span>
                                                 </div>
                                             </div>
                                             <div class="row-name">
                                                 <div class="fname fbutton">
-                                                    <button type="submit">Send</button>
+                                                    <button type="submit" class="btn-submit">Send</button>
                                                 </div>
                                             </div>
                                         </form>
