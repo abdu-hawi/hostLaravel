@@ -62,6 +62,7 @@
             //name email subject massege border-color e70c0c
             //serialize()
             var vContact = validationContact()
+            return false;
         })
     }
     function validationContact() {
@@ -3105,7 +3106,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                                             aria-invalid="false"
                                                             placeholder="Full name"
                                                             value="" type="text"
-                                                            name="name" required />
+                                                            name="name"  />
                                                             <span id="name_error" style="color: #e70c0c; display:none">Required</span>
                                                     </span>
                                                 </div>
