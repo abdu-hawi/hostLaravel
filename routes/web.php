@@ -58,16 +58,18 @@ Route::get('email', function () {
     //     sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
     // }
 
-    $from = "no_replay@scesummit-sa.com";
-    $to = "ahhh42@gmail.com";
-    $subject = "Checking PHP mail";
-    $message = "PHP mail works just fine";
-    $headers = "From:" . $from;
-    if (mail($to, $subject, $message, $headers)) {
-        echo "The email message was sent.";
-    } else {
-        echo "The email message was not sent.";
-    }
+    // $from = "no_replay@scesummit-sa.com";
+    // $to = "ahhh42@gmail.com";
+    // $subject = "Checking PHP mail";
+    // $message = "PHP mail works just fine";
+    // $headers = "From:" . $from;
+    // if (mail($to, $subject, $message, $headers)) {
+    //     echo "The email message was sent.";
+    // } else {
+    //     echo "The email message was not sent.";
+    // }
+
+    sendMail("ahhh42@gmail.com", "Thank you for register", "Abdu Hawi");
 
     return "Done";
 });

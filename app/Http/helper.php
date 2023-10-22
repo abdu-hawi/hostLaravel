@@ -16,9 +16,9 @@ if (!function_exists('active_menu')) {
 if (!function_exists('sendMail')) {
     function sendMail($to, $subject, $name)
     {
-        $headers = "From: no_replay@scesummit-sa.com\r\n";
-        $headers .= "MIME-Version: 1.0\r\n";
-        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+        $headers = "From: no_replay@scesummit-sa.com";
+        // $headers .= "MIME-Version: 1.0\r\n";
+        // $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
         $msg = '
 
         <div style="direction:ltr; Margin: 0; background: #fefefe !important; background-color: #fefefe !important; box-sizing: border-box; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px;font-weight: normal;line-height: 1.5;margin: 0;min-width: 100%;padding: 0;text-align: left;width: 100% !important;word-break: keep-all;">
