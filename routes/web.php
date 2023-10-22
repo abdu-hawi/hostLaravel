@@ -69,7 +69,7 @@ Route::get('email', function () {
     //     echo "The email message was not sent.";
     // }
 
-    sendMail("ahhh42@gmail.com", "Thank you for register", "Abdu Hawi");
+    echo sendMail("ahhh42@gmail.com", "Thank you for register", "Abdu Hawi");
 
     return "Done";
 });
