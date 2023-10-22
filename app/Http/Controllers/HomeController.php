@@ -25,18 +25,18 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $clients = Client::query()->paginate(5);
+        $clients = Client::query()->paginate(10);
         return view('home', compact('clients'));
     }
 
     public function clients()
     {
-        $clients = Client::query()->paginate(5);
+        $clients = Client::query()->paginate(10);
         return view('admin.clients', compact('clients'));
     }
     public function contact_forms()
     {
-        $contacts = Contact::query()->paginate(5);
+        $contacts = Contact::query()->paginate(10);
         return view('admin.contact_form', compact('contacts'));
     }
 }

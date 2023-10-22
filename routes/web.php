@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
+use App\Models\Client;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -50,6 +51,14 @@ Route::get('contact_us', function () {
 //     sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
 //     return "Done";
 // });
+Route::get('email', function () {
+    $_data = Client::query()->get();
+    //dispatch(new \App\Jobs\SendEmailsJob($data));
+    foreach ($_data as $data) {
+        sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
+    }
+    return "Done";
+});
 Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
