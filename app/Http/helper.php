@@ -3,9 +3,9 @@
 use Illuminate\Support\Facades\Request;
 
 if (!function_exists('active_menu')) {
-    function active_menu($link)
+    function active_menu($link, $segment = 1)
     {
-        if (preg_match('/' . $link . '/i', Request::segment(1))) {
+        if (preg_match('/' . $link . '/i', Request::segment($segment))) {
             return 'active';
         } else {
             return '';

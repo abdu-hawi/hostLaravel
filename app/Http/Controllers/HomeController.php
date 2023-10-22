@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Client;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -26,5 +27,16 @@ class HomeController extends Controller
     {
         $clients = Client::query()->paginate(5);
         return view('home', compact('clients'));
+    }
+
+    public function clients()
+    {
+        $clients = Client::query()->paginate(5);
+        return view('admin.clients', compact('clients'));
+    }
+    public function contact_forms()
+    {
+        $contacts = Contact::query()->paginate(5);
+        return view('admin.contact_form', compact('contacts'));
     }
 }

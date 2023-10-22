@@ -18,10 +18,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <!-- Scripts -->
     {{-- @vite(['resources/sass/app.scss', 'resources/js/app.js']) --}}
+    <style>
+        .nav-link.active {
+            color: var(--bs-navbar-active-color);
+            border-bottom: 3px solid var(--bs-navbar-active-color);
+        }
+    </style>
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <nav class="navbar navbar-expand-md  navbar-dark bg-dark shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Laravel') }}
@@ -33,7 +39,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-
+                        <li class="nav-item">
+                            <a class="nav-link {{ active_menu('clients', 2) }}" href="{{ route('admin.clients') }}">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ active_menu('contact_forms', 2) }}" href="{{ route('admin.contact_forms') }}">Contact forms</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
