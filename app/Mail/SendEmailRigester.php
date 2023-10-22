@@ -55,6 +55,6 @@ class SendEmailRigester extends Mailable
     public function build()
     {
         return $this->subject("Thank you for register")
-            ->view('emails.sample', ['name' => $this->data['name']]);
+            ->view('emails.sample', ['name' => $this->data]);
     }
 }
