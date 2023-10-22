@@ -3005,7 +3005,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                     {{-- END New and Update --}}
 
 
-                                    {{-- Contact us --}}
+                                    {{-- Contact us
                                     <style>
                                         .contact-us{
                                             background-color: #E6F4FF;
@@ -3158,7 +3158,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                         </form>
 
 
-                                    </section>
+                                    </section>--}}
                                     {{-- End Contact us --}}
 
 
