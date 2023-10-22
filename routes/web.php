@@ -56,6 +56,7 @@ Route::get('contact_us', function () {
 // });
 Route::get('email', function () {
     $_data = Client::query()->get();
+    dd($_data);
     //dispatch(new \App\Jobs\SendEmailsJob($data));
     foreach ($_data as $data) {
         // sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
