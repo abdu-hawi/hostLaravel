@@ -45,54 +45,54 @@
         }
     }
 
-    var $jq = jQuery.noConflict();
+    // var $jq = jQuery.noConflict();
 
-    $jq( document ).ready( function() {
-        "use strict";
-        sendContact();
-    } );
-    function sendContact(){
-        $jq.ajaxSetup({
-            headers: {
-                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-            }
-        });
-        $jq(".btn-submit").click(function(e){
-            e.preventDefault();
-            //name email subject massege border-color e70c0c
-            //serialize()
-            var vContact = validationContact()
-            return false;
-        })
-    }
-    function validationContact() {
-        var isErrorValidation = false
-        const arr = ["name", "email", "subject", "massege"]
-        arr.forEach(element => {
-            if (element != "massege") {
-                if ($jq("input[name="+element+"]").val().length < 1) {
-                    isErrorValidation = true
-                    $jq("input[name="+element+"]").css("border-color","e70c0c")
-                    $jq("#"+element+"_error").css("display","block")
-                }else{
-                    $jq("input[name="+element+"]").css("border-color","dcdcde")
-                    $jq(""+element+"_error").css("display","none")
-                    $jq(""+element+"_error").text("This field required")
-                }
-            } else {
-                if ($jq("textarea[name="+element+"]").val().length < 1) {
-                    isErrorValidation = true
-                    $jq("textarea[name="+element+"]").css("border-color","e70c0c")
-                    $jq(""+element+"_error").css("display","block")
-                }else{
-                    $jq("textarea[name="+element+"]").css("border-color","dcdcde")
-                    $jq("#"+element+"_error").css("display","none")
-                    $jq("#"+element+"_error").text("This field required")
-                }
-            }
-        });
-        return isErrorValidation
-    }
+    // $jq( document ).ready( function() {
+    //     "use strict";
+    //     sendContact();
+    // } );
+    // function sendContact(){
+    //     $jq.ajaxSetup({
+    //         headers: {
+    //             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    //         }
+    //     });
+    //     $jq(".btn-submit").click(function(e){
+    //         e.preventDefault();
+    //         //name email subject massege border-color e70c0c
+    //         //serialize()
+    //         var vContact = validationContact()
+    //         return false;
+    //     })
+    // }
+    // function validationContact() {
+    //     var isErrorValidation = false
+    //     const arr = ["name", "email", "subject", "massege"]
+    //     arr.forEach(element => {
+    //         if (element != "massege") {
+    //             if ($jq("input[name="+element+"]").val().length < 1) {
+    //                 isErrorValidation = true
+    //                 $jq("input[name="+element+"]").css("border-color","e70c0c")
+    //                 $jq("#"+element+"_error").css("display","block")
+    //             }else{
+    //                 $jq("input[name="+element+"]").css("border-color","dcdcde")
+    //                 $jq(""+element+"_error").css("display","none")
+    //                 $jq(""+element+"_error").text("This field required")
+    //             }
+    //         } else {
+    //             if ($jq("textarea[name="+element+"]").val().length < 1) {
+    //                 isErrorValidation = true
+    //                 $jq("textarea[name="+element+"]").css("border-color","e70c0c")
+    //                 $jq(""+element+"_error").css("display","block")
+    //             }else{
+    //                 $jq("textarea[name="+element+"]").css("border-color","dcdcde")
+    //                 $jq("#"+element+"_error").css("display","none")
+    //                 $jq("#"+element+"_error").text("This field required")
+    //             }
+    //         }
+    //     });
+    //     return isErrorValidation
+    // }
 </script>
 {{-- <script src='wp-content/plugins/elementor/assets/js/frontend-modules.min.js@ver=3.11.3'
 id='elementor-frontend-modules-js'></script> --}}

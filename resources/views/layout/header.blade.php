@@ -261,6 +261,40 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                         </div>
                     </div>
                 </section>--}}
+                <style>
+                    /*! elementor - v3.11.3 - 07-03-2023 */
+                    .elementor-heading-title {
+                        padding: 0;
+                        margin: 0;
+                        line-height: 1
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                        color: inherit;
+                        font-size: inherit;
+                        line-height: inherit
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                        font-size: 15px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                        font-size: 19px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                        font-size: 29px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                        font-size: 39px
+                    }
+
+                    .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                        font-size: 59px
+                    }
+                </style>
                 <section
                     class="elementor-section elementor-top-section elementor-element elementor-element-c4221ad elementor-hidden-tablet elementor-hidden-mobile elementor-hidden-desktop elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="c4221ad" data-element_type="section"
