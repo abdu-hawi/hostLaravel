@@ -180,7 +180,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7ea06fa"
+                                    {{-- <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7ea06fa"
                                         data-id="7ea06fa" data-element_type="column">
                                         <div class="elementor-widget-wrap elementor-element-populated">
                                             <div class="elementor-element elementor-element-31ceed8 premium-mask-yes premium-mask-tl elementor-widget elementor-widget-premium-addon-title"
@@ -541,7 +541,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </section>
                         </div>

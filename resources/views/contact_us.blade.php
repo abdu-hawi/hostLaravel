@@ -57,6 +57,75 @@
                                     </div>
                                 </section>
 
+                                <style>
+                                    .contact-us{
+                                        background-color: #E6F4FF;
+                                        margin-bottom: 60px;
+                                        padding: 3rem;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: space-between;
+                                    }
+                                    .fname, .lname, .job, .company, .industry, .email, .number, .interest, .mobilenum, .ticket {
+                                        width: 100%;
+                                        padding-right: 10px;
+                                    }
+                                    .ah-form{
+                                        border-radius: 5px;
+                                        padding: 2rem 6.5rem;
+                                        box-shadow: 0 0 3px #0003;
+                                        width: 85dvw;
+                                        background: #d9e8f369;
+                                    }
+                                    .ah-form input, .ah-form textarea{
+                                        min-height: 40px;
+                                        width: 100%;
+                                    }
+                                    @media (max-width: 992px){
+                                        .ah-form{
+                                            padding: 1rem 1.5rem;
+                                        }
+                                    }
+                                    @media (max-width: 768px){
+                                        .contact-us{
+                                            flex-direction: column;
+                                        }
+                                        .contact-us .elementor-widget-image img{
+                                            height: 150px;
+                                            width: auto;
+                                        }
+                                    }
+                                    .text-red{
+                                        color: #e70c0c;
+                                    }
+                                    .row-name{
+                                        margin-top: 0.75rem;
+                                    }
+                                    .ah-form button{
+                                        width: 200px;
+                                        color: #000000;
+                                        font-size: 18px;
+                                    }
+                                    .fbutton{
+                                        display: flex;
+                                        justify-content: center;
+                                    }
+                                    .fbutton button{
+                                        width: 250px;
+                                    }
+                                    .success-msg{
+                                        color: #0a7e00;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                        text-align: center;
+                                        width: 100%;
+                                        background: #0a7e0020;
+                                        padding: 0.5rem;
+                                        border-radius: 5px;
+                                        display: none;
+                                    }
+                                </style>
+
                                 @if(Session::has('success'))
                                     <div class="alert alert-success fade in alert-dismissible" style="margin-top: 18px;
                                     color: #3c763d;
@@ -101,311 +170,69 @@
                                                                     <form action="{{ route('contact_us') }}"
                                                                         method="post" class="wpcf7-form init"
                                                                         aria-label="Contact form" novalidate="novalidate"
-                                                                        data-status="init">
+                                                                        data-status="init" id="ah_form">
                                                                         @csrf
                                                                         <div class="row-name">
                                                                             <div class="fname">
-                                                                                <label>First Name*</label>
+                                                                                <label><span class="text-red">*</span> Full Name</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="Name">
                                                                                     <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="First name"
-                                                                                        value="{{ old('first_name') ?? '' }}" type="text"
-                                                                                        name="first_name" required
-                                                                                        @error('first_name') style="border-color: #e70c0c;" @enderror />
-                                                                                    @error('first_name')
-                                                                                    <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
+                                                                                        placeholder="Full name"
+                                                                                        value="" type="text"
+                                                                                        name="name"  />
+                                                                                        <span id="name_error" style="color: #e70c0c; display:none">Required</span>
                                                                                 </span>
                                                                             </div>
-
-                                                                            <div class="lname">
-                                                                                <label>Last Name*</label>
-                                                                                <span class="wpcf7-form-control-wrap" data-name="LastName">
-                                                                                    <input
-                                                                                        size="40"
+                                                                        </div>
+                                                                        <div class="row-name">
+                                                                            <div class="fname">
+                                                                                <label><span class="text-red">*</span> Email</label>
+                                                                                <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                                                    <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Last Name"
-                                                                                        value="{{ old('last_name') ?? '' }}" type="text"
-                                                                                        name="last_name" required
-                                                                                        @error('last_name') style="border-color: #e70c0c;" @enderror />
-                                                                                    @error('last_name')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
+                                                                                        placeholder="Email"
+                                                                                        value="" type="email"
+                                                                                        name="email" required />
+                                                                                        <span id="email_error" style="color: #e70c0c; display:none">Required</span>
                                                                                 </span>
                                                                             </div>
                                                                         </div>
-
-                                                                        <div class="row-job">
-                                                                            <div class="job">
-                                                                                <label>Job Title*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="Jobtitle"><input
-                                                                                        size="40"
+                                                                        <div class="row-name">
+                                                                            <div class="fname">
+                                                                                <label><span class="text-red">*</span> Subject</label>
+                                                                                <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                                                    <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Job title"
-                                                                                        value="{{ old('job_title') ?? '' }}" type="text"
-                                                                                        name="job_title" required
-                                                                                        @error('job_title') style="border-color: #e70c0c;" @enderror />
-                                                                                    @error('job_title')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
+                                                                                        placeholder="Subject"
+                                                                                        value="" type="text"
+                                                                                        name="subject" required />
+                                                                                        <span id="subject_error" style="color: #e70c0c; display:none">Required</span>
                                                                                 </span>
                                                                             </div>
-
-                                                                            <div class="company">
-                                                                                <label>Company Name*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="Companyname"><input
-                                                                                        size="40"
-                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
-                                                                                        aria-required="true"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Company name"
-                                                                                        value="{{ old('company_name') ?? '' }}" type="text"
-                                                                                        name="company_name" required
-                                                                                        @error('company_name') style="border-color: #e70c0c;" @enderror />
-                                                                                    @error('company_name')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
+                                                                        </div>
+                                                                        <div class="row-name">
+                                                                            <div class="fname">
+                                                                                <label><span class="text-red">*</span> Massege</label>
+                                                                                <span class="wpcf7-form-control-wrap" data-name="Name">
+                                                                                    <textarea name="massege" rows="5"></textarea>
+                                                                                        <span id="massege_error" style="color: #e70c0c; display:none">Required</span>
                                                                                 </span>
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="row-email">
-                                                                            <div class="mobilenum">
-                                                                                <label>Mobile Number*</label>
-                                                                                <span class="wpcf7-form-control-wrap" data-name="mobile">
-                                                                                    <input
-                                                                                        size="40"
-                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-phonetext wpcf7-validates-as-required wpcf7-validates-as-phonetext"
-                                                                                        data-numberonly="true"
-                                                                                        aria-required="true"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Phone number"
-                                                                                        value="{{ old('mobile') ?? '' }}" type="text"
-                                                                                        name="mobile" required
-                                                                                        @error('full_number') style="border-color: #e70c0c;" @enderror />
-                                                                                    <input
-                                                                                        type="hidden"
-                                                                                        name="mobile-country-code"
-                                                                                        class="wpcf7-phonetext-country-code" />
-                                                                                    @error('full_number')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
-                                                                                </span>
-                                                                            </div>
 
-                                                                            <div class="email">
-                                                                                <label>Email*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="your-email"><input
-                                                                                        size="40"
-                                                                                        class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-                                                                                        aria-required="true"
-                                                                                        aria-invalid="false"
-                                                                                        placeholder="Official email address"
-                                                                                        value="{{ old('email') ?? '' }}" type="email"
-                                                                                        name="email" required
-                                                                                        @error('email') style="border-color: #e70c0c;" @enderror />
-                                                                                    @error('email')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
-                                                                                </span>
+                                                                        <div class="row-name">
+                                                                            <div class="fname fbutton">
+                                                                                <button type="submit" class="btn-submit">Submit</button>
                                                                             </div>
                                                                         </div>
-
-                                                                        <div class="row-ticket">
-                                                                            <div class="ticket">
-                                                                                <label>Industry*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="Industry">
-                                                                                    <select
-                                                                                        class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
-                                                                                        aria-required="true"
-                                                                                        aria-invalid="false"
-                                                                                        name="industry" required
-                                                                                        @error('industry') style="border-color: #e70c0c;" @enderror>
-                                                                                        <option value="" hidden>
-                                                                                            &#8212;Please choose an
-                                                                                            option&#8212;</option>
-                                                                                        <option value="Building Envelope">
-                                                                                            Building Envelope</option>
-                                                                                        <option
-                                                                                            value="Building Interiors &amp; Finishes">
-                                                                                            Building Interiors &amp;
-                                                                                            Finishes</option>
-                                                                                        <option
-                                                                                            value="Banking &amp; Finance">
-                                                                                            Banking &amp; Finance</option>
-                                                                                        <option
-                                                                                            value="Government &amp; Ministry">
-                                                                                            Government &amp; Ministry
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Construction &amp; Building Materials">
-                                                                                            Construction &amp; Building
-                                                                                            Materials</option>
-                                                                                        <option
-                                                                                            value="Construction &amp; Engineering">
-                                                                                            Construction &amp; Engineering
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Construction Technologies &amp; Services">
-                                                                                            Construction Technologies &amp;
-                                                                                            Services</option>
-                                                                                        <option value="Architecture">
-                                                                                            Architecture</option>
-                                                                                        <option
-                                                                                            value="Interior Design &amp; Finishing">
-                                                                                            Interior Design &amp; Finishing
-                                                                                        </option>
-                                                                                        <option value="Developers">
-                                                                                            Developers</option>
-                                                                                        <option value="IT &amp; Software">
-                                                                                            IT &amp; Software</option>
-                                                                                        <option
-                                                                                            value="Connected Home Automation">
-                                                                                            Connected Home Automation
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Heating, Ventilation, Air-Conditioning &amp; Refrigeration (HVACR)">
-                                                                                            Heating, Ventilation,
-                                                                                            Air-Conditioning &amp;
-                                                                                            Refrigeration (HVACR)</option>
-                                                                                        <option
-                                                                                            value="Electrical &amp; Lighting">
-                                                                                            Electrical &amp; Lighting
-                                                                                        </option>
-                                                                                        <option value="Real Estate">Real
-                                                                                            Estate</option>
-                                                                                        <option
-                                                                                            value="Safety, Security &amp; Surveillance">
-                                                                                            Safety, Security &amp;
-                                                                                            Surveillance</option>
-                                                                                        <option
-                                                                                            value="Urban-Design &amp; Landscaping">
-                                                                                            Urban-Design &amp; Landscaping
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Stone Industry &amp; Technology">
-                                                                                            Stone Industry &amp; Technology
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="PMV: Plants, Heavy Machinery and Vehicles">
-                                                                                            PMV: Plants, Heavy Machinery and
-                                                                                            Vehicles</option>
-                                                                                        <option
-                                                                                            value="Consulting &amp; Advisory Services">
-                                                                                            Consulting &amp; Advisory
-                                                                                            Services</option>
-                                                                                        <option value="Holding Companies">
-                                                                                            Holding Companies</option>
-                                                                                        <option value="Energy Utilities">
-                                                                                            Energy Utilities</option>
-                                                                                        <option
-                                                                                            value="Environmental Consultants">
-                                                                                            Environmental Consultants
-                                                                                        </option>
-                                                                                        <option value="Investment Houses">
-                                                                                            Investment Houses</option>
-                                                                                        <option value="Start-Ups">Start-Ups
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Venture Capitalists">
-                                                                                            Venture Capitalists</option>
-                                                                                        <option value="PPP Units">PPP Units
-                                                                                        </option>
-                                                                                        <option
-                                                                                            value="Research &amp; Developments">
-                                                                                            Research &amp; Developments
-                                                                                        </option>
-                                                                                        <option value="Other">Other
-                                                                                        </option>
-                                                                                    </select>
-                                                                                    @error('industry')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
-                                                                                </span>
-                                                                            </div>
-
-                                                                            <div class="interest">
-                                                                                <label>Interested in*</label>
-                                                                                <span class="wpcf7-form-control-wrap"
-                                                                                    data-name="interest">
-                                                                                    <select
-                                                                                        class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
-                                                                                        aria-required="true"
-                                                                                        aria-invalid="false"
-                                                                                        name="interested" required
-                                                                                        @error('interested') style="border-color: #e70c0c;" @enderror>
-                                                                                        <option value="" hidden>
-                                                                                            &#8212;Please choose an
-                                                                                            option&#8212;</option>
-                                                                                        <option value="Sponsorship">
-                                                                                            Sponsorship</option>
-                                                                                        <option value="Exhibition">
-                                                                                            Exhibition</option>
-                                                                                        <option value="Attending Delegate">
-                                                                                            Attending Delegate</option>
-                                                                                        <option value="Speaker">Speaker
-                                                                                        </option>
-                                                                                        <option value="Media Partner">Media
-                                                                                            Partner</option>
-                                                                                    </select>
-                                                                                    @error('interested')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-
-                                                                        <div class="row-gdrp">
-                                                                            <span class="wpcf7-form-control-wrap"
-                                                                                data-name="GDRP"><span
-                                                                                    class="wpcf7-form-control wpcf7-acceptance">
-                                                                                    <span class="wpcf7-list-item" @error('GDRP') style="border: solid 1px #e70c0c;" @enderror>
-                                                                                        <label>
-                                                                                            <input
-                                                                                                type="checkbox"
-                                                                                                name="GDRP"
-                                                                                                value="1"
-                                                                                                id="gdrp"
-                                                                                                aria-invalid="false" required />
-                                                                                            <span class="wpcf7-list-item-label">
-                                                                                                <span
-                                                                                                    style="gdrptext"> I
-                                                                                                    acknowledge that will process my
-                                                                                                    personal data in
-                                                                                                    accordance with Summit’s Privacy Policy
-                                                                                                </span>
-                                                                                            </span>
-                                                                                        </label>
-                                                                                    @error('GDRP')
-                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
-                                                                                    @enderror
-                                                                                    </span></span></span>
-                                                                        </div>
-
-                                                                        <div class="row">
-                                                                            *Register now for early bird discount 15% off
-                                                                        </div>
-
-
-                                                                        <div class="row-button">
-                                                                            <input
-                                                                                class="wpcf7-form-control has-spinner wpcf7-submit"
-                                                                                id="submit" type="submit"
-                                                                                value="Submit" />
-                                                                        </div>
-                                                                        <div class="wpcf7-response-output"
-                                                                            aria-hidden="true"></div>
                                                                     </form>
                                                                 </div>
                                                             </div>

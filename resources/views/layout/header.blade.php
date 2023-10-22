@@ -594,6 +594,10 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('sponsors') }}"
                                                             class="hfe-menu-item {{ active_menu('sponsors') }}">SPONSORS</a></li>
+                                                    <li id="menu-item-560"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                        <a href="{{ route('contact_us') }}"
+                                                            class="hfe-menu-item {{ active_menu('contact_us') }}">Contact us</a></li>
                                                     {{-- <li id="menu-item-672"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('news') }}"

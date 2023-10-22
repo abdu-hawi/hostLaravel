@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,6 +50,7 @@ Route::get('contact_us', function () {
 //     sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
 //     return "Done";
 // });
+Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
