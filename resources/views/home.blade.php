@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <table class="table table-bordered table-responsive">
                         <thead>
-                          <tr class="table-dark">
+                          <tr class="table-primary">
                             <th scope="col">Name</th>
                             <th scope="col">Job Title</th>
                             <th scope="col">Company Name</th>

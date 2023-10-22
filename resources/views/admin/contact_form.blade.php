@@ -5,12 +5,12 @@
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
-                <div class="card-header">Clients register</div>
+                <div class="card-header">Contact Forms</div>
 
                 <div class="card-body">
                     <table class="table table-bordered table-responsive">
                         <thead>
-                          <tr class="table-dark">
+                          <tr class="table-success">
                             <th scope="col">Name</th>
                             <th scope="col">Email</th>
                             <th scope="col">Subject</th>
