@@ -52,11 +52,23 @@ Route::get('contact_us', function () {
 //     return "Done";
 // });
 Route::get('email', function () {
-    $_data = Client::query()->get();
-    //dispatch(new \App\Jobs\SendEmailsJob($data));
-    foreach ($_data as $data) {
-        sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
+    // $_data = Client::query()->get();
+    // //dispatch(new \App\Jobs\SendEmailsJob($data));
+    // foreach ($_data as $data) {
+    //     sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
+    // }
+
+    $from = "no_replay@scesummit-sa.com";
+    $to = "ahhh42@gmail.com";
+    $subject = "Checking PHP mail";
+    $message = "PHP mail works just fine";
+    $headers = "From:" . $from;
+    if (mail($to, $subject, $message, $headers)) {
+        echo "The email message was sent.";
+    } else {
+        echo "The email message was not sent.";
     }
+
     return "Done";
 });
 Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
