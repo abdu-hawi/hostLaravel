@@ -55,32 +55,20 @@ Route::get('contact_us', function () {
 //     return "Done";
 // });
 Route::get('email', function () {
-    // $_data = Client::query()->get();
-    // //dispatch(new \App\Jobs\SendEmailsJob($data));
-    // foreach ($_data as $data) {
-    //     sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
-    // }
-
-    // $from = "no_replay@scesummit-sa.com";
-    // $to = "ahhh42@gmail.com";
-    // $subject = "Checking PHP mail";
-    // $name = "Abdu Hawi";
-    // $message = 'Send Email Test';
-    // $headers = "From:" . $from;
-    // if (mail($to, $subject, $message, $headers)) {
-    //     echo "The email message was sent.";
-    // } else {
-    //     echo "The email message was not sent.";
-    // }
-
-    // echo sendMail("ahhh42@gmail.com", "Thank you for register", "Abdu Hawi");
-
-    // $name = "A h";
-    // return view('emails.sample', compact("name"));
-    $data = [
-        "name" => "Abdu",
-    ];
-    Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester($data));
+    $_data = Client::query()->get();
+    //dispatch(new \App\Jobs\SendEmailsJob($data));
+    foreach ($_data as $data) {
+        // sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
+        if (Mail::to($data['email'])->send(new SendEmailRigester($data['first_name'] . ' ' . $data['last_name']))) {
+            echo "Done " . $data['id'] . "<br>";
+        } else {
+            echo "Fails " . $data['id'] . "<br>";
+        }
+    }
+    // $data = [
+    //     "name" => "Abdu",
+    // ];
+    // Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester($data));
     return "Done " . Carbon::now();
 });
 Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
