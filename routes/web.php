@@ -36,16 +36,19 @@ Route::get('news', function () {
 Route::get('register', function () {
     return view('register');
 })->name('register');
-Route::get('email', function () {
-    $data = [
-        "first_name" => "Abdu",
-        "last_name" => "Hawi",
-        "email" => "ahhh42@gmail.com",
-    ];
-    //dispatch(new \App\Jobs\SendEmailsJob($data));
-    sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
-    return "Done";
-});
+Route::get('contact_us', function () {
+    return view('contact_us');
+})->name('contact_us');
+// Route::get('email', function () {
+//     $data = [
+//         "first_name" => "Abdu",
+//         "last_name" => "Hawi",
+//         "email" => "ahhh42@gmail.com",
+//     ];
+//     //dispatch(new \App\Jobs\SendEmailsJob($data));
+//     sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
+//     return "Done";
+// });
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);

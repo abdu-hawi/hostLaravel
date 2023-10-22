@@ -93,7 +93,7 @@ if (!function_exists('sendMail')) {
 
                                                                         <p>
                                                                             If you have any suggestions or inquiries, please fill out the contact form at the following link
-                                                                            <a href="' . route('index') . '#contact_us" target="_blank">Contact form</a>
+                                                                            <a href="' . route('contact_us') . '" target="_blank">Contact form</a>
                                                                         </p>
                                                                     </div>
                                                                 </td>
@@ -116,7 +116,7 @@ if (!function_exists('sendMail')) {
                                                                         </p>
                                                                         <p>
                                                                             في حالة وجود أي مقترحات أو استفسارات نرجوا منكم تعبئة نموذج التواصل على الرابط التالي
-                                                                            <a href="' . route('index') . '#contact_us" target="_blank">نموذج التواصل</a>
+                                                                            <a href="' . route('contact_us') . '" target="_blank">نموذج التواصل</a>
                                                                         </p>
                                                                     </div>
                                                                 </td>
