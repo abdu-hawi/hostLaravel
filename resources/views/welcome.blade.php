@@ -3005,7 +3005,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                     {{-- END New and Update --}}
 
 
-                                    {{-- Contact us
+                                    {{-- Contact us --}}
                                     <style>
                                         .contact-us{
                                             background-color: #E6F4FF;
@@ -3073,7 +3073,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                     </style>
                                     <section id="contact_us"
                                     class="elementor-section elementor-top-section elementor-element elementor-element-d1169c2
-                                    elementor-section-boxed elementor-section-height-default elementor-section-height-default contact-us"
+                                    elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="d1169c2" data-element_type="section">
 
                                         <div class="elementor-element elementor-element-e2e2300 elementor-widget elementor-widget-image"
@@ -3091,7 +3091,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                             </div>
                                         </div>
 
-
+{{--
                                         <form class="elementor-widget-container col-lg-6 col-md-12 ah-form" method="POST" id="ah_form">
                                             <div class="success-msg">
                                                 Error msg
@@ -3155,10 +3155,10 @@ id='elementor-frontend-modules-js'></script> --}}
                                                     <button type="submit" class="btn-submit">Send</button>
                                                 </div>
                                             </div>
-                                        </form>
+                                        </form>--}}
 
 
-                                    </section>--}}
+                                    </section>
                                     {{-- End Contact us --}}
 
 
