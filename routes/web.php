@@ -58,7 +58,7 @@ Route::get('admin/clients', [App\Http\Controllers\HomeController::class, 'client
 Route::get('admin/contact_forms', [App\Http\Controllers\HomeController::class, 'contact_forms'])->name('admin.contact_forms');
 
 Route::get('email', function () {
-    $_data = Client::query()->get();
+    $_data = Client::query()->where('is_sent_email', false)->get();
     foreach ($_data as $data) {
         try {
             if (Mail::to($data['email'])->send(new SendEmailRigester($data['first_name'] . ' ' . $data['last_name']))) {
