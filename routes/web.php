@@ -5,6 +5,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
 use App\Mail\SendEmailRigester;
 use App\Models\Client;
+use App\Models\EmailFailer;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
@@ -44,32 +45,24 @@ Route::get('register', function () {
 Route::get('contact_us', function () {
     return view('contact_us');
 })->name('contact_us');
-// Route::get('email', function () {
-//     $data = [
-//         "first_name" => "Abdu",
-//         "last_name" => "Hawi",
-//         "email" => "ahhh42@gmail.com",
-//     ];
-//     //dispatch(new \App\Jobs\SendEmailsJob($data));
-//     sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
-//     return "Done";
-// });
 Route::get('email', function () {
     $_data = Client::query()->get();
-    //dd($_data);
-    //dispatch(new \App\Jobs\SendEmailsJob($data));
     foreach ($_data as $data) {
-        // sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
-        if (Mail::to($data['email'])->send(new SendEmailRigester($data['first_name'] . ' ' . $data['last_name']))) {
-            echo "Done " . $data['id'] . "<br>";
-        } else {
-            echo "Fails " . $data['id'] . "<br>";
+        try {
+            if (Mail::to($data['email'])->send(new SendEmailRigester($data['first_name'] . ' ' . $data['last_name']))) {
+            } else {
+                EmailFailer::query()->create([
+                    'email' => $data['email'],
+                    'fail' => 'Unkown Error'
+                ]);
+            }
+        } catch (\Exception $ex) {
+            EmailFailer::query()->create([
+                'email' => $data['email'],
+                'fail' => $ex->getMessage()
+            ]);
         }
     }
-    // $data = [
-    //     "name" => "Abdu",
-    // ];
-    // Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester($data));
     return "Done " . Carbon::now();
 });
 Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');

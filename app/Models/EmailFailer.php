@@ -5,18 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Client extends Model
+class EmailFailer extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'first_name',
-        'last_name',
-        'job_title',
-        'company_name',
-        'mobile',
         'email',
-        'industry',
-        'interested',
-        'is_sent_email'
+        'fails',
     ];
 }
