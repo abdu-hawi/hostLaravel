@@ -55,6 +55,12 @@ class SendEmailRigester extends Mailable
     public function build()
     {
         return $this->subject("Thank you for register")
-            ->view('emails.sample', ['name' => $this->data]);
+            ->view('emails.sample', [
+                'name' => $this->data,
+                'contact_us' => route('contact_us'),
+                'xs_logo' => asset('wp-content/uploads/2023/01/xs-conference-1-light.png'),
+                'c3_logo' => asset('wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg'),
+                'sce_summit_logo' => asset('wp-content/uploads/2023/07/logo_black.jpg')
+            ]);
     }
 }
