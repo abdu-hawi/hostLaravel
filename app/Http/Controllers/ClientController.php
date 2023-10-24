@@ -41,13 +41,13 @@ class ClientController extends Controller
             } else {
                 EmailFailer::query()->create([
                     'email' => $data['email'],
-                    'fail' => 'Unkown Error'
+                    'fails' => 'Unkown Error'
                 ]);
             }
         } catch (\Exception $ex) {
             EmailFailer::query()->create([
                 'email' => $data['email'],
-                'fail' => $ex->getMessage()
+                'fails' => $ex->getMessage()
             ]);
         }
         Session::flash('success', 'The form send successfully');
