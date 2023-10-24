@@ -194,7 +194,7 @@
                                                 <tr>
                                                     <td>
                                                         <a href="">
-                                                            <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="{{ asset('wp-content/uploads/2023/01/xs-conference-1-e1675154741737.jpg') }}">
+                                                            <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="{{ asset('wp-content/uploads/2023/01/xs-conference-1-light.png') }}">
                                                         </a>
                                                     </td>
                                                     <td style="border-right:#f5f1e1 solid 3px;">

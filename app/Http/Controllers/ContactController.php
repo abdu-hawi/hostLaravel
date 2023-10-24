@@ -15,6 +15,9 @@ class ContactController extends Controller
             "email" => "required | email",
             "subject" => "required | string",
             "massege" => "required | string",
+            "GDRP" => "accepted",
+        ], [
+            "GDRP.accepted" => "You must accept privacy policy"
         ]);
 
         Contact::query()->create($data);
