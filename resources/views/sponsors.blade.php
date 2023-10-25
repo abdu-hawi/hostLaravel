@@ -381,6 +381,9 @@
                                         </div>
                                     </div>
                                 </section>
+
+
+                                {{--
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-6841a00d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="6841a00d" data-element_type="section"
@@ -649,6 +652,7 @@
                                         </div>
                                     </div>
                                 </section>
+
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-50fbea7 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="50fbea7" data-element_type="section">
@@ -753,6 +757,7 @@
                                         </div>
                                     </div>
                                 </section>
+
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-264a2e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="264a2e1" data-element_type="section"
@@ -1030,6 +1035,8 @@
                                         </div>
                                     </div>
                                 </section>
+                                --}}
+
                             </div>
 
 
