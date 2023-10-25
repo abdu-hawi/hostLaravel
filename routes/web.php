@@ -65,14 +65,16 @@ Route::get('email', function () {
                 $data->query()->update([
                     'is_sent_email' => true
                 ]);
+                echo $data['email'] . Carbon::now() . "<br>";
             } else {
                 EmailFailer::query()->create([
                     'email' => $data['email'],
                     'fails' => 'Unkown Error'
                 ]);
+                echo "Fails " . $data['email'] . "<br>";
             }
         } catch (\Exception $ex) {
-            dd($ex->getMessage());
+            // dd($ex->getMessage());
             EmailFailer::query()->create([
                 'email' => $data['email'],
                 'fails' => $ex->getMessage()
