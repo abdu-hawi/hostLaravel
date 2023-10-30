@@ -7,6 +7,7 @@ use App\Mail\SendEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
@@ -103,9 +104,7 @@ Route::get('qr_email', function () {
 });
 
 Route::get('/link', function () {
-    $target = '/../storage/app/public';
-    $shortcut = '/storage';
-    symlink($target, $shortcut);
+    Artisan::call('storage:link');
 });
 
 Route::get('email', function () {
