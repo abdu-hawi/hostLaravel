@@ -187,16 +187,16 @@
                                 <!-- xs -->
                                 <th style="color:#f5f1e1;">
                                     <table style="width: 100% direction:ltr" dir="ltr">
-                                        <tr>
+                                        <tr style="width: 100% direction:ltr" dir="ltr">
                                             <th style="color:#f5f1e1;">Organised By</th>
                                         </tr>
-                                        <tr>
+                                        <tr style="width: 100% direction:ltr" dir="ltr">
                                             <td>
                                                 <a href="">
                                                     <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="{{ $xs_logo }}">
                                                 </a>
                                             </td>
-                                            <td style="border-right:#f5f1e1 solid 3px;">
+                                            <td style="border-right:#f5f1e1 solid 3px; direction:ltr" dir="ltr">
                                                 <p style="color: #f5f1e1;font-family: Helvetica,Arial,sans-serif;font-size: 80%;font-weight: 400;line-height: 1.5;margin: 0 !important;margin-bottom: 30px;padding: 0;padding-bottom: 15px !important;text-align: left;">
                                                     <b>Riyadh, KSA</b><br>+966-50-56-85126<br>info@xs-conferences.com <br>adel@xs-conferences.com
                                                     <br>
@@ -211,17 +211,17 @@
                                 <!-- End xs -->
                                 <!-- c3 -->
                                 <th style="color:#f5f1e1;">
-                                    <table style="width: 100%; margin-left: 10px;">
-                                        <tr>
+                                    <table style="width: 100%; margin-left: 10px; direction:ltr" dir="ltr">
+                                        <tr style="direction:ltr" dir="ltr">
                                             <th style="color:#f5f1e1;">International Offices</th>
                                         </tr>
-                                        <tr>
+                                        <tr style="direction:ltr" dir="ltr">
                                             <td>
                                                 <a href="">
                                                     <img loading="lazy" style="border: none; margin: 0 auto;clear: both;display: block;height: 66px !important;max-width: 100%;outline: 0;text-decoration: none;width: auto !important;" src="{{ $c3_logo }}">
                                                 </a>
                                             </td>
-                                            <td>
+                                            <td style="direction:ltr" dir="ltr">
                                                 <p style="color: #f5f1e1;font-family: Helvetica,Arial,sans-serif;font-size: 80%;font-weight: 400;line-height: 1.5;margin: 0 !important;margin-bottom: 30px;padding: 0;padding-bottom: 15px !important;text-align: left;">
                                                     <b>New York, USA</b><br>+1 (917) 742-9941<br>info@xs-conferences.com <br>ranselpotter@xs-conferences.com
                                                     <br>
