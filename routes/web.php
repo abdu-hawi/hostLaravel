@@ -87,12 +87,11 @@ Route::get('qr_email', function () {
         ->backgroundColor(246, 248, 250)
         ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
 
-    $image = \QrCode::format('png')
-        ->merge('img/t.jpg', 0.1, true)
-        ->size(200)->errorCorrection('H')
-        ->generate('A simple example of QR code!');
+    // $image = \QrCode::format('png')
+    //     ->size(200)->errorCorrection('H')
+    //     ->generate('A simple example of QR code!');
     $output_file = Str::uuid() . time() . '.png';
-    Storage::disk('local')->put($output_file, $image);
+    Storage::disk('local')->put($output_file, $qr);
 
     // print_r($qr);
     return "AAAAA";
