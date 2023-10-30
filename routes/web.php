@@ -100,7 +100,7 @@ Route::get('qr_email', function () {
         "name" => "Abdu Hawi",
         // "qr" => $qr
     ]));
-    return "Abdu";
+    return $output_file;
 });
 
 Route::get('email', function () {
