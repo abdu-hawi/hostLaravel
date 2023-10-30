@@ -102,7 +102,7 @@
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
                                                                             {{-- <img src="{!!$message->embedData(base64_encode(QrCode::format('png')->size(100)->generate('QrCode as PNG image!')) , 'QrCode.png', 'image/png')!!}"> --}}
-                                                                            <img src="{!!$message->embedData($data['qr'], 'QrCode.png', 'image/png')!!}">
+                                                                            <img src="{!!$message->embedData(QrCode::format('png')->size(100)->generate('QrCode as PNG image!'), 'QrCode.png', 'image/png')!!}">
                                                                             {{-- <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(100)->generate('QrCode as PNG image!')) !!}" /> --}}
                                                                         </td>
                                                                     </tr>
