@@ -2812,7 +2812,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                                                                     </span>
                                                                                     <span
                                                                                         class="elementor-icon-list-text">Nov
-                                                                                        13-14, 2023</span>
+                                                                                        20 - 21, 2023</span>
                                                                                 </li>
                                                                                 <li
                                                                                     class="elementor-icon-list-item">
