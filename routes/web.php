@@ -60,27 +60,6 @@ Route::get('admin/clients', [App\Http\Controllers\HomeController::class, 'client
 Route::get('admin/contact_forms', [App\Http\Controllers\HomeController::class, 'contact_forms'])->name('admin.contact_forms');
 
 Route::get('qr_email', function () {
-    // $qr = QrCode::size(300)
-    //     ->format('png')
-    //     ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
-    //     ->backgroundColor(246, 248, 250)
-    //     ->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9');
-    // return view('emails.sample', [
-    //     'data' => [
-    //         'name' => 'Abdu Hawi',
-    //         'qr' => $qr
-    //     ],
-    //     'contact_us' => route('contact_us'),
-    //     'xs_logo' => asset('wp-content/uploads/2023/01/xs-conference-1-light.png'),
-    //     'c3_logo' => asset('wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg'),
-    //     'sce_summit_logo' => asset('wp-content/uploads/2023/07/logo_black.jpg')
-    // ]);
-
-    // $qr = QrCode::size(300)
-    //     ->format('png')
-    //     ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
-    //     ->backgroundColor(246, 248, 250)
-    //     ->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9');
 
     $qr = QrCode::size(300)
         ->format('png')
@@ -97,6 +76,16 @@ Route::get('qr_email', function () {
         "name" => "Abdu Hawi",
         "qr" => $qr
     ]));
+    if (Storage::exists('qr/' . $output_file)) {
+        Storage::delete('qr/' . $output_file);
+        /*
+            Delete Multiple files this way
+            Storage::delete(['upload/test.png', 'upload/test2.png']);
+        */
+        echo "delete <br>";
+    } else {
+        echo "not foune <br>";
+    }
     return "Abdu";
 });
 
