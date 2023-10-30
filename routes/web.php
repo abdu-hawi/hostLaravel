@@ -94,7 +94,7 @@ Route::get('qr_email', function () {
     Storage::disk('public')->put($output_file, $qr);
 
     // print_r($qr);
-    return "AAAAA";
+    return $output_file;
     Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
         "name" => "Abdu Hawi",
         // "qr" => $qr
