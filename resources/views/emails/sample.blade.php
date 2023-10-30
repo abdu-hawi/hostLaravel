@@ -105,7 +105,8 @@
                                                                             {{-- <img src="{!!$message->embedData(QrCode::format('png')->size(100)->generate('QrCode as PNG image!'), 'QrCode.png', 'image/png')!!}"> --}}
                                                                             {{-- <img src="data:image/png;base64, {!! base64_encode(QrCode::format('png')->size(100)->generate('QrCode as PNG image!')) !!}" /> --}}
                                                                             {{-- <img src="data:image/png;base64,{{ base64_encode(QrCode::format('png')->size(100)->generate('QrCode as PNG image!')) }}"/> --}}
-                                                                            <img src="{!!$message->embedData($data['qr'], 'QrCode.png', 'image/png')!!}">
+                                                                            <img src="{!!$message->embed($data['qr'])!!}">
+                                                                            {{ $data['qr'] }}
                                                                         </td>
                                                                     </tr>
                                                                 </table>
