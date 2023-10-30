@@ -80,13 +80,15 @@ Route::get('qr_email', function () {
     //     ->backgroundColor(246, 248, 250)
     //     ->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9');
 
-    // $qr = QrCode::size(300)
-    //     ->format('png')
-    //     ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
-    //     ->backgroundColor(246, 248, 250)
-    //     ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
+    $qr = QrCode::size(300)
+        ->format('png')
+        ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
+        ->backgroundColor(246, 248, 250)
+        ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
+    return gettype($qr);
     Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
-        "name" => "Abdu Hawi"
+        "name" => "Abdu Hawi",
+        "qr" => $qr
     ]));
     return "Abdu";
 });
