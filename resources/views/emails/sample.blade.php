@@ -108,7 +108,7 @@
                                                                     @endphp
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
-                                                                            <img src="{!! $message->embedData($qr , 'QrCode.png', 'image/png')!!}">
+                                                                            <img src="{!! $message->embed($qr)!!}">
                                                                         </td>
                                                                     </tr>
                                                                 </table>
