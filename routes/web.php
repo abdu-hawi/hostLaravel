@@ -103,8 +103,8 @@ Route::get('qr_email', function () {
 });
 
 Route::get('/link', function () {
-    $target = '/public_html/storage/app/public';
-    $shortcut = '/public_html/public/storage';
+    $target = '/../storage/app/public';
+    $shortcut = '/storage';
     symlink($target, $shortcut);
 });
 
