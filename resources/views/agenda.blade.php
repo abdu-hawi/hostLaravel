@@ -67,7 +67,7 @@
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default">DAY 1 -
-                                                            13 NOV 2023</h2>
+                                                            20 NOV 2023</h2>
                                                     </div>
                                                 </div>
                                                 <section
@@ -573,7 +573,7 @@
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default">DAY 2 -
-                                                            14 NOV 2023</h2>
+                                                            21 NOV 2023</h2>
                                                     </div>
                                                 </div>
                                                 <section
