@@ -91,7 +91,7 @@ Route::get('qr_email', function () {
     //     ->size(200)->errorCorrection('H')
     //     ->generate('A simple example of QR code!');
     $output_file = Str::uuid() . time() . '.png';
-    Storage::disk('local')->put($output_file, $qr);
+    Storage::disk('public')->put($output_file, $qr);
 
     // print_r($qr);
     return "AAAAA";
