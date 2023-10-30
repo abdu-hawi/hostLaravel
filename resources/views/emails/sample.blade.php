@@ -99,16 +99,9 @@
                                                                         </td>
 
                                                                     </tr>
-                                                                    @php
-                                                                        $qr = QrCode::size(300)
-                                                                                ->format('png')
-                                                                                ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
-                                                                                ->backgroundColor(246, 248, 250)
-                                                                                ->generate($data['qr']);
-                                                                    @endphp
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
-                                                                            <img src="{!! $message->embed($qr)!!}">
+                                                                            <img src="{!!$message->embedData($data['qr'] , 'QrCode.png', 'image/png')!!}">
                                                                         </td>
                                                                     </tr>
                                                                 </table>
