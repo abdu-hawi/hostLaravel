@@ -57,6 +57,35 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('admin/clients', [App\Http\Controllers\HomeController::class, 'clients'])->name('admin.clients');
 Route::get('admin/contact_forms', [App\Http\Controllers\HomeController::class, 'contact_forms'])->name('admin.contact_forms');
 
+Route::get('qr_email', function () {
+    // $qr = QrCode::size(300)
+    //     ->format('png')
+    //     ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
+    //     ->backgroundColor(246, 248, 250)
+    //     ->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9');
+    // return view('emails.sample', [
+    //     'data' => [
+    //         'name' => 'Abdu Hawi',
+    //         'qr' => $qr
+    //     ],
+    //     'contact_us' => route('contact_us'),
+    //     'xs_logo' => asset('wp-content/uploads/2023/01/xs-conference-1-light.png'),
+    //     'c3_logo' => asset('wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg'),
+    //     'sce_summit_logo' => asset('wp-content/uploads/2023/07/logo_black.jpg')
+    // ]);
+
+    // $qr = QrCode::size(300)
+    //     ->format('png')
+    //     ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
+    //     ->backgroundColor(246, 248, 250)
+    //     ->generate('https://techvblogs.com/blog/generate-qr-code-laravel-9');
+
+    Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
+        'name' => 'Abdu Hawi',
+        'qr' => "https://techvblogs.com/blog/generate-qr-code-laravel-9"
+    ]));
+});
+
 Route::get('email', function () {
     $_data = Client::query()->where('is_sent_email', false)->get();
     foreach ($_data as $data) {

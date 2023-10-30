@@ -3,7 +3,7 @@
     <tr style = "padding: 0; text-align: left; vertical-align: top; word-break: keep-all;">
         <td style="Margin: 0; border-collapse: collapse !important; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: keep-all; word-wrap: break-word;">
             <!-- logo and table -->
-            <table style="min-width: 580px; width: 100%; word-break: keep-all; text-align:center;">
+            <table style="min-width: 580px; width: 100%; word-break: keep-all; text-align:center;background: #fefefe !important;background-color: #fefefe !important;">
                 <tbody>
                     <tr>
                         <td style="width: 100%; word-break: keep-all; text-align:center;">
@@ -60,7 +60,7 @@
 
                                                                         <td style="direction: ltr;">
                                                                             <div style="direction: ltr;">
-                                                                                <p><b>Hello, {{ $name }}</b></p>
+                                                                                <p><b>Hello, {{ $data['name'] }}</b></p>
                                                                                 <p>
                                                                                     Thank you for registering for the Saudi Excellence Contracting Conference, which will be held at the Ritz-Carlton, Riyadh from November 13 - 14, 2023 from 8 a.m. - 5:30 p.m.
                                                                                 </p>
@@ -82,7 +82,7 @@
                                                                             <div style="direction:rtl; text-align:right; ">
                                                                                 <p>
                                                                                     <b>
-                                                                                        مرحبا, {{ $name }}
+                                                                                        مرحبا, {{ $data['name'] }}
                                                                                     </b>
                                                                                 </p>
                                                                                 <p>
@@ -98,6 +98,15 @@
                                                                             </div>
                                                                         </td>
 
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td colspan="3" style="text-align: center; padding: 20px auto;">
+                                                                            <img src="{!!$message->embedData(QrCode::size(300)
+                                                                                ->format('png')
+                                                                                ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
+                                                                                ->backgroundColor(246, 248, 250)
+                                                                                ->generate($data['qr']) , 'QrCode.png', 'image/png')!!}">
+                                                                        </td>
                                                                     </tr>
                                                                 </table>
                                                             <th style="Margin: 0 auto; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0 auto; padding: 0!important; text-align: left; width: 0; word-break: keep-all;">&nbsp;&nbsp;</th>
