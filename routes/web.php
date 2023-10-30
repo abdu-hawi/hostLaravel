@@ -9,6 +9,7 @@ use App\Models\EmailFailer;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Storage;
 
 /*
 |--------------------------------------------------------------------------
@@ -85,6 +86,7 @@ Route::get('qr_email', function () {
         ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
         ->backgroundColor(246, 248, 250)
         ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
+
     // print_r($qr);
     // return gettype($qr);
     Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
