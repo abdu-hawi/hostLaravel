@@ -87,11 +87,11 @@ Route::get('qr_email', function () {
         ->backgroundColor(246, 248, 250)
         ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
 
-    // $image = \QrCode::format('png')
-    //     ->size(200)->errorCorrection('H')
-    //     ->generate('A simple example of QR code!');
     $output_file = Str::uuid() . time() . '.png';
     Storage::disk('public')->put($output_file, $qr);
+
+    // print_r($qr);
+    return $output_file;
 
     // print_r($qr);
     return $output_file;
@@ -99,7 +99,7 @@ Route::get('qr_email', function () {
         "name" => "Abdu Hawi",
         // "qr" => $qr
     ]));
-    return $output_file;
+    return "Abdu";
 });
 
 Route::get('email', function () {
