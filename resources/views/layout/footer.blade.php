@@ -33,7 +33,7 @@
                                                 <div class="elementor-widget-container">
                                                     <h2
                                                         class="elementor-heading-title elementor-size-default">
-                                                        13 - 14 NOV 2023</h2>
+                                                        20 - 21 NOV 2023</h2>
                                                 </div>
                                             </div>
                                             <div class="elementor-element elementor-element-3097de2 elementor-widget elementor-widget-heading"
