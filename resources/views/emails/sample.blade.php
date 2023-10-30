@@ -101,7 +101,7 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
-                                                                            {{-- <img src="{!!$message->embed($data['qr'] , 'QrCode.png')!!}"> --}}
+                                                                            <img src="{!!$message->embedData($data['qr'] , 'QrCode.png')!!}">
                                                                         </td>
                                                                     </tr>
                                                                 </table>
