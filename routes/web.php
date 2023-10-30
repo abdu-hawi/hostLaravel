@@ -92,7 +92,7 @@ Route::get('qr_email', function () {
     Storage::disk('public')->put($output_file, $qr);
 
     // print_r($qr);
-    $qr = url("") . "/storage//" . $output_file;
+    $qr = url("") . "/storage" . $output_file;
 
     // print_r($qr);
     return $qr;
