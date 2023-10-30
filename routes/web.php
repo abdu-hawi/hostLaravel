@@ -89,10 +89,10 @@ Route::get('qr_email', function () {
         ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
 
     $output_file = Str::uuid() . time() . '.png';
-    Storage::disk('public')->put($output_file, $qr);
+    Storage::disk('public')->put("qr/" . $output_file, $qr);
 
     // print_r($qr);
-    $qr = url("") . "/storage" . $output_file;
+    $qr = url("") . "/storage/qr" . $output_file;
 
     // print_r($qr);
     return $qr;
