@@ -91,11 +91,8 @@ Route::get('qr_email', function () {
     $output_file = Str::uuid() . time() . '.png';
     Storage::disk('public')->put("qr/" . $output_file, $qr);
 
-    // print_r($qr);
     $qr = url("") . "/storage/qr/" . $output_file;
 
-    // print_r($qr);
-    return $qr;
     Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
         "name" => "Abdu Hawi",
         "qr" => $qr
