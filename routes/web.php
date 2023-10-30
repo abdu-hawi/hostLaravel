@@ -91,7 +91,7 @@ Route::get('qr_email', function () {
     // return gettype($qr);
     Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
         "name" => "Abdu Hawi",
-        "qr" => $qr
+        // "qr" => $qr
     ]));
     return "Abdu";
 });
