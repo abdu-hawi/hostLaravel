@@ -102,6 +102,12 @@ Route::get('qr_email', function () {
     return "Abdu";
 });
 
+Route::get('/link', function () {
+    $target = '/public_html/storage/app/public';
+    $shortcut = '/public_html/public/storage';
+    symlink($target, $shortcut);
+});
+
 Route::get('email', function () {
     $_data = Client::query()->where('is_sent_email', false)->get();
     foreach ($_data as $data) {
