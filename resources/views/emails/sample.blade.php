@@ -186,7 +186,7 @@
                             <tr style="padding: 0; text-align: left; vertical-align: top; min-height:30px">
                                 <!-- xs -->
                                 <th style="color:#f5f1e1;">
-                                    <table style="width: 100%">
+                                    <table style="width: 100% direction:ltr" dir="ltr">
                                         <tr>
                                             <th style="color:#f5f1e1;">Organised By</th>
                                         </tr>
