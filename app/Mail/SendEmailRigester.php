@@ -48,12 +48,12 @@ class SendEmailRigester extends Mailable
     //  *
     //  * @return array<int, \Illuminate\Mail\Mailables\Attachment>
     //  */
-    public function attachments(): array
-    {
-        return [
-            "qr.png" => QrCode::format('png')->size(100)->generate('QrCode as PNG image!')
-        ];
-    }
+    // public function attachments(): array
+    // {
+    //     return [
+    //         "qr.png" => QrCode::format('png')->size(100)->generate('QrCode as PNG image!')
+    //     ];
+    // }
 
     public function build()
     {

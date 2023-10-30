@@ -87,8 +87,16 @@ Route::get('qr_email', function () {
         ->backgroundColor(246, 248, 250)
         ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
 
+    $image = $qr;  // your base64 encoded
+    $image = str_replace('data:image/png;base64,', '', $image);
+    $image = str_replace(' ', '+', $image);
+    $imageName = Str::uuid() . '.png';
+
+
+    $url = Storage::disk('public')->put($imageName, base64_decode($image));
+
     // print_r($qr);
-    // return gettype($qr);
+    return $url;
     Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
         "name" => "Abdu Hawi",
         // "qr" => $qr
