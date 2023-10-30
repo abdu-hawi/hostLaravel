@@ -55,10 +55,10 @@
                                                                     </tr>
                                                                     </tbody>
                                                                 </table>
-                                                                <table style="width: 100%;">
+                                                                <table style="width: 100%; direction:ltr" dir="ltr">
                                                                     <tr>
 
-                                                                        <td style="direction: ltr;">
+                                                                        <td style=" direction:ltr" dir="ltr">
                                                                             <div style="direction: ltr;">
                                                                                 <p><b>Hello, {{ $data['name'] }}</b></p>
                                                                                 <p>
@@ -78,7 +78,7 @@
                                                                         <td>&nbsp;</td>
 
 
-                                                                        <td style="direction:rtl; text-align:right; ">
+                                                                        <td style="direction:rtl; text-align:right; direction:ltr" dir="ltr">
                                                                             <div style="direction:rtl; text-align:right; ">
                                                                                 <p>
                                                                                     <b>
@@ -114,7 +114,7 @@
                                             </tbody>
                                         </table>
                                         <!-- thank you table  -->
-                                        <table style="background-color: #fefefe !important; border-top: 1px solid #dbd9e5; border-collapse: collapse;border-radius: 0 0 6px 6px !important;border-spacing: 0;display: table;padding: 0;text-align: left;vertical-align: top;width: 100%;word-break: keep-all;">
+                                        <table style="background-color: #fefefe !important; border-top: 1px solid #dbd9e5; border-collapse: collapse;border-radius: 0 0 6px 6px !important;border-spacing: 0;display: table;padding: 0;text-align: left;vertical-align: top;width: 100%;word-break: keep-all; direction:ltr" dir="ltr">
                                             <tbody style="word-break: keep-all;">
                                             <tr style="padding: 0; text-align: left; vertical-align: top; word-break: keep-all;">
                                                 <th style="Margin: 0 auto; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0 auto; padding-top: 0px; padding-bottom: 0px; padding-left: 35px; padding-right: 35px; text-align: left; width: 545px; word-break: keep-all;">
