@@ -51,7 +51,7 @@ class SendEmailRigester extends Mailable
     public function attachments(): array
     {
         return [
-            "qr.png" => base64_encode(QrCode::format('png')->size(100)->generate('QrCode as PNG image!'))
+            "qr.png" => QrCode::format('png')->size(100)->generate('QrCode as PNG image!')
         ];
     }
 
