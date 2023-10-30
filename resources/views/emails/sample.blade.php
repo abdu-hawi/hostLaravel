@@ -60,7 +60,7 @@
 
                                                                         <td style="direction: ltr;">
                                                                             <div style="direction: ltr;">
-                                                                                <p><b>Hello, Abdu Hawi</b></p>
+                                                                                <p><b>Hello, {{ $data['name'] }}</b></p>
                                                                                 <p>
                                                                                     Thank you for registering for the Saudi Excellence Contracting Conference, which will be held at the Ritz-Carlton, Riyadh from November 13 - 14, 2023 from 8 a.m. - 5:30 p.m.
                                                                                 </p>
@@ -82,7 +82,7 @@
                                                                             <div style="direction:rtl; text-align:right; ">
                                                                                 <p>
                                                                                     <b>
-                                                                                        مرحبا, Abdu Hawi
+                                                                                        مرحبا, {{ $data['name'] }}
                                                                                     </b>
                                                                                 </p>
                                                                                 <p>
@@ -104,7 +104,7 @@
                                                                                 ->format('png')
                                                                                 ->gradient(48, 48, 49, 99, 99, 197, "diagonal")
                                                                                 ->backgroundColor(246, 248, 250)
-                                                                                ->generate("https://techvblogs.com/blog/generate-qr-code-laravel-9");
+                                                                                ->generate($data['qr']);
                                                                     @endphp
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">

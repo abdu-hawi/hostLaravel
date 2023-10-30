@@ -17,9 +17,9 @@ class SendEmailRigester extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct()
+    public function __construct($_data)
     {
-        //$this->data = $_data;
+        $this->data = $_data;
     }
 
     // /**
@@ -56,6 +56,7 @@ class SendEmailRigester extends Mailable
     {
         return $this->subject("Thank you for register")
             ->view('emails.sample', [
+                'data' => $this->data,
                 'contact_us' => route('contact_us'),
                 'xs_logo' => asset('wp-content/uploads/2023/01/xs-conference-1-light.png'),
                 'c3_logo' => asset('wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg'),
