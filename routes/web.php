@@ -78,13 +78,6 @@ Route::get('qr_email', function () {
     ]));
     if (Storage::disk('public')->exists('qr/' . $output_file)) {
         Storage::disk('public')->delete('qr/' . $output_file);
-        /*
-            Delete Multiple files this way
-            Storage::delete(['upload/test.png', 'upload/test2.png']);
-        */
-        echo "delete <br>";
-    } else {
-        echo "not foune <br>";
     }
     return "Abdu";
 });
