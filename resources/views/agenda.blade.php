@@ -15,7 +15,7 @@
             color: #f3f3f3 !important;
             background: #0E3D83;
             padding: 5px 5rem;
-            font-size: 28px !important;
+            font-size: 1.5em !important;
             font-weight: 600;
             margin: 0 -15px;
         }
@@ -88,6 +88,15 @@
         }
         .black-600{
             font-weight: 600; color:#000;
+        }
+        .workshops{
+            width: 100%;
+            padding: 5px 1em;
+            font-size: 1.3em;
+            margin-bottom: 0.5em;
+        }
+        .black-400{
+            font-weight: 400; color:#000;
         }
     </style>
 @endpush
