@@ -3,7 +3,10 @@
     data-id="fe51aff" data-element_type="section"
     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 
-    {{-- Registration & Networking --}}
+    <div class="agenda-session-header">
+        Session 2 - Shaping the Future of Saudi Arabia
+    </div>
+    {{-- 14:15 – 15:15 --}}
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
             data-id="f49d54d" data-element_type="column">
@@ -16,7 +19,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
                                     <span>
-                                        08:00 - 09:00
+                                        14:15 – 15:15
                                     </span>
                                 </div>
                             </div>
@@ -36,7 +39,39 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        Registration and Networking
+                                        <span class="blue-600">
+                                            Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA
+                                        </span><br>
+                                        <span class="blue-600">
+                                            Moderator: TBC
+                                        </span><br>
+                                        <span class="blue-600">
+                                            Speakers:
+                                        </span><br>
+                                        <span class="black-600">
+                                            Dr. Khaled Alskeet
+                                        </span><br>
+                                        <span>
+                                            President of the Real Estate Sciences Association
+                                        </span><br>
+                                        <span class="black-600">
+                                            Dr. Sami Brahmin
+                                        </span><br>
+                                        <span>
+                                            Advisor
+                                        </span><br>
+                                        <span class="black-600">
+                                            Eng. Mohammed Bahaidara
+                                        </span><br>
+                                        <span>
+                                            Urban Expert
+                                        </span><br>
+                                        <span class="black-600">
+                                            Eng. Maan Hashem Harir
+                                        </span><br>
+                                        <span>
+                                            Vice Chairman of the National Real Estate Committee
+                                        </span>
                                     </span>
                                 </div>
                             </div>
@@ -46,10 +81,89 @@
             </div>
         </div>
     </div>
-    {{-- End Registration & Networking --}}
+    {{-- End -- 14:15 – 15:15 --}}
 
 
-    {{-- The National Anthem and Verses from the Holy Quran --}}
+
+    {{-- 15:15– 16:15 --}}
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
+            data-id="f49d54d" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated agenda-time-element-populated first-agenda-item">
+                <div class="elementor-element elementor-element-1ec5c42 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                    data-id="1ec5c42" data-element_type="widget"
+                    data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-box-wrapper">
+                            <div class="elementor-icon-box-content">
+                                <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
+                                    <span>
+                                        15:15 – 16:15
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0ed5bdc"
+            data-id="0ed5bdc" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated agenda-element-populated first-agenda-item">
+                <div class="elementor-element elementor-element-4f875eb elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                    data-id="4f875eb" data-element_type="widget"
+                    data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-box-wrapper">
+                            <div class="elementor-icon-box-content">
+                                <div class="elementor-icon-box-title">
+                                    <span class="agenda-icon-box-title-span">
+                                        <span class="blue-600">
+                                            Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency
+                                        </span><br>
+                                        <span class="blue-600">
+                                            Moderator: TBC
+                                        </span><br>
+                                        <span class="blue-600">
+                                            Speakers:
+                                        </span><br>
+                                        <span class="black-600">
+                                            Engineer Ammar Yasser Habis
+                                        </span><br>
+                                        <span>
+                                            Royal Commission for Makkah City
+                                        </span><br>
+                                        <span class="black-600">
+                                            Engineer Yasser Abu Ateeq
+                                        </span><br>
+                                        <span>
+                                            Chief Executive Officer - Masar
+                                        </span><br>
+                                        <span class="black-600">
+                                            Ahmed Zahrani
+                                        </span><br>
+                                        <span>
+                                            Undersecretary of the Ministry of Energy
+                                        </span><br>
+                                        <span class="black-600">
+                                            Eng. Faisal Al Fadl
+                                        </span><br>
+                                        <span>
+                                            Secretary of the Saudi Green Building Forum
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- End -- 15:15 – 16:15 --}}
+
+
+    {{-- Networking Coffee Break--}}
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
             data-id="f49d54d" data-element_type="column">
@@ -62,7 +176,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
                                     <span>
-                                        09:00 - 09:05
+                                        16:15 – 16:30
                                     </span>
                                 </div>
                             </div>
@@ -82,7 +196,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        The National Anthem and Verses from the Holy Quran
+                                        <i>Networking Coffee Break</i>
                                     </span>
                                 </div>
                             </div>
@@ -92,10 +206,86 @@
             </div>
         </div>
     </div>
-    {{-- End The National Anthem and Verses from the Holy Quran --}}
+    {{-- End -- Networking Coffee Break --}}
 
 
-    {{-- Remarks by: Chairman of the Organizing Committee --}}
+    {{-- 16: 30 – 17:30 --}}
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
+            data-id="f49d54d" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated agenda-time-element-populated first-agenda-item">
+                <div class="elementor-element elementor-element-1ec5c42 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                    data-id="1ec5c42" data-element_type="widget"
+                    data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-box-wrapper">
+                            <div class="elementor-icon-box-content">
+                                <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
+                                    <span>
+                                        16: 30 – 17:30
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0ed5bdc"
+            data-id="0ed5bdc" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated agenda-element-populated first-agenda-item">
+                <div class="elementor-element elementor-element-4f875eb elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
+                    data-id="4f875eb" data-element_type="widget"
+                    data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-box-wrapper">
+                            <div class="elementor-icon-box-content">
+                                <div class="elementor-icon-box-title">
+                                    <span class="agenda-icon-box-title-span">
+                                        <span class="blue-600">
+                                            Expert Panel: Championing collaborative & people centric liveable cities of tomorrow
+                                        </span><br>
+                                        <span class="blue-600">
+                                            Speakers:
+                                        </span><br>
+                                        <span class="black-600">
+                                            Engineer Thamer Alzahran
+                                        </span><br>
+                                        <span>
+                                            Real Estate Expert - Community Management Traine
+                                        </span><br>
+                                        <span class="black-600">
+                                            Eng. Yahya Siraj
+                                        </span><br>
+                                        <span>
+                                            Head of Partnerships Sector
+                                        </span><br>
+                                        <span class="black-600">
+                                            Mr. Saud Al-Ajmi
+                                        </span><br>
+                                        <span>
+                                            National Housing Company
+                                        </span><br>
+                                        <span class="black-600">
+                                            Sultan Alharazi
+                                        </span><br>
+                                        <span>
+                                            General Manager of Project Management - Watana Housing
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{-- End -- 16: 30 – 17:30 --}}
+
+
+
+    {{-- Closing Remarks--}}
     <div class="elementor-container elementor-column-gap-default">
         <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
             data-id="f49d54d" data-element_type="column">
@@ -108,7 +298,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
                                     <span>
-                                        09:05 - 09:10
+                                        17:30 – 17:35
                                     </span>
                                 </div>
                             </div>
@@ -128,7 +318,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        Remarks by: Chairman of the Organizing Committee
+                                        <i>Closing Remarks</i>
                                     </span>
                                 </div>
                             </div>
@@ -138,147 +328,8 @@
             </div>
         </div>
     </div>
-    {{-- End -- Remarks by: Chairman of the Organizing Committee --}}
+    {{-- End -- Closing Remarks --}}
 
-    {{-- Remarks by: The Summit Main Sponsor --}}
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
-            data-id="f49d54d" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated agenda-time-element-populated">
-                <div class="elementor-element elementor-element-1ec5c42 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                    data-id="1ec5c42" data-element_type="widget"
-                    data-widget_type="icon-box.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-icon-box-wrapper">
-                            <div class="elementor-icon-box-content">
-                                <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
-                                        09:10 - 09:15
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0ed5bdc"
-            data-id="0ed5bdc" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated agenda-element-populated">
-                <div class="elementor-element elementor-element-4f875eb elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                    data-id="4f875eb" data-element_type="widget"
-                    data-widget_type="icon-box.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-icon-box-wrapper">
-                            <div class="elementor-icon-box-content">
-                                <div class="elementor-icon-box-title">
-                                    <span class="agenda-icon-box-title-span">
-                                        Remarks by: The Summit Main Sponsor
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- End -- Remarks by: The Summit Main Sponsor --}}
-
-
-    {{-- Summit Opening Session --}}
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
-            data-id="f49d54d" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated agenda-time-element-populated">
-                <div class="elementor-element elementor-element-1ec5c42 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                    data-id="1ec5c42" data-element_type="widget"
-                    data-widget_type="icon-box.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-icon-box-wrapper">
-                            <div class="elementor-icon-box-content">
-                                <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
-                                        09:15 - 09:25
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0ed5bdc"
-            data-id="0ed5bdc" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated agenda-element-populated">
-                <div class="elementor-element elementor-element-4f875eb elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                    data-id="4f875eb" data-element_type="widget"
-                    data-widget_type="icon-box.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-icon-box-wrapper">
-                            <div class="elementor-icon-box-content">
-                                <div class="elementor-icon-box-title">
-                                    <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">Summit Opening Session</span><br>
-                                        <span class="blue-600">MOMRAH Strategy: Taking a strategic approach towards construction sector development</span><br>
-                                        Remarks by: H.E. Minister of Municipal and Rural Affairs and Housing
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- End -- Summit Opening Session --}}
-
-
-
-    {{-- Honouring the sponsors --}}
-    <div class="elementor-container elementor-column-gap-default">
-        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-f49d54d"
-            data-id="f49d54d" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated agenda-time-element-populated">
-                <div class="elementor-element elementor-element-1ec5c42 elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                    data-id="1ec5c42" data-element_type="widget"
-                    data-widget_type="icon-box.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-icon-box-wrapper">
-                            <div class="elementor-icon-box-content">
-                                <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
-                                        09:30 - 09:45
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-0ed5bdc"
-            data-id="0ed5bdc" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated agenda-element-populated last-agenda-item">
-                <div class="elementor-element elementor-element-4f875eb elementor-view-default elementor-vertical-align-top elementor-widget elementor-widget-icon-box"
-                    data-id="4f875eb" data-element_type="widget"
-                    data-widget_type="icon-box.default">
-                    <div class="elementor-widget-container">
-                        <div class="elementor-icon-box-wrapper">
-                            <div class="elementor-icon-box-content">
-                                <div class="elementor-icon-box-title">
-                                    <span class="agenda-icon-box-title-span">
-                                        <i>Honouring the sponsors</i>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {{-- End -- Honouring the sponsors --}}
 
 
 

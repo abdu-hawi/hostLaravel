@@ -20,6 +20,8 @@
                 </div>
 
                 @include('agenda.session_zero')
+                @include('agenda.session_one')
+                @include('agenda.session_two')
 
                 <section
                     class="elementor-section elementor-inner-section elementor-element elementor-element-f8cf982 elementor-section-boxed elementor-section-height-default elementor-section-height-default"

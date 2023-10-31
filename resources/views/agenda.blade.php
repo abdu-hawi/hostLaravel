@@ -34,7 +34,6 @@
                 border-style: none !important;
             }
             .agenda-time-element-populated:not(.first-agenda-item){
-                align-content: flex-start !important;
                 padding-top: 0 !important;
             }
         }
@@ -51,6 +50,9 @@
         .agenda-element-populated:not(.first-agenda-item) {
                 border-style: none !important;
                 padding-top: 0 !important;
+        }
+        .agenda-time-element-populated{
+                align-content: flex-start !important;
         }
         @media (max-width: 1024px){
             .elementor-1309 .elementor-element.elementor-element-0ed5bdc {
@@ -71,6 +73,21 @@
         .agenda-icon-box-title-span i{
             color: #054bb5;
             font-weight: 400;
+        }
+        .agenda-session-header{
+            width: 100%;
+            background: #e1e1e1;
+            padding: 5px 1em;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #0E3D83;
+            margin-bottom: 0.5em;
+        }
+        .blue-600{
+            font-weight: 600; color:#0E3D83;
+        }
+        .black-600{
+            font-weight: 600; color:#000;
         }
     </style>
 @endpush
