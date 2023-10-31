@@ -16,7 +16,11 @@
             </li>
             <li class="blue-600">
                 Workshop 2: <span class="black-400">Transforming into the sites of the future – IoT in Construction</span>
+            </li>
+            <li class="blue-600">
                 Workshop 3: <span class="black-400">Enhancing digital experience & integrated labour delivery</span>
+            </li>
+            <li class="blue-600">
                 Workshop 4: <span class="black-400">Robotics & automated systems in construction – A Realistic Look</span>
             </li>
         </ul>
