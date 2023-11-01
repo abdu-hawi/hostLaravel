@@ -21,10 +21,7 @@
                 Workshop 3: <span class="black-400">Enhancing digital experience & integrated labour delivery</span>
             </li>
             <li class="blue-600">
-                Workshop 4: <span class="black-400">Achieving Construction Excellence Through the Materials Transition </span>
-                <span class="blue-600">
-                    Ahmed Al-Shammari
-                </span>
+                Workshop 4: <span class="black-400">Robotics & automated systems in construction – A Realistic Look</span>
             </li>
         </ul>
     </div>
