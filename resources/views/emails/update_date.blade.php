@@ -62,7 +62,10 @@
                                                                             <div style="direction: ltr;">
                                                                                 <p><b>Hello, {{ $data['name'] }}</b></p>
                                                                                 <p>
-                                                                                    We would like to thank you for your registration in the “Saudi Contracting Excellence Summit” at the Ritz Carlton, Riyadh from November 20 - 21, 2023 from 8 a.m. - 5:30 p.m.
+                                                                                    We would like to thank you for your registration in the “Saudi Contracting Excellence Summit” at the Ritz Carlton, Riyadh.
+                                                                                </p>
+                                                                                <p>
+                                                                                    <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
                                                                                 </p>
 
                                                                                 <p>
@@ -70,10 +73,11 @@
                                                                                 </p>
 
                                                                                 <p>
-                                                                                    <b>Please save this e -mail</b>, and display the barcode below for entering the conference and register your presence.
+                                                                                    We would like to inform you about the new date of the Summit which will be on November 20-21 2023.
                                                                                 </p>
+
                                                                                 <p>
-                                                                                    <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
+                                                                                    <b>Please save this e -mail</b>, and display the barcode below for entering the conference and register your presence.
                                                                                 </p>
 
                                                                                 <p>
@@ -94,11 +98,22 @@
                                                                                     </b>
                                                                                 </p>
                                                                                 <p>
-                                                                                    نشكرك على التسجيل في المؤتمر السعودي للمقاولات المتميزة، والذي سيقام في الريتز كارلتون، الرياض من تاريخ 20 – 21 نوفمبر 2023 من الساعة 8 ص- 5:30 م
+                                                                                    نشكرك على التسجيل في المؤتمر السعودي للمقاولات المتميزة، والذي سيقام في الريتز كارلتون، الرياض
                                                                                 </p>
+
                                                                                 <p>
                                                                                     تحت رعاية معالي وزير الشؤون البلدية والقروية والإسكان، الأستاذ ماجد بن عبدالله الحقيل
                                                                                 </p>
+
+                                                                                <p>
+                                                                                    نوعد إعلامكم بأنه تم تأجيل موعد القمة وسيكون في الفترة 20 - 21 نوفمبر 2023
+                                                                                </p>
+
+                                                                                <p>
+                                                                                    <b>نرجوا منكم الاحتفاظ بهذا الايميل</b>
+                                                                                    وعرض الباركود الموجود بالاسفل في بوابات الدخول للمؤتمر
+                                                                                </p>
+
                                                                                 <p>
                                                                                     <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">انقر هنا للوصول للموقع على الخريطة</a>
                                                                                 </p>
