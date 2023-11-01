@@ -299,12 +299,12 @@
                                                                                         placeholder="Phone number"
                                                                                         value="{{ old('mobile') ?? '' }}" type="text"
                                                                                         name="mobile" required
-                                                                                        @error('full_number') style="border-color: #e70c0c;" @enderror />
+                                                                                        @error('mobile') style="border-color: #e70c0c;" @enderror />
                                                                                     <input
                                                                                         type="hidden"
                                                                                         name="mobile-country-code"
                                                                                         class="wpcf7-phonetext-country-code" />
-                                                                                    @error('full_number')
+                                                                                    @error('mobile')
                                                                                         <p style="color: #e70c0c"><b>{{ $message }}</b></p>
                                                                                     @enderror
                                                                                 </span>
