@@ -179,7 +179,7 @@
                                             Eng. Mohammad Al Tayyar
                                         </span><br>
                                         <span>
-                                            "Exective Program Director (Oil Sustainability Program)"
+                                            Exective Program Director (Oil Sustainability Program)
                                         </span><br>
                                         <span class="black-600">
                                             Eng. Mohammed Saleh Al-But
