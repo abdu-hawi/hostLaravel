@@ -56,6 +56,7 @@ class ClientController extends Controller
             if (Mail::to($data['email'])->send(new SendEmailRigester([
                 'name' => $data['first_name'].' '.$data['last_name'],
                 'qr' => $qr,
+                'isEmail' => false
             ]))) {
                 $client->query()->update([
                     'is_sent_email' => true
