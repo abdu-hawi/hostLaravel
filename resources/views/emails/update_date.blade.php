@@ -64,9 +64,6 @@
                                                                                 <p>
                                                                                     We would like to thank you for your registration in the “Saudi Contracting Excellence Summit” at the Ritz Carlton, Riyadh.
                                                                                 </p>
-                                                                                <p>
-                                                                                    <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
-                                                                                </p>
 
                                                                                 <p>
                                                                                     This high level summit is hosted Under the Patronage of “H.E MR. MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL, Minister of Municipal and Rural Affairs and Housing, Saudi Arabia”
@@ -80,6 +77,9 @@
                                                                                     <b>Please save this e -mail</b>, and display the barcode below for entering the conference and register your presence.
                                                                                 </p>
 
+                                                                                <p>
+                                                                                    <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
+                                                                                </p>
                                                                                 <p>
                                                                                     If you have any suggestions or inquiries, please fill out the contact form at the following link
                                                                                     <a href="{{ $contact_us }}" target="_blank">Contact form</a>
