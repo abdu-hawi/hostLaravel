@@ -12,6 +12,13 @@
                 width: 100% !important;
                 max-width: 35rem !important;
             }
+            @media (max-width: 767px){
+                .elementor-536 .elementor-element.elementor-element-114c0367,
+                .elementor-536 .elementor-element.elementor-element-46ff26a3,
+                .elementor-536 .elementor-element.elementor-element-46ff26a3 {
+                    width: 100%;
+                }
+            }
 
         </style>
 @endpush
