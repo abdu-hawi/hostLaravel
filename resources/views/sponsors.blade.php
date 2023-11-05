@@ -15,7 +15,7 @@
             @media (max-width: 767px){
                 .elementor-536 .elementor-element.elementor-element-114c0367,
                 .elementor-536 .elementor-element.elementor-element-46ff26a3,
-                .elementor-536 .elementor-element.elementor-element-46ff26a3 {
+                .elementor-536 .elementor-element.elementor-element-233165c4 {
                     width: 100%;
                 }
             }
