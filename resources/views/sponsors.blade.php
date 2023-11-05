@@ -2,9 +2,21 @@
 @push('css')
     <link rel='stylesheet' id='elementor-post-536-css' href='wp-content/uploads/elementor/css/post-536.css@ver=1682340094.css'
         media='all' />
+        <style>
+            .sponsors .elementor-element-37d232d0{
+                max-width: unset !important;
+                width: unset !important;
+            }
+            .sponsors-img{
+                height: auto !important;
+                width: 100% !important;
+                max-width: 35rem !important;
+            }
+
+        </style>
 @endpush
 @section('content')
-    <main id="main" class="site-main clr" role="main">
+    <main id="main" class="site-main clr sponsors" role="main">
 
 
 
@@ -25,6 +37,7 @@
 
 
                             <div data-elementor-type="wp-page" data-elementor-id="536" class="elementor elementor-536">
+                                {{-- MAIN SPONSOR --}}
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-288f8e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="288f8e3" data-element_type="section"
@@ -39,16 +52,17 @@
                                                     data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
-                                                        <h1 class="elementor-heading-title elementor-size-default">Associate
-                                                            Sponsor</h1>
+                                                        <h2 class="elementor-heading-title elementor-size-default">
+                                                            Main Sponsor
+                                                        </h2>
                                                     </div>
                                                 </div>
                                                 <section
                                                     class="elementor-section elementor-inner-section elementor-element elementor-element-4eb82261 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
                                                     data-id="4eb82261" data-element_type="section"
                                                     data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
-                                                    <div class="elementor-container elementor-column-gap-default">
-                                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-37d232d0"
+                                                    <div class="elementor-container elementor-column-gap-default" style="justify-content: center;">
+                                                        <div class="elementor-column elementor-inner-column elementor-element elementor-element-37d232d0"
                                                             data-id="37d232d0" data-element_type="column"
                                                             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                                             <div class="elementor-widget-wrap elementor-element-populated">
@@ -56,14 +70,15 @@
                                                                     data-id="5fbec846" data-element_type="widget"
                                                                     data-widget_type="image.default">
                                                                     <div class="elementor-widget-container">
-                                                                        <img decoding="async" width="249" height="100"
-                                                                            src="wp-content/uploads/2023/04/media153-1.jpg"
-                                                                            class="attachment-medium size-medium wp-image-2018"
+                                                                        <img decoding="async"
+                                                                            src="logo\sponsors\shebh al-jazera.png"
+                                                                            class="attachment-medium size-medium wp-image-2018 sponsors-img"
                                                                             alt="" loading="lazy" />
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        {{--
                                                         <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-502d5d3"
                                                             data-id="502d5d3" data-element_type="column"
                                                             data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -82,12 +97,66 @@
                                                             <div class="elementor-widget-wrap elementor-element-populated">
                                                             </div>
                                                         </div>
+                                                        --}}
                                                     </div>
                                                 </section>
                                             </div>
                                         </div>
                                     </div>
                                 </section>
+                                {{-- END -- MAIN SPONSOR --}}
+
+
+                                {{-- Co-Sponsor --}}
+                                <section
+                                    class="elementor-section elementor-top-section elementor-element elementor-element-288f8e3 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                    data-id="288f8e3" data-element_type="section"
+                                    data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+                                    <div class="elementor-background-overlay"></div>
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2bfb9ebe"
+                                            data-id="2bfb9ebe" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-3246ade8 elementor-invisible elementor-widget elementor-widget-heading"
+                                                    data-id="3246ade8" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">
+                                                            Co-Sponsor
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <section
+                                                    class="elementor-section elementor-inner-section elementor-element elementor-element-4eb82261 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+                                                    data-id="4eb82261" data-element_type="section"
+                                                    data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+                                                    <div class="elementor-container elementor-column-gap-default" style="justify-content: center;">
+                                                        <div class="elementor-column elementor-inner-column elementor-element elementor-element-37d232d0"
+                                                            data-id="37d232d0" data-element_type="column"
+                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                                <div class="elementor-element elementor-element-5fbec846 elementor-widget elementor-widget-image"
+                                                                    data-id="5fbec846" data-element_type="widget"
+                                                                    data-widget_type="image.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <img decoding="async"
+                                                                            src="logo\sponsors\osp.png"
+                                                                            class="attachment-medium size-medium wp-image-2018 sponsors-img"
+                                                                            alt="" loading="lazy" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                {{-- END -- Co-Sponsor --}}
+
+                                {{--
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-53e731f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="53e731f" data-element_type="section"
@@ -381,7 +450,7 @@
                                         </div>
                                     </div>
                                 </section>
-
+                                --}}
 
                                 {{--
                                 <section
