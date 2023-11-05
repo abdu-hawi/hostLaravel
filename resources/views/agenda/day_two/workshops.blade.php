@@ -23,7 +23,7 @@
             <li class="blue-600">
                 Workshop 4: <span class="black-400">Robotics & automated systems in construction – A Realistic Look</span>
                 <br>
-                <b class="black-400">Speaker:</b><span class="black-600"> Mr. Ahmed Al-Shammari</span>
+                <b class="black-600">Speaker:</b><span class="black-400"> Mr. Ahmed Al-Shammari</span>
             </li>
         </ul>
     </div>
