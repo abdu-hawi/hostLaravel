@@ -109,6 +109,12 @@
         .black-400{
             font-weight: 400; color:#000;
         }
+        .agenda-icon-box-title-span span:not(.black-600), .agenda-icon-box-title-span span:not(.blue-600){
+            margin: 2rem;
+        }
+        .agenda-icon-box-title-span span:is(.black-600), .agenda-icon-box-title-span span:is(.blue-600){
+            margin: 0;
+        }
     </style>
 @endpush
 @section('content')
