@@ -46,7 +46,7 @@
                                             Speakers:
                                         </span><br>
                                         <span class="black-600">
-                                            Doctor Muhammad Hamza Alabbasi
+                                            Dr. Muhammad Hamza Alabbasi
                                         </span><br>
                                         <span>
                                             Custodian of the Two Holy Mosques Institute for Hajj Research

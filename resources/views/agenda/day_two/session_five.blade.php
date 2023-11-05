@@ -50,25 +50,25 @@
                                             Speakers:
                                         </span><br>
                                         <span class="black-600">
-                                            Engineer Muammar Al Atawi
+                                            Eng. Muammar Al Atawi
                                         </span><br>
                                         <span>
                                             Chairman of the Urban Development Council - Jeddah Chamber
                                         </span><br>
                                         <span class="black-600">
-                                            Mohammed Saleh bin Laden
+                                            Mr. Mohammed Saleh bin Laden
                                         </span><br>
                                         <span>
                                             Executive Boss MBL
                                         </span><br>
                                         <span class="black-600">
-                                            Khalid Bin Debis Alharthi
+                                            Mr. Khalid Bin Debis Alharthi
                                         </span><br>
                                         <span>
                                             Vice Chairman of the National Contractors Committee
                                         </span><br>
                                         <span class="black-600">
-                                            Dhari Al Otaishan
+                                            Eng. Dhari Al Otaishan
                                         </span><br>
                                         <span>
                                             Vice Chairman of the Contractors Committee - Asharqia Chamber
@@ -142,10 +142,10 @@
                                             Consultant
                                         </span><br>
                                         <span class="black-600">
-                                            Mabanee Joseph Daher
+                                            Mr. Joseph Daher
                                         </span><br>
                                         <span>
-                                            Chief Executive Officer
+                                            Chief Executive Officer- Mabanee
                                         </span>
                                     </span>
                                 </div>

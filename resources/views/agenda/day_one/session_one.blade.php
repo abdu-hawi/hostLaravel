@@ -55,7 +55,7 @@
                                             Vice Minister of Municipal and Rural Affairs and Housing
                                         </span><br>
                                         <span class="black-600">
-                                            Salih Ali Al-Turki
+                                            Mr. Salih Ali Al-Turki
                                         </span><br>
                                         <span>
                                             H.E. Mayor of Jeddah and Makkah Al Mukarrama

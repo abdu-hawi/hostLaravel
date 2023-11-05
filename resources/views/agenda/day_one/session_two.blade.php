@@ -128,19 +128,19 @@
                                             Speakers:
                                         </span><br>
                                         <span class="black-600">
-                                            Engineer Ammar Yasser Habis
+                                            Eng. Ammar Yasser Habis
                                         </span><br>
                                         <span>
                                             Royal Commission for Makkah City
                                         </span><br>
                                         <span class="black-600">
-                                            Engineer Yasser Abu Ateeq
+                                            Mr. Medy Navani
                                         </span><br>
                                         <span>
-                                            Chief Executive Officer - Masar
+                                            CEO- Design Haus Medy
                                         </span><br>
                                         <span class="black-600">
-                                            Ahmed Zahrani
+                                            Eng. Ahmed Zahrani
                                         </span><br>
                                         <span>
                                             Undersecretary of the Ministry of Energy
@@ -249,7 +249,7 @@
                                             Speakers:
                                         </span><br>
                                         <span class="black-600">
-                                            Engineer Thamer Alzahran
+                                            Eng. Thamer Alzahran
                                         </span><br>
                                         <span>
                                             Real Estate Expert - Community Management Traine
@@ -267,7 +267,7 @@
                                             National Housing Company
                                         </span><br>
                                         <span class="black-600">
-                                            Sultan Alharazi
+                                            Mr. Sultan Alharazi
                                         </span><br>
                                         <span>
                                             General Manager of Project Management - Watana Housing

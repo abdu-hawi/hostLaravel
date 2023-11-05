@@ -126,15 +126,14 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
 <div id="outer-wrap" class="site clr">
 
-    <a class="skip-link screen-reader-text" href="{{ route('index') }}#main">Skip to content</a>
+    <a class="skip-link screen-reader-text" href="{{ route('index') }}#main">{{ __('header.Skip to content') }}</a>
 
 
     <div id="wrap" class="clr">
 
         <header id="masthead" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
             <p class="main-title bhf-hidden" itemprop="headline"><a href="{{ route('index') }}"
-                    title="Saudi Construction Excellence Summit 2023" rel="home">Saudi Construction Excellence
-                    Summit 2023</a></p>
+                    title="Saudi Construction Excellence Summit 2023" rel="home">{{ __('header.Saudi Construction Excellence Summit 2023') }}</a></p>
             <div data-elementor-type="wp-post" data-elementor-id="10" class="elementor elementor-10">
                 {{--<section
                     class="elementor-section elementor-top-section elementor-element elementor-element-c38ed11 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
@@ -351,7 +350,8 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default">
-                                                            04 - 05 JUNE 2023</h2>
+                                                            {{ __('header.20 - 21 NOV 2023') }}
+                                                        </h2>
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-700b2e2 elementor-widget elementor-widget-heading"
@@ -359,7 +359,8 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h3 class="elementor-heading-title elementor-size-default">
-                                                            Ritz-Carlton, Riyadh</h3>
+                                                            {{ __('header.Ritz-Carlton, Riyadh') }}
+                                                        </h3>
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-0ae6dba elementor-widget elementor-widget-heading"
@@ -367,7 +368,8 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h3 class="elementor-heading-title elementor-size-default">
-                                                            Saudi Arabia</h3>
+                                                            {{ __('header.Saudi Arabia') }}
+                                                        </h3>
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-60f84e6 elementor-widget elementor-widget-heading"
@@ -405,7 +407,8 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h3 class="elementor-heading-title elementor-size-default">
-                                                            Under the Patronage of</h3>
+                                                            {{ __('header.Under the Patronage of') }}
+                                                        </h3>
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-74c89dc elementor-widget elementor-widget-heading"
@@ -413,7 +416,8 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default">
-                                                            H.E MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL</h2>
+                                                            {{ __('header.H.E MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL') }}
+                                                        </h2>
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-50f6b2b elementor-widget elementor-widget-heading"
@@ -421,7 +425,8 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h3 class="elementor-heading-title elementor-size-default">
-                                                            Minister of Municipal & Rural Affairs & Housing</h3>
+                                                            {{ __('header.Minister of Municipal & Rural Affairs & Housing') }}
+                                                        </h3>
                                                     </div>
                                                 </div>
                                             </div>
@@ -474,21 +479,25 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                 <div class="elementor-element elementor-element-229c1e5 elementor-widget elementor-widget-heading"
                                     data-id="229c1e5" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">20 - 21 NOV 2023
+                                        <h2 class="elementor-heading-title elementor-size-default">
+                                            {{ __('header.20 - 21 NOV 2023') }}
                                         </h2>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-3ebfb68 elementor-widget elementor-widget-heading"
                                     data-id="3ebfb68" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h3 class="elementor-heading-title elementor-size-default">Ritz-Carlton,
-                                            Riyadh</h3>
+                                        <h3 class="elementor-heading-title elementor-size-default">
+                                            {{ __('header.Ritz-Carlton, Riyadh') }}
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-72d4571 elementor-widget elementor-widget-heading"
                                     data-id="72d4571" data-element_type="widget" data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h3 class="elementor-heading-title elementor-size-default">Saudi Arabia</h3>
+                                        <h3 class="elementor-heading-title elementor-size-default">
+                                            {{ __('header.Saudi Arabia') }}
+                                        </h3>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-a4ea8df elementor-widget elementor-widget-heading"
@@ -521,7 +530,10 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                 <ul id="menu-1-26f745b" class="hfe-nav-menu">
                                                     <li id="menu-item-679"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-674 current_page_item parent hfe-creative-menu">
-                                                        <a href="{{ route('index') }}" class="hfe-menu-item {{ active_menu('index') }}">HOME</a></li>
+                                                        <a href="{{ route('index') }}" class="hfe-menu-item {{ active_menu('index') }}">
+                                                            {{ __('header.HOME') }}
+                                                        </a>
+                                                    </li>
                                                     <li id="menu-item-1074"
                                                         class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
                                                         <div class="hfe-has-submenu-container"><a
@@ -584,7 +596,10 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     <li id="menu-item-1316"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('agenda') }}"
-                                                            class="hfe-menu-item {{ active_menu('agenda') }}">AGENDA</a></li>
+                                                            class="hfe-menu-item {{ active_menu('agenda') }}">
+                                                            {{ __('header.AGENDA') }}
+                                                        </a>
+                                                    </li>
                                                     <li id="menu-item-1940"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('media_partners') }}"
@@ -613,6 +628,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                 </div>
                             </div>
                         </div>
+                        {{-- @include('layout.dropdown_lang') --}}
                     </div>
                 </section>
                 <section
@@ -626,7 +642,14 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                 <section
                                     class="elementor-section elementor-inner-section elementor-element elementor-element-732d7c4 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
                                     data-id="732d7c4" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-no">
+                                    <style>
+                                        .header-container{
+                                            display: flex;
+                                            justify-content: space-between;
+                                            align-items: center;
+                                        }
+                                    </style>
+                                    <div class="elementor-container elementor-column-gap-no header-container">
                                         <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-829eee0"
                                             data-id="829eee0" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
@@ -651,145 +674,153 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b04416c"
+                                        {{-- <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b04416c"
                                             data-id="b04416c" data-element_type="column">
                                             <div class="elementor-widget-wrap">
+
                                             </div>
-                                        </div>
-                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a69b6f7"
-                                            data-id="a69b6f7" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-0419fa7 hfe-menu-item-space-between hfe-submenu-icon-arrow hfe-link-redirect-child elementor-widget elementor-widget-navigation-menu"
-                                                    data-id="0419fa7" data-element_type="widget"
-                                                    data-settings="{&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:14,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;hamburger_align&quot;:&quot;center&quot;,&quot;hamburger_menu_align&quot;:&quot;space-between&quot;,&quot;width_flyout_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:300,&quot;sizes&quot;:[]},&quot;width_flyout_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_flyout_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_flyout_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;padding_flyout_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_flyout_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_top_space&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_top_space_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_top_space_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_flyout_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_flyout_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_flyout_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}"
-                                                    data-widget_type="navigation-menu.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="hfe-nav-menu__toggle elementor-clickable hfe-flyout-trigger"
-                                                            tabindex="0">
-                                                            <div class="hfe-nav-menu-icon">
-                                                                <i aria-hidden="true" tabindex="0"
-                                                                    class="icon icon-menu-6"></i>
+                                        </div> --}}
+                                        <div style="display: flex; margin: 0 2rem;">
+                                            {{-- @include('layout.dropdown_lang') --}}
+                                            <div class="elementor-column elementor-inner-column elementor-element elementor-element-a69b6f7"
+                                                data-id="a69b6f7" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-0419fa7 hfe-menu-item-space-between hfe-submenu-icon-arrow hfe-link-redirect-child elementor-widget elementor-widget-navigation-menu"
+                                                        data-id="0419fa7" data-element_type="widget"
+                                                        data-settings="{&quot;menu_space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:14,&quot;sizes&quot;:[]},&quot;toggle_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:18,&quot;sizes&quot;:[]},&quot;toggle_border_width_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;hamburger_align&quot;:&quot;center&quot;,&quot;hamburger_menu_align&quot;:&quot;space-between&quot;,&quot;width_flyout_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:300,&quot;sizes&quot;:[]},&quot;width_flyout_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;width_flyout_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_flyout_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;padding_flyout_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_flyout_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_menu_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_top_space&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_top_space_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;menu_top_space_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;dropdown_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;dropdown_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_horizontal_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_horizontal_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:15,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding_vertical_dropdown_item_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_width_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;toggle_border_radius_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_flyout_size&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_flyout_size_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;close_flyout_size_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;padding&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true},&quot;padding_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;top&quot;:&quot;&quot;,&quot;right&quot;:&quot;&quot;,&quot;bottom&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;isLinked&quot;:true}}"
+                                                        data-widget_type="navigation-menu.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="hfe-nav-menu__toggle elementor-clickable hfe-flyout-trigger"
+                                                                tabindex="0">
+                                                                <div class="hfe-nav-menu-icon">
+                                                                    <i aria-hidden="true" tabindex="0"
+                                                                        class="icon icon-menu-6"></i>
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="hfe-flyout-wrapper" data-last-item="cta">
-                                                            <div class="hfe-flyout-overlay elementor-clickable">
-                                                            </div>
-                                                            <div class="hfe-flyout-container">
-                                                                <div id="hfe-flyout-content-id-0419fa7"
-                                                                    class="hfe-side hfe-flyout-left hfe-flyout-open"
-                                                                    data-layout="left" data-flyout-type="normal">
-                                                                    <div class="hfe-flyout-content push">
-                                                                        <nav>
-                                                                            <ul id="menu-1-0419fa7"
-                                                                                class="hfe-nav-menu">
-                                                                                <li id="menu-item-679"
-                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-674 current_page_item parent hfe-creative-menu">
-                                                                                    <a href="{{ route('index') }}"
-                                                                                        class="hfe-menu-item {{ active_menu('index') }}">HOME</a>
-                                                                                </li>
-                                                                                <li id="menu-item-1074"
-                                                                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
-                                                                                    <div
-                                                                                        class="hfe-has-submenu-container">
-                                                                                        <a href="{{ route('index') }}#overview"
-                                                                                            class="hfe-menu-item">OVERVIEW<span
-                                                                                                class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
-                                                                                                    class='fa'></i></span></a>
-                                                                                    </div>
-                                                                                    <ul class="sub-menu">
-                                                                                        <li id="menu-item-1075"
-                                                                                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                                            <a href="{{ route('index') }}#whysaudi"
-                                                                                                class="hfe-sub-menu-item hfe-sub-menu-item-active">Why
-                                                                                                Saudi Arabia?</a>
-                                                                                        </li>
-                                                                                        <li id="menu-item-1076"
-                                                                                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                                            <a href="{{ route('index') }}#whoattend"
-                                                                                                class="hfe-sub-menu-item hfe-sub-menu-item-active">Who
-                                                                                                Will Attend?</a>
-                                                                                        </li>
-                                                                                        <li id="menu-item-1077"
-                                                                                            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
-                                                                                            <a href="{{ route('index') }}#venue"
-                                                                                                class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
-                                                                                        </li>
-                                                                                        {{-- <li id="menu-item-1400"
-                                                                                            class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                                            <a href="{{ route('index') }}#"
-                                                                                                class="hfe-sub-menu-item">Visa,
-                                                                                                Travel &#038;
-                                                                                                Hotel</a></li>
-                                                                                        <li id="menu-item-1401"
-                                                                                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children hfe-has-submenu hfe-creative-menu">
-                                                                                            <div
-                                                                                                class="hfe-has-submenu-container">
+                                                            <div class="hfe-flyout-wrapper" data-last-item="cta">
+                                                                <div class="hfe-flyout-overlay elementor-clickable">
+                                                                </div>
+                                                                <div class="hfe-flyout-container">
+                                                                    <div id="hfe-flyout-content-id-0419fa7"
+                                                                        class="hfe-side hfe-flyout-left hfe-flyout-open"
+                                                                        data-layout="left" data-flyout-type="normal">
+                                                                        <div class="hfe-flyout-content push">
+                                                                            <nav>
+                                                                                <ul id="menu-1-0419fa7"
+                                                                                    class="hfe-nav-menu">
+                                                                                    <li id="menu-item-679"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-674 current_page_item parent hfe-creative-menu">
+                                                                                        <a href="{{ route('index') }}"
+                                                                                            class="hfe-menu-item {{ active_menu('index') }}">
+                                                                                            {{ __('header.HOME') }}
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li id="menu-item-1074"
+                                                                                        class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
+                                                                                        <div
+                                                                                            class="hfe-has-submenu-container">
+                                                                                            <a href="{{ route('index') }}#overview"
+                                                                                                class="hfe-menu-item">OVERVIEW<span
+                                                                                                    class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
+                                                                                                        class='fa'></i></span></a>
+                                                                                        </div>
+                                                                                        <ul class="sub-menu">
+                                                                                            <li id="menu-item-1075"
+                                                                                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
+                                                                                                <a href="{{ route('index') }}#whysaudi"
+                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Why
+                                                                                                    Saudi Arabia?</a>
+                                                                                            </li>
+                                                                                            <li id="menu-item-1076"
+                                                                                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
+                                                                                                <a href="{{ route('index') }}#whoattend"
+                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Who
+                                                                                                    Will Attend?</a>
+                                                                                            </li>
+                                                                                            <li id="menu-item-1077"
+                                                                                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
+                                                                                                <a href="{{ route('index') }}#venue"
+                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
+                                                                                            </li>
+                                                                                            {{-- <li id="menu-item-1400"
+                                                                                                class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
                                                                                                 <a href="{{ route('index') }}#"
-                                                                                                    class="hfe-sub-menu-item">Media
-                                                                                                    Center<span
-                                                                                                        class='hfe-menu-toggle sub-arrow hfe-menu-child-1'><i
-                                                                                                            class='fa'></i></span></a>
-                                                                                            </div>
-                                                                                            <ul class="sub-menu">
-                                                                                                <li id="menu-item-1402"
-                                                                                                    class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
+                                                                                                    class="hfe-sub-menu-item">Visa,
+                                                                                                    Travel &#038;
+                                                                                                    Hotel</a></li>
+                                                                                            <li id="menu-item-1401"
+                                                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children hfe-has-submenu hfe-creative-menu">
+                                                                                                <div
+                                                                                                    class="hfe-has-submenu-container">
                                                                                                     <a href="{{ route('index') }}#"
-                                                                                                        class="hfe-sub-menu-item">Photo
-                                                                                                        Gallary</a>
-                                                                                                </li>
-                                                                                                <li id="menu-item-1403"
-                                                                                                    class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                                                    <a href="{{ route('index') }}#"
-                                                                                                        class="hfe-sub-menu-item">Video
-                                                                                                        Gallary</a>
-                                                                                                </li>
-                                                                                                <li id="menu-item-1404"
-                                                                                                    class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
-                                                                                                    <a href="{{ route('index') }}#"
-                                                                                                        class="hfe-sub-menu-item">Press
-                                                                                                        Release</a>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </li> --}}
-                                                                                    </ul>
-                                                                                </li>
-                                                                                {{-- <li id="menu-item-1334"
-                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="{{ route('speakers') }}"
-                                                                                        class="hfe-menu-item {{ active_menu('speakers') }}">SPEAKERS</a>
-                                                                                </li> --}}
-                                                                                <li id="menu-item-1316"
-                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="{{ route('agenda') }}"
-                                                                                        class="hfe-menu-item {{ active_menu('agenda') }}">AGENDA</a>
-                                                                                </li>
-                                                                                <li id="menu-item-1940"
-                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="{{ route('media_partners') }}"
-                                                                                        class="hfe-menu-item {{ active_menu('media_partners') }}">ASSOCIATION
-                                                                                        &#038; MEDIA PARTNERS</a>
-                                                                                </li>
-                                                                                <li id="menu-item-560"
-                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="{{ route('sponsors') }}"
-                                                                                        class="hfe-menu-item {{ active_menu('sponsors') }}">SPONSORS</a>
-                                                                                </li>
-                                                                                {{-- <li id="menu-item-672"
-                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="{{ route('news') }}"
-                                                                                        class="hfe-menu-item {{ active_menu('news') }}">NEWS</a>
-                                                                                </li> --}}
-                                                                                <li id="menu-item-754"
-                                                                                    class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                    <a href="{{ route('register') }}"
-                                                                                        class="hfe-menu-item">REGISTER
-                                                                                        NOW</a></li>
-                                                                            </ul>
-                                                                        </nav>
-                                                                        <div class="elementor-clickable hfe-flyout-close"
-                                                                            tabindex="0">
-                                                                            <i aria-hidden="true" tabindex="0"
-                                                                                class=" icon_close"></i>
+                                                                                                        class="hfe-sub-menu-item">Media
+                                                                                                        Center<span
+                                                                                                            class='hfe-menu-toggle sub-arrow hfe-menu-child-1'><i
+                                                                                                                class='fa'></i></span></a>
+                                                                                                </div>
+                                                                                                <ul class="sub-menu">
+                                                                                                    <li id="menu-item-1402"
+                                                                                                        class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
+                                                                                                        <a href="{{ route('index') }}#"
+                                                                                                            class="hfe-sub-menu-item">Photo
+                                                                                                            Gallary</a>
+                                                                                                    </li>
+                                                                                                    <li id="menu-item-1403"
+                                                                                                        class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
+                                                                                                        <a href="{{ route('index') }}#"
+                                                                                                            class="hfe-sub-menu-item">Video
+                                                                                                            Gallary</a>
+                                                                                                    </li>
+                                                                                                    <li id="menu-item-1404"
+                                                                                                        class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
+                                                                                                        <a href="{{ route('index') }}#"
+                                                                                                            class="hfe-sub-menu-item">Press
+                                                                                                            Release</a>
+                                                                                                    </li>
+                                                                                                </ul>
+                                                                                            </li> --}}
+                                                                                        </ul>
+                                                                                    </li>
+                                                                                    {{-- <li id="menu-item-1334"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                        <a href="{{ route('speakers') }}"
+                                                                                            class="hfe-menu-item {{ active_menu('speakers') }}">SPEAKERS</a>
+                                                                                    </li> --}}
+                                                                                    <li id="menu-item-1316"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                        <a href="{{ route('agenda') }}"
+                                                                                            class="hfe-menu-item {{ active_menu('agenda') }}">
+                                                                                            {{ __('header.AGENDA') }}
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li id="menu-item-1940"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                        <a href="{{ route('media_partners') }}"
+                                                                                            class="hfe-menu-item {{ active_menu('media_partners') }}">ASSOCIATION
+                                                                                            &#038; MEDIA PARTNERS</a>
+                                                                                    </li>
+                                                                                    <li id="menu-item-560"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                        <a href="{{ route('sponsors') }}"
+                                                                                            class="hfe-menu-item {{ active_menu('sponsors') }}">SPONSORS</a>
+                                                                                    </li>
+                                                                                    {{-- <li id="menu-item-672"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                        <a href="{{ route('news') }}"
+                                                                                            class="hfe-menu-item {{ active_menu('news') }}">NEWS</a>
+                                                                                    </li> --}}
+                                                                                    <li id="menu-item-754"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                        <a href="{{ route('register') }}"
+                                                                                            class="hfe-menu-item">REGISTER
+                                                                                            NOW</a></li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                            <div class="elementor-clickable hfe-flyout-close"
+                                                                                tabindex="0">
+                                                                                <i aria-hidden="true" tabindex="0"
+                                                                                    class=" icon_close"></i>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -799,6 +830,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                 </div>
                                             </div>
                                         </div>
+
                                     </div>
                                 </section>
                             </div>

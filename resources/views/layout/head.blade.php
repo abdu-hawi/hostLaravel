@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html" lang="en-US">
+<html class="html" lang="en-US" dir="ltr">
 
 <head>
 	<meta charset="UTF-8">
@@ -8,7 +8,7 @@
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- This site is optimized with the Yoast SEO Premium plugin v20.9 (Yoast SEO v20.9) - https://yoast.com/wordpress/plugins/seo/ -->
-	<title>Saudi Construction Excellence Summit - Saudi Construction Excellence Summit 2023</title>
+	<title>{{ __('header.Saudi Construction Excellence Summit 2023') }}</title>
 	<link rel="canonical" href="index.html" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />

@@ -67,7 +67,7 @@
                                             Saudi Society for Civil Engineering
                                         </span><br>
                                         <span class="black-600">
-                                            Mohab Mohammed Saleh Benten
+                                            Mr. Mohab Mohammed Saleh Benten
                                         </span><br>
                                         <span>
                                             Advisor to the Minister of Municipal and Rural Affairs and Housing
@@ -140,7 +140,7 @@
                                             Aseer Authority
                                         </span><br>
                                         <span class="black-600">
-                                            Doctor Muhammad Bakr Malibari
+                                            Dr. Muhammad Bakr Malibari
                                         </span><br>
                                         <span>
                                             adviser
