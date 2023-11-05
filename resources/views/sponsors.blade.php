@@ -156,6 +156,87 @@
                                 </section>
                                 {{-- END -- Co-Sponsor --}}
 
+
+                                <section
+                                    class="elementor-section elementor-top-section elementor-element elementor-element-53e731f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                    data-id="53e731f" data-element_type="section"
+                                    data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+                                    <div class="elementor-background-overlay"></div>
+                                    <div class="elementor-container elementor-column-gap-default">
+                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1e95d7f1"
+                                            data-id="1e95d7f1" data-element_type="column">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                <div class="elementor-element elementor-element-6c3835c7 elementor-invisible elementor-widget elementor-widget-heading"
+                                                    data-id="6c3835c7" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">
+                                                            Success partners
+                                                        </h2>
+                                                    </div>
+                                                </div>
+
+                                                <section
+                                                    class="elementor-section elementor-inner-section elementor-element elementor-element-3efaacdc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+                                                    data-id="3efaacdc" data-element_type="section"
+                                                    data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+                                                    <div class="elementor-container elementor-column-gap-default">
+                                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-233165c4"
+                                                            data-id="233165c4" data-element_type="column"
+                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                                <div class="elementor-element elementor-element-2df108d8 elementor-widget elementor-widget-image"
+                                                                    data-id="2df108d8" data-element_type="widget"
+                                                                    data-widget_type="image.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <img decoding="async"
+                                                                            src="logo\sponsors\ssmqog.png"
+                                                                            class="attachment-medium size-medium wp-image-2018 sponsors-img"
+                                                                            alt="" loading="lazy" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-46ff26a3"
+                                                            data-id="46ff26a3" data-element_type="column"
+                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                                <div class="elementor-element elementor-element-2df108d8 elementor-widget elementor-widget-image"
+                                                                    data-id="2df108d8" data-element_type="widget"
+                                                                    data-widget_type="image.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <img decoding="async"
+                                                                            src="logo\sponsors\sbcnc.png"
+                                                                            class="attachment-medium size-medium wp-image-2018 sponsors-img"
+                                                                            alt="" loading="lazy" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-114c0367"
+                                                            data-id="114c0367" data-element_type="column"
+                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                                <div class="elementor-element elementor-element-2df108d8 elementor-widget elementor-widget-image"
+                                                                    data-id="2df108d8" data-element_type="widget"
+                                                                    data-widget_type="image.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <img decoding="async"
+                                                                            src="logo\sponsors\sce.png"
+                                                                            class="attachment-medium size-medium wp-image-2018 sponsors-img"
+                                                                            alt="" loading="lazy" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
                                 {{--
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-53e731f elementor-section-boxed elementor-section-height-default elementor-section-height-default"
