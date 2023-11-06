@@ -19,10 +19,4 @@ return [
     'SPONSORS' => 'الرعاة',
     'CONTACT US' => 'اتصل بنا',
     'REGISTER NOW' => 'التسجيل',
-    'Venue' => 'Venue',
-    'Venue' => 'Venue',
-    'Venue' => 'Venue',
-    'Venue' => 'Venue',
-    'Venue' => 'Venue',
-    'Venue' => 'Venue',
 ];

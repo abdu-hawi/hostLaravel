@@ -56,7 +56,7 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default agenda-head-day">
-                            <span>Day Tow</span>
+                            <span>Day Two</span>
                             <span>21 NOV 2023</span>
                         </h2>
                     </div>

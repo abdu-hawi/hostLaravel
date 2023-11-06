@@ -63,9 +63,9 @@
                                                 <span
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
-                                            <div
-                                                class="elementor-counter-title">
-                                                Attendees</div>
+                                            <div class="elementor-counter-title">
+                                                {{ __('counter.Attendees') }}
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -93,9 +93,9 @@
                                                 <span
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
-                                            <div
-                                                class="elementor-counter-title">
-                                                Speakers</div>
+                                            <div class="elementor-counter-title">
+                                                Speakers
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -123,9 +123,9 @@
                                                 <span
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
-                                            <div
-                                                class="elementor-counter-title">
-                                                Panel Discussions</div>
+                                            <div class="elementor-counter-title">
+                                                Panel Discussions
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -153,9 +153,9 @@
                                                 <span
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
-                                            <div
-                                                class="elementor-counter-title">
-                                                Workshops</div>
+                                            <div class="elementor-counter-title">
+                                                Workshops
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -183,9 +183,9 @@
                                                 <span
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
-                                            <div
-                                                class="elementor-counter-title">
-                                                Associations</div>
+                                            <div class="elementor-counter-title">
+                                                Associations
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -213,9 +213,9 @@
                                                 <span
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
-                                            <div
-                                                class="elementor-counter-title">
-                                                Media Partners</div>
+                                            <div class="elementor-counter-title">
+                                                Media Partners
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

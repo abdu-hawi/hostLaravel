@@ -25,7 +25,7 @@
                                     <div class="elementor-widget-container">
                                         <h2
                                             class="elementor-heading-title elementor-size-default">
-                                            {{ __('welcome.SAUDI CONSTRUCTION EXCELLENCE SUMMIT') }}
+                                            {{ __('welcome.SAUDI CONSTRUCTING EXCELLENCE SUMMIT') }}
                                         </h2>
                                     </div>
                                 </div>
