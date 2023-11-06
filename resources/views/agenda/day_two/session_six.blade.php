@@ -18,9 +18,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         16:00 – 17:00
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -39,12 +39,12 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Dr. Muhammad Hamza Alabbasi
                                         </span><br>
@@ -75,9 +75,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         17:00 – 17:05
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>

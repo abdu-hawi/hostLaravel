@@ -18,9 +18,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         13:45 – 14:45
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -39,34 +39,34 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Workforce Challenges- Discussing challenges associated with skills,
                                             resource shortage, wages & benefits
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Moderator: TBC
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Muammar Al Atawi
                                         </span><br>
                                         <span>
                                             Chairman of the Urban Development Council - Jeddah Chamber
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Mohammed Saleh bin Laden
                                         </span><br>
                                         <span>
                                             Executive Boss MBL
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Khalid Bin Debis Alharthi
                                         </span><br>
                                         <span>
                                             Vice Chairman of the National Contractors Committee
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Dhari Al Otaishan
                                         </span><br>
@@ -98,9 +98,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         14:45 – 15:45
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -119,28 +119,28 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating
                                             within the sector
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Moderator: TBC
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Ahmed Al-Saleem
                                         </span><br>
                                         <span>
                                             Chief Executive Officer - Central Jeddah Company
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Ibrahim Kutbkhana
                                         </span><br>
                                         <span>
                                             Consultant
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Joseph Daher
                                         </span><br>
@@ -172,9 +172,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         15:45 – 16:00
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>

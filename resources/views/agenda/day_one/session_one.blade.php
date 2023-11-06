@@ -18,9 +18,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         09:45 - 10:45
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -39,27 +39,29 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Opening Panel: Construction in Saudi Arabia – Key trends & opportunities beyond 2025
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Moderator: Mr. Talat Hafiz
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Abdullah Mohammed Al-Budair
                                         </span><br>
                                         <span>
                                             Vice Minister of Municipal and Rural Affairs and Housing
-                                        </span><br>
+                                        </span>
+                                        <hr>
                                         <span class="black-600">
                                             Mr. Salih Ali Al-Turki
                                         </span><br>
                                         <span>
                                             H.E. Mayor of Jeddah and Makkah Al Mukarrama
-                                        </span><br>
+                                        </span>
+                                        <hr>
                                         <span class="black-600">
                                             Eng. Fahad Mohammed Alkhabeer
                                         </span><br>
@@ -90,9 +92,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         10:45 - 11:00
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -136,9 +138,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         11:00 – 12:15
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -157,30 +159,33 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Ahmed Al-Sheikh
                                         </span><br>
                                         <span>
                                             Saudi Council of Engineers
-                                        </span><br>
+                                        </span>
+                                        <hr>
                                         <span class="black-600">
                                             Eng. Zakaria Al-Abdulqader
                                         </span><br>
                                         <span>
                                             Saudi Contractors Authority
-                                        </span><br>
+                                        </span>
+                                        <hr>
                                         <span class="black-600">
                                             Eng. Mohammad Al Tayyar
                                         </span><br>
                                         <span>
                                             Exective Program Director (Oil Sustainability Program)
-                                        </span><br>
+                                        </span>
+                                        <hr>
                                         <span class="black-600">
                                             Eng. Mohammed Saleh Al-But
                                         </span><br>
@@ -212,9 +217,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         12:15 – 13:30
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -233,31 +238,31 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Implementing new operating standards and regulations to
                                             drive sustainable development goals
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Mohammed Al Mana
                                         </span><br>
                                         <span>
                                             Chief Executive Officer - Jasara
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Sumaya Suleiman Alsulaiman
                                         </span><br>
                                         <span>
                                             Architecture Authority - Ministry of Culture
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Adel Ezzat
                                         </span><br>
                                         <span>
                                             Chief Executive Officer - Elaf
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Hamad Hamoud Al-Hammad
                                         </span><br>
@@ -288,9 +293,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         13:30 – 14:15
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>

@@ -18,9 +18,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         09:45 – 11:00
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -39,30 +39,30 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Future of construction sector in Saudi Arabia – Upcoming Projects
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Saad Bin Saleh AlShuail
                                         </span><br>
                                         <span>
                                             Secretary-General of the Saudi Building Code National Committee
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Khaled Madkhali
                                         </span><br>
                                         <span>
                                             Royal Commission in Riyadh
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Bassam Ghulman
                                         </span><br>
                                         <span>
                                             Advisor
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Magdy Hariri
                                         </span><br>
@@ -93,9 +93,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         11:00 – 11:30
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>

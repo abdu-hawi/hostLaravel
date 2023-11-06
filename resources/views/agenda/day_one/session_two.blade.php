@@ -18,9 +18,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         14:15 – 15:15
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -39,33 +39,33 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Moderator: TBC
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Dr. Khaled Alskeet
                                         </span><br>
                                         <span>
                                             President of the Real Estate Sciences Association
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Sami Brahmin
                                         </span><br>
                                         <span>
                                             Advisor
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Mohammed Bahaidara
                                         </span><br>
                                         <span>
                                             Urban Expert
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Maan Hashem Harir
                                         </span><br>
@@ -97,9 +97,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         15:15 – 16:15
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -118,33 +118,33 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Moderator: TBC
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Ammar Yasser Habis
                                         </span><br>
                                         <span>
                                             Royal Commission for Makkah City
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Medy Navani
                                         </span><br>
                                         <span>
                                             CEO- Design Haus Medy
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Ahmed Zahrani
                                         </span><br>
                                         <span>
                                             Undersecretary of the Ministry of Energy
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Faisal Al Fadl
                                         </span><br>
@@ -175,9 +175,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         16:15 – 16:30
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -221,9 +221,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         16: 30 – 17:30
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -242,30 +242,30 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Expert Panel: Championing collaborative & people centric liveable cities of tomorrow
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Thamer Alzahran
                                         </span><br>
                                         <span>
                                             Real Estate Expert - Community Management Traine
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Yahya Siraj
                                         </span><br>
                                         <span>
                                             Head of Partnerships Sector
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Saud Al-Ajmi
                                         </span><br>
                                         <span>
                                             National Housing Company
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Sultan Alharazi
                                         </span><br>
@@ -297,9 +297,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         17:30 – 17:35
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>

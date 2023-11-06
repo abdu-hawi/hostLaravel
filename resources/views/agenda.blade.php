@@ -115,6 +115,19 @@
         .agenda-icon-box-title-span span:is(.black-600), .agenda-icon-box-title-span span:is(.blue-600){
             margin: 0;
         }
+        .agenda-section hr{
+            margin: 1rem 0;
+            border-style: dashed;
+            border-color: #00000075;
+        }
+        @media (max-width: 1024px){
+            .agenda-elementor-icon-box-title p{
+                margin: 1rem 0;
+            }
+        }
+        .agenda-section p {
+            margin: 0 0 1rem;
+        }
     </style>
 @endpush
 @section('content')

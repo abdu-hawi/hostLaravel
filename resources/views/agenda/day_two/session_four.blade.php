@@ -18,9 +18,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         11:30 – 12:15
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -39,33 +39,33 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Construction technology trends on the horizon for 2023 and beyond
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Moderator: TBC
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Essam Bin Ahmed Kalthoum
                                         </span><br>
                                         <span>
                                             Chief Executive Officer - ASMO Company
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Hashim Alhamyani
                                         </span><br>
                                         <span>
                                             Taif University
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Ali Malibari
                                         </span><br>
                                         <span>
                                             Saudi Society for Civil Engineering
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Mr. Mohab Mohammed Saleh Benten
                                         </span><br>
@@ -97,9 +97,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         12:15 – 13:00
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -118,27 +118,27 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">
+                                        <p class="blue-600">
                                             Panel Discussion: Transformative innovation- Redefining the construction industry
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Moderator: TBC
-                                        </span><br>
-                                        <span class="blue-600">
+                                        </p>
+                                        <p class="blue-600">
                                             Speakers:
-                                        </span><br>
+                                        </p>
                                         <span class="black-600">
                                             Eng. Saleh Al-Rasheed
                                         </span><br>
                                         <span>
                                             Royal Commission Makkah
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Abdulqader Amir
                                         </span><br>
                                         <span>
                                             Aseer Authority
-                                        </span><br>
+                                        </span><hr>
                                         <span class="black-600">
                                             Dr. Muhammad Bakr Malibari
                                         </span><br>
@@ -170,9 +170,9 @@
                         <div class="elementor-icon-box-wrapper">
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title agenda-elementor-icon-box-title">
-                                    <span>
+                                    <p>
                                         13:00 – 13:45
-                                    </span>
+                                    </p>
                                 </div>
                             </div>
                         </div>
