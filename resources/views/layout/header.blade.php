@@ -538,24 +538,32 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                         class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home current-menu-ancestor current-menu-parent menu-item-has-children parent hfe-has-submenu hfe-creative-menu">
                                                         <div class="hfe-has-submenu-container"><a
                                                                 href="{{ route('index') }}#overview"
-                                                                class="hfe-menu-item">OVERVIEW<span
+                                                                class="hfe-menu-item">
+                                                                {{ __('header.OVERVIEW') }}
+                                                                <span
                                                                     class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
                                                                         class='fa'></i></span></a></div>
                                                         <ul class="sub-menu">
                                                             <li id="menu-item-1075"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                 <a href="{{ route('index') }}#whysaudi"
-                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Why
-                                                                    Saudi Arabia?</a></li>
+                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">
+                                                                    {{ __('header.Why Saudi Arabia?') }}
+                                                                </a>
+                                                            </li>
                                                             <li id="menu-item-1076"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                 <a href="{{ route('index') }}#whoattend"
-                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Who
-                                                                    Will Attend?</a></li>
+                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">
+                                                                    {{ __('header.Who Will Attend?') }}
+                                                                </a>
+                                                            </li>
                                                             <li id="menu-item-1077"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                 <a href="{{ route('index') }}#venue"
-                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
+                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">
+                                                                    {{ __('header.Venue') }}
+                                                                </a>
                                                             </li>
                                                             {{-- <li id="menu-item-1400"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
@@ -603,16 +611,24 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     <li id="menu-item-1940"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('media_partners') }}"
-                                                            class="hfe-menu-item {{ active_menu('media_partners') }}">{{-- ASSOCIATION &#038;  --}}MEDIA
-                                                            PARTNERS</a></li>
+                                                            class="hfe-menu-item {{ active_menu('media_partners') }}">{{-- ASSOCIATION &#038;  --}}
+                                                            {{ __('header.MEDIA PARTNERS') }}
+                                                        </a>
+                                                    </li>
                                                     <li id="menu-item-560"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('sponsors') }}"
-                                                            class="hfe-menu-item {{ active_menu('sponsors') }}">SPONSORS</a></li>
+                                                            class="hfe-menu-item {{ active_menu('sponsors') }}">
+                                                            {{ __('header.SPONSORS') }}
+                                                        </a>
+                                                    </li>
                                                     <li id="menu-item-560"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('contact_us') }}"
-                                                            class="hfe-menu-item {{ active_menu('contact_us') }}">CONTACT US</a></li>
+                                                            class="hfe-menu-item {{ active_menu('contact_us') }}">
+                                                            {{ __('header.CONTACT US') }}
+                                                        </a>
+                                                    </li>
                                                     {{-- <li id="menu-item-672"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('news') }}"
@@ -620,7 +636,10 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     <li id="menu-item-754"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('register') }}"
-                                                            class="hfe-menu-item">REGISTER NOW</a></li>
+                                                            class="hfe-menu-item">
+                                                            {{ __('header.REGISTER NOW') }}
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                             </nav>
                                         </div>
@@ -720,7 +739,9 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                         <div
                                                                                             class="hfe-has-submenu-container">
                                                                                             <a href="{{ route('index') }}#overview"
-                                                                                                class="hfe-menu-item">OVERVIEW<span
+                                                                                                class="hfe-menu-item">
+                                                                                                {{ __('header.OVERVIEW') }}
+                                                                                                <span
                                                                                                     class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
                                                                                                         class='fa'></i></span></a>
                                                                                         </div>
@@ -728,19 +749,23 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                             <li id="menu-item-1075"
                                                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                                                 <a href="{{ route('index') }}#whysaudi"
-                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Why
-                                                                                                    Saudi Arabia?</a>
+                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">
+                                                                                                    {{ __('header.Why Saudi Arabia?') }}
+                                                                                                </a>
                                                                                             </li>
                                                                                             <li id="menu-item-1076"
                                                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                                                 <a href="{{ route('index') }}#whoattend"
-                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Who
-                                                                                                    Will Attend?</a>
+                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">
+                                                                                                    {{ __('header.Who Will Attend?') }}
+                                                                                                </a>
                                                                                             </li>
                                                                                             <li id="menu-item-1077"
                                                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                                                 <a href="{{ route('index') }}#venue"
-                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">Venue</a>
+                                                                                                    class="hfe-sub-menu-item hfe-sub-menu-item-active">
+                                                                                                    {{ __('header.Venue') }}
+                                                                                                </a>
                                                                                             </li>
                                                                                             {{-- <li id="menu-item-1400"
                                                                                                 class="menu-item menu-item-type-custom menu-item-object-custom hfe-creative-menu">
@@ -796,24 +821,31 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                     <li id="menu-item-1940"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('media_partners') }}"
-                                                                                            class="hfe-menu-item {{ active_menu('media_partners') }}">ASSOCIATION
-                                                                                            &#038; MEDIA PARTNERS</a>
+                                                                                            class="hfe-menu-item {{ active_menu('media_partners') }}">
+                                                                                            {{ __('header.MEDIA PARTNERS') }}
+                                                                                        </a>
                                                                                     </li>
                                                                                     <li id="menu-item-560"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('sponsors') }}"
-                                                                                            class="hfe-menu-item {{ active_menu('sponsors') }}">SPONSORS</a>
+                                                                                            class="hfe-menu-item {{ active_menu('sponsors') }}">
+                                                                                            {{ __('header.SPONSORS') }}
+                                                                                        </a>
                                                                                     </li>
-                                                                                    {{-- <li id="menu-item-672"
+                                                                                    <li id="menu-item-672"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                        <a href="{{ route('news') }}"
-                                                                                            class="hfe-menu-item {{ active_menu('news') }}">NEWS</a>
-                                                                                    </li> --}}
+                                                                                        <a href="{{ route('contact_us') }}"
+                                                                                            class="hfe-menu-item {{ active_menu('contact_us') }}">
+                                                                                            {{ __('header.CONTACT US') }}
+                                                                                        </a>
+                                                                                    </li>
                                                                                     <li id="menu-item-754"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('register') }}"
-                                                                                            class="hfe-menu-item">REGISTER
-                                                                                            NOW</a></li>
+                                                                                            class="hfe-menu-item">
+                                                                                            {{ __('header.REGISTER NOW') }}
+                                                                                        </a>
+                                                                                    </li>
                                                                                 </ul>
                                                                             </nav>
                                                                             <div class="elementor-clickable hfe-flyout-close"
