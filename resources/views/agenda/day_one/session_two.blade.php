@@ -128,6 +128,12 @@
                                             Speakers:
                                         </p>
                                         <span class="black-600">
+                                            Mr. John Seed
+                                        </span><br>
+                                        <span>
+                                            Group Director, Strategy & Development - Dar Al Riyadh
+                                        </span><hr>
+                                        <span class="black-600">
                                             Eng. Ammar Yasser Habis
                                         </span><br>
                                         <span>
