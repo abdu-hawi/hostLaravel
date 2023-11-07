@@ -43,10 +43,10 @@
                     <div class="elementor-widget-container">
                         <a href="https://momrah.gov.sa/en" target="_blank">
                             <img decoding="async"
-                                src="wp-content/uploads/elementor/thumbs/minister-logo-q3w2o9o2c9zadg451vqsxl2uau2y4cgizezhvzjywe.jpg"
+                                src="logo/mmrah.png"
                                 title="minister-logo" alt="minister-logo"
                                 class="elementor-animation-grow"
-                                loading="lazy" /> </a>
+                                loading="lazy" width="200" /> </a>
                     </div>
                 </div>
             </div>
