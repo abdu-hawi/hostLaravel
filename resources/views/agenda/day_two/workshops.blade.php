@@ -11,17 +11,10 @@
                 Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs
             </li>
             <li class="blue-600">
-                Workshop 1: <span class="black-400">Role of Construction in Achieving the SDGs: Implementing the sustainable development goals in the
-                    construction industry</span>
+                Workshop 3: <span class="black-400">Transforming into the sites of the future – IoT in Construction</span>
             </li>
             <li class="blue-600">
-                Workshop 2: <span class="black-400">Transforming into the sites of the future – IoT in Construction</span>
-            </li>
-            <li class="blue-600">
-                Workshop 3: <span class="black-400">Enhancing digital experience & integrated labour delivery</span>
-            </li>
-            <li class="blue-600">
-                Workshop 4: <span class="black-400">Robotics & automated systems in construction – A Realistic Look</span>
+                Workshop 4: <span class="black-400">Achieving Construction Excellence Through the Materials Transition</span>
                 <br>
                 <b class="black-600">Speaker:</b><span class="black-400"> Mr. Ahmed Al-Shammari</span>
             </li>
