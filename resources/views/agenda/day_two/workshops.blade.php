@@ -11,7 +11,9 @@
                 Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs
             </li>
             <li class="blue-600">
-                Workshop 3: <span class="black-400">Transforming into the sites of the future – IoT in Construction</span>
+                Workshop 3: <span class="black-400">Saudi Construction Code for Safety and Buildings </span>
+                <br>
+                <b class="black-600">Speaker:</b><span class="black-400"> Eng. Saad Bin Saleh AlShuail</span>
             </li>
             <li class="blue-600">
                 Workshop 4: <span class="black-400">Achieving Construction Excellence Through the Materials Transition</span>

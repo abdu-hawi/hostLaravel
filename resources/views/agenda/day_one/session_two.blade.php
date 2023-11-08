@@ -134,6 +134,12 @@
                                             Group Director, Strategy & Development - Dar Al Riyadh
                                         </span><hr>
                                         <span class="black-600">
+                                            Ms. Jena Ladhani
+                                        </span><br>
+                                        <span>
+                                            CBRE Country Managing Director in KSA
+                                        </span><hr>
+                                        <span class="black-600">
                                             Eng. Ammar Yasser Habis
                                         </span><br>
                                         <span>
