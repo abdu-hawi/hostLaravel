@@ -113,7 +113,7 @@ id='elementor-frontend-modules-js'></script> --}}
                                     @include('welcome.overview')
                                     @include('welcome.why_saudi_arabia')
                                     @include('welcome.ongoing_upcoming')
-                                    @include('welcome.who_will_attend')
+                                    {{-- @include('welcome.who_will_attend') --}}
 
 
 
