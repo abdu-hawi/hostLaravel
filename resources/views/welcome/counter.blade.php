@@ -64,7 +64,7 @@
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
                                             <div class="elementor-counter-title">
-                                                {{ __('counter.Attendees') }}
+                                                {{ __('welcome.Attendees') }}
                                             </div>
                                         </div>
                                     </div>
@@ -94,7 +94,7 @@
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
                                             <div class="elementor-counter-title">
-                                                Speakers
+                                                {{ __('welcome.Speakers') }}
                                             </div>
                                         </div>
                                     </div>
@@ -124,7 +124,7 @@
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
                                             <div class="elementor-counter-title">
-                                                Panel Discussions
+                                                {{ __('welcome.Panel Discussions') }}
                                             </div>
                                         </div>
                                     </div>
@@ -154,7 +154,7 @@
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
                                             <div class="elementor-counter-title">
-                                                Workshops
+                                                {{ __('welcome.Workshops') }}
                                             </div>
                                         </div>
                                     </div>
@@ -184,7 +184,7 @@
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
                                             <div class="elementor-counter-title">
-                                                Associations
+                                                {{ __('welcome.Associations') }}
                                             </div>
                                         </div>
                                     </div>
@@ -214,7 +214,7 @@
                                                     class="elementor-counter-number-suffix">+</span>
                                             </div>
                                             <div class="elementor-counter-title">
-                                                Media Partners
+                                                {{ __('welcome.Media Partners') }}
                                             </div>
                                         </div>
                                     </div>

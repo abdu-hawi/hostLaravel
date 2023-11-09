@@ -46,6 +46,9 @@ Route::get('register', function () {
 Route::get('contact_us', function () {
     return view('contact_us');
 })->name('contact_us');
+Route::get('pdf', function () {
+    return view('pdf');
+})->name('pdf');
 // read QR Code
 Route::get('presence/{uuid}/{id}', function () {
     return view('welcome');
