@@ -156,10 +156,15 @@ return [
     'Sign business deals and procure latest technology and solutions for your ongoing and upcoming projects' => 'Sign business deals and procure latest technology and solutions for your ongoing and upcoming projects',
     'Secure investments for your ongoing and upcoming projects' => 'Secure investments for your ongoing and upcoming projects',
     'Explore new and exciting business opportunities across the construction sector' => 'Explore new and exciting business opportunities across the construction sector',
-    'AGENDA' => 'AGENDA',
-    'AGENDA' => 'AGENDA',
-    'AGENDA' => 'AGENDA',
-    'AGENDA' => 'AGENDA',
-    'AGENDA' => 'AGENDA',
+    // Event Venue
+    'Event Venue' => 'Event Venue',
+    'Ritz Carlton, Riyadh, Saudi Arabia' => 'Ritz Carlton, Riyadh, Saudi Arabia',
+    'Nov 20 - 21, 2023' => 'Nov 20 - 21, 2023',
+    '08:00 A.M - 05:30 P.M' => '08:00 A.M - 05:30 P.M',
+    // Organised By
+    'Organised By' => 'Organised By',
+    'Riyadh, KSA' => 'Riyadh, KSA',
+    'International Offices' => 'International Offices',
+    'New York, USA' => 'New York, USA',
     'AGENDA' => 'AGENDA',
 ];

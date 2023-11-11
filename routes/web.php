@@ -22,30 +22,43 @@ use Illuminate\Support\Facades\Storage;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
-Route::get('speakers', function () {
-    return view('speakers');
-})->name('speakers');
-Route::get('agenda', function () {
-    return view('agenda');
-})->name('agenda');
-Route::get('media_partners', function () {
-    return view('media_partners');
-})->name('media_partners');
-Route::get('sponsors', function () {
-    return view('sponsors');
-})->name('sponsors');
-Route::get('news', function () {
-    return view('news');
-})->name('news');
-Route::get('register', function () {
-    return view('register');
-})->name('register');
-Route::get('contact_us', function () {
-    return view('contact_us');
-})->name('contact_us');
+Route::group(['middleware'=>'Lang'],function (){
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('index');
+    Route::get('speakers', function () {
+        return view('speakers');
+    })->name('speakers');
+    Route::get('agenda', function () {
+        return view('agenda');
+    })->name('agenda');
+    Route::get('media_partners', function () {
+        return view('media_partners');
+    })->name('media_partners');
+    Route::get('sponsors', function () {
+        return view('sponsors');
+    })->name('sponsors');
+    Route::get('news', function () {
+        return view('news');
+    })->name('news');
+    Route::get('register', function () {
+        return view('register');
+    })->name('register');
+    Route::get('contact_us', function () {
+        return view('contact_us');
+    })->name('contact_us');
+});
+
+Route::get('/lang/{lang}',function ($lang){
+    if (session()->has('lang')){
+        session()->forget('lang');
+    }
+    session()->put('lang',$lang);
+    return back();
+})->name('lang');
+
+
+
 Route::get('pdf', function () {
     return view('pdf');
 })->name('pdf');

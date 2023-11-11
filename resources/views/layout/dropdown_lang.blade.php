@@ -48,8 +48,8 @@
         <i class="fa fa-angle-down" style="margin: 0 0.5rem;"></i>
       </span>
       <div class="dropdown-content">
-        <a href="">English</a>
-        <a href="">عربي</a>
+        <a href="{{ route('lang','en') }}">English</a>
+        <a href="{{ route('lang','ar') }}">عربي</a>
       </div>
     </div>
 

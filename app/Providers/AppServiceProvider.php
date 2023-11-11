@@ -22,5 +22,12 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         Paginator::useBootstrapFive();
+        app()->singleton('lang', function (){
+            if (session()->has('lang')){
+                return session("lang");
+            }else{
+                return "en";
+            }
+        });
     }
 }

@@ -543,7 +543,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                 <span
                                                                     class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
                                                                         class='fa'></i></span></a></div>
-                                                        <ul class="sub-menu">
+                                                        <ul class="sub-menu"  style="text-align: start;">
                                                             <li id="menu-item-1075"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                 <a href="{{ route('index') }}#whysaudi"
@@ -745,7 +745,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                                     class='hfe-menu-toggle sub-arrow hfe-menu-child-0'><i
                                                                                                         class='fa'></i></span></a>
                                                                                         </div>
-                                                                                        <ul class="sub-menu">
+                                                                                        <ul class="sub-menu" style="text-align: start;">
                                                                                             <li id="menu-item-1075"
                                                                                                 class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home hfe-creative-menu">
                                                                                                 <a href="{{ route('index') }}#whysaudi"

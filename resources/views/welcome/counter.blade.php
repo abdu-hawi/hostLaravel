@@ -11,7 +11,7 @@
                     class="elementor-section elementor-inner-section elementor-element elementor-element-ceb1fe2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                     data-id="ceb1fe2" data-element_type="section">
                     <div
-                        class="elementor-container elementor-column-gap-default">
+                        class="elementor-container elementor-column-gap-default" style="justify-content: space-between;">
                         <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-2c14d65"
                             data-id="2c14d65" data-element_type="column">
                             <div
@@ -131,7 +131,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-d1b5ffc"
+                        {{-- <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-d1b5ffc"
                             data-id="d1b5ffc" data-element_type="column">
                             <div
                                 class="elementor-widget-wrap elementor-element-populated">
@@ -160,7 +160,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="elementor-column elementor-col-16 elementor-inner-column elementor-element elementor-element-ef298dd"
                             data-id="ef298dd" data-element_type="column">
                             <div

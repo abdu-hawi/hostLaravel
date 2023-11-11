@@ -1,5 +1,13 @@
+@php
+    $lang = 'lang="en-US" dir="ltr"';
+    if (session()->has('lang')) {
+        if (session('lang') == 'ar') {
+            $lang = 'lang="ar" dir="rtl"';
+        }
+    }
+@endphp
 <!DOCTYPE html>
-<html class="html" lang="en-US" dir="ltr">
+<html class="html" {!! $lang !!}>
 
 <head>
 	<meta charset="UTF-8">
@@ -820,6 +828,16 @@
 		#site-header.has-header-media .overlay-header-media {
 			background-color: rgba(0, 0, 0, 0.5)
 		}
+        .elementor-10 .elementor-element.elementor-element-08733a2:not(.elementor-motion-effects-element-type-background), .elementor-10 .elementor-element.elementor-element-08733a2 > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+            padding: 0.5rem 50px;
+        }
 	</style>
+    <?php
+    if (session()->has('lang') && session('lang') == 'ar') {
+    ?>
+    @include('layout.ar_font')
+    <?php
+    }
+    ?>
     @stack('css')
 </head>
