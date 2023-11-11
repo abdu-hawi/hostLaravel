@@ -50,6 +50,18 @@
                                         </span><br>
                                         <span>
                                             Custodian of the Two Holy Mosques Institute for Hajj Research
+                                        </span><hr>
+                                        <span class="black-600">
+                                            Dr. Abdulrahman Yamani
+                                        </span><br>
+                                        <span>
+                                            Alfaisal University
+                                        </span><hr>
+                                        <span class="black-600">
+                                            Dr. Ammar Al-Ammar
+                                        </span><br>
+                                        <span>
+                                            King Saud University
                                         </span>
                                     </span>
                                 </div>

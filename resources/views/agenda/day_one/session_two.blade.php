@@ -49,28 +49,22 @@
                                             Speakers:
                                         </p>
                                         <span class="black-600">
-                                            Dr. Khaled Alskeet
+                                            Eng. Abdullah Faisal Al Mubarak
                                         </span><br>
                                         <span>
-                                            President of the Real Estate Sciences Association
+
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Sami Brahmin
+                                            Dr. Waleed Al Zamil
                                         </span><br>
                                         <span>
-                                            Advisor
+                                            Professor of Planning - King Saud University
                                         </span><hr>
                                         <span class="black-600">
                                             Eng. Mohammed Bahaidara
                                         </span><br>
                                         <span>
                                             Urban Expert
-                                        </span><hr>
-                                        <span class="black-600">
-                                            Eng. Maan Hashem Harir
-                                        </span><br>
-                                        <span>
-                                            Vice Chairman of the National Real Estate Committee
                                         </span>
                                     </span>
                                 </div>
@@ -128,6 +122,18 @@
                                             Speakers:
                                         </p>
                                         <span class="black-600">
+                                            Mr. Khattar Abdulkhalek
+                                        </span><br>
+                                        <span>
+                                            Drone & Innovation Expert , Managing CBRE Saudi region
+                                        </span><hr>
+                                        <span class="black-600">
+                                            Eng. Thamer Alzahrani
+                                        </span><br>
+                                        <span>
+                                            Head Quarter Property Manager
+                                        </span><hr>
+                                        <span class="black-600">
                                             Mr. John Seed
                                         </span><br>
                                         <span>
@@ -137,25 +143,13 @@
                                             Ms. Jena Ladhani
                                         </span><br>
                                         <span>
-                                            CBRE Country Managing Director in KSA
-                                        </span><hr>
-                                        <span class="black-600">
-                                            Eng. Ammar Yasser Habis
-                                        </span><br>
-                                        <span>
-                                            Royal Commission for Makkah City
+                                            CBRE Global Workplace Solutions (GWS) Country Managing Director in KSA
                                         </span><hr>
                                         <span class="black-600">
                                             Mr. Medy Navani
                                         </span><br>
                                         <span>
                                             CEO- Design Haus Medy
-                                        </span><hr>
-                                        <span class="black-600">
-                                            Eng. Ahmed Zahrani
-                                        </span><br>
-                                        <span>
-                                            Undersecretary of the Ministry of Energy
                                         </span><hr>
                                         <span class="black-600">
                                             Eng. Faisal Al Fadl
@@ -260,12 +254,6 @@
                                         <p class="blue-600">
                                             Speakers:
                                         </p>
-                                        <span class="black-600">
-                                            Eng. Thamer Alzahran
-                                        </span><br>
-                                        <span>
-                                            Real Estate Expert - Community Management Traine
-                                        </span><hr>
                                         <span class="black-600">
                                             Eng. Yahya Siraj
                                         </span><br>

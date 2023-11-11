@@ -26,7 +26,7 @@
 <section
 class="elementor-section elementor-top-section elementor-element elementor-element-6d16f4f elementor-section-boxed elementor-section-height-default elementor-section-height-default ongoing-upcoming"
 data-id="6d16f4f" data-element_type="section"
-data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="margin-bottom: 0;">
 <div class="elementor-container elementor-column-gap-default">
     <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fea083c"
         data-id="fea083c" data-element_type="column">

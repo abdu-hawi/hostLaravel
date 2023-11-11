@@ -62,16 +62,16 @@
                                             Executive Boss MBL
                                         </span><hr>
                                         <span class="black-600">
+                                            Dr. Abdullah bin Junaideb
+                                        </span><br>
+                                        <span>
+                                            Construction Expert
+                                        </span><hr>
+                                        <span class="black-600">
                                             Mr. Khalid Bin Debis Alharthi
                                         </span><br>
                                         <span>
                                             Vice Chairman of the National Contractors Committee
-                                        </span><hr>
-                                        <span class="black-600">
-                                            Eng. Dhari Al Otaishan
-                                        </span><br>
-                                        <span>
-                                            Vice Chairman of the Contractors Committee - Asharqia Chamber
                                         </span>
                                     </span>
                                 </div>
@@ -146,6 +146,12 @@
                                         </span><br>
                                         <span>
                                             Chief Executive Officer- Mabanee
+                                        </span><hr>
+                                        <span class="black-600">
+                                            Mr. Ali Sawadi
+                                        </span><br>
+                                        <span>
+                                            Chairman of the National Contractors Committee
                                         </span>
                                     </span>
                                 </div>

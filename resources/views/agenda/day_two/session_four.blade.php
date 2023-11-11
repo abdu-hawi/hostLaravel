@@ -143,7 +143,13 @@
                                             Dr. Muhammad Bakr Malibari
                                         </span><br>
                                         <span>
-                                            adviser
+                                            Consultant
+                                        </span><hr>
+                                        <span class="black-600">
+                                            Dr. Khaled Alskeet
+                                        </span><br>
+                                        <span>
+                                            Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences
                                         </span>
                                     </span>
                                 </div>

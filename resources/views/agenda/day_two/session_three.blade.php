@@ -56,18 +56,6 @@
                                         </span><br>
                                         <span>
                                             Royal Commission in Riyadh
-                                        </span><hr>
-                                        <span class="black-600">
-                                            Dr. Bassam Ghulman
-                                        </span><br>
-                                        <span>
-                                            Advisor
-                                        </span><hr>
-                                        <span class="black-600">
-                                            Dr. Magdy Hariri
-                                        </span><br>
-                                        <span>
-                                            President of McKeon
                                         </span>
                                     </span>
                                 </div>
