@@ -41,15 +41,28 @@
     }
     </style>
 
+    @if (session()->has('lang') && session('lang') == 'ar')
     <div class="dropdown">
-      <span style="display: flex;
-      justify-content: space-between;
-      align-items: center;">English
-        <i class="fa fa-angle-down" style="margin: 0 0.5rem;"></i>
-      </span>
-      <div class="dropdown-content">
-        <a href="{{ route('lang','en') }}">English</a>
-        <a href="{{ route('lang','ar') }}">عربي</a>
-      </div>
+        <span style="display: flex; justify-content: space-between; align-items: center;">
+            عربي
+            <i class="fa fa-angle-down" style="margin: 0 0.5rem;"></i>
+        </span>
+        <div class="dropdown-content">
+          <a href="{{ route('lang','en') }}">English</a>
+          <a href="javascript:void(0)">عربي</a>
+        </div>
     </div>
+    @else
+    <div class="dropdown">
+        <span style="display: flex; justify-content: space-between; align-items: center;">
+            English
+            <i class="fa fa-angle-down" style="margin: 0 0.5rem;"></i>
+        </span>
+        <div class="dropdown-content">
+          <a href="javascript:void(0)">English</a>
+          <a href="{{ route('lang','ar') }}">عربي</a>
+        </div>
+    </div>
+    @endif
+
 

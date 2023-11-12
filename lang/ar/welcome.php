@@ -51,7 +51,7 @@ return [
     'Identify Smart Construction Technology' => 'اﻟﺘﻌﺮف ﻋﻠﻰ ﺗﻘﻨﻴﺔ اﻟﺒﻨﺎء اﻟﺬﻛﻴﺔ',
     'Promote Sustainable Developments' => 'ﺗﻌﺰﻳﺰ اﻟﺘﻨﻤﻴﺔ اﻟﻤﺴﺘﺪاﻣﺔ',
     // overview -- Hybrid Event (Physical + Virtual)
-    'Hybrid Event (Physical + Virtual)' => 'ﺣﺪث ﻣﺘﻨﻮع )ﺣﻀﻮري + اﻓﺘﺮاﺿﻲ(',
+    'Hybrid Event (Physical + Virtual)' => 'حدث متنوع (حضوري + افتراضي)',
     'Case Study & Technical Presentations' => 'دراﺳﺔ اﻟﺤﺎﻟﺔ واﻟﻌﺮوض اﻟﺘﻘﺪﻳﻤﻴﺔ اﻟﻔﻨﻴﺔ',
     'Exclusive Marketing & Branding' => 'اﻟﺘﺴﻮﻳﻖ واﻟﻌﻼﻣﺎت اﻟﺘﺠﺎرﻳﺔ اﻟﺤﺼﺮﻳﺔ',
     'Technology Showcase & Exhibition' => 'ﺣﺪث وﻣﻌﺮض ﺗﻜﻨﻮﻟﻮﺟﻲ',
@@ -89,7 +89,7 @@ return [
     'USD 819 billion' => 'ﻣﻠﻴﺎر دوﻻر أﻣﺮﻳﻜﻲ 819',
     '35% of total value of active projects across GCC' => 'ﻣﻦ إﺟﻤﺎﻟﻲ ﻗﻴﻤﺔ اﻟﻤﺸﺎرﻳﻊ اﻟﻨﺸﻄﺔ ﻓﻲ دول ﻣﺠﻠﺲ اﻟﺘﻌﺎون اﻟﺨﻠﻴﺠﻲ ٪35',
     '5,200 construction projects are currently ongoing' => 'ﻣﺸﺮوع ﺑﻨﺎء ﻗﻴﺪ اﻟﺘﻨﻔﻴﺬ ﺣﺎﻟﻴﺎ 5200',
-    //Attendee breakdown
+    // Attendee breakdown
     'Attendee breakdown' => 'Attendee breakdown',
     'Ministry VVIP’s, VIP’s & Senior Dignitaries' => 'ﻛﺒﺎر اﻟﺸﺨﺼﻴﺎت ﻓﻲ اﻟﻮزارة و ﻏﻴﺮﻫﺎ ﻣﻦ ﻛﺒﺎر اﻟﺸﺨﺼﻴﺎت',
     'Municipality Representatives' => 'ﻣﻤﺜﻠﻲ اﻟﺒﻠﺪﻳﺔ',
@@ -145,35 +145,25 @@ return [
     'Directors & Heads of Transportation & Infrastructure Projects' => 'ﻣﺪﻳﺮو ورؤﺳﺎء اﻟﻨﻘﻞ وﻣﺸﺎرﻳﻊ اﻟﺒﻨﻴﺔ اﻟﺘﺤﺘﻴﺔ',
     // Attendee Benefits
     'Attendee Benefits' => 'ﻣﻤﻴﺰات اﻟﺤﻀﻮر',
-    'Hear from our international panel of experts about ongoing and upcoming construction projects' =>
-        'اﻟﺘﻌﺮف ﻋﻠﻰ ﻣﺸﺎرﻳﻊ اﻟﺒﻨﺎء اﻟﺠﺎرﻳﺔ واﻟﻘﺎدﻣﺔ ﻣﻦ ﻓﺮﻳﻖ اﻟﺨﺒﺮاء اﻟﺪوﻟﻲ.',
+    'Hear from our international panel of experts about ongoing and upcoming construction projects' => 'اﻟﺘﻌﺮف ﻋﻠﻰ ﻣﺸﺎرﻳﻊ اﻟﺒﻨﺎء اﻟﺠﺎرﻳﺔ واﻟﻘﺎدﻣﺔ ﻣﻦ ﻓﺮﻳﻖ اﻟﺨﺒﺮاء اﻟﺪوﻟﻲ.',
 
-    'Learn about latest construction strategies and leading technology trends in 2023' =>
-        'اﻟﺘﻌﺮف ﻋﻠﻰ أﺣﺪث اﺳﺘﺮاﺗﻴﺠﻴﺎت اﻟﺒﻨﺎء واﺗﺠﺎﻫﺎت اﻟﺘﻜﻨﻮﻟﻮﺟﻴﺎ اﻟﺮاﺋﺪة ﻓﻲ ﻋﺎم ٢٠٢٣',
+    'Learn about latest construction strategies and leading technology trends in 2023' => 'اﻟﺘﻌﺮف ﻋﻠﻰ أﺣﺪث اﺳﺘﺮاﺗﻴﺠﻴﺎت اﻟﺒﻨﺎء واﺗﺠﺎﻫﺎت اﻟﺘﻜﻨﻮﻟﻮﺟﻴﺎ اﻟﺮاﺋﺪة ﻓﻲ ﻋﺎم ٢٠٢٣',
 
-    'Identify smart and futuristic construction technological solutions for your ongoing construction projects' =>
-        'ﺗﺤﺪﻳﺪ اﻟﺤﻠﻮل اﻟﺘﻘﻨﻴﺔ ﻟﻤﺸﺎرﻳﻊ اﻟﺒﻨﺎء اﻟﺬﻛﻴﺔ واﻟﻤﺴﺘﻘﺒﻠﻴﺔ',
+    'Identify smart and futuristic construction technological solutions for your ongoing construction projects' => 'ﺗﺤﺪﻳﺪ اﻟﺤﻠﻮل اﻟﺘﻘﻨﻴﺔ ﻟﻤﺸﺎرﻳﻊ اﻟﺒﻨﺎء اﻟﺬﻛﻴﺔ واﻟﻤﺴﺘﻘﺒﻠﻴﺔ',
 
-    'Share your views and experiences with industry peers and thought leaders' =>
-        'ﻣﺸﺎرﻛﺔ الآراء واﻟﺨﺒﺮات ﻣﻊ ﺧﺒﺮاء اﻟﺼﻨﺎﻋﺔ وﻗﺎدة اﻟﻔﻜﺮ',
+    'Share your views and experiences with industry peers and thought leaders' => 'ﻣﺸﺎرﻛﺔ الآراء واﻟﺨﺒﺮات ﻣﻊ ﺧﺒﺮاء اﻟﺼﻨﺎﻋﺔ وﻗﺎدة اﻟﻔﻜﺮ',
 
-    'Participate in our highly interactive panel discussions' =>
-        'اﻟﻤﺸﺎرﻛﺔ ﻓﻲ ﺣﻠﻘﺎت اﻟﻨﻘﺎش اﻟﺘﻔﺎﻋﻠﻴﺔ',
+    'Participate in our highly interactive panel discussions' => 'اﻟﻤﺸﺎرﻛﺔ ﻓﻲ ﺣﻠﻘﺎت اﻟﻨﻘﺎش اﻟﺘﻔﺎﻋﻠﻴﺔ',
 
-    'Gain technical insights on some of the latest technology and software by attending our technical workshops' =>
-        'اﻛﺘﺴﺎب رؤى ﺗﻘﻨﻴﺔ ﺣﻮل أﺣﺪث اﻟﺘﻘﻨﻴﺎت واﻟﺒﺮاﻣﺞ ﻣﻦ ﺧﻼل ﺣﻀﻮر ورش اﻟﻌﻤﻞ اﻟﻔﻨﻴﺔ',
+    'Gain technical insights on some of the latest technology and software by attending our technical workshops' => 'اﻛﺘﺴﺎب رؤى ﺗﻘﻨﻴﺔ ﺣﻮل أﺣﺪث اﻟﺘﻘﻨﻴﺎت واﻟﺒﺮاﻣﺞ ﻣﻦ ﺧﻼل ﺣﻀﻮر ورش اﻟﻌﻤﻞ اﻟﻔﻨﻴﺔ',
 
-    'Get a real-time experience of leading technologies at our innovation hub' =>
-        'اﻛﺘﺴﺎب اﻟﺨﺒﺮة ﻣﻦ ﺧﻼل ﺗﺠﺮﺑﺔ ﺣﻘﻴﻘﻴﺔ ﺣﻮل اﻟﺘﻘﻨﻴﺎت اﻟﺮاﺋﺪة',
+    'Get a real-time experience of leading technologies at our innovation hub' => 'اﻛﺘﺴﺎب اﻟﺨﺒﺮة ﻣﻦ ﺧﻼل ﺗﺠﺮﺑﺔ ﺣﻘﻴﻘﻴﺔ ﺣﻮل اﻟﺘﻘﻨﻴﺎت اﻟﺮاﺋﺪة',
 
-    'Sign business deals and procure latest technology and solutions for your ongoing and upcoming projects' =>
-        'ﺗﻮﻗﻴﻊ اﻟﺼﻔﻘﺎت اﻟﺘﺠﺎرﻳﺔ واﻟﺤﺼﻮل ﻋﻠﻰ أﺣﺪث اﻟﺘﻘﻨﻴﺎت واﻟﺤﻠﻮل ﻟﻠﻤﺸﺎرﻳﻊ اﻟﺤﺎﻟﻴﺔ واﻟﻤﺴﺘﻘﺒﻠﻴﺔ',
+    'Sign business deals and procure latest technology and solutions for your ongoing and upcoming projects' => 'ﺗﻮﻗﻴﻊ اﻟﺼﻔﻘﺎت اﻟﺘﺠﺎرﻳﺔ واﻟﺤﺼﻮل ﻋﻠﻰ أﺣﺪث اﻟﺘﻘﻨﻴﺎت واﻟﺤﻠﻮل ﻟﻠﻤﺸﺎرﻳﻊ اﻟﺤﺎﻟﻴﺔ واﻟﻤﺴﺘﻘﺒﻠﻴﺔ',
 
-    'Secure investments for your ongoing and upcoming projects' =>
-        'ﺗﺄﻣﻴﻦ اﻻﺳﺘﺜﻤﺎرات ﻟﻠﻤﺸﺎرﻳﻊ اﻟﺤﺎﻟﻴﺔ واﻟﻤﺴﺘﻘﺒﻠﻴﺔ.',
+    'Secure investments for your ongoing and upcoming projects' => 'ﺗﺄﻣﻴﻦ اﻻﺳﺘﺜﻤﺎرات ﻟﻠﻤﺸﺎرﻳﻊ اﻟﺤﺎﻟﻴﺔ واﻟﻤﺴﺘﻘﺒﻠﻴﺔ.',
 
-    'Explore new and exciting business opportunities across the construction sector' =>
-        'اﻛﺘﺸﺎف ﻓﺮص ﻋﻤﻞ ﺟﺪﻳﺪة وﻣﻤﻴﺰة ﻓﻲ ﻗﻄﺎع اﻟﺒﻨﺎء',
+    'Explore new and exciting business opportunities across the construction sector' => 'اﻛﺘﺸﺎف ﻓﺮص ﻋﻤﻞ ﺟﺪﻳﺪة وﻣﻤﻴﺰة ﻓﻲ ﻗﻄﺎع اﻟﺒﻨﺎء',
     // Event Venue
     'Event Venue' => 'موقع المؤتمر',
     'Ritz Carlton, Riyadh, Saudi Arabia' => 'رﻳﺘﺰ ﻛﺎرﻟﺘﻮن، الرياض، المملكة العربية السعودية',
