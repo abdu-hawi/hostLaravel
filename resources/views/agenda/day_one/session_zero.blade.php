@@ -36,7 +36,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        Registration and Networking
+                                        {{ __('agenda.Registration_Networking') }}
                                     </span>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        The National Anthem and Verses from the Holy Quran
+                                        {{ __('agenda.The National Anthem and Verses from the Holy Quran') }}
                                     </span>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        Remarks by: Chairman of the Organizing Committee
+                                        {{ __('agenda.Remarks by: Chairman of the Organizing Committee') }}
                                     </span>
                                 </div>
                             </div>
@@ -173,7 +173,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        Remarks by: The Summit Main Sponsor
+                                        {{ __('agenda.Remarks by: The Summit Main Sponsor') }}
                                     </span>
                                 </div>
                             </div>
@@ -219,9 +219,10 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <span class="blue-600">Summit Opening Session</span><br>
-                                        <span class="blue-600">MOMRAH Strategy: Taking a strategic approach towards construction sector development</span><br>
-                                        Remarks by: H.E. Minister of Municipal and Rural Affairs and Housing
+                                        <span class="blue-600">{{ __("agenda.Sponsor's speech") }}</span><br>
+                                        <span class="blue-600">
+                                            {{ __('agenda.Ministry of Municipal and Rural Affairs and Housing') }}
+                                        </span>
                                     </span>
                                 </div>
                             </div>
@@ -268,7 +269,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Honouring the sponsors</i>
+                                        <i>{{ __('agenda.Honouring the sponsors') }}</i>
                                     </span>
                                 </div>
                             </div>

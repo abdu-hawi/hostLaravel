@@ -41,10 +41,33 @@
     .elementor-169 .elementor-element.elementor-element-3097de2,
     .elementor-169 .elementor-element.elementor-element-031f79a,
     .elementor-169 .elementor-element.elementor-element-e282771 {
-        text-align: right;
+        text-align: right !important;
     }
     .premium-title-style1 {
         border-width: 0 !important;
         border-right: 3px solid #6ec1e4 !important;
+    }
+    .elementor-1309 .elementor-element.elementor-element-f49d54d > .elementor-element-populated {
+        border-width: 0 !important;
+    }
+    .elementor-1309 .elementor-element.elementor-element-1ec5c42 .elementor-icon-box-wrapper {
+        text-align: right !important;
+    }
+    .elementor-1309 .elementor-element.elementor-element-4f875eb .elementor-icon-box-wrapper {
+        text-align: right !important;
+    }
+    .elementor-1309 .elementor-element.elementor-element-a19b765 > .elementor-element-populated {
+        margin: 0% 0% 0% 50% !important;
+        --e-column-margin-right: 0% !important;
+        --e-column-margin-left: 50% !important;
+    }
+    .elementor-button .elementor-align-icon-right {
+        margin-right: 5px !important;
+    }
+    #ah_form, #ah_form_register{
+        direction: rtl !important;
+    }
+    .intl-tel-input {
+        direction: ltr !important;
     }
   </style>

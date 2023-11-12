@@ -104,7 +104,7 @@ return [
     // ongoing AND upcoming
     'Ongoing & Upcoming KSA Projects' => 'Ongoing & Upcoming KSA Projects',
     'NEOM' => 'NEOM',
-    'Al WIDYAN' => 'Al WIDYAN',
+    'Al WIDYAN' => 'AL WIDYAN',
     'THE RED SEA PROJECT' => 'THE RED SEA PROJECT',
     'AL FAISALIYAH' => 'AL FAISALIYAH',
     'KING SALMAN ENERGY PARK' => 'KING SALMAN ENERGY PARK',

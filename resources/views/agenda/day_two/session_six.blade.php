@@ -4,7 +4,7 @@
     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 
     <div class="agenda-session-header">
-        Session 6 - Evolving with construction technology
+        {{ __('agenda.Session 6: Evolving with Construction Technology') }}
     </div>
     {{-- 16:00 – 17:00 --}}
     <div class="elementor-container elementor-column-gap-default">
@@ -40,28 +40,28 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety
+                                            {{ __('agenda.AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety') }}
                                         </p>
                                         <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Dr. Muhammad Hamza Alabbasi
+                                            {{ __('agenda.Dr. Muhammad Hamza Alabbasi') }}
                                         </span><br>
                                         <span>
-                                            Custodian of the Two Holy Mosques Institute for Hajj Research
+                                            {{ __('agenda.Custodian of the Two Holy Mosques Institute for Hajj Research') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Abdulrahman Yamani
+                                            {{ __('agenda.Dr. Abdulrahman Yamani') }}
                                         </span><br>
                                         <span>
-                                            Alfaisal University
+                                            {{ __('agenda.Alfaisal University') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Ammar Al-Ammar
+                                            {{ __('agenda.Dr. Ammar Al-Ammar') }}
                                         </span><br>
                                         <span>
-                                            King Saud University
+                                            {{ __('agenda.King_Saud_University') }}
                                         </span>
                                     </span>
                                 </div>
@@ -108,7 +108,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Closing Remarks</i>
+                                        <i>{{ __('agenda.Closing Remarks') }}</i>
                                     </span>
                                 </div>
                             </div>

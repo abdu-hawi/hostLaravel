@@ -49,7 +49,8 @@
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h1 class="elementor-heading-title elementor-size-default">
-                                                            Contact us</h1>
+                                                            {{ __('header.Contact us') }}
+                                                        </h1>
                                                     </div>
                                                 </div>
                                             </div>
@@ -144,10 +145,6 @@
                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                     <div class="elementor-background-overlay"></div>
 
-
-
-
-
                                     <div class="elementor-container elementor-column-gap-default">
                                         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-425a2d2f elementor-invisible"
                                             data-id="425a2d2f" data-element_type="column"
@@ -174,55 +171,55 @@
                                                                         @csrf
                                                                         <div class="row-name">
                                                                             <div class="fname">
-                                                                                <label><span class="text-red">*</span> Full Name</label>
+                                                                                <label><span class="text-red">*</span> {{ __('header.Full Name') }}</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="Name">
                                                                                     <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Full name"
+                                                                                        placeholder="{{ __('header.Full Name') }}"
                                                                                         value="" type="text"
                                                                                         name="name"  />
-                                                                                        <span id="name_error" style="color: #e70c0c; display:none">Required</span>
+                                                                                        <span id="name_error" style="color: #e70c0c; display:none">{{ __('header.Required') }}</span>
                                                                                 </span>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row-name">
                                                                             <div class="fname">
-                                                                                <label><span class="text-red">*</span> Email</label>
+                                                                                <label><span class="text-red">*</span> {{ __('header.Email') }}</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="Name">
                                                                                     <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Email"
+                                                                                        placeholder="{{ __('header.Email') }}"
                                                                                         value="" type="email"
                                                                                         name="email" required />
-                                                                                        <span id="email_error" style="color: #e70c0c; display:none">Required</span>
+                                                                                        <span id="email_error" style="color: #e70c0c; display:none">{{ __('header.Required') }}</span>
                                                                                 </span>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row-name">
                                                                             <div class="fname">
-                                                                                <label><span class="text-red">*</span> Subject</label>
+                                                                                <label><span class="text-red">*</span> {{ __('header.Subject') }}</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="Name">
                                                                                     <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Subject"
+                                                                                        placeholder="{{ __('header.Subject') }}"
                                                                                         value="" type="text"
                                                                                         name="subject" required />
-                                                                                        <span id="subject_error" style="color: #e70c0c; display:none">Required</span>
+                                                                                        <span id="subject_error" style="color: #e70c0c; display:none">{{ __('header.Required') }}</span>
                                                                                 </span>
                                                                             </div>
                                                                         </div>
                                                                         <div class="row-name">
                                                                             <div class="fname">
-                                                                                <label><span class="text-red">*</span> Massege</label>
+                                                                                <label><span class="text-red">*</span> {{ __('header.Massege') }}</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="Name">
                                                                                     <textarea name="massege" rows="5"></textarea>
-                                                                                        <span id="massege_error" style="color: #e70c0c; display:none">Required</span>
+                                                                                        <span id="massege_error" style="color: #e70c0c; display:none">{{ __('header.Required') }}</span>
                                                                                 </span>
                                                                             </div>
                                                                         </div>
@@ -230,7 +227,7 @@
 
                                                                         <div class="row-name">
                                                                             <div class="fname fbutton">
-                                                                                <button type="submit" class="btn-submit">Submit</button>
+                                                                                <button type="submit" class="btn-submit">{{ __('header.Submit') }}</button>
                                                                             </div>
                                                                         </div>
                                                                     </form>

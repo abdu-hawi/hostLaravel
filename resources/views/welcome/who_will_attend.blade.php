@@ -69,7 +69,7 @@
         }
     }
 </style>
-<section class="who-will-attend">
+<section class="who-will-attend" id="whoattend">
     <div class="container">
         <h2 class="elementor-heading-title elementor-size-default">
             <span>

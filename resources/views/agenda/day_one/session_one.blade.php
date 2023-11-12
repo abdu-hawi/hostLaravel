@@ -4,7 +4,7 @@
     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 
     <div class="agenda-session-header">
-        Session 1 - Saudi Construction Industry Trends
+        {{ __('agenda.Session 1 - Saudi Construction Industry Trends') }}
     </div>
     {{-- Opening Panel --}}
     <div class="elementor-container elementor-column-gap-default">
@@ -40,33 +40,30 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Opening Panel: Construction in Saudi Arabia – Key trends & opportunities beyond 2025
+                                            {{ __('agenda.Opening Panel: Construction is Saudi Arabia - Key Trends & Opportunities Beyond 2025') }}
                                         </p>
                                         <p class="blue-600">
-                                            Moderator: Mr. Talat Hafiz
-                                        </p>
-                                        <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Abdullah Mohammed Al-Budair
+                                            {{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }}
                                         </span><br>
                                         <span>
-                                            Vice Minister of Municipal and Rural Affairs and Housing
+                                            {{ __('agenda.Vice Minister of Municipal and Rural Affairs and Housing') }}
                                         </span>
                                         <hr>
                                         <span class="black-600">
-                                            Mr. Salih Ali Al-Turki
+                                            {{ __('agenda.Mr. Salih Ali Al-Turki') }}
                                         </span><br>
                                         <span>
-                                            H.E. Mayor of Jeddah and Makkah Al Mukarrama
+                                            {{ __('agenda.H.E. Mayor of Jeddah and Makkah Al Mukarrama') }}
                                         </span>
                                         <hr>
                                         <span class="black-600">
-                                            Eng. Fahad Mohammed Alkhabeer
+                                            {{ __('agenda.Eng. Fahad Mohammed Alkhabeer') }}
                                         </span><br>
                                         <span>
-                                            H.E. Mayor of Eastern Province
+                                            {{ __('agenda.H.E. Mayor of Eastern Province') }}
                                         </span>
                                     </span>
                                 </div>
@@ -113,7 +110,9 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Networking Coffee Break</i>
+                                        <i>
+                                            {{ __('agenda.Networking Coffee Break') }}
+                                        </i>
                                     </span>
                                 </div>
                             </div>
@@ -160,37 +159,40 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom
+                                            {{ __('agenda.Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom') }}
                                         </p>
                                         <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr. Talat Hafiz') }}
+                                        </p>
+                                        <p class="blue-600">
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Ahmed Al-Sheikh
+                                            {{ __('agenda.Eng. Mohammad Al Tayyar') }}
                                         </span><br>
                                         <span>
-                                            Saudi Council of Engineers
+                                            {{ __('agenda.Exective Program Director (Oil Sustainability Program)') }}
                                         </span>
                                         <hr>
                                         <span class="black-600">
-                                            Eng. Zakaria Al-Abdulqader
+                                            {{ __('agenda.Eng Saad Bin Saleh AlShuail') }}
                                         </span><br>
                                         <span>
-                                            Saudi Contractors Authority
+                                            {{ __('agenda.Secretary_General of the Saudi Building Code National Committee') }}
                                         </span>
                                         <hr>
                                         <span class="black-600">
-                                            Eng. Mohammad Al Tayyar
+                                            {{ __('agenda.Eng. Mohammed Saleh Al-Buti') }}
                                         </span><br>
                                         <span>
-                                            Exective Program Director (Oil Sustainability Program)
+                                            {{ __('agenda.National_Housing_Company') }}
                                         </span>
                                         <hr>
                                         <span class="black-600">
-                                            Eng. Mohammed Saleh Al-But
+                                            {{ __('agenda.Eng. Ahmed Al-Sheikh') }}
                                         </span><br>
                                         <span>
-                                            National Housing Company
+                                            {{ __('agenda.Saudi Council of Engineers') }}
                                         </span>
                                     </span>
                                 </div>
@@ -239,35 +241,37 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Implementing new operating standards and regulations to
-                                            drive sustainable development goals
+                                            {{ __('agenda.Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals') }}
                                         </p>
                                         <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr. Talat Hafiz') }}
+                                        </p>
+                                        <p class="blue-600">
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Mohammed Al Mana
+                                            {{ __('agenda.Eng. Mohammed Al Mana') }}
                                         </span><br>
                                         <span>
-                                            Chief Executive Officer - Jasara
+                                            {{ __('agenda.Chief Executive Officer - Jasara') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Sumaya Suleiman Alsulaiman
+                                            {{ __('agenda.Dr. Sumaya Suleiman Alsulaiman') }}
                                         </span><br>
                                         <span>
-                                            Architecture Authority - Ministry of Culture
+                                            {{ __('agenda.Architecture Authority - Ministry of Culture') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Adel Ezzat
+                                            {{ __('agenda.Dr. Adel Ezzat') }}
                                         </span><br>
                                         <span>
-                                            Chief Executive Officer - Elaf
+                                            {{ __('agenda.Chief Executive Officer - Elaf') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Hamad Hamoud Al-Hammad
+                                            {{ __('agenda.Mr. Hamad Hamoud Al-Hammad') }}
                                         </span><br>
                                         <span>
-                                            Chairman of the National Contractors Committee
+                                            {{ __('agenda.Chairman_of the National Contractors Committee') }}
                                         </span>
                                     </span>
                                 </div>
@@ -314,7 +318,9 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Networking Coffee Break</i>
+                                        <i>
+                                            {{ __('agenda.Networking Coffee Break') }}
+                                        </i>
                                     </span>
                                 </div>
                             </div>

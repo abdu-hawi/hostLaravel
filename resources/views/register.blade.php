@@ -157,7 +157,8 @@
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h1 class="elementor-heading-title elementor-size-default">
-                                                            REGISTRATION</h1>
+                                                            {{ __('header.REGISTRATION') }}
+                                                        </h1>
                                                     </div>
                                                 </div>
                                             </div>
@@ -208,18 +209,18 @@
                                                                     </div>
                                                                     <form action="{{ route('clients') }}"
                                                                         method="post" class="wpcf7-form init"
-                                                                        aria-label="Contact form" novalidate="novalidate"
+                                                                        aria-label="Contact form" novalidate="novalidate" id="ah_form_register"
                                                                         data-status="init">
                                                                         @csrf
                                                                         <div class="row-name">
                                                                             <div class="fname">
-                                                                                <label>First Name*</label>
+                                                                                <label>{{ __('header.First name') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="Name">
                                                                                     <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="First name"
+                                                                                        placeholder="{{ __('header.First name') }}"
                                                                                         value="{{ old('first_name') ?? '' }}" type="text"
                                                                                         name="first_name" required
                                                                                         @error('first_name') style="border-color: #e70c0c;" @enderror />
@@ -230,14 +231,14 @@
                                                                             </div>
 
                                                                             <div class="lname">
-                                                                                <label>Last Name*</label>
+                                                                                <label>{{ __('header.Last name') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="LastName">
                                                                                     <input
                                                                                         size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Last Name"
+                                                                                        placeholder="{{ __('header.Last name') }}"
                                                                                         value="{{ old('last_name') ?? '' }}" type="text"
                                                                                         name="last_name" required
                                                                                         @error('last_name') style="border-color: #e70c0c;" @enderror />
@@ -250,14 +251,14 @@
 
                                                                         <div class="row-job">
                                                                             <div class="job">
-                                                                                <label>Job Title*</label>
+                                                                                <label>{{ __('header.Job title') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="Jobtitle"><input
                                                                                         size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Job title"
+                                                                                        placeholder="{{ __('header.Job title') }}"
                                                                                         value="{{ old('job_title') ?? '' }}" type="text"
                                                                                         name="job_title" required
                                                                                         @error('job_title') style="border-color: #e70c0c;" @enderror />
@@ -268,14 +269,14 @@
                                                                             </div>
 
                                                                             <div class="company">
-                                                                                <label>Company Name*</label>
+                                                                                <label>{{ __('header.Company name') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="Companyname"><input
                                                                                         size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Company name"
+                                                                                        placeholder="{{ __('header.Company name') }}"
                                                                                         value="{{ old('company_name') ?? '' }}" type="text"
                                                                                         name="company_name" required
                                                                                         @error('company_name') style="border-color: #e70c0c;" @enderror />
@@ -288,7 +289,7 @@
 
                                                                         <div class="row-email">
                                                                             <div class="mobilenum">
-                                                                                <label>Mobile Number*</label>
+                                                                                <label>{{ __('header.Mobile number') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="mobile">
                                                                                     <input
                                                                                         size="40"
@@ -296,7 +297,7 @@
                                                                                         data-numberonly="true"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Phone number"
+                                                                                        placeholder="{{ __('header.Mobile number') }}"
                                                                                         value="{{ old('mobile') ?? '' }}" type="text"
                                                                                         name="mobile" required
                                                                                         @error('mobile') style="border-color: #e70c0c;" @enderror />
@@ -311,14 +312,14 @@
                                                                             </div>
 
                                                                             <div class="email">
-                                                                                <label>Email*</label>
+                                                                                <label>{{ __('header.Email') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="your-email"><input
                                                                                         size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
                                                                                         aria-required="true"
                                                                                         aria-invalid="false"
-                                                                                        placeholder="Official email address"
+                                                                                        placeholder="{{ __('header.Official email address') }}"
                                                                                         value="{{ old('email') ?? '' }}" type="email"
                                                                                         name="email" required
                                                                                         @error('email') style="border-color: #e70c0c;" @enderror />
@@ -331,7 +332,7 @@
 
                                                                         <div class="row-ticket">
                                                                             <div class="ticket">
-                                                                                <label>Industry*</label>
+                                                                                <label>{{ __('header.Industry') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="Industry">
                                                                                     <select
@@ -341,8 +342,8 @@
                                                                                         name="industry" required
                                                                                         @error('industry') style="border-color: #e70c0c;" @enderror>
                                                                                         <option value="" hidden>
-                                                                                            &#8212;Please choose an
-                                                                                            option&#8212;</option>
+                                                                                            &#8212;Please choose an option&#8212;
+                                                                                        </option>
                                                                                         <option value="Building Envelope">
                                                                                             Building Envelope</option>
                                                                                         <option
@@ -444,7 +445,7 @@
                                                                             </div>
 
                                                                             <div class="interest">
-                                                                                <label>Interested in*</label>
+                                                                                <label>{{ __('header.Interested in') }}*</label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="interest">
                                                                                     <select
@@ -474,7 +475,7 @@
                                                                             </div>
                                                                         </div>
 
-                                                                        <div class="row-gdrp">
+                                                                        <div class="row-gdrp" style="margin: 1rem 0;">
                                                                             <span class="wpcf7-form-control-wrap"
                                                                                 data-name="GDRP"><span
                                                                                     class="wpcf7-form-control wpcf7-acceptance">
@@ -487,11 +488,8 @@
                                                                                                 id="gdrp"
                                                                                                 aria-invalid="false" required />
                                                                                             <span class="wpcf7-list-item-label">
-                                                                                                <span
-                                                                                                    style="gdrptext"> I
-                                                                                                    acknowledge that will process my
-                                                                                                    personal data in
-                                                                                                    accordance with Summit’s Privacy Policy
+                                                                                                <span style="gdrptext">
+                                                                                                    {{ __('header.privacy_policy') }}
                                                                                                 </span>
                                                                                             </span>
                                                                                         </label>
@@ -501,16 +499,15 @@
                                                                                     </span></span></span>
                                                                         </div>
 
-                                                                        <div class="row">
+                                                                        {{-- <div class="row">
                                                                             *Register now for early bird discount 15% off
-                                                                        </div>
+                                                                        </div> --}}
 
 
-                                                                        <div class="row-button">
-                                                                            <input
-                                                                                class="wpcf7-form-control has-spinner wpcf7-submit"
-                                                                                id="submit" type="submit"
-                                                                                value="Submit" />
+                                                                        <div class="row-name">
+                                                                            <div class="fname fbutton">
+                                                                                <button type="submit" class="btn-submit">{{ __('header.Submit') }}</button>
+                                                                            </div>
                                                                         </div>
                                                                         <div class="wpcf7-response-output"
                                                                             aria-hidden="true"></div>

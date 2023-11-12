@@ -4,7 +4,7 @@
     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 
     <div class="agenda-session-header">
-        Session 5 - Construction Sector Challenges
+        {{ __('agenda.Session 5: Construction Sector Challenges') }}
     </div>
     {{-- 13:45 – 14:45 --}}
     <div class="elementor-container elementor-column-gap-default">
@@ -40,38 +40,34 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Workforce Challenges- Discussing challenges associated with skills,
-                                            resource shortage, wages & benefits
+                                            {{ __('agenda.Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits') }}
                                         </p>
                                         <p class="blue-600">
-                                            Moderator: TBC
-                                        </p>
-                                        <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Muammar Al Atawi
+                                            {{ __('agenda.Eng. Muammar Al Atawi') }}
                                         </span><br>
                                         <span>
-                                            Chairman of the Urban Development Council - Jeddah Chamber
+                                            {{ __('agenda.Chairman of the Urban Development Council - Jeddah Chamber') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Mohammed Saleh bin Laden
+                                            {{ __('agenda.Mr. Mohammed Saleh bin Laden') }}
                                         </span><br>
                                         <span>
-                                            Executive Boss MBL
+                                            {{ __('agenda.Executive Boss MBL') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Abdullah bin Junaideb
+                                            {{ __('agenda.Dr. Abdullah bin Junaideb') }}
                                         </span><br>
                                         <span>
-                                            Construction Expert
+                                            {{ __('agenda.Construction Expert') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Khalid Bin Debis Alharthi
+                                            {{ __('agenda.Mr. Khalid Bin Debis Alharthi') }}
                                         </span><br>
                                         <span>
-                                            Vice Chairman of the National Contractors Committee
+                                            {{ __('agenda.Vice Chairman of the National Contractors Committee') }}
                                         </span>
                                     </span>
                                 </div>
@@ -120,38 +116,34 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating
-                                            within the sector
+                                            {{ __('agenda.Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector') }}
                                         </p>
                                         <p class="blue-600">
-                                            Moderator: TBC
-                                        </p>
-                                        <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Ahmed Al-Saleem
+                                            {{ __('agenda.Eng. Ahmed Al-Saleem') }}
                                         </span><br>
                                         <span>
-                                            Chief Executive Officer - Central Jeddah Company
+                                            {{ __('agenda.Chief Executive Officer - Central Jeddah Company') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Ibrahim Kutbkhana
+                                            {{ __('agenda.Dr. Ibrahim Kutbkhana') }}
                                         </span><br>
                                         <span>
-                                            Consultant
+                                            {{ __('agenda.Consultant') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Joseph Daher
+                                            {{ __('agenda.Mr. Joseph Daher') }}
                                         </span><br>
                                         <span>
-                                            Chief Executive Officer- Mabanee
+                                            {{ __('agenda.Chief Executive Officer- Mabanee') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Ali Sawadi
+                                            {{ __('agenda.Mr. Ali Sawadi') }}
                                         </span><br>
                                         <span>
-                                            Chairman of the National Contractors Committee
+                                            {{ __('agenda.Chairman of the National Contractors Committee') }}
                                         </span>
                                     </span>
                                 </div>
@@ -199,7 +191,9 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Networking Coffee Break</i>
+                                        <i>
+                                            {{ __('agenda.Networking Coffee Break') }}
+                                        </i>
                                     </span>
                                 </div>
                             </div>

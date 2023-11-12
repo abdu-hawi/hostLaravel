@@ -60,7 +60,7 @@
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default">
-                                                            Main Sponsor
+                                                            {{ __('header.MAIN SPONSOR') }}
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -85,26 +85,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        {{--
-                                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-502d5d3"
-                                                            data-id="502d5d3" data-element_type="column"
-                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-6901a394"
-                                                            data-id="6901a394" data-element_type="column"
-                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                            </div>
-                                                        </div>
-                                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8fd3582"
-                                                            data-id="8fd3582" data-element_type="column"
-                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                            </div>
-                                                        </div>
-                                                        --}}
+
                                                     </div>
                                                 </section>
                                             </div>
@@ -130,7 +111,7 @@
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default">
-                                                            Co-Sponsor
+                                                            {{ __('header.Co_Sponsor') }}
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -179,7 +160,7 @@
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
                                                         <h2 class="elementor-heading-title elementor-size-default">
-                                                            Success partners
+                                                            {{ __('header.Success partners') }}
                                                         </h2>
                                                     </div>
                                                 </div>

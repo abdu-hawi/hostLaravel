@@ -166,7 +166,8 @@
                                                     data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
-                                                        <h1 class="elementor-heading-title elementor-size-default">Agenda
+                                                        <h1 class="elementor-heading-title elementor-size-default">
+                                                            {{ __('agenda.Agenda') }}
                                                         </h1>
                                                     </div>
                                                 </div>
@@ -192,8 +193,9 @@
                                                     data-id="46148f5" data-element_type="widget"
                                                     data-widget_type="heading.default">
                                                     <div class="elementor-widget-container">
-                                                        <div class="elementor-heading-title elementor-size-default">Let's
-                                                            join the biggest construction conference on 2023.</div>
+                                                        <div class="elementor-heading-title elementor-size-default">
+                                                            {{ __("agenda.Let's join the biggest construction conference on 2023.") }}
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-9de45ef elementor-widget elementor-widget-text-editor"
@@ -248,9 +250,15 @@
                                                                 <span class="elementor-button-content-wrapper">
                                                                     <span
                                                                         class="elementor-button-icon elementor-align-icon-right">
-                                                                        <i aria-hidden="true"
-                                                                            class="fas fa-angle-double-right"></i> </span>
-                                                                    <span class="elementor-button-text">Overview</span>
+                                                                        @if (session()->has('lang') && session('lang') == 'ar')
+                                                                        <i class="fas fa-angle-double-left"></i> </span>
+                                                                        @else
+                                                                        <i class="fas fa-angle-double-right"></i> </span>
+                                                                        @endif
+
+                                                                    <span class="elementor-button-text">
+                                                                        {{ __('agenda.Overview') }}
+                                                                    </span>
                                                                 </span>
                                                             </a>
                                                         </div>

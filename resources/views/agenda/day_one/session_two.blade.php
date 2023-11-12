@@ -4,7 +4,7 @@
     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 
     <div class="agenda-session-header">
-        Session 2 - Shaping the Future of Saudi Arabia
+        {{ __('agenda.Session 2: Shaping the Future of Saudi Arabia') }}
     </div>
     {{-- 14:15 – 15:15 --}}
     <div class="elementor-container elementor-column-gap-default">
@@ -40,31 +40,34 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA
+                                            {{ __('agenda.Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA') }}
                                         </p>
                                         <p class="blue-600">
-                                            Moderator: TBC
-                                        </p>
-                                        <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Abdullah Faisal Al Mubarak
+                                            {{ __('agenda.Dr. Saleh Alhathloul') }}
                                         </span><br>
                                         <span>
-
+                                            {{ __('agenda.King_Saud_University') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Waleed Al Zamil
+                                            {{ __('agenda.Dr. Khalid Bin Mishari') }}
                                         </span><br>
                                         <span>
-                                            Professor of Planning - King Saud University
+                                            {{ __('agenda.King_Saud_University') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Eng. Mohammed Bahaidara
+                                            {{ __('agenda.Eng. Mohammed Bahaidara') }}
                                         </span><br>
                                         <span>
-                                            Urban Expert
+                                            {{ __('agenda.Urban Expert') }}
+                                        </span><hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Dr. Mishari Al-Naeem') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.King_Saud_University') }}
                                         </span>
                                     </span>
                                 </div>
@@ -113,49 +116,46 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency
+                                            {{ __('agenda.Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency') }}
                                         </p>
                                         <p class="blue-600">
-                                            Moderator: TBC
-                                        </p>
-                                        <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Mr. Khattar Abdulkhalek
+                                            {{ __('agenda.Mr. Khattar Abdulkhalek') }}
                                         </span><br>
                                         <span>
-                                            Drone & Innovation Expert , Managing CBRE Saudi region
+                                            {{ __('agenda.Drone & Innovation Expert , Managing CBRE Saudi region') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Eng. Thamer Alzahrani
+                                            {{ __('agenda.Eng. Thamer Alzahrani') }}
                                         </span><br>
                                         <span>
-                                            Head Quarter Property Manager
+                                            {{ __('agenda.Head Quarter Property Manager') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. John Seed
+                                            {{ __('agenda.Mr. John Seed') }}
                                         </span><br>
                                         <span>
-                                            Group Director, Strategy & Development - Dar Al Riyadh
+                                            {{ __('agenda.Group Director, Strategy & Development - Dar Al Riyadh') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Ms. Jena Ladhani
+                                           {{ __('agenda.Ms. Jena Ladhani') }}
                                         </span><br>
                                         <span>
-                                            CBRE Global Workplace Solutions (GWS) Country Managing Director in KSA
+                                            {{ __('agenda.CBRE Global Workplace Solutions (GWS) Country Managing Director in KSA') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Medy Navani
+                                            {{ __('agenda.Mr. Medy Navani') }}
                                         </span><br>
                                         <span>
-                                            CEO- Design Haus Medy
+                                            {{ __('agenda.CEO- Design Haus Medy') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Eng. Faisal Al Fadl
+                                            {{ __('agenda.Eng. Faisal Al Fadl') }}
                                         </span><br>
                                         <span>
-                                            Secretary of the Saudi Green Building Forum
+                                            {{ __('agenda.Secretary of the Saudi Green Building Forum') }}
                                         </span>
                                     </span>
                                 </div>
@@ -202,7 +202,9 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Networking Coffee Break</i>
+                                        <i>
+                                            {{ __('agenda.Networking Coffee Break') }}
+                                        </i>
                                     </span>
                                 </div>
                             </div>
@@ -249,28 +251,28 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Expert Panel: Championing collaborative & people centric liveable cities of tomorrow
+                                            {{ __('agenda.Expert Panel: Championing collaborative & people centric liveable cities of tomorrow') }}
                                         </p>
                                         <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Yahya Siraj
+                                            {{ __('agenda.Eng. Yahya Siraj') }}
                                         </span><br>
                                         <span>
-                                            Head of Partnerships Sector
+                                            {{ __('agenda.Head of Partnerships Sector') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Saud Al-Ajmi
+                                            {{ __('agenda.Mr. Saud Al-Ajmi') }}
                                         </span><br>
                                         <span>
-                                            National Housing Company
+                                            {{ __('agenda.National Housing Company') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Sultan Alharazi
+                                            {{ __('agenda.Mr. Sultan Alharazi') }}
                                         </span><br>
                                         <span>
-                                            General Manager of Project Management - Watana Housing
+                                            {{ __('agenda.General Manager of Project Management - Watana Housing') }}
                                         </span>
                                     </span>
                                 </div>
@@ -318,7 +320,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Closing Remarks</i>
+                                        <i>{{ __('agenda.Closing Remarks') }}</i>
                                     </span>
                                 </div>
                             </div>

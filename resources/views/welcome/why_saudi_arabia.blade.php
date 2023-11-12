@@ -122,7 +122,7 @@
         font-weight: 700;
     }
 </style>
-<section class="why">
+<section class="why" id="whysaudi">
     <div class="overlay"></div>
     <div class="container">
         <div class="content">

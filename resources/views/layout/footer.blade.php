@@ -31,36 +31,36 @@
                                                 data-id="8b5687b" data-element_type="widget"
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <h2
-                                                        class="elementor-heading-title elementor-size-default">
-                                                        20 - 21 NOV 2023</h2>
+                                                    <h2 class="elementor-heading-title elementor-size-default">
+                                                        {{ __('header.20 - 21 NOV 2023') }}
+                                                    </h2>
                                                 </div>
                                             </div>
                                             <div class="elementor-element elementor-element-3097de2 elementor-widget elementor-widget-heading"
                                                 data-id="3097de2" data-element_type="widget"
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <h2
-                                                        class="elementor-heading-title elementor-size-default">
-                                                        Ritz-Carlton Riyadh</h2>
+                                                    <h2 class="elementor-heading-title elementor-size-default">
+                                                        {{ __('header.Ritz-Carlton, Riyadh') }}
+                                                    </h2>
                                                 </div>
                                             </div>
                                             <div class="elementor-element elementor-element-031f79a elementor-widget elementor-widget-heading"
                                                 data-id="031f79a" data-element_type="widget"
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <h2
-                                                        class="elementor-heading-title elementor-size-default">
-                                                        Saudi Arabia</h2>
+                                                    <h2 class="elementor-heading-title elementor-size-default">
+                                                        {{ __('header.Saudi Arabia') }}
+                                                    </h2>
                                                 </div>
                                             </div>
                                             <div class="elementor-element elementor-element-e282771 elementor-widget elementor-widget-heading"
                                                 data-id="e282771" data-element_type="widget"
                                                 data-widget_type="heading.default">
                                                 <div class="elementor-widget-container">
-                                                    <h2
-                                                        class="elementor-heading-title elementor-size-default">
-                                                        #SCES2023</h2>
+                                                    <h2 class="elementor-heading-title elementor-size-default">
+                                                        #SCES2023
+                                                    </h2>
                                                 </div>
                                             </div>
                                         </div>
@@ -79,7 +79,8 @@
 
 
                                                             <span class="premium-title-text">
-                                                                QUICK LINKS </span>
+                                                                {{ __('header.QUICK LINKS') }}
+                                                            </span>
 
                                                         </h3>
                                                     </div>
@@ -93,27 +94,37 @@
                                                     <ul class="elementor-icon-list-items">
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('index') }}#overview">
-                                                                <span class="elementor-icon-list-text">Overview</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('welcome.Overview') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('agenda') }}">
-                                                                <span class="elementor-icon-list-text">Agenda</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('agenda.Agenda') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('speakers') }}">
-                                                                <span class="elementor-icon-list-text">Speakers</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Speakers') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('sponsors') }}">
-                                                                <span class="elementor-icon-list-text">Sponsors</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Sponsors') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('media_partners') }}">
-                                                                <span class="elementor-icon-list-text">Media partner</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Media partner') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -130,7 +141,9 @@
                                                 <div class="elementor-widget-container">
                                                     <div class="premium-title-container style1">
                                                         <h3 class="premium-title-header premium-title-style1">
-                                                            <span class="premium-title-text">REGISTER AS </span>
+                                                            <span class="premium-title-text">
+                                                                {{ __('header.REGISTER AS') }}
+                                                            </span>
                                                         </h3>
                                                     </div>
                                                 </div>
@@ -142,37 +155,37 @@
                                                     <ul class="elementor-icon-list-items">
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('register') }}">
-
-                                                                <span
-                                                                    class="elementor-icon-list-text">Sponsor</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Sponsor') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('register') }}">
-
-                                                                <span
-                                                                    class="elementor-icon-list-text">Exhibition</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Exhibition') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('register') }}">
-
-                                                                <span
-                                                                    class="elementor-icon-list-text">Delegate</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Delegate') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('register') }}">
-
-                                                                <span
-                                                                    class="elementor-icon-list-text">Speaker</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Speaker') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                         <li class="elementor-icon-list-item">
                                                             <a href="{{ route('register') }}">
-
-                                                                <span class="elementor-icon-list-text">Media
-                                                                    partner</span>
+                                                                <span class="elementor-icon-list-text">
+                                                                    {{ __('header.Media partner') }}
+                                                                </span>
                                                             </a>
                                                         </li>
                                                     </ul>
@@ -180,368 +193,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    {{-- <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7ea06fa"
-                                        data-id="7ea06fa" data-element_type="column">
-                                        <div class="elementor-widget-wrap elementor-element-populated">
-                                            <div class="elementor-element elementor-element-31ceed8 premium-mask-yes premium-mask-tl elementor-widget elementor-widget-premium-addon-title"
-                                                data-id="31ceed8" data-element_type="widget"
-                                                data-widget_type="premium-addon-title.default">
-                                                <div class="elementor-widget-container">
 
-                                                    <div class="premium-title-container style1">
-                                                        <h3
-                                                            class="premium-title-header premium-title-style1">
-
-
-                                                            <span class="premium-title-text">
-                                                                FOLLOW US </span>
-
-                                                        </h3>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                            <div class="elementor-element elementor-element-2d91172 e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons"
-                                                data-id="2d91172" data-element_type="widget"
-                                                data-widget_type="social-icons.default">
-                                                <div class="elementor-widget-container">
-                                                    <style>
-                                                        /*! elementor - v3.11.3 - 07-03-2023 */
-                                                        .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,
-                                                        .elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,
-                                                        .elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container {
-                                                            line-height: 1;
-                                                            font-size: 0
-                                                        }
-
-                                                        .elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid {
-                                                            display: inline-grid
-                                                        }
-
-                                                        .elementor-widget-social-icons .elementor-grid {
-                                                            grid-column-gap: var(--grid-column-gap, 5px);
-                                                            grid-row-gap: var(--grid-row-gap, 5px);
-                                                            grid-template-columns: var(--grid-template-columns);
-                                                            justify-content: var(--justify-content, center);
-                                                            justify-items: var(--justify-content, center)
-                                                        }
-
-                                                        .elementor-icon.elementor-social-icon {
-                                                            font-size: var(--icon-size, 25px);
-                                                            line-height: var(--icon-size, 25px);
-                                                            width: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)));
-                                                            height: calc(var(--icon-size, 25px) + (2 * var(--icon-padding, .5em)))
-                                                        }
-
-                                                        .elementor-social-icon {
-                                                            --e-social-icon-icon-color: #fff;
-                                                            display: inline-flex;
-                                                            background-color: #818a91;
-                                                            align-items: center;
-                                                            justify-content: center;
-                                                            text-align: center;
-                                                            cursor: pointer
-                                                        }
-
-                                                        .elementor-social-icon i {
-                                                            color: var(--e-social-icon-icon-color)
-                                                        }
-
-                                                        .elementor-social-icon svg {
-                                                            fill: var(--e-social-icon-icon-color)
-                                                        }
-
-                                                        .elementor-social-icon:last-child {
-                                                            margin: 0
-                                                        }
-
-                                                        .elementor-social-icon:hover {
-                                                            opacity: .9;
-                                                            color: #fff
-                                                        }
-
-                                                        .elementor-social-icon-android {
-                                                            background-color: #a4c639
-                                                        }
-
-                                                        .elementor-social-icon-apple {
-                                                            background-color: #999
-                                                        }
-
-                                                        .elementor-social-icon-behance {
-                                                            background-color: #1769ff
-                                                        }
-
-                                                        .elementor-social-icon-bitbucket {
-                                                            background-color: #205081
-                                                        }
-
-                                                        .elementor-social-icon-codepen {
-                                                            background-color: #000
-                                                        }
-
-                                                        .elementor-social-icon-delicious {
-                                                            background-color: #39f
-                                                        }
-
-                                                        .elementor-social-icon-deviantart {
-                                                            background-color: #05cc47
-                                                        }
-
-                                                        .elementor-social-icon-digg {
-                                                            background-color: #005be2
-                                                        }
-
-                                                        .elementor-social-icon-dribbble {
-                                                            background-color: #ea4c89
-                                                        }
-
-                                                        .elementor-social-icon-elementor {
-                                                            background-color: #d30c5c
-                                                        }
-
-                                                        .elementor-social-icon-envelope {
-                                                            background-color: #ea4335
-                                                        }
-
-                                                        .elementor-social-icon-facebook,
-                                                        .elementor-social-icon-facebook-f {
-                                                            background-color: #3b5998
-                                                        }
-
-                                                        .elementor-social-icon-flickr {
-                                                            background-color: #0063dc
-                                                        }
-
-                                                        .elementor-social-icon-foursquare {
-                                                            background-color: #2d5be3
-                                                        }
-
-                                                        .elementor-social-icon-free-code-camp,
-                                                        .elementor-social-icon-freecodecamp {
-                                                            background-color: #006400
-                                                        }
-
-                                                        .elementor-social-icon-github {
-                                                            background-color: #333
-                                                        }
-
-                                                        .elementor-social-icon-gitlab {
-                                                            background-color: #e24329
-                                                        }
-
-                                                        .elementor-social-icon-globe {
-                                                            background-color: #818a91
-                                                        }
-
-                                                        .elementor-social-icon-google-plus,
-                                                        .elementor-social-icon-google-plus-g {
-                                                            background-color: #dd4b39
-                                                        }
-
-                                                        .elementor-social-icon-houzz {
-                                                            background-color: #7ac142
-                                                        }
-
-                                                        .elementor-social-icon-instagram {
-                                                            background-color: #262626
-                                                        }
-
-                                                        .elementor-social-icon-jsfiddle {
-                                                            background-color: #487aa2
-                                                        }
-
-                                                        .elementor-social-icon-link {
-                                                            background-color: #818a91
-                                                        }
-
-                                                        .elementor-social-icon-linkedin,
-                                                        .elementor-social-icon-linkedin-in {
-                                                            background-color: #0077b5
-                                                        }
-
-                                                        .elementor-social-icon-medium {
-                                                            background-color: #00ab6b
-                                                        }
-
-                                                        .elementor-social-icon-meetup {
-                                                            background-color: #ec1c40
-                                                        }
-
-                                                        .elementor-social-icon-mixcloud {
-                                                            background-color: #273a4b
-                                                        }
-
-                                                        .elementor-social-icon-odnoklassniki {
-                                                            background-color: #f4731c
-                                                        }
-
-                                                        .elementor-social-icon-pinterest {
-                                                            background-color: #bd081c
-                                                        }
-
-                                                        .elementor-social-icon-product-hunt {
-                                                            background-color: #da552f
-                                                        }
-
-                                                        .elementor-social-icon-reddit {
-                                                            background-color: #ff4500
-                                                        }
-
-                                                        .elementor-social-icon-rss {
-                                                            background-color: #f26522
-                                                        }
-
-                                                        .elementor-social-icon-shopping-cart {
-                                                            background-color: #4caf50
-                                                        }
-
-                                                        .elementor-social-icon-skype {
-                                                            background-color: #00aff0
-                                                        }
-
-                                                        .elementor-social-icon-slideshare {
-                                                            background-color: #0077b5
-                                                        }
-
-                                                        .elementor-social-icon-snapchat {
-                                                            background-color: #fffc00
-                                                        }
-
-                                                        .elementor-social-icon-soundcloud {
-                                                            background-color: #f80
-                                                        }
-
-                                                        .elementor-social-icon-spotify {
-                                                            background-color: #2ebd59
-                                                        }
-
-                                                        .elementor-social-icon-stack-overflow {
-                                                            background-color: #fe7a15
-                                                        }
-
-                                                        .elementor-social-icon-steam {
-                                                            background-color: #00adee
-                                                        }
-
-                                                        .elementor-social-icon-stumbleupon {
-                                                            background-color: #eb4924
-                                                        }
-
-                                                        .elementor-social-icon-telegram {
-                                                            background-color: #2ca5e0
-                                                        }
-
-                                                        .elementor-social-icon-thumb-tack {
-                                                            background-color: #1aa1d8
-                                                        }
-
-                                                        .elementor-social-icon-tripadvisor {
-                                                            background-color: #589442
-                                                        }
-
-                                                        .elementor-social-icon-tumblr {
-                                                            background-color: #35465c
-                                                        }
-
-                                                        .elementor-social-icon-twitch {
-                                                            background-color: #6441a5
-                                                        }
-
-                                                        .elementor-social-icon-twitter {
-                                                            background-color: #1da1f2
-                                                        }
-
-                                                        .elementor-social-icon-viber {
-                                                            background-color: #665cac
-                                                        }
-
-                                                        .elementor-social-icon-vimeo {
-                                                            background-color: #1ab7ea
-                                                        }
-
-                                                        .elementor-social-icon-vk {
-                                                            background-color: #45668e
-                                                        }
-
-                                                        .elementor-social-icon-weibo {
-                                                            background-color: #dd2430
-                                                        }
-
-                                                        .elementor-social-icon-weixin {
-                                                            background-color: #31a918
-                                                        }
-
-                                                        .elementor-social-icon-whatsapp {
-                                                            background-color: #25d366
-                                                        }
-
-                                                        .elementor-social-icon-wordpress {
-                                                            background-color: #21759b
-                                                        }
-
-                                                        .elementor-social-icon-xing {
-                                                            background-color: #026466
-                                                        }
-
-                                                        .elementor-social-icon-yelp {
-                                                            background-color: #af0606
-                                                        }
-
-                                                        .elementor-social-icon-youtube {
-                                                            background-color: #cd201f
-                                                        }
-
-                                                        .elementor-social-icon-500px {
-                                                            background-color: #0099e5
-                                                        }
-
-                                                        .elementor-shape-rounded .elementor-icon.elementor-social-icon {
-                                                            border-radius: 10%
-                                                        }
-
-                                                        .elementor-shape-circle .elementor-icon.elementor-social-icon {
-                                                            border-radius: 50%
-                                                        }
-                                                    </style>
-                                                    <div
-                                                        class="elementor-social-icons-wrapper elementor-grid">
-                                                        <span class="elementor-grid-item">
-                                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-0c9a6e1"
-                                                                href="https://www.linkedin.com/showcase/87418858"
-                                                                target="_blank">
-                                                                <span
-                                                                    class="elementor-screen-only">Linkedin</span>
-                                                                <i class="fab fa-linkedin"></i> </a>
-                                                        </span>
-                                                        <span class="elementor-grid-item">
-                                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-repeater-item-8c67c15"
-                                                                href="{{ route('index') }}#" target="_blank">
-                                                                <span
-                                                                    class="elementor-screen-only">Twitter</span>
-                                                                <i class="fab fa-twitter"></i> </a>
-                                                        </span>
-                                                        <span class="elementor-grid-item">
-                                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-f2df457"
-                                                                href="https://www.facebook.com/SCESUMMIT"
-                                                                target="_blank">
-                                                                <span
-                                                                    class="elementor-screen-only">Facebook</span>
-                                                                <i class="fab fa-facebook"></i> </a>
-                                                        </span>
-                                                        <span class="elementor-grid-item">
-                                                            <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-651c568"
-                                                                href="https://www.instagram.com/scesummit2023"
-                                                                target="_blank">
-                                                                <span
-                                                                    class="elementor-screen-only">Instagram</span>
-                                                                <i class="fab fa-instagram"></i> </a>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                 </div>
                             </section>
                         </div>
@@ -560,9 +212,11 @@
                                 data-id="7818cce" data-element_type="widget"
                                 data-widget_type="heading.default">
                                 <div class="elementor-widget-container">
-                                    <h2 class="elementor-heading-title elementor-size-default"><a
-                                            href="javascript:void(0)" target="_blank">© 2023 | Saudi
-                                            Construction Excellence Summit | Copyrights Reserved</a></h2>
+                                    <h2 class="elementor-heading-title elementor-size-default">
+                                        <a href="javascript:void(0)" target="_blank">
+                                            {{ __('header.© 2023 | Saudi Construction Excellence Summit | Copyrights Reserved') }}
+                                        </a>
+                                    </h2>
                                 </div>
                             </div>
                         </div>

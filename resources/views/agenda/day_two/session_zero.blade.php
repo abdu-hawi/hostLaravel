@@ -36,7 +36,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        Registration and Networking
+                                        {{ __('agenda.Registration_Networking') }}
                                     </span>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span blue-600">
-                                        Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects
+                                        {{ __('agenda.Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects') }}
                                     </span>
                                 </div>
                             </div>

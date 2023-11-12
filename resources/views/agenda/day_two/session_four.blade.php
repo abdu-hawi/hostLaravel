@@ -4,7 +4,7 @@
     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 
     <div class="agenda-session-header">
-        Session 4 - Technology The New Age of Construction
+        {{ __('agenda.Session 4: Technology The New Age of Construction') }}
     </div>
     {{-- 11:30 – 12:15 --}}
     <div class="elementor-container elementor-column-gap-default">
@@ -40,37 +40,34 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Construction technology trends on the horizon for 2023 and beyond
+                                            {{ __('agenda.Panel Discussion: Construction technology trends on the horizon for 2023 and beyond') }}
                                         </p>
                                         <p class="blue-600">
-                                            Moderator: TBC
-                                        </p>
-                                        <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Essam Bin Ahmed Kalthoum
+                                            {{ __('agenda.Eng. Essam Bin Ahmed Kalthoum') }}
                                         </span><br>
                                         <span>
-                                            Chief Executive Officer - ASMO Company
+                                            {{ __('agenda.Chief Executive Officer - ASMO Company') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Hashim Alhamyani
+                                            {{ __('agenda.Dr. Hashim Alhamyani') }}
                                         </span><br>
                                         <span>
-                                            Taif University
+                                            {{ __('agenda.Taif University') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Ali Malibari
+                                            {{ __('agenda.Dr. Ali Malibari') }}
                                         </span><br>
                                         <span>
-                                            Saudi Society for Civil Engineering
+                                            {{ __('agenda.Saudi Society for Civil Engineering') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Mr. Mohab Mohammed Saleh Benten
+                                            {{ __('agenda.Mr. Mohab Mohammed Saleh Benten') }}
                                         </span><br>
                                         <span>
-                                            Advisor to the Minister of Municipal and Rural Affairs and Housing
+                                            {{ __('agenda.Advisor to the Minister of Municipal and Rural Affairs and Housing') }}
                                         </span>
                                     </span>
                                 </div>
@@ -119,37 +116,34 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Transformative innovation- Redefining the construction industry
+                                            {{ __('agenda.Panel Discussion: Transformative innovation- Redefining the construction industry') }}
                                         </p>
                                         <p class="blue-600">
-                                            Moderator: TBC
-                                        </p>
-                                        <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Saleh Al-Rasheed
+                                            {{ __('agenda.Eng. Saleh Al-Rasheed') }}
                                         </span><br>
                                         <span>
-                                            Royal Commission Makkah
+                                            {{ __('agenda.Royal Commission Makkah') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Abdulqader Amir
+                                            {{ __('agenda.Dr. Abdulqader Amir') }}
                                         </span><br>
                                         <span>
-                                            Aseer Authority
+                                            {{ __('agenda.Aseer Authority') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Muhammad Bakr Malibari
+                                            {{ __('agenda.Dr. Muhammad Bakr Malibari') }}
                                         </span><br>
                                         <span>
-                                            Consultant
+                                            {{ __('agenda.Consultant') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Dr. Khaled Alskeet
+                                            {{ __('agenda.Dr. Khaled Alskeet') }}
                                         </span><br>
                                         <span>
-                                            Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences
+                                            {{ __('agenda.Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences') }}
                                         </span>
                                     </span>
                                 </div>
@@ -197,7 +191,9 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Networking Coffee Break</i>
+                                        <i>
+                                            {{ __('agenda.Networking Coffee Break') }}
+                                        </i>
                                     </span>
                                 </div>
                             </div>

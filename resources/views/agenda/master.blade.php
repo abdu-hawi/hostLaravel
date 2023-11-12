@@ -16,8 +16,8 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default agenda-head-day">
-                            <span>Day One</span>
-                            <span>20 NOV 2023</span>
+                            <span>{{ __('agenda.Day One') }}</span>
+                            <span>{{ __('agenda.20 NOV 2023') }}</span>
                         </h2>
                     </div>
                 </div>
@@ -31,9 +31,9 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default agenda-head-day agenda-head-workshop">
-                            <span>Day One</span>
-                            <span>WORKSHSOPS</span>
-                            <span>20 NOV 2023</span>
+                            <span>{{ __('agenda.Day One') }}</span>
+                            <span>{{ __('agenda.WORKSHSOPS') }}</span>
+                            <span>{{ __('agenda.20 NOV 2023') }}</span>
                         </h2>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default agenda-head-day">
-                            <span>Day Two</span>
-                            <span>21 NOV 2023</span>
+                            <span>{{ __('agenda.Day Two') }}</span>
+                            <span>{{ __('agenda.21 NOV 2023') }}</span>
                         </h2>
                     </div>
                 </div>
@@ -73,9 +73,9 @@
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
                         <h2 class="elementor-heading-title elementor-size-default agenda-head-day agenda-head-workshop">
-                            <span>Day Two</span>
-                            <span>WORKSHSOPS</span>
-                            <span>21 NOV 2023</span>
+                            <span>{{ __('agenda.Day Two') }}</span>
+                            <span>{{ __('agenda.WORKSHSOPS') }}</span>
+                            <span>{{ __('agenda.21 NOV 2023') }}</span>
                         </h2>
                     </div>
                 </div>

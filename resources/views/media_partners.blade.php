@@ -35,7 +35,7 @@
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-bfb7e51 elementor-invisible elementor-widget elementor-widget-heading" data-id="bfb7e51" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h1 class="elementor-heading-title elementor-size-default">MEDIA PARTNERS</h1>		</div>
+			<h1 class="elementor-heading-title elementor-size-default">{{ __('header.MEDIA PARTNERS') }}</h1>		</div>
 				</div>
 					</div>
 		</div>

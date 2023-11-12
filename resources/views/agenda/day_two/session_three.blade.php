@@ -4,7 +4,7 @@
     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 
     <div class="agenda-session-header">
-        Session 3 - Financing and Business Models Opportunities 2023 - 2028
+        {{ __('agenda.Session 3: Financing and Business Models Opportunities 2023 - 2028') }}
     </div>
     {{-- 09:45 – 11:00 --}}
     <div class="elementor-container elementor-column-gap-default">
@@ -40,22 +40,25 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            Panel Discussion: Future of construction sector in Saudi Arabia – Upcoming Projects
+                                            {{ __('agenda.Panel Discussion: Future of construction sector in Saudi Arabia – Upcoming Projects') }}
                                         </p>
                                         <p class="blue-600">
-                                            Speakers:
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr. Talat Hafiz') }}
+                                        </p>
+                                        <p class="blue-600">
+                                            {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            Eng. Saad Bin Saleh AlShuail
+                                            {{ __('agenda.Eng. Saad Bin Saleh AlShuail') }}
                                         </span><br>
                                         <span>
-                                            Secretary-General of the Saudi Building Code National Committee
+                                            {{ __('agenda.Secretary-General of the Saudi Building Code National Committee') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            Eng. Khaled Madkhali
+                                            {{ __('agenda.Eng. Khaled Madkhali') }}
                                         </span><br>
                                         <span>
-                                            Royal Commission in Riyadh
+                                            {{ __('agenda.Royal Commission in Riyadh') }}
                                         </span>
                                     </span>
                                 </div>
@@ -102,7 +105,7 @@
                             <div class="elementor-icon-box-content">
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
-                                        <i>Networking Coffee Break</i>
+                                        <i>{{ __('agenda.Networking Coffee Break') }}</i>
                                     </span>
                                 </div>
                             </div>
