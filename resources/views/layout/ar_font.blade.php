@@ -70,4 +70,7 @@
     .intl-tel-input {
         direction: ltr !important;
     }
+    .dropdown-content {
+        left: 0;
+    }
   </style>
