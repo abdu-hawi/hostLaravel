@@ -91,7 +91,7 @@
                                                                                     <a href="{{ $contact_us }}" target="_blank">Contact form</a>
                                                                                 </p>
 
-                                                                                @if ($data['vip'])
+                                                                                @if ($data['cc'])
                                                                                 <p>
                                                                                     <strong>Note: </strong>
                                                                                     <span>If you would like to invite guests of your own, please invite them through the registration link and use the registration code below during registration.</span>
@@ -140,8 +140,8 @@
                                                                     <tr><td><p>&nbsp;&nbsp;</p></td></tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
-                                                                            {{-- <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100"> --}}
-                                                                            {{ $data['qr'] }}
+                                                                            <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100">
+                                                                            {{-- {{ $data['qr'] }} --}}
                                                                         </td>
                                                                     </tr>
                                                                 </table>
