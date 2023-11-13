@@ -205,12 +205,12 @@ Route::get('admin/custome', function(){
     try {
 
         $data = [
-            "first_name" => "Yasser",
-            "last_name" => "Al-Harbi",
-            "job_title" => "Secretary of the Real Estate Sector at the Riyadh Chamber",
-            "company_name" => "Riyadh Chamber",
-            "mobile" => "+966550385555",
-            "email" => "y.harbi@rdcci.org.sa",
+            "first_name" => "Mohammed",
+            "last_name" => "Al-Shanbri",
+            "job_title" => "Sr. Specialist of Business Development",
+            "company_name" => "El Seif Engineering Constructing",
+            "mobile" => "+966541988779",
+            "email" => "m.alsanbri@el-seif.com.sa",
             "industry" => "Government & Ministry",
             "interested" => "Sponsorship",
             "registeration_code" => "VIP-SCES"

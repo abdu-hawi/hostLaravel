@@ -70,7 +70,7 @@
 
                                                                         <td style=" direction:ltr" dir="ltr">
                                                                             <div style="direction: ltr;">
-                                                                                <p><b>Hello, {{ $data['name'] }}</b></p>
+                                                                                <p><b>Dear, {{ $data['name'] }}</b></p>
                                                                                 <p>
                                                                                     We would like to thank you for your registration in the “Saudi Contracting Excellence Summit” at the Ritz Carlton, Riyadh from November 20 - 21, 2023 from 8 a.m. - 5:30 p.m.
                                                                                 </p>
