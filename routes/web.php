@@ -240,7 +240,8 @@ Route::get('admin/custome', function(){
             'name' => $data['first_name'].' '.$data['last_name'],
             'qr' => $qr,
             'isEmail' => false,
-            'vip' => $vip
+            'vip' => $vip,
+            'cc' => 'cc'
         ]))) {
             $client->query()->update([
                 'is_sent_email' => true
