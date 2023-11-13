@@ -25,11 +25,7 @@
                                                             <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;"></th>
 
                                                         </tr>
-                                                        <tr>
-                                                            <th></th>
-                                                        </tr>
                                                         <tr><th style="padding: 10px"></th></tr>
-                                                        <tr><th></th></tr>
                                                         <tr>
                                                             <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;">
                                                                 <h1 style="text-align: center; font-size:22px; color:#1e5a13">
@@ -93,7 +89,16 @@
                                                                                     <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
                                                                                 </p>
 
+                                                                                <p>
+                                                                                    <strong>Note: </strong>
+                                                                                    <span>If you would like to invite guests of your own, please invite them through the registration link and use the registration code below during registration.</span>
+                                                                                    <p>Registration code: <strong>VIP-SCES</strong></p>
+                                                                                    <p>Registration link: <strong>https://scesummit-sa.com/register</strong></p>
+                                                                                    <a href="https://scesummit-sa.com/register" target="_blank">Click here to register link</a>
+                                                                                </p>
+
                                                                                 <p>&nbsp;&nbsp;</p>
+
                                                                             </div>
                                                                         </td>
 
@@ -101,8 +106,8 @@
                                                                     </tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
-                                                                            {{-- <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100"> --}}
-                                                                            {{ $data['qr'] }}
+                                                                            <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100">
+                                                                            {{-- {{ $data['qr'] }} --}}
                                                                         </td>
                                                                     </tr>
                                                                 </table>

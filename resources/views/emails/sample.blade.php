@@ -24,6 +24,16 @@
                                                             </th>
                                                             <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;"></th>
                                                         </tr>
+                                                        @if ($data['vip'])
+                                                        <tr><th style="padding: 10px"></th></tr>
+                                                        <tr>
+                                                            <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;">
+                                                                <h1 style="text-align: center; font-size:22px; color:#a17202">
+                                                                    SCES VIP Invitation
+                                                                </h1>
+                                                            </th>
+                                                        </tr>
+                                                        @endif
                                                         </tbody>
                                                     </table>
                                                 </th>
@@ -83,6 +93,7 @@
                                                                             </div>
                                                                         </td>
 
+                                                                        @if (!$data['vip'])
                                                                         <td>&nbsp;</td>
 
 
@@ -110,13 +121,17 @@
                                                                                     في حالة وجود أي مقترحات أو استفسارات نرجوا منكم تعبئة نموذج التواصل على الرابط التالي
                                                                                     <a href="{{ $contact_us }}" target="_blank">نموذج التواصل</a>
                                                                                 </p>
+
                                                                             </div>
                                                                         </td>
+                                                                        @endif
 
                                                                     </tr>
+                                                                    <tr><td><p>&nbsp;&nbsp;</p></td></tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
                                                                             <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100">
+                                                                            {{-- {{ $data['qr'] }} --}}
                                                                         </td>
                                                                     </tr>
                                                                 </table>

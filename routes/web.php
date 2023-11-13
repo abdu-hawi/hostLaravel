@@ -170,7 +170,7 @@ Route::get('clear_cache', function () {
 
 Route::get("qr", function(){
     return SimpleSoftwareIO\QrCode\Facades\QrCode::size(300)
-    ->gradient(48, 49, 48, 115, 197, 99, 'diagonal')
+    ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
     ->backgroundColor(246, 248, 250)
     ->generate("A");
 });
@@ -182,7 +182,7 @@ Route::get('admin/testEmail', function(){
     ]);
     $qr = SimpleSoftwareIO\QrCode\Facades\QrCode::size(300)
         // ->format('png')
-        ->gradient(48, 49, 48, 115, 197, 99, 'diagonal')
+        ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
         ->backgroundColor(246, 248, 250)
         ->generate($url);
 

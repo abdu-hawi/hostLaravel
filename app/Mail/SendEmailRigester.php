@@ -69,7 +69,11 @@ class SendEmailRigester extends Mailable
             ]);
         }
 
-        return $this->subject('Thank you for register')
+        $subject = 'Thank you for register';
+        if($this->data['vip']){
+            $subject = 'Thank you for VIP register';
+        }
+        return $this->subject($subject)
             ->view('emails.sample', [
                 'data' => $this->data,
                 'contact_us' => route('contact_us'),

@@ -28,7 +28,7 @@ class ClientController extends Controller
             "industry" => "required | string",
             "interested" => "required | string",
             "GDRP" => "accepted",
-            "registeration_code" => "string | sometimes | regex:(VIP-SCES)"
+            "registeration_code" => "string | sometimes | nullable | regex:(VIP-SCES)"
         ], [
             "GDRP.accepted" => "You must accept privacy policy"
         ]);
@@ -39,16 +39,29 @@ class ClientController extends Controller
         //sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
         // dd($client->id);
         try {
+
             $client = Client::query()->create($data);
             $url = route('presence',[
                 'uuid' => \Str::uuid(),
                 'id' => $client->id
             ]);
-            $qr = QrCode::size(300)
+
+            $vip = false;
+            if($data['registeration_code']){
+                $vip = 'VIP SCES Invitation';
+                $qr = QrCode::size(300)
+                ->format('png')
+                ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
+                ->backgroundColor(246, 248, 250)
+                ->generate($url);
+            }else{
+                $qr = QrCode::size(300)
                 ->format('png')
                 ->gradient(48, 48, 49, 99, 99, 197, 'diagonal')
                 ->backgroundColor(246, 248, 250)
                 ->generate($url);
+            }
+
 
             $output_file = \Str::uuid().time().'.png';
             Storage::disk('public')->put('qr/'.$output_file, $qr);
@@ -58,7 +71,8 @@ class ClientController extends Controller
             if (Mail::to($data['email'])->send(new SendEmailRigester([
                 'name' => $data['first_name'].' '.$data['last_name'],
                 'qr' => $qr,
-                'isEmail' => false
+                'isEmail' => false,
+                'vip' => $vip
             ]))) {
                 $client->query()->update([
                     'is_sent_email' => true
