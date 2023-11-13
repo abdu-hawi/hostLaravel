@@ -257,9 +257,11 @@ Route::get('admin/custome', function(){
         }
 
     } catch (\Exception $ex) {
+        dd($ex->getMessage());
         EmailFailer::query()->create([
             'email' => $data['email'],
             'fails' => $ex->getMessage()
         ]);
     }
+    dd("dobe");
 });
