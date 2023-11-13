@@ -130,8 +130,8 @@
                                                                     <tr><td><p>&nbsp;&nbsp;</p></td></tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
-                                                                            <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100">
-                                                                            {{-- {{ $data['qr'] }} --}}
+                                                                            {{-- <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100"> --}}
+                                                                            {{ $data['qr'] }}
                                                                         </td>
                                                                     </tr>
                                                                 </table>

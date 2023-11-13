@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
+use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 /*
 |--------------------------------------------------------------------------
@@ -169,7 +170,7 @@ Route::get('clear_cache', function () {
 })->middleware('auth');
 
 Route::get("qr", function(){
-    return SimpleSoftwareIO\QrCode\Facades\QrCode::size(300)
+    return QrCode::size(300)
     ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
     ->backgroundColor(246, 248, 250)
     ->generate("A");
@@ -180,21 +181,85 @@ Route::get('admin/testEmail', function(){
         'uuid' => \Str::uuid(),
         'id' => 111
     ]);
-    $qr = SimpleSoftwareIO\QrCode\Facades\QrCode::size(300)
+    $qr = QrCode::size(300)
         // ->format('png')
         ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
         ->backgroundColor(246, 248, 250)
         ->generate($url);
 
 
-    return view('emails.diplomatic', [
+    return view('emails.sample', [
         'data' => [
             'name' => "Abdu Hawi",
             'qr' => $qr,
+            'vip' => "a"
         ],
         'contact_us' => route('contact_us'),
         'xs_logo' => asset('wp-content/uploads/2023/01/xs-conference-1-light.png'),
         'c3_logo' => asset('wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg'),
         'sce_summit_logo' => asset('wp-content/uploads/2023/07/logo_black.jpg'),
     ]);
+});
+
+Route::get('admin/custome', function(){
+    try {
+
+        $data = [
+            "first_name" => "Yasser",
+            "last_name" => "Al-Harbi",
+            "job_title" => "Secretary of the Real Estate Sector at the Riyadh Chamber",
+            "company_name" => "Riyadh Chamber",
+            "mobile" => "+966550385555",
+            "email" => "y.harbi@rdcci.org.saddd",
+            "industry" => "Government & Ministry",
+            "interested" => "Sponsorship",
+            "registeration_code" => "VIP-SCES"
+        ];
+        $client = Client::query()->create($data);
+        $url = route('presence',[
+            'uuid' => \Str::uuid(),
+            'id' => $client->id
+        ]);
+
+        $vip = 'VIP SCES Invitation';
+            $qr = QrCode::size(300)
+            ->format('png')
+            ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
+            ->backgroundColor(246, 248, 250)
+            ->generate($url);
+
+
+        $output_file = \Str::uuid().time().'.png';
+        Storage::disk('public')->put('qr/'.$output_file, $qr);
+
+        $qr = url('').'/storage/qr/'.$output_file;
+
+        if (Mail::to($data['email'])
+        ->cc(['ahhh42@gmail.com'])
+        ->send(new SendEmailRigester([
+            'name' => $data['first_name'].' '.$data['last_name'],
+            'qr' => $qr,
+            'isEmail' => false,
+            'vip' => $vip
+        ]))) {
+            $client->query()->update([
+                'is_sent_email' => true
+            ]);
+        } else {
+            EmailFailer::query()->create([
+                'email' => $data['email'],
+                'fails' => 'Unkown Error'
+            ]);
+        }
+
+        if (Storage::disk('public')->exists('qr/'.$output_file)) {
+            Storage::disk('public')->delete('qr/'.$output_file);
+        }
+
+    } catch (\Exception $ex) {
+        EmailFailer::query()->create([
+            'email' => $data['email'],
+            'fails' => $ex->getMessage()
+        ]);
+    }
 });
