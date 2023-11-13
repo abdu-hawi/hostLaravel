@@ -24,7 +24,7 @@ return [
     'Opening Panel: Construction is Saudi Arabia - Key Trends & Opportunities Beyond 2025' => 'الجلسة الافتتاحية: البناء في المملكة العربية السعودية-الاتجاهات و الفرص الرئيسية بعد عام 2025',
     'Speakers:' => 'المتحدثون',
     'Eng. Abdullah Mohammed Al-Budair' => 'م. عبدالله محمد البدير',
-    'Vice Minister of Municipal and Rural Affairs and Housing' => 'معالي نائب وزير الشؤون البلدية والقروية والاسكان',
+    'Vice Minister of Municipal and Rural Affairs and Housing' => 'نائب وزير الشؤون البلدية والقروية والاسكان',
     'Mr. Salih Ali Al-Turki' => 'أ.  صالح التركي ',
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'معالي أمين جدة والعاصمة المقدسة',
     'Eng. Fahad Mohammed Alkhabeer' => 'م. فهد محمد الخبير ',
@@ -68,14 +68,18 @@ return [
     'Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA' => 'جلسة مناقشة: المدن المستقبلية- تقوية النسيج الاقتصادي و الاجتماعي للمملكة العربية السعودية',
 
     'Dr. Saleh Alhathloul' => 'د. صالح الهذلول',
+    'Dr_Saleh_Alhathloul_bio' => 'أستاذ الهندسة المعمارية والتصميم الحضاري بجامعة الملك سعود',
+
     'King_Saud_University' => 'جامعة الملك سعود',
 
-    'Dr. Khalid Bin Mishari' => 'د. خالد بن مشاري',
+    'Dr_Abdulaziz_Alzahrani' => 'د. عبد العزيز الزهراني',
+    'Dr_Abdulaziz_Alzahrani_bio' => 'أكاديمي و متخصص في مجال التصميم العمراني',
 
     'Eng. Mohammed Bahaidara' => 'م. محمد باحيدرة',
     'Urban Expert' => 'خبير عمراني',
 
     'Dr. Mishari Al-Naeem' => 'د. مشاري النعيم',
+    'Dr_Mishari_Al_Naeem_bio' => ' أستاذ النقد المعماري في كلية العمارة والتخطيط - جامعة الإمام عبدالرحمن بن فيصل',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'جلسة مناقشة: بناء مدن ذكية لتحقيق أهداف الاستدامة وكفاءة الطاقة',
 
@@ -88,8 +92,8 @@ return [
     'Mr. John Seed' => 'أ. جون سييد',
     'Group Director, Strategy & Development - Dar Al Riyadh' => 'مدير المجموعة، الإستراتيجية والتطوير - دار الرياض',
 
-    'Ms. Jena Ladhani' => 'أ. جينا لاداني',
-    'CBRE Global Workplace Solutions (GWS) Country Managing Director in KSA' => 'المديرة العامة لشركة سي بي ار في المملكة العربية السعودية',
+    'Ms_Jena_Ladhani' => 'أ. جينا لاداني',
+    'Ms_Jena_Ladhani_bio' => 'المديرة العامة لشركة CBRE في المملكة العربية السعودية',
 
     'Mr. Medy Navani' => 'أ. ميدي نافاني',
     'CEO- Design Haus Medy' => 'المدير التنفيذي- ديزاين هاوس ميدي',
@@ -128,6 +132,9 @@ return [
 
     'Eng. Khaled Madkhali' => 'م. خالد مدخلي ',
     'Royal Commission in Riyadh' => 'الهيئة الملكية في الرياض',
+
+    'Eng_Abdulnasser_Saif_Al_Abdullatef' => 'م. عبدالناصر العبد اللطيف',
+    'Eng_Abdulnasser_Saif_Al_Abdullatef_bio' => 'امين الهيئة السعودية للمهندسين',
     // Session 4:
     'Session 4: Technology The New Age of Construction' => 'جلسة 4: التكنولوجيا مستقبل البناء الحديث',
     // 11:30-12:15
@@ -205,5 +212,5 @@ return [
     'Saudi Construction Code for Safety and Buildings' => 'كود البناء السعودي و دوره في سلامة واستدامة المباني',
     'Workshop 4:' => 'ورشة العمل 4:',
     ' Achieving Construction Excellence Through the Materials Transition' => ' الامتياز في قطاع البناء و التشييد بالاستناد على تحول المواد',
-    'Mr. Ahmed Al-Shammari' => 'أ. أحمد الشمري',
+    'Mr. Ahmed Al-Shammari' => 'م. أحمد الشمري',
     ];

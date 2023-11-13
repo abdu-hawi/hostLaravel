@@ -46,10 +46,11 @@
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            {{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }}
+                                            {{-- {{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }} --}}
+                                            {{ __('agenda.Vice Minister of Municipal and Rural Affairs and Housing') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Vice Minister of Municipal and Rural Affairs and Housing') }}
+
                                         </span>
                                         <hr>
                                         <span class="black-600">

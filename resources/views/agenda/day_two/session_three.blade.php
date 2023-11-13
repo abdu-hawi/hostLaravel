@@ -60,6 +60,12 @@
                                         <span>
                                             {{ __('agenda.Royal Commission in Riyadh') }}
                                         </span>
+                                        <span class="black-600">
+                                            {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef_bio') }}
+                                        </span>
                                     </span>
                                 </div>
                             </div>

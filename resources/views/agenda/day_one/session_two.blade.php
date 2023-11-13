@@ -49,13 +49,13 @@
                                             {{ __('agenda.Dr. Saleh Alhathloul') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.King_Saud_University') }}
+                                            {{ __('agenda.Dr_Saleh_Alhathloul_bio') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            {{ __('agenda.Dr. Khalid Bin Mishari') }}
+                                            {{ __('agenda.Dr_Abdulaziz_Alzahrani') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.King_Saud_University') }}
+                                            {{ __('agenda.Dr_Abdulaziz_Alzahrani_bio') }}
                                         </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Eng. Mohammed Bahaidara') }}
@@ -67,7 +67,7 @@
                                             {{ __('agenda.Dr. Mishari Al-Naeem') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.King_Saud_University') }}
+                                            {{ __('agenda.Dr_Mishari_Al_Naeem_bio') }}
                                         </span>
                                     </span>
                                 </div>
@@ -140,10 +140,10 @@
                                             {{ __('agenda.Group Director, Strategy & Development - Dar Al Riyadh') }}
                                         </span><hr>
                                         <span class="black-600">
-                                           {{ __('agenda.Ms. Jena Ladhani') }}
+                                           {{ __('agenda.Ms_Jena_Ladhani') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.CBRE Global Workplace Solutions (GWS) Country Managing Director in KSA') }}
+                                            {{ __('agenda.Ms_Jena_Ladhani_bio') }}
                                         </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Medy Navani') }}

@@ -68,14 +68,17 @@ return [
     'Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA' => 'Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA',
 
     'Dr. Saleh Alhathloul' => 'Dr. Saleh Alhathloul',
+    'Dr_Saleh_Alhathloul_bio' => 'Professor of Architecture & Urban Design - King Saud Univeristy',
     'King_Saud_University' => 'King Saud University',
 
-    'Dr. Khalid Bin Mishari' => 'Dr. Khalid Bin Mishari',
+    'Dr_Abdulaziz_Alzahrani' => 'Dr. Abdulaziz Alzahrani',
+    'Dr_Abdulaziz_Alzahrani_bio' => 'Professor and Urban Designer',
 
     'Eng. Mohammed Bahaidara' => 'Eng. Mohammed Bahaidara',
     'Urban Expert' => 'Urban Expert',
 
     'Dr. Mishari Al-Naeem' => 'Dr. Mishari Al-Naeem',
+    'Dr_Mishari_Al_Naeem_bio' => 'Professor College of Architecture and Plannin - Imam Abdulrahman Bin Faisal University',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency',
 
@@ -88,8 +91,8 @@ return [
     'Mr. John Seed' => 'Mr. John Seed',
     'Group Director, Strategy & Development - Dar Al Riyadh' => 'Group Director, Strategy & Development - Dar Al Riyadh',
 
-    'Ms. Jena Ladhani' => 'Ms. Jena Ladhani',
-    'CBRE Global Workplace Solutions (GWS) Country Managing Director in KSA' => 'CBRE Global Workplace Solutions (GWS) Country Managing Director in KSA',
+    'Ms_Jena_Ladhani' => 'Ms. Jena Ladhani',
+    'Ms_Jena_Ladhani_bio' => 'CBRE Global Workplace Solutions (GWS) Country Managing Director in Saudi region',
 
     'Mr. Medy Navani' => 'Mr. Medy Navani',
     'CEO- Design Haus Medy' => 'CEO- Design Haus Medy',
@@ -127,6 +130,9 @@ return [
 
     'Eng. Khaled Madkhali' => 'Eng. Khaled Madkhali',
     'Royal Commission in Riyadh' => 'Royal Commission in Riyadh',
+
+    'Eng_Abdulnasser_Saif_Al_Abdullatef' => 'Eng. Abdulnasser Saif Al-Abdullatef',
+    'Eng_Abdulnasser_Saif_Al_Abdullatef_bio' => 'Secretary-general of Saudi Council of Engineers',
     // Session 4:
     'Session 4: Technology The New Age of Construction' => 'Session 4: Technology The New Age of Construction',
     // 11:30-12:15
@@ -205,5 +211,5 @@ return [
     'Saudi Construction Code for Safety and Buildings' => 'Saudi Construction Code for Safety and Buildings',
     'Workshop 4:' => 'Workshop 4:',
     ' Achieving Construction Excellence Through the Materials Transition' => ' Achieving Construction Excellence Through the Materials Transition',
-    'Mr. Ahmed Al-Shammari' => 'Mr. Ahmed Al-Shammari',
+    'Mr. Ahmed Al-Shammari' => 'Eng. Ahmed Al-Shammari',
     ];
