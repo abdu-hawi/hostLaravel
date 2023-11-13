@@ -214,7 +214,10 @@
                                                                         @csrf
                                                                         <div class="row-name">
                                                                             <div class="fname">
-                                                                                <label>{{ __('header.First name') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.First name') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="Name">
                                                                                     <input size="40"
                                                                                         class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
@@ -231,7 +234,10 @@
                                                                             </div>
 
                                                                             <div class="lname">
-                                                                                <label>{{ __('header.Last name') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.Last name') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="LastName">
                                                                                     <input
                                                                                         size="40"
@@ -251,7 +257,10 @@
 
                                                                         <div class="row-job">
                                                                             <div class="job">
-                                                                                <label>{{ __('header.Job title') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.Job title') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="Jobtitle"><input
                                                                                         size="40"
@@ -269,7 +278,10 @@
                                                                             </div>
 
                                                                             <div class="company">
-                                                                                <label>{{ __('header.Company name') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.Company name') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="Companyname"><input
                                                                                         size="40"
@@ -289,7 +301,10 @@
 
                                                                         <div class="row-email">
                                                                             <div class="mobilenum">
-                                                                                <label>{{ __('header.Mobile number') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.Mobile number') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap" data-name="mobile">
                                                                                     <input
                                                                                         size="40"
@@ -312,7 +327,10 @@
                                                                             </div>
 
                                                                             <div class="email">
-                                                                                <label>{{ __('header.Email') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.Email') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="your-email"><input
                                                                                         size="40"
@@ -332,7 +350,10 @@
 
                                                                         <div class="row-ticket">
                                                                             <div class="ticket">
-                                                                                <label>{{ __('header.Industry') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.Industry') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="Industry">
                                                                                     <select
@@ -445,7 +466,10 @@
                                                                             </div>
 
                                                                             <div class="interest">
-                                                                                <label>{{ __('header.Interested in') }}*</label>
+                                                                                <label>
+                                                                                    <span style="color: #e70c0c">*</span>
+                                                                                    {{ __('header.Interested in') }}
+                                                                                </label>
                                                                                 <span class="wpcf7-form-control-wrap"
                                                                                     data-name="interest">
                                                                                     <select
@@ -467,6 +491,29 @@
                                                                                             Partner</option>
                                                                                     </select>
                                                                                     @error('interested')
+                                                                                        <p style="color: #e70c0c"><b>{{ $message }}</b></p>
+                                                                                    @enderror
+                                                                                </span>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row-code">
+                                                                            <div class="company">
+                                                                                <label>
+                                                                                    {{ __('header.registeration_code') }}
+                                                                                    <span style="padding: 0 5px; font-size:14px; font-weight: 500; color:#3c763d">
+                                                                                        {{ __('header.If you have code please write in below') }}
+                                                                                    </span>
+                                                                                </label>
+                                                                                <span class="wpcf7-form-control-wrap"
+                                                                                    data-name="Registerationcode"><input
+                                                                                        size="40"
+                                                                                        class="wpcf7-form-control wpcf7-text"
+                                                                                        placeholder="{{ __('header.registeration_code') }}"
+                                                                                        value="{{ old('registeration_code') ?? '' }}" type="text"
+                                                                                        name="registeration_code"
+                                                                                        @error('registeration_code') style="border-color: #e70c0c;" @enderror />
+                                                                                    @error('registeration_code')
                                                                                         <p style="color: #e70c0c"><b>{{ $message }}</b></p>
                                                                                     @enderror
                                                                                 </span>

@@ -55,4 +55,6 @@ return [
     'Interested in' => 'الاهتمام',
     'privacy_policy' => 'أقر بأن معلومات التسجيل صحيحة وفقا لمعايير وخصوصية المؤتمر',
     'Register now for early bird discount 15% off' => 'Register now for early bird discount 15% off',
+    'registeration_code' => 'كود التسجيل',
+    'If you have code please write in below' => 'إذا لديك رمز تسجيل فضلا كتابته بالاسفل',
 ];

@@ -28,10 +28,12 @@ class ClientController extends Controller
             "industry" => "required | string",
             "interested" => "required | string",
             "GDRP" => "accepted",
+            "registeration_code" => "string | sometimes | regex:(VIP-SCES)"
         ], [
             "GDRP.accepted" => "You must accept privacy policy"
         ]);
 
+        // registeration_code
 
         //dispatch(new SendEmailsJob($data));
         //sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);

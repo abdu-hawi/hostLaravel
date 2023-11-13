@@ -9,6 +9,7 @@ use App\Mail\SendEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
@@ -157,6 +158,14 @@ Route::get('email', function () {
     }
 
     return 'Done '.Carbon::now();
+})->middleware('auth');
+
+Route::get('clear_cache', function () {
+
+    Artisan::call('migrate');
+    Artisan::call('optimize:clear');
+
+    dd("Cache is cleared");
 })->middleware('auth');
 
 Route::get("qr", function(){

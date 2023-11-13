@@ -55,4 +55,6 @@ return [
     'Interested in' => 'Interested in',
     'privacy_policy' => 'acknowledge that will process my personal data in accordance with Summit’s Privacy Policy',
     'Register now for early bird discount 15% off' => 'Register now for early bird discount 15% off',
+    'registeration_code' => 'Registeration code',
+    'If you have code please write in below' => 'If you have code please write in below',
 ];

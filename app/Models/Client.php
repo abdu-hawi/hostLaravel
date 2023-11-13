@@ -17,6 +17,7 @@ class Client extends Model
         'email',
         'industry',
         'interested',
-        'is_sent_email'
+        'is_sent_email',
+        'registeration_code'
     ];
 }
