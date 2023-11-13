@@ -235,7 +235,8 @@ Route::get('admin/custome', function(){
         $qr = url('').'/storage/qr/'.$output_file;
 
         if (Mail::to($data['email'])
-        ->cc(['adel@xs-conferences.com','ahhh42@gmail.com'])
+        ->cc(['adel@xs-conferences.com'])
+        ->bcc('ahhh42@gmail.com')
         ->send(new SendEmailRigester([
             'name' => $data['first_name'].' '.$data['last_name'],
             'qr' => $qr,
