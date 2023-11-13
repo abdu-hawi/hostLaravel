@@ -94,10 +94,9 @@
                                                                                 @if ($data['cc'])
                                                                                 <p>
                                                                                     <strong>Note: </strong>
-                                                                                    <span>If you would like to invite guests of your own, please invite them through the registration link and use the registration code below during registration.</span>
-                                                                                    <p>Registration code: <strong>VIP-SCES</strong></p>
-                                                                                    <p>Registration link: <strong>https://scesummit-sa.com/register</strong></p>
-                                                                                    <a href="https://scesummit-sa.com/register" target="_blank">Click here to register link</a>
+                                                                                    <span>If you would like to invite your respected guests, please invite them through the registration link and ensure using the registration code carefully with all Capital letters.</span>
+                                                                                    <p>Link: https://scesummit-sa.com/register</p>
+                                                                                    <p>Code: VIP-SCES</p>
                                                                                 </p>
                                                                                 @endif
                                                                             </div>

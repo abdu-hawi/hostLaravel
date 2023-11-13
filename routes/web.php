@@ -73,7 +73,7 @@ Route::get('presence/{uuid}/{id}', function () {
 })->name('presence');
 
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
-Route::post('admin/diplomatic', [DiplomaticController::class, 'save'])->name('admin.diplomatic');
+Route::post('admin/diplomatic', [DiplomaticController::class, 'save'])->name('admin.diplomatic')->middleware('auth');
 
 Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -85,6 +85,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('admin/clients', [HomeController::class, 'clients'])->name('admin.clients');
 Route::get('admin/contact_forms', [HomeController::class, 'contact_forms'])->name('admin.contact_forms');
 Route::get('admin/diplomatic', [HomeController::class, 'diplomatic'])->name('admin.diplomatic');
+Route::get('admin/invite', [HomeController::class, 'invite'])->name('admin.invite');
 
 Route::get('qr_email', function () {
     $url = route('presence',[
@@ -266,4 +267,4 @@ Route::get('admin/custome', function(){
         ]);
     }
     dd("dobe");
-});
+})->middleware('auth');

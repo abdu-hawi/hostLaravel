@@ -14,6 +14,11 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class DiplomaticController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     protected function save(Request $request)
     {
         $_data = $request->validate([
@@ -23,9 +28,6 @@ class DiplomaticController extends Controller
             'communicatoin' => 'required | string',
          ]);
 
-        // dispatch(new SendEmailsJob($data));
-        // sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
-        // dd($client->id);
         $data['first_name'] = $_data['name'];
         $data['last_name'] = 'NAN';
         $data['email'] = $_data['email'];

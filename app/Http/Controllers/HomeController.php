@@ -25,23 +25,27 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $clients = Client::query()->paginate(10);
+        $clients = Client::query()->latest()->paginate(10);
         return view('home', compact('clients'));
     }
 
     public function clients()
     {
-        $clients = Client::query()->paginate(10);
+        $clients = Client::query()->latest()->paginate(10);
         return view('admin.clients', compact('clients'));
     }
     public function contact_forms()
     {
-        $contacts = Contact::query()->paginate(10);
+        $contacts = Contact::query()->latest()->paginate(10);
         return view('admin.contact_form', compact('contacts'));
     }
     public function diplomatic()
     {
-        $clients = Client::query()->where('interested', 'Diplomatic')->paginate(10);
+        $clients = Client::query()->where('interested', 'Diplomatic')->latest()->paginate(10);
         return view('admin.diplomatic', compact('clients'));
+    }
+    public function invite()
+    {
+        return view('admin.invite');
     }
 }
