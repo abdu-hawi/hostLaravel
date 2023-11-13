@@ -73,4 +73,8 @@
     .dropdown-content {
         left: 0;
     }
+    .hfe-nav-menu__align-left .hfe-nav-menu {
+        margin-right: unset;
+        margin-left: auto;
+    }
   </style>
