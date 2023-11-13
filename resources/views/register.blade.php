@@ -463,8 +463,6 @@
                                                                                             Exhibition</option>
                                                                                         <option value="Attending Delegate">
                                                                                             Attending Delegate</option>
-                                                                                        <option value="Speaker">Speaker
-                                                                                        </option>
                                                                                         <option value="Media Partner">Media
                                                                                             Partner</option>
                                                                                     </select>

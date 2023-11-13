@@ -3,11 +3,13 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Mail\SendEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 
@@ -67,16 +69,19 @@ Route::get('presence/{uuid}/{id}', function () {
     return view('welcome');
 })->name('presence');
 
-Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
+Route::post('admin/diplomatic', [ClientController::class, 'diplomatic'])->name('admin.diplomatic');
+
+Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('admin/clients', [App\Http\Controllers\HomeController::class, 'clients'])->name('admin.clients');
-Route::get('admin/contact_forms', [App\Http\Controllers\HomeController::class, 'contact_forms'])->name('admin.contact_forms');
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('admin/clients', [HomeController::class, 'clients'])->name('admin.clients');
+Route::get('admin/contact_forms', [HomeController::class, 'contact_forms'])->name('admin.contact_forms');
+Route::get('admin/diplomatic', [HomeController::class, 'diplomatic'])->name('admin.diplomatic');
 
 Route::get('qr_email', function () {
     $url = route('presence',[
@@ -101,8 +106,6 @@ Route::get('qr_email', function () {
     if (Storage::disk('public')->exists('qr/'.$output_file)) {
         Storage::disk('public')->delete('qr/'.$output_file);
     }
-
-    return 'Abdu';
 })->middleware('auth');
 
 Route::get('email', function () {
@@ -154,3 +157,10 @@ Route::get('email', function () {
 
     return 'Done '.Carbon::now();
 })->middleware('auth');
+
+Route::get("qr", function(){
+    return SimpleSoftwareIO\QrCode\Facades\QrCode::size(300)
+    ->gradient(48, 49, 48, 115, 197, 99, 'diagonal')
+    ->backgroundColor(246, 248, 250)
+    ->generate("A");
+});
