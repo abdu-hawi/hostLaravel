@@ -8,7 +8,7 @@
                     <tr>
                         <td style="width: 100%; word-break: keep-all; text-align:center;">
                             <!-- logo -->
-                            <table style = "Margin: 0 auto; background: transparent; border-collapse: collapse; border-spacing: 0; float: none; margin: 20px auto; padding: 0; text-align: center; vertical-align: top; width: 580px; word-break: keep-all;">
+                            <table style = "Margin: 0 auto; background: transparent; border-collapse: collapse; border-spacing: 0; float: none; margin: 20px auto 0; padding: 0; text-align: center; vertical-align: top; width: 580px; word-break: keep-all;">
                                 <tbody style="word-break: keep-all;">
                                 <tr style="padding: 0; text-align: left; vertical-align: top; word-break: keep-all;">
                                     <td style="Margin: 0; border-collapse: collapse !important; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0; text-align: left; vertical-align: top; word-break: keep-all; word-wrap: break-word;">
@@ -23,6 +23,19 @@
                                                                 <img loading="lazy" src="{{ $sce_summit_logo }}" style="Margin: 0 auto; border: 0; clear: both; display: block; float: none; height: 100px !important; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto !important; word-break: keep-all" alt="Innovation">
                                                             </th>
                                                             <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;"></th>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <th></th>
+                                                        </tr>
+                                                        <tr><th style="padding: 10px"></th></tr>
+                                                        <tr><th></th></tr>
+                                                        <tr>
+                                                            <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;">
+                                                                <h1 style="text-align: center; font-size:22px; color:#1e5a13">
+                                                                    SCES Diplomatic Invitation
+                                                                </h1>
+                                                            </th>
                                                         </tr>
                                                         </tbody>
                                                     </table>
@@ -51,7 +64,7 @@
                                                                 <table style="border-collapse: collapse; border-spacing: 0; padding: 0;text-align: left; vertical-align: top;width: 100%;word-break: keep-all;">
                                                                     <tbody style="word-break:keep-all">
                                                                     <tr style="padding: 0; text-align: left; vertical-align: top; word-break: keep-all;">
-                                                                        <td style="Margin: 0; border-collapse: collapse !important; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 35px; font-weight: normal; line-height: 35px; margin: 0; padding: 0;text-align: left; vertical-align: top; word-break: keep-all; word-wrap: break-word;">&nbsp;&nbsp;</td>
+                                                                        <td style="Margin: 0; border-collapse: collapse !important; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 15px; font-weight: normal; line-height: 15px; margin: 0; padding: 0;text-align: left; vertical-align: top; word-break: keep-all; word-wrap: break-word;">&nbsp;&nbsp;</td>
                                                                     </tr>
                                                                     </tbody>
                                                                 </table>
@@ -80,10 +93,7 @@
                                                                                     <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
                                                                                 </p>
 
-                                                                                <p>
-                                                                                    If you have any suggestions or inquiries, please fill out the contact form at the following link
-                                                                                    <a href="{{ $contact_us }}" target="_blank">Contact form</a>
-                                                                                </p>
+                                                                                <p>&nbsp;&nbsp;</p>
                                                                             </div>
                                                                         </td>
 
