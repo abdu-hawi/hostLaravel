@@ -165,3 +165,27 @@ Route::get("qr", function(){
     ->backgroundColor(246, 248, 250)
     ->generate("A");
 });
+
+Route::get('admin/testEmail', function(){
+    $url = route('presence',[
+        'uuid' => \Str::uuid(),
+        'id' => 111
+    ]);
+    $qr = SimpleSoftwareIO\QrCode\Facades\QrCode::size(300)
+        // ->format('png')
+        ->gradient(48, 49, 48, 115, 197, 99, 'diagonal')
+        ->backgroundColor(246, 248, 250)
+        ->generate($url);
+
+
+    return view('emails.diplomatic', [
+        'data' => [
+            'name' => "Abdu Hawi",
+            'qr' => $qr,
+        ],
+        'contact_us' => route('contact_us'),
+        'xs_logo' => asset('wp-content/uploads/2023/01/xs-conference-1-light.png'),
+        'c3_logo' => asset('wp-content/uploads/2023/01/C3-conference-1-e1675154716886-150x150.jpg'),
+        'sce_summit_logo' => asset('wp-content/uploads/2023/07/logo_black.jpg'),
+    ]);
+});
