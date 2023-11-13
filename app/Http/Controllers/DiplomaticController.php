@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Jobs\SendEmailsJob;
 use App\Mail\DiplomaticEmail;
-use App\Mail\SendEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
 use Illuminate\Http\Request;
@@ -18,15 +17,14 @@ class DiplomaticController extends Controller
     protected function save(Request $request)
     {
         $_data = $request->validate([
-            "name" => "required | string",
-            "email" => "required | email | unique:clients,email",
-            "embassy" => "required | string",
-            "communicatoin" => "required | string",
+            'name' => 'required | string',
+            'email' => 'required | email | unique:clients,email',
+            'embassy' => 'required | string',
+            'communicatoin' => 'required | string',
          ]);
 
-
-        //dispatch(new SendEmailsJob($data));
-        //sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
+        // dispatch(new SendEmailsJob($data));
+        // sendMail($data['email'], "Thank you for register", $data['first_name'] . ' ' . $data['last_name']);
         // dd($client->id);
         $data['first_name'] = $_data['name'];
         $data['last_name'] = 'NAN';
@@ -35,12 +33,12 @@ class DiplomaticController extends Controller
         $data['company_name'] = $_data['embassy'];
         $data['mobile'] = $_data['communicatoin'];
         $data['industry'] = 'NAN';
-        $data['interested'] = "Diplomatic";
+        $data['interested'] = 'Diplomatic';
         try {
             $client = Client::query()->create($data);
-            $url = route('presence',[
+            $url = route('presence', [
                 'uuid' => \Str::uuid(),
-                'id' => $client->id
+                'id' => $client->id,
             ]);
             $qr = QrCode::size(300)
                 ->format('png')
@@ -55,30 +53,29 @@ class DiplomaticController extends Controller
 
             if (Mail::to($data['email'])->send(new DiplomaticEmail([
                 'name' => $data['first_name'],
-                'qr' => $qr
+                'qr' => $qr,
             ]))) {
                 $client->query()->update([
-                    'is_sent_email' => true
+                    'is_sent_email' => true,
                 ]);
             } else {
                 EmailFailer::query()->create([
                     'email' => $data['email'],
-                    'fails' => 'Unkown Error'
+                    'fails' => 'Unkown Error',
                 ]);
             }
 
             if (Storage::disk('public')->exists('qr/'.$output_file)) {
                 Storage::disk('public')->delete('qr/'.$output_file);
             }
-
         } catch (\Exception $ex) {
-            dd($ex->getMessage());
             EmailFailer::query()->create([
                 'email' => $data['email'],
-                'fails' => $ex->getMessage()
+                'fails' => $ex->getMessage(),
             ]);
         }
         Session::flash('success', 'The diplomatic save successfully');
+
         return redirect(route('admin.diplomatic'));
     }
 }

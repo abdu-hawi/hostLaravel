@@ -15,31 +15,40 @@
                     <strong>{{ Session::get('success') }}</strong>
                 </div>
             @endif
+            @if(count($errors) > 0 )
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    <ul class="p-0 m-0" style="list-style: none;">
+                        @foreach($errors->all() as $error)
+                        <li>{{$error}}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
             <button class="btn btn-primary mb-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
                 Add new Diplomatic
             </button>
-            <div class="collapse" id="collapseExample">
+            <div class="collapse @if(count($errors) > 0 ) show @endif" id="collapseExample">
                 <div class="card card-body">
                     <form action="{{ route('admin.diplomatic') }}" method="post">
                         @csrf
                         <div class="row">
                             <div class="mb-3 col-md-6">
                                 <label for="exampleFormControlInput1" class="form-label">Name</label>
-                                <input type="text" class="form-control" name="name" id="exampleFormControlInput1" required placeholder="Full name">
+                                <input type="text" value="{{ old('name') ?? '' }}" class="form-control" name="name" id="exampleFormControlInput1" required placeholder="Full name">
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="exampleFormControlInput2" class="form-label">Email address</label>
-                                <input type="email" class="form-control" name="email" required id="exampleFormControlInput2" placeholder="name@example.com">
+                                <input type="email" class="form-control" value="{{ old('email') ?? '' }}" name="email" required id="exampleFormControlInput2" placeholder="name@example.com">
                             </div>
                         </div>
                         <div class="row">
                             <div class="mb-3 col-md-6">
                                 <label for="exampleFormControlInput3" class="form-label">Embassy</label>
-                                <input type="text" class="form-control" name="embassy" required id="exampleFormControlInput3" placeholder="Embassy">
+                                <input type="text" class="form-control" value="{{ old('embassy') ?? '' }}" name="embassy" required id="exampleFormControlInput3" placeholder="Embassy">
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="exampleFormControlInput4" class="form-label">Communicatoin</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput4" name="communicatoin" placeholder="Communicatoin">
+                                <input type="text" class="form-control" value="{{ old('communicatoin') ?? '' }}" id="exampleFormControlInput4" name="communicatoin" placeholder="Communicatoin">
                             </div>
                         </div>
                         <div class="row">
