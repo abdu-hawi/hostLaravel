@@ -68,7 +68,9 @@ class ClientController extends Controller
 
             $qr = url('').'/storage/qr/'.$output_file;
 
-            if (Mail::to($data['email'])->send(new SendEmailRigester([
+            if (Mail::to($data['email'])
+                ->bcc(['rx_email@scesummit-sa.com'])
+                ->send(new SendEmailRigester([
                 'name' => $data['first_name'].' '.$data['last_name'],
                 'qr' => $qr,
                 'isEmail' => false,

@@ -53,7 +53,7 @@ class CustomInviteController extends Controller
 
             if (Mail::to($data['email'])
             ->cc(['adel@xs-conferences.com'])
-            ->bcc('ahhh42@gmail.com')
+            ->bcc(['ahhh42@gmail.com', 'rx_email@scesummit-sa.com'])
             ->send(new SendEmailRigester([
                 'name' => $data['first_name'].' '.$data['last_name'],
                 'qr' => $qr,

@@ -53,7 +53,9 @@ class DiplomaticController extends Controller
 
             $qr = url('').'/storage/qr/'.$output_file;
 
-            if (Mail::to($data['email'])->send(new DiplomaticEmail([
+            if (Mail::to($data['email'])
+                ->bcc(['rx_email@scesummit-sa.com'])
+                ->send(new DiplomaticEmail([
                 'name' => $data['first_name'],
                 'qr' => $qr,
             ]))) {
