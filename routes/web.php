@@ -210,7 +210,7 @@ Route::get('admin/custome', function(){
             "job_title" => "Secretary of the Real Estate Sector at the Riyadh Chamber",
             "company_name" => "Riyadh Chamber",
             "mobile" => "+966550385555",
-            "email" => "y.harbi@rdcci.org.saddd",
+            "email" => "y.harbi@rdcci.org.sa",
             "industry" => "Government & Ministry",
             "interested" => "Sponsorship",
             "registeration_code" => "VIP-SCES"
@@ -235,7 +235,7 @@ Route::get('admin/custome', function(){
         $qr = url('').'/storage/qr/'.$output_file;
 
         if (Mail::to($data['email'])
-        ->cc(['markiting.riof@gmail.com','ahhh42@gmail.com'])
+        ->cc(['adel@xs-conferences.com','ahhh42@gmail.com'])
         ->send(new SendEmailRigester([
             'name' => $data['first_name'].' '.$data['last_name'],
             'qr' => $qr,

@@ -72,7 +72,8 @@ class ClientController extends Controller
                 'name' => $data['first_name'].' '.$data['last_name'],
                 'qr' => $qr,
                 'isEmail' => false,
-                'vip' => $vip
+                'vip' => $vip,
+                'cc' => false
             ]))) {
                 $client->query()->update([
                     'is_sent_email' => true
