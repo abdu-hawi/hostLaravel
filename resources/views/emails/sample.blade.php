@@ -90,6 +90,16 @@
                                                                                     If you have any suggestions or inquiries, please fill out the contact form at the following link
                                                                                     <a href="{{ $contact_us }}" target="_blank">Contact form</a>
                                                                                 </p>
+
+                                                                                @if ($data['vip'])
+                                                                                <p>
+                                                                                    <strong>Note: </strong>
+                                                                                    <span>If you would like to invite guests of your own, please invite them through the registration link and use the registration code below during registration.</span>
+                                                                                    <p>Registration code: <strong>VIP-SCES</strong></p>
+                                                                                    <p>Registration link: <strong>https://scesummit-sa.com/register</strong></p>
+                                                                                    <a href="https://scesummit-sa.com/register" target="_blank">Click here to register link</a>
+                                                                                </p>
+                                                                                @endif
                                                                             </div>
                                                                         </td>
 
