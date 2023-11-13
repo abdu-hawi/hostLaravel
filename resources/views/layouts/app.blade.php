@@ -46,6 +46,9 @@
                         <li class="nav-item">
                             <a class="nav-link {{ active_menu('contact_forms', 2) }}" href="{{ route('admin.contact_forms') }}">Contact forms</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link {{ active_menu('diplomatic', 2) }}" href="{{ route('admin.diplomatic') }}">Diplomatic</a>
+                        </li>
                         @endauth
                     </ul>
 

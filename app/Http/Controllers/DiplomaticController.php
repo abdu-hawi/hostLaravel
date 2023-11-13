@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Jobs\SendEmailsJob;
+use App\Mail\DiplomaticEmail;
 use App\Mail\SendEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
@@ -52,10 +53,9 @@ class DiplomaticController extends Controller
 
             $qr = url('').'/storage/qr/'.$output_file;
 
-            if (Mail::to($data['email'])->send(new SendEmailRigester([
+            if (Mail::to($data['email'])->send(new DiplomaticEmail([
                 'name' => $data['first_name'],
-                'qr' => $qr,
-                'isEmail' => false
+                'qr' => $qr
             ]))) {
                 $client->query()->update([
                     'is_sent_email' => true

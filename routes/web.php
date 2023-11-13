@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\DiplomaticController;
 use App\Http\Controllers\HomeController;
 use App\Mail\SendEmailRigester;
 use App\Models\Client;
@@ -70,7 +71,7 @@ Route::get('presence/{uuid}/{id}', function () {
 })->name('presence');
 
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
-Route::post('admin/diplomatic', [ClientController::class, 'diplomatic'])->name('admin.diplomatic');
+Route::post('admin/diplomatic', [DiplomaticController::class, 'save'])->name('admin.diplomatic');
 
 Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');

@@ -39,4 +39,9 @@ class HomeController extends Controller
         $contacts = Contact::query()->paginate(10);
         return view('admin.contact_form', compact('contacts'));
     }
+    public function diplomatic()
+    {
+        $clients = Client::query()->where('interested', 'Diplomatic')->paginate(10);
+        return view('admin.diplomatic', compact('clients'));
+    }
 }
