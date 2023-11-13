@@ -72,6 +72,7 @@ class DiplomaticController extends Controller
             }
 
         } catch (\Exception $ex) {
+            dd($ex->getMessage());
             EmailFailer::query()->create([
                 'email' => $data['email'],
                 'fails' => $ex->getMessage()
