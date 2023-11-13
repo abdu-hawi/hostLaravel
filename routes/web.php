@@ -252,9 +252,9 @@ Route::get('admin/custome', function(){
             ]);
         }
 
-        // if (Storage::disk('public')->exists('qr/'.$output_file)) {
-        //     Storage::disk('public')->delete('qr/'.$output_file);
-        // }
+        if (Storage::disk('public')->exists('qr/'.$output_file)) {
+            Storage::disk('public')->delete('qr/'.$output_file);
+        }
 
     } catch (\Exception $ex) {
         EmailFailer::query()->create([
