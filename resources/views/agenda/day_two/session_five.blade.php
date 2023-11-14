@@ -43,6 +43,9 @@
                                             {{ __('agenda.Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits') }}
                                         </p>
                                         <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Eng_Majed_Malibari') }}
+                                        </p>
+                                        <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
@@ -119,6 +122,9 @@
                                             {{ __('agenda.Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector') }}
                                         </p>
                                         <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Eng. Fahad Al-Anqari') }}
+                                        </p>
+                                        <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
@@ -127,6 +133,20 @@
                                         <span>
                                             {{ __('agenda.Chief Executive Officer - Central Jeddah Company') }}
                                         </span><hr>
+
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Eng_Assem_Raqban') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Eng_Assem_Raqban_bio') }}
+                                        </span><hr>
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Dr_Maher_Shira') }}
+                                        </span><hr>
+
+
                                         <span class="black-600">
                                             {{ __('agenda.Dr. Ibrahim Kutbkhana') }}
                                         </span><br>

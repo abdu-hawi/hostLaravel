@@ -43,6 +43,9 @@
                                             {{ __('agenda.Opening Panel: Construction is Saudi Arabia - Key Trends & Opportunities Beyond 2025') }}
                                         </p>
                                         <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr. Talat Hafiz') }}
+                                        </p>
+                                        <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
@@ -61,7 +64,7 @@
                                         </span>
                                         <hr>
                                         <span class="black-600">
-                                            {{ __('agenda.Eng. Fahad Mohammed Alkhabeer') }}
+                                            {{ __('agenda.Eng. Fahad Mohammed Aljubair') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.H.E. Mayor of Eastern Province') }}
@@ -245,17 +248,37 @@
                                             {{ __('agenda.Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals') }}
                                         </p>
                                         <p class="blue-600">
-                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr. Talat Hafiz') }}
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Dr. Samih Alorabi') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
+
                                         <span class="black-600">
                                             {{ __('agenda.Eng. Mohammed Al Mana') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Chief Executive Officer - Jasara') }}
                                         </span><hr>
+
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr_Abdulrahman_Al_Taweel') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Mr_Abdulrahman_Al_Taweel_bio') }}
+                                        </span><hr>
+
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr_Hazem_Al_Aleeli') }}
+                                        </span>
+                                        {{-- <br>
+                                        <span>
+                                            {{ __('agenda.Mr_Hazem_Al_Aleeli_bio') }}
+                                        </span> --}}
+                                        <hr>
+
                                         <span class="black-600">
                                             {{ __('agenda.Dr. Sumaya Suleiman Alsulaiman') }}
                                         </span><br>

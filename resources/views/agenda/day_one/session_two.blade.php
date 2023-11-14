@@ -43,6 +43,9 @@
                                             {{ __('agenda.Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA') }}
                                         </p>
                                         <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Eng. Fahad Al-Anqari') }}
+                                        </p>
+                                        <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
@@ -56,6 +59,12 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Dr_Abdulaziz_Alzahrani_bio') }}
+                                        </span><hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Eng_Ali_Al_Shuaibi') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Eng_Ali_Al_Shuaibi_bio') }}
                                         </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Eng. Mohammed Bahaidara') }}
@@ -119,20 +128,11 @@
                                             {{ __('agenda.Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency') }}
                                         </p>
                                         <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr_Mohammed_Bakhriba') }}
+                                        </p>
+                                        <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr. Khattar Abdulkhalek') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Drone & Innovation Expert , Managing CBRE Saudi region') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng. Thamer Alzahrani') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Head Quarter Property Manager') }}
-                                        </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Mr. John Seed') }}
                                         </span><br>
@@ -150,12 +150,6 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.CEO- Design Haus Medy') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng. Faisal Al Fadl') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Secretary of the Saudi Green Building Forum') }}
                                         </span>
                                     </span>
                                 </div>
@@ -252,6 +246,9 @@
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
                                             {{ __('agenda.Expert Panel: Championing collaborative & people centric liveable cities of tomorrow') }}
+                                        </p>
+                                        <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Eng_Saud_Al_Quwaifel') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}

@@ -27,14 +27,14 @@ return [
     'Vice Minister of Municipal and Rural Affairs and Housing' => 'Vice Minister of Municipal and Rural Affairs and Housing',
     'Mr. Salih Ali Al-Turki' => 'Mr. Salih Ali Al-Turki',
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'H.E. Mayor of Jeddah and Makkah Al Mukarrama',
-    'Eng. Fahad Mohammed Alkhabeer' => 'Eng. Fahad Mohammed Alkhabeer',
+    'Eng. Fahad Mohammed Aljubair' => 'Eng. Fahad Mohammed Aljubair',
     'H.E. Mayor of Eastern Province' => 'H.E. Mayor of Eastern Province',
     // 10:45-11:00
     'Networking Coffee Break' => 'Networking Coffee Break',
     // 11:00-12:15
     'Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom' => 'Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom',
 
-    'Moderator:' => 'Moderator:',
+    'Moderator:' => 'Moderators:',
     'Mr. Talat Hafiz' => 'Mr. Talat Hafiz',
 
     'Eng. Mohammad Al Tayyar' => 'Eng. Mohammad Al Tayyar',
@@ -51,8 +51,15 @@ return [
     // 12:15-13:30
     'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals' => 'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals',
 
+    'Dr. Samih Alorabi' => 'Dr. Samih Alorabi',
+
     'Eng. Mohammed Al Mana' => 'Eng. Mohammed Al Mana',
     'Chief Executive Officer - Jasara' => 'Chief Executive Officer - Jasara',
+
+    'Mr_Abdulrahman_Al_Taweel' => 'Mr. Abdulrahman Al-Taweel',
+    'Mr_Abdulrahman_Al_Taweel_bio' => 'Undersecretary of the Ministry of Municipal and Rural Affairs and Housing for Real Estate Development',
+
+    'Mr_Hazem_Al_Aleeli' => 'Mr. Hazem Al-Aleeli',
 
     'Dr. Sumaya Suleiman Alsulaiman' => 'Dr. Sumaya Suleiman Alsulaiman',
     'Architecture Authority - Ministry of Culture' => 'Architecture Authority - Ministry of Culture',
@@ -67,12 +74,17 @@ return [
     // 14:15-15:15
     'Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA' => 'Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA',
 
+    'Eng. Fahad Al-Anqari' => 'Eng. Fahad Al-Anqari',
+
     'Dr. Saleh Alhathloul' => 'Dr. Saleh Alhathloul',
     'Dr_Saleh_Alhathloul_bio' => 'Professor of Architecture & Urban Design - King Saud Univeristy',
     'King_Saud_University' => 'King Saud University',
 
     'Dr_Abdulaziz_Alzahrani' => 'Dr. Abdulaziz Alzahrani',
     'Dr_Abdulaziz_Alzahrani_bio' => 'Professor and Urban Designer',
+
+    'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
+    'Eng_Ali_Al_Shuaibi_bio' => 'Distinguished Saudi architect',
 
     'Eng. Mohammed Bahaidara' => 'Eng. Mohammed Bahaidara',
     'Urban Expert' => 'Urban Expert',
@@ -82,11 +94,7 @@ return [
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency',
 
-    'Mr. Khattar Abdulkhalek' => 'Mr. Khattar Abdulkhalek',
-    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'Drone & Innovation Expert , Managing CBRE Saudi region',
-
-    'Eng. Thamer Alzahrani' => 'Eng. Thamer Alzahrani',
-    'Head Quarter Property Manager' => 'Head Quarter Property Manager',
+    'Mr_Mohammed_Bakhriba' => 'Mr. Mohammed Bakhriba',
 
     'Mr. John Seed' => 'Mr. John Seed',
     'Group Director, Strategy & Development - Dar Al Riyadh' => 'Group Director, Strategy & Development - Dar Al Riyadh',
@@ -96,11 +104,11 @@ return [
 
     'Mr. Medy Navani' => 'Mr. Medy Navani',
     'CEO- Design Haus Medy' => 'CEO- Design Haus Medy',
-
-    'Eng. Faisal Al Fadl' => 'Eng. Faisal Al Fadl',
-    'Secretary of the Saudi Green Building Forum' => 'Secretary of the Saudi Green Building Forum',
     // Session 2 : 16:30-17:30
     'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow',
+
+    'Eng_Saud_Al_Quwaifel' => 'Eng. Saud Al-Quwaifel',
+
     'Eng. Yahya Siraj' => 'Eng. Yahya Siraj',
     'Head of Partnerships Sector' => 'Head of Partnerships Sector',
 
@@ -133,13 +141,21 @@ return [
 
     'Eng_Abdulnasser_Saif_Al_Abdullatef' => 'Eng. Abdulnasser Saif Al-Abdullatef',
     'Eng_Abdulnasser_Saif_Al_Abdullatef_bio' => 'Secretary-general of Saudi Council of Engineers',
+
+    'Eng_Zakaria_Al_Abdulqader' => 'Eng. Zakaria Al-Abdulqader',
+    'Eng_Zakaria_Al_Abdulqader_bio' => 'Saudi Contractors Authority',
     // Session 4:
     'Session 4: Technology The New Age of Construction' => 'Session 4: Technology The New Age of Construction',
     // 11:30-12:15
     'Panel Discussion: Construction technology trends on the horizon for 2023 and beyond' => 'Panel Discussion: Construction technology trends on the horizon for 2023 and beyond',
 
+    'Dr_Samar_Khan' => 'Dr. Samar Khan',
+
     'Eng. Essam Bin Ahmed Kalthoum' => 'Eng. Essam Bin Ahmed Kalthoum',
     'Chief Executive Officer - ASMO Company' => 'Chief Executive Officer - ASMO Company',
+
+    'Mr. Khattar Abdulkhalek' => 'Mr. Khattar Abdulkhalek',
+    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'Drone & Innovation Expert , Managing CBRE Saudi region',
 
     'Dr. Hashim Alhamyani' => 'Dr. Hashim Alhamyani',
     'Taif University' => 'Taif University',
@@ -167,8 +183,15 @@ return [
     // 13:45-14:45
     'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits' => 'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits',
 
+    'Eng_Majed_Malibari' => 'Eng. Majed Malibari',
+
     'Eng. Muammar Al Atawi' => 'Eng. Muammar Al Atawi',
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'Chairman of the Urban Development Council - Jeddah Chamber',
+
+    'Eng_Assem_Raqban' => 'Eng. Assem Raqban',
+    'Eng_Assem_Raqban_bio' => 'Chief Executive Officer',
+
+    'Dr_Maher_Shira' => 'Dr. Maher Shira',
 
     'Mr. Mohammed Saleh bin Laden' => 'Mr. Mohammed Saleh bin Laden',
     'Executive Boss MBL' => 'Executive Boss MBL',

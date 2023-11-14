@@ -43,6 +43,9 @@
                                             {{ __('agenda.Panel Discussion: Construction technology trends on the horizon for 2023 and beyond') }}
                                         </p>
                                         <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Dr_Samar_Khan') }}
+                                        </p>
+                                        <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
@@ -50,6 +53,12 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Chief Executive Officer - ASMO Company') }}
+                                        </span><hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr. Khattar Abdulkhalek') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Drone & Innovation Expert , Managing CBRE Saudi region') }}
                                         </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Dr. Hashim Alhamyani') }}
@@ -117,6 +126,9 @@
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
                                             {{ __('agenda.Panel Discussion: Transformative innovation- Redefining the construction industry') }}
+                                        </p>
+                                        <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Eng. Fahad Al-Anqari') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}

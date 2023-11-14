@@ -27,7 +27,7 @@ return [
     'Vice Minister of Municipal and Rural Affairs and Housing' => 'نائب وزير الشؤون البلدية والقروية والاسكان',
     'Mr. Salih Ali Al-Turki' => 'أ.  صالح التركي ',
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'معالي أمين جدة والعاصمة المقدسة',
-    'Eng. Fahad Mohammed Alkhabeer' => 'م. فهد محمد الخبير ',
+    'Eng. Fahad Mohammed Aljubair' => 'م. فهد محمد الجبير',
     'H.E. Mayor of Eastern Province' => 'معالي أمين المنطقة الشرقية',
     // Session 1 --- 10:45-11:00
     'Networking Coffee Break' => 'استراحة قهوة و تواصل',
@@ -51,8 +51,15 @@ return [
     // Session 1 --- 12:15-13:30
     'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals' => 'جلسة مناقشة: تطبيق معايير و لوائح تشغيل جديدة لدفع أهداف التنمية المستدامة',
 
+    'Dr. Samih Alorabi' => 'د. سميح العرابي',
+
     'Eng. Mohammed Al Mana' => 'م. محمد المانع',
     'Chief Executive Officer - Jasara' => 'الرئيس التنفيذي - جسارة',
+
+    'Mr_Abdulrahman_Al_Taweel' => 'أ. عبدالرحمن الطويل',
+    'Mr_Abdulrahman_Al_Taweel_bio' => 'وكيل وزارة الشؤون البلدية والقروية والإسكان للتطوير العقاري',
+
+    'Mr_Hazem_Al_Aleeli' => 'أ. حازم العليلي',
 
     'Dr. Sumaya Suleiman Alsulaiman' => 'د. سمية سليمان السليمان ',
     'Architecture Authority - Ministry of Culture' => 'هيئة العمارة - وزارة الثقافة',
@@ -67,6 +74,8 @@ return [
     // 14:15-15:15
     'Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA' => 'جلسة مناقشة: المدن المستقبلية- تقوية النسيج الاقتصادي و الاجتماعي للمملكة العربية السعودية',
 
+    'Eng. Fahad Al-Anqari' => 'م. فهد العنقري',
+
     'Dr. Saleh Alhathloul' => 'د. صالح الهذلول',
     'Dr_Saleh_Alhathloul_bio' => 'أستاذ الهندسة المعمارية والتصميم الحضاري بجامعة الملك سعود',
 
@@ -74,6 +83,9 @@ return [
 
     'Dr_Abdulaziz_Alzahrani' => 'د. عبد العزيز الزهراني',
     'Dr_Abdulaziz_Alzahrani_bio' => 'أكاديمي و متخصص في مجال التصميم العمراني',
+
+    'Eng_Ali_Al_Shuaibi' => 'م. علي الشعيبي',
+    'Eng_Ali_Al_Shuaibi_bio' => 'معماري سعودي متميز',
 
     'Eng. Mohammed Bahaidara' => 'م. محمد باحيدرة',
     'Urban Expert' => 'خبير عمراني',
@@ -83,11 +95,7 @@ return [
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'جلسة مناقشة: بناء مدن ذكية لتحقيق أهداف الاستدامة وكفاءة الطاقة',
 
-    'Mr. Khattar Abdulkhalek' => 'أ. خطار عبد الخالق',
-    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'خبير الطائرات بدون طيار والابتكار (درون)، إدارة شركة CBRE في السعودية',
-
-    'Eng. Thamer Alzahrani' => 'م. ثامر الزهراني',
-    'Head Quarter Property Manager' => 'مدير عقار الهيدكوارتر',
+    'Mr_Mohammed_Bakhriba' => 'أ. محمد باخريبة',
 
     'Mr. John Seed' => 'أ. جون سييد',
     'Group Director, Strategy & Development - Dar Al Riyadh' => 'مدير المجموعة، الإستراتيجية والتطوير - دار الرياض',
@@ -97,11 +105,10 @@ return [
 
     'Mr. Medy Navani' => 'أ. ميدي نافاني',
     'CEO- Design Haus Medy' => 'المدير التنفيذي- ديزاين هاوس ميدي',
-
-    'Eng. Faisal Al Fadl' => 'م. فيصل الفضل ',
-    'Secretary of the Saudi Green Building Forum' => 'امين المنتدى السعودي للابنية الخضراء',
     // Session 2 : 16:30-17:30
     'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'جلسة الخبراء: الاتجاه نحو التفاعل بين الراغبين في اشغال المدن الجديدة',
+
+    'Eng_Saud_Al_Quwaifel' => 'م. سعود القويفل',
 
     'Eng. Yahya Siraj' => 'م. يحيى سراج',
     'Head of Partnerships Sector' => 'رئيس قطاع شراكات',
@@ -135,13 +142,21 @@ return [
 
     'Eng_Abdulnasser_Saif_Al_Abdullatef' => 'م. عبدالناصر العبد اللطيف',
     'Eng_Abdulnasser_Saif_Al_Abdullatef_bio' => 'امين الهيئة السعودية للمهندسين',
+
+    'Eng_Zakaria_Al_Abdulqader' => 'م. زكريا العبد القادر',
+    'Eng_Zakaria_Al_Abdulqader_bio' => 'الهيئة السعودية للمقاولين',
     // Session 4:
     'Session 4: Technology The New Age of Construction' => 'جلسة 4: التكنولوجيا مستقبل البناء الحديث',
     // 11:30-12:15
     'Panel Discussion: Construction technology trends on the horizon for 2023 and beyond' => 'جلسة نقاش: توجهات تكنولوجيا البناء في الافق لعام 2023 و مابعده',
 
+    'Dr_Samar_Khan' => 'د. سمر خان',
+
     'Eng. Essam Bin Ahmed Kalthoum' => 'م. عصام بن احمد كلثوم',
     'Chief Executive Officer - ASMO Company' => 'الرئيس التنفيذي - شركة اسمو',
+
+    'Mr. Khattar Abdulkhalek' => 'أ. خطار عبد الخالق',
+    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'خبير الطائرات بدون طيار والابتكار (درون)، إدارة شركة CBRE في السعودية',
 
     'Dr. Hashim Alhamyani' => 'د. هاشم الحمياني ',
     'Taif University' => 'جامعة الطايف ',
@@ -169,6 +184,8 @@ return [
     // 13:45-14:45
     'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits' => 'جلسة نقاش: تحديات القوى العاملة- مناقشة التحديات المرتبطة بالمهارات و نقص الموارد و الاجور و المزايا',
 
+    'Eng_Majed_Malibari' => 'م. ماجد مليباري',
+
     'Eng. Muammar Al Atawi' => 'م. معمر العطاوي',
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'رئيس مجلس التطوير العمراني - غرفة جدة',
 
@@ -185,6 +202,11 @@ return [
 
     'Eng. Ahmed Al-Saleem' => 'م. أحمد السليم ',
     'Chief Executive Officer - Central Jeddah Company' => 'الرئيس التنفيذي - شركة وسط جدة',
+
+    'Eng_Assem_Raqban' => 'م. عاصم رقبان',
+    'Eng_Assem_Raqban_bio' => 'الرئيس التنفيذي',
+
+    'Dr_Maher_Shira' => 'د. ماهر شيرة',
 
     'Dr. Ibrahim Kutbkhana' => 'د. إبراهيم كتبخانة ',
     'Consultant' => 'مستشار',
