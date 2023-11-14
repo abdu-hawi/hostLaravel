@@ -1,0 +1,41 @@
+<?php
+return [
+    // slider
+    'PITCH_COMPETITION' => 'PITCH COMPETITION',
+    'are_you_an_innovative_entrepreneur' => 'Are you an innovative entrepreneur in the construction industry?',
+    'apply_today_to_the_pitch_competition' => 'Apply today to the pitch competition that will be held as part of the upcoming Saudi Contracting Excellence Summit.',
+    'applay_now' => 'APPLAY NOW',
+    'deadline' => 'Deadline: 17, NOV',
+    'about_competition' => 'About the COMPETITION',
+    'about_01' => 'We are thrilled to announce the upcoming competition as part of our conference, where innovative entrepreneurs will have the opportunity to showcase their business ideas. 5 Construction Startups will be invited to pitch their businesses in front of the Saudi authority of construction, investors, and business leaders alike. The first place winner will be awarded a cash prize of 50K SR.',
+    // apply_if_you_are
+    'apply_if_you_are' => 'Apply if you are',
+    'Early_stage_startups' => 'Early-stage startups in the construction sector',
+    'Business_must_be_based' => 'Business must be based and serving the KSA market',
+    'Must_have_working_Minimum_Viable_Product' => 'Must have a working Minimum Viable Product (MVP) or Some Initial Traction',
+    // Competition Advantages
+    'competition_dvantages' => 'Competition Advantages',
+    'Present_your_business_idea' => 'Present your business idea in front of a large audience of conference attendees',
+    'Get_constructive_feedback' => 'Get constructive feedback from experienced judges',
+    'winner_competition_will_be_awarded' => 'The winner of the competition will be awarded a cash prize of 50,000 SAR',
+    'Connect_with_various_key' => 'Connect with various key players in the entrepreneurial ecosystem',
+    // Competition Track
+    'competition_track' => 'Competition Track',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+    '' => '',
+];

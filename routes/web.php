@@ -11,7 +11,6 @@ use App\Models\EmailFailer;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Mail;
-use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
@@ -27,7 +26,7 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 |
 */
 
-Route::group(['middleware'=>'Lang'],function (){
+Route::group(['middleware' => 'Lang'], function () {
     Route::get('/', function () {
         return view('welcome');
     })->name('index');
@@ -52,17 +51,19 @@ Route::group(['middleware'=>'Lang'],function (){
     Route::get('contact_us', function () {
         return view('contact_us');
     })->name('contact_us');
+    Route::get('competition', function () {
+        return view('competition');
+    })->name('competition');
 });
 
-Route::get('/lang/{lang}',function ($lang){
-    if (session()->has('lang')){
+Route::get('/lang/{lang}', function ($lang) {
+    if (session()->has('lang')) {
         session()->forget('lang');
     }
-    session()->put('lang',$lang);
+    session()->put('lang', $lang);
+
     return back();
 })->name('lang');
-
-
 
 Route::get('pdf', function () {
     return view('pdf');
@@ -88,9 +89,9 @@ Route::get('admin/diplomatic', [HomeController::class, 'diplomatic'])->name('adm
 Route::get('admin/invite', [HomeController::class, 'invite'])->name('admin.invite');
 
 Route::get('qr_email', function () {
-    $url = route('presence',[
+    $url = route('presence', [
         'uuid' => Str::uuid(),
-        'id' => 2
+        'id' => 2,
     ]);
     $qr = QrCode::size(300)
         ->format('png')
@@ -116,9 +117,9 @@ Route::get('email', function () {
     $_data = Client::query()->get();
     foreach ($_data as $data) {
         try {
-            $url = route('presence',[
+            $url = route('presence', [
                 'uuid' => Str::uuid(),
-                'id' => $data->id
+                'id' => $data->id,
             ]);
             $qr = QrCode::size(300)
                 ->format('png')
@@ -134,7 +135,7 @@ Route::get('email', function () {
             if (Mail::to($data['email'])->send(new SendEmailRigester([
                 'name' => $data['first_name'].' '.$data['last_name'],
                 'qr' => $qr,
-                'isEmail' => true
+                'isEmail' => true,
             ]))) {
                 $data->query()->update([
                     'is_sent_email' => true,
@@ -163,24 +164,23 @@ Route::get('email', function () {
 })->middleware('auth');
 
 Route::get('clear_cache', function () {
-
     Artisan::call('migrate');
     Artisan::call('optimize:clear');
 
-    dd("Cache is cleared");
+    dd('Cache is cleared');
 })->middleware('auth');
 
-Route::get("qr", function(){
+Route::get('qr', function () {
     return QrCode::size(300)
     ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
     ->backgroundColor(246, 248, 250)
-    ->generate("A");
+    ->generate('A');
 });
 
-Route::get('admin/testEmail', function(){
-    $url = route('presence',[
+Route::get('admin/testEmail', function () {
+    $url = route('presence', [
         'uuid' => \Str::uuid(),
-        'id' => 111
+        'id' => 111,
     ]);
     $qr = QrCode::size(300)
         // ->format('png')
@@ -188,12 +188,11 @@ Route::get('admin/testEmail', function(){
         ->backgroundColor(246, 248, 250)
         ->generate($url);
 
-
     return view('emails.sample', [
         'data' => [
-            'name' => "Abdu Hawi",
+            'name' => 'Abdu Hawi',
             'qr' => $qr,
-            'vip' => "a"
+            'vip' => 'a',
         ],
         'contact_us' => route('contact_us'),
         'xs_logo' => asset('wp-content/uploads/2023/01/xs-conference-1-light.png'),
@@ -202,33 +201,31 @@ Route::get('admin/testEmail', function(){
     ]);
 });
 
-Route::get('admin/custome', function(){
+Route::get('admin/custome', function () {
     try {
-
         $data = [
-            "first_name" => "Mohammed",
-            "last_name" => "Al-Shanbri",
-            "job_title" => "Sr. Specialist of Business Development",
-            "company_name" => "El Seif Engineering Constructing",
-            "mobile" => "+966541988779",
-            "email" => "m.alsanbri@el-seif.com.sa",
-            "industry" => "Government & Ministry",
-            "interested" => "Sponsorship",
-            "registeration_code" => "VIP-SCES"
+            'first_name' => 'Mohammed',
+            'last_name' => 'Al-Shanbri',
+            'job_title' => 'Sr. Specialist of Business Development',
+            'company_name' => 'El Seif Engineering Constructing',
+            'mobile' => '+966541988779',
+            'email' => 'm.alsanbri@el-seif.com.sa',
+            'industry' => 'Government & Ministry',
+            'interested' => 'Sponsorship',
+            'registeration_code' => 'VIP-SCES',
         ];
         $client = Client::query()->create($data);
-        $url = route('presence',[
+        $url = route('presence', [
             'uuid' => \Str::uuid(),
-            'id' => $client->id
+            'id' => $client->id,
         ]);
 
         $vip = 'VIP SCES Invitation';
-            $qr = QrCode::size(300)
-            ->format('png')
-            ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
-            ->backgroundColor(246, 248, 250)
-            ->generate($url);
-
+        $qr = QrCode::size(300)
+        ->format('png')
+        ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
+        ->backgroundColor(246, 248, 250)
+        ->generate($url);
 
         $output_file = \Str::uuid().time().'.png';
         Storage::disk('public')->put('qr/'.$output_file, $qr);
@@ -243,28 +240,27 @@ Route::get('admin/custome', function(){
             'qr' => $qr,
             'isEmail' => false,
             'vip' => $vip,
-            'cc' => 'cc'
+            'cc' => 'cc',
         ]))) {
             $client->query()->update([
-                'is_sent_email' => true
+                'is_sent_email' => true,
             ]);
         } else {
             EmailFailer::query()->create([
                 'email' => $data['email'],
-                'fails' => 'Unkown Error'
+                'fails' => 'Unkown Error',
             ]);
         }
 
         if (Storage::disk('public')->exists('qr/'.$output_file)) {
             Storage::disk('public')->delete('qr/'.$output_file);
         }
-
     } catch (\Exception $ex) {
         dd($ex->getMessage());
         EmailFailer::query()->create([
             'email' => $data['email'],
-            'fails' => $ex->getMessage()
+            'fails' => $ex->getMessage(),
         ]);
     }
-    dd("dobe");
+    dd('dobe');
 })->middleware('auth');
