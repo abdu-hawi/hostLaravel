@@ -28,31 +28,47 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 Route::group(['middleware' => 'Lang'], function () {
     Route::get('/', function () {
-        return view('welcome');
+        return view('welcome' , [
+            'title' => __('header.HOME') . ' - ',
+        ]);
     })->name('index');
     Route::get('speakers', function () {
-        return view('speakers');
+        return view('speakers' , [
+            'title' => __('header.SPEAKERS') . ' - ',
+        ]);
     })->name('speakers');
     Route::get('agenda', function () {
-        return view('agenda');
+        return view('agenda' , [
+            'title' => __('header.AGENDA') . ' - ',
+        ]);
     })->name('agenda');
     Route::get('media_partners', function () {
-        return view('media_partners');
+        return view('media_partners' , [
+            'title' => __('header.MEDIA PARTNERS') . ' - ',
+        ]);
     })->name('media_partners');
     Route::get('sponsors', function () {
-        return view('sponsors');
+        return view('sponsors' , [
+            'title' => __('header.SPONSORS') . ' - ',
+        ]);
     })->name('sponsors');
     Route::get('news', function () {
         return view('news');
     })->name('news');
     Route::get('register', function () {
-        return view('register');
+        return view('register' , [
+            'title' => __('header.REGISTRATION') . ' - ',
+        ]);
     })->name('register');
     Route::get('contact_us', function () {
-        return view('contact_us');
+        return view('contact_us' , [
+            'title' => __('header.CONTACT US') . ' - ',
+        ]);
     })->name('contact_us');
     Route::get('competition', function () {
-        return view('competition');
+        return view('competition' , [
+            'title' => __('competition.PITCH_COMPETITION') . ' - ',
+        ]);
     })->name('competition');
 });
 

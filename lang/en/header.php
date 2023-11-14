@@ -15,6 +15,7 @@ return [
     'Who Will Attend?' => 'Who Will Attend?',
     'Venue' => 'Venue',
     'AGENDA' => 'AGENDA',
+    'SPEAKERS' => 'SPEAKERS',
     'MEDIA PARTNERS' => 'MEDIA PARTNERS',
     'SPONSORS' => 'SPONSORS',
     'CONTACT US' => 'CONTACT US',
