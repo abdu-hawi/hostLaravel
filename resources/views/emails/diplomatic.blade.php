@@ -69,7 +69,7 @@
 
                                                                         <td style=" direction:ltr" dir="ltr">
                                                                             <div style="direction: ltr;">
-                                                                                <p><b>Dear, {{ $data['name'] }}</b></p>
+                                                                                <p><b>{{ $data['name'] }}</b></p>
                                                                                 <p>
                                                                                     Greetings from XS Conferences.
                                                                                 </p>
