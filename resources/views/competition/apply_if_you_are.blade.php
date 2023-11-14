@@ -25,19 +25,16 @@
         background-attachment: fixed;
     }
     section.apply-if-you-are .container{
-        /* max-width: 1024px; */
-        margin: 40px 2rem;
         color: var( --e-global-color-1299bf4 );
         font-family: "Poppins", Sans-serif;
         display: flex;
-        /* align-items: center; */
-        justify-content: center;
-        flex-flow: column;
-    }
-    @media (max-width: 992px){
-        section.apply-if-you-are .container{
-            max-width: fit-content;
-        }
+        align-items: center;
+        justify-content: space-between;
+        text-align: justify;
+        margin: 0px auto;
+        padding: 40px auto;
+        max-width: 1280px;
+        width: unset;
     }
     section.apply-if-you-are .container h2{
         margin-bottom: 0;
@@ -50,20 +47,15 @@
     }
     .apply-if-you-are-content{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 0 20px;
     }
 
-    .apply-if-you-are-content img{
-        width: auto;
-        height: 200px;
-    }
-    @media(max-width:767px){
-        .apply-if-you-are-content{
-            flex-direction: column-reverse;
-        }
-        .apply-if-you-are-content img{
-            margin-top: 1.5rem;
-        }
+    .apply-if-you-are img{
+        width: 50%;
+        height: auto;
+        padding: 40px 20px 40px;
     }
     .apply-if-you-are-content ul{
         width: 100%;
@@ -84,22 +76,39 @@
         }
     } */
 
+    @media(max-width:992px){
+        section.apply-if-you-are .container{
+            flex-direction: column;
+        }
+        .apply-if-you-are-content{
+            padding-top: 40px;
+        }
+        .apply-if-you-are img{
+            width: 70%;
+            padding: 10px 20px 40px;
+        }
+    }
+    @media(max-width:767px){
+        .apply-if-you-are img{
+            width: 100%;
+        }
+    }
 </style>
 <section class="apply-if-you-are" id="whoattend">
     <div class="container">
-        <h2 class="elementor-heading-title elementor-size-default">
-            <span>
-                {{ __('competition.apply_if_you_are') }}
-            </span>
-        </h2>
         <div class="apply-if-you-are-content">
+            <h2 class="elementor-heading-title elementor-size-default">
+                <span>
+                    {{ __('competition.apply_if_you_are') }}
+                </span>
+            </h2>
             <ul>
                 <li>{{ __('competition.Early_stage_startups') }}</li>
                 <li>{{ __('competition.Business_must_be_based') }}</li>
                 <li>{{ __('competition.Must_have_working_Minimum_Viable_Product') }}</li>
             </ul>
-            <img src="{{ asset('img/competition_apply.png') }}" alt="">
         </div>
+        <img src="{{ asset('img/competition_apply.png') }}" alt="">
     </div>
 
 

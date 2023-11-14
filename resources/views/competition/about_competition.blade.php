@@ -24,16 +24,16 @@
         position: relative;
         z-index: 1;
         color: #fff;
-        max-width: fit-content;
-        margin: 0px 2rem;
         font-family: "Poppins", Sans-serif;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-flow: column;
-        width: fit-content;
         text-align: justify;
-        padding: 40px 2rem;
+        margin: 0px auto;
+        padding: 40px 20px;
+        max-width: 1280px;
+        width: unset;
     }
     /* .why .container .content{
         padding: 40px 2rem;

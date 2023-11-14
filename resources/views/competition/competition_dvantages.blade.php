@@ -44,7 +44,7 @@ data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="m
                 <div class="elementor-widget-container">
                     <div class="elementor-divider">
                         <span class="elementor-divider-separator">
-                            <i class="fa-7x fa-medal fas gold"></i>
+                            <i class="fa-7x fa-medal fas" style="color: #2e55bc;"></i>
                         </span>
                     </div>
                 </div>

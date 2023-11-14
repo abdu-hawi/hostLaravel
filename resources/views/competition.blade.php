@@ -40,7 +40,7 @@
                                     align-items: center;
                                     margin: 5rem auto;">
                                         <h1 style="color: #000;
-                                        font-size: 40px;">POWERED BY</h1>
+                                        font-size: 30px; font-weight:500">POWERED BY</h1>
                                         <img src="{{ asset('img/bloosom-logo.png') }}" style="max-width: unset; height: 120px;">
                                     </div>
 

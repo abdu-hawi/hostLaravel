@@ -23,7 +23,7 @@
                                     data-id="46fae01" data-element_type="widget"
                                     data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h2 class="elementor-heading-title elementor-size-default">
+                                        <h2 class="elementor-heading-title elementor-size-default" style="font-size: 58px;">
                                             {{ __('competition.PITCH_COMPETITION') }}
                                         </h2>
                                     </div>
@@ -31,11 +31,11 @@
                                 <div class="elementor-element elementor-element-2891c96 elementor-widget elementor-widget-heading"
                                     data-id="2891c96" data-element_type="widget"
                                     data-widget_type="heading.default">
-                                    <div class="elementor-widget-container">
-                                        <h4 class="elementor-heading-title elementor-size-default">
+                                    <div class="elementor-widget-container" style="margin-top: 2em;">
+                                        <h4 class="elementor-heading-title elementor-size-default" style="font-size: 20px;">
                                             {{ __('competition.are_you_an_innovative_entrepreneur') }}
                                         </h4>
-                                        <h4 class="elementor-heading-title elementor-size-default color-f0f9ff mt-1">
+                                        <h4 class="elementor-heading-title elementor-size-default color-f0f9ff mt-1" style="font-size: 20px;">
                                             {{ __('competition.apply_today_to_the_pitch_competition') }}
                                         </h4>
                                     </div>
@@ -66,7 +66,7 @@
                                     data-id="2891c96" data-element_type="widget"
                                     data-widget_type="heading.default">
                                     <div class="elementor-widget-container">
-                                        <h6 class="elementor-heading-title elementor-size-default color-f0f9ff fs-16">
+                                        <h6 class="elementor-heading-title elementor-size-default" style="font-size: 12px;">
                                             {{ __('competition.deadline') }}
                                         </h6>
                                     </div>

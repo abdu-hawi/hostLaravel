@@ -4,7 +4,7 @@ return [
     'PITCH_COMPETITION' => 'PITCH COMPETITION',
     'are_you_an_innovative_entrepreneur' => 'Are you an innovative entrepreneur in the construction industry?',
     'apply_today_to_the_pitch_competition' => 'Apply today to the pitch competition that will be held as part of the upcoming Saudi Contracting Excellence Summit.',
-    'applay_now' => 'APPLAY NOW',
+    'applay_now' => 'APPLAY',
     'deadline' => 'Deadline: 17, NOV',
     'about_competition' => 'About the COMPETITION',
     'about_01' => 'We are thrilled to announce the upcoming competition as part of our conference, where innovative entrepreneurs will have the opportunity to showcase their business ideas. 5 Construction Startups will be invited to pitch their businesses in front of the Saudi authority of construction, investors, and business leaders alike. The first place winner will be awarded a cash prize of 50K SR.',
