@@ -1,10 +1,10 @@
 <body
 class="home page-template-default page page-id-674 wp-embed-responsive ehf-header ehf-footer ehf-template-oceanwp ehf-stylesheet-oceanwp qodef-qi--no-touch qi-addons-for-elementor-1.5.7 oceanwp-theme dropdown-mobile default-breakpoint content-full-screen has-topbar page-header-disabled no-margins elementor-default elementor-kit-23 elementor-page elementor-page-674"
 itemscope="itemscope" itemtype="https://schema.org/WebPage">
-<!-- Google Tag Manager (noscript) -->
+{{-- <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDJMFPNC"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) --> --}}
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">

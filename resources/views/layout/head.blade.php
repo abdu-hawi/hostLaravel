@@ -11,22 +11,31 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
+	{{-- <link rel="profile" href="https://gmpg.org/xfn/11"> --}}
 
     <!-- Google Tag Manager -->
-    <script>
+    {{-- <script>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-PDJMFPNC');
-    </script>
+    </script> --}}
     <!-- End Google Tag Manager -->
+	<!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPMCXKVTVV"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-BPMCXKVTVV');
+    </script>
 	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- This site is optimized with the Yoast SEO Premium plugin v20.9 (Yoast SEO v20.9) - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>{{ __('header.Saudi Construction Excellence Summit 2023') }}</title>
-	<link rel="canonical" href="index.html" />
+	<link rel="canonical" href="{{ route('home') }}" />
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Saudi Construction Excellence Summit" />
@@ -43,8 +52,6 @@
 	<meta name="twitter:data1" content="9 minutes" />
 
 
-
-	<link rel='dns-prefetch' href='https://www.googletagmanager.com/' />
 	<link rel="alternate" type="application/rss+xml" title="Saudi Construction Excellence Summit 2023 &raquo; Feed"
 		href="feed/index.html" />
 	<link rel='stylesheet' id='pa-frontend-css'
