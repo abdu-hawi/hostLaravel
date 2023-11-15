@@ -58,6 +58,6 @@ return [
     'registeration_code' => 'كود التسجيل',
     'If you have code please write in below' => 'إذا لديك رمز تسجيل فضلا كتابته بالاسفل',
     // WORKSHOP REGISTRATION
-    'WORKSHOP REGISTRATION' => 'التسجيل في ورش العمل',
+    'WORKSHOP REGISTRATION' => 'تسجيل ورش العمل',
     'Workshop_name' => 'اسم ورشة العمل',
 ];
