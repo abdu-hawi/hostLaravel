@@ -80,6 +80,6 @@ class WorkshopController extends Controller
         }
         Session::flash('success', 'The form send successfully');
 
-        return redirect(route('register'));
+        return redirect(route('workstaion'));
     }
 }
