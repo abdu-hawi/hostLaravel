@@ -57,4 +57,7 @@ return [
     'Register now for early bird discount 15% off' => 'Register now for early bird discount 15% off',
     'registeration_code' => 'كود التسجيل',
     'If you have code please write in below' => 'إذا لديك رمز تسجيل فضلا كتابته بالاسفل',
+    // WORKSHOP REGISTRATION
+    'WORKSHOP REGISTRATION' => 'التسجيل في ورش العمل',
+    'Workshop_name' => 'اسم ورشة العمل',
 ];

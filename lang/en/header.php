@@ -58,4 +58,7 @@ return [
     'Register now for early bird discount 15% off' => 'Register now for early bird discount 15% off',
     'registeration_code' => 'Registeration code',
     'If you have code please write in below' => 'If you have code please write in below',
+    // WORKSHOP REGISTRATION
+    'WORKSHOP REGISTRATION' => 'WORKSHOP REGISTRATION',
+    'Workshop_name' => 'Workshop name',
 ];

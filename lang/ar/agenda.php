@@ -4,6 +4,8 @@ return [
     'Agenda' => 'جدول الأعمال',
     "Let's join the biggest construction conference on 2023." => 'انضم معنا في أكبر مؤتمر للبناء في عام 2023',
     'Overview' => 'المقدمة',
+    'READ_MORE' => 'إقرأ المزيد',
+    'REGISTER' => 'التسجيل بالورشة',
     // Master blade
     'Day One' => 'اليوم الأول',
     '20 NOV 2023' => '20 نوفمبر 2023',

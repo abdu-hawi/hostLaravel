@@ -5,6 +5,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DiplomaticController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\WorkshopController;
 use App\Mail\SendEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
@@ -28,48 +29,53 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 Route::group(['middleware' => 'Lang'], function () {
     Route::get('/', function () {
-        return view('welcome' , [
-            'title' => __('header.HOME') . ' - ',
+        return view('welcome', [
+            'title' => __('header.HOME').' - ',
         ]);
     })->name('index');
     Route::get('speakers', function () {
-        return view('speakers' , [
-            'title' => __('header.SPEAKERS') . ' - ',
+        return view('speakers', [
+            'title' => __('header.SPEAKERS').' - ',
         ]);
     })->name('speakers');
     Route::get('agenda', function () {
-        return view('agenda' , [
-            'title' => __('header.AGENDA') . ' - ',
+        return view('agenda', [
+            'title' => __('header.AGENDA').' - ',
         ]);
     })->name('agenda');
     Route::get('media_partners', function () {
-        return view('media_partners' , [
-            'title' => __('header.MEDIA PARTNERS') . ' - ',
+        return view('media_partners', [
+            'title' => __('header.MEDIA PARTNERS').' - ',
         ]);
     })->name('media_partners');
     Route::get('sponsors', function () {
-        return view('sponsors' , [
-            'title' => __('header.SPONSORS') . ' - ',
+        return view('sponsors', [
+            'title' => __('header.SPONSORS').' - ',
         ]);
     })->name('sponsors');
     Route::get('news', function () {
         return view('news');
     })->name('news');
     Route::get('register', function () {
-        return view('register' , [
-            'title' => __('header.REGISTRATION') . ' - ',
+        return view('register', [
+            'title' => __('header.REGISTRATION').' - ',
         ]);
     })->name('register');
     Route::get('contact_us', function () {
-        return view('contact_us' , [
-            'title' => __('header.CONTACT US') . ' - ',
+        return view('contact_us', [
+            'title' => __('header.CONTACT US').' - ',
         ]);
     })->name('contact_us');
     Route::get('competition', function () {
-        return view('competition' , [
-            'title' => __('competition.PITCH_COMPETITION') . ' - ',
+        return view('competition', [
+            'title' => __('competition.PITCH_COMPETITION').' - ',
         ]);
     })->name('competition');
+    Route::get('workshop', function () {
+        return view('workshop', [
+            'title' => __('header.WORKSHOP REGISTRATION').' - ',
+        ]);
+    })->name('workshop');
 });
 
 Route::get('/lang/{lang}', function ($lang) {
@@ -90,6 +96,7 @@ Route::get('presence/{uuid}/{id}', function () {
 })->name('presence');
 
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
+Route::post('workshop', [WorkshopController::class, 'save'])->name('workshop');
 Route::post('admin/diplomatic', [DiplomaticController::class, 'save'])->name('admin.diplomatic')->middleware('auth');
 
 Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');

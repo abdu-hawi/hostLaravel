@@ -4,6 +4,8 @@ return [
     'Agenda' => 'Agenda',
     "Let's join the biggest construction conference on 2023." => "Let's join the biggest construction conference on 2023.",
     'Overview' => 'Overview',
+    'READ_MORE' => 'READ MORE',
+    'REGISTER' => 'REGISTER',
     // Master blade
     'Day One' => 'Day One',
     '20 NOV 2023' => '20 NOV 2023',

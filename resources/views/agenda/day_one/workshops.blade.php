@@ -155,6 +155,15 @@
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Ahmed Al-Shammari') }}
                                         </span>
+                                        <span class="agenda-icon-box-title-span" style="font-size: 16px; margin:0.5rem;cursor: pointer;">
+                                            {{-- <i>{{ __('agenda.READ_MORE_AND_REGISTER') }}</i> --}}
+                                            {{-- <button class="agend_btn_read_more" id="agend_btn_read_more" data-id="3">
+                                                {{ __('agenda.READ_MORE') }}
+                                            </button> --}}
+                                            <a href="{{ route('workshop') }}">
+                                                <button class="agend_btn_register">{{ __('agenda.REGISTER') }}</button>
+                                            </a>
+                                        </span>
                                     </span>
                                 </div>
                             </div>
@@ -165,6 +174,7 @@
         </div>
     </div>
     {{-- End -- 15:00 --}}
+
 
 
 </section>

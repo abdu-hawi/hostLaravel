@@ -240,8 +240,6 @@
 class=" fa fa-angle-up" aria-hidden="true" role="img"></i></a>
 
 
-
-
 <link rel='stylesheet' id='font-awesome-5-all-css'
 href='{{ asset("wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css@ver=4.9.51.css") }}' media='all' />
 <link rel='stylesheet' id='pa-slick-css'
@@ -323,7 +321,6 @@ var elementskit = {
 resturl: 'https://scesummit-sa.com/wp-json/elementskit/v1/',
 }
 
-
 </script>
 <script src='wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js@ver=2.8.5'
 id='ekit-widget-scripts-js'></script>
@@ -374,6 +371,7 @@ d.body.appendChild(js);
 }(window, document, 'script', 'webpushr-jssdk'));
 webpushr('setup', { 'key': 'BLGZ5IswvT4yD22HK3vhJGSadXtdWasHPybPQ5VcvagGYyAUX60vPo_BfuEXGevID5Sz3r7nBLUj4FhxTOzMUGY', 'sw': 'https://scesummit-sa.com/wp-content/plugins/webpushr-web-push-notifications/sdk_files/webpushr-sw.js.php' });
 </script> --}}
+@stack('modal')
 </body>
 
 </html><!-- WP Fastest Cache file was created in 0.81304788589478 seconds, on 15-07-23 11:15:46 -->
