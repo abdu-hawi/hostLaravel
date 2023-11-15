@@ -59,5 +59,6 @@ return [
     'If you have code please write in below' => 'إذا لديك رمز تسجيل فضلا كتابته بالاسفل',
     // WORKSHOP REGISTRATION
     'WORKSHOP REGISTRATION' => 'تسجيل ورش العمل',
+    'WORKSHOP REGISTER' => 'تسجيل ورش العمل',
     'Workshop_name' => 'اسم ورشة العمل',
 ];

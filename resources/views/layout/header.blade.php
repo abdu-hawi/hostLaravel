@@ -640,8 +640,15 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                     <li id="menu-item-754"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('register') }}"
-                                                            class="hfe-menu-item">
+                                                            class="hfe-menu-item elementor-button">
                                                             {{ __('header.REGISTER NOW') }}
+                                                        </a>
+                                                    </li>
+                                                    <li id="menu-item-755"
+                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                        <a href="{{ route('workshop') }}"
+                                                            class="hfe-menu-item elementor-button" style="margin: 0 1rem;">
+                                                            {{ __('header.WORKSHOP REGISTER') }}
                                                         </a>
                                                     </li>
                                                 </ul>
@@ -846,8 +853,15 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                     <li id="menu-item-754"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('register') }}"
-                                                                                            class="hfe-menu-item">
+                                                                                            class="hfe-menu-item elementor-button">
                                                                                             {{ __('header.REGISTER NOW') }}
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li id="menu-item-755"
+                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                        <a href="{{ route('workshop') }}"
+                                                                                            class="hfe-menu-item elementor-button">
+                                                                                            {{ __('header.WORKSHOP REGISTER') }}
                                                                                         </a>
                                                                                     </li>
                                                                                 </ul>

@@ -60,5 +60,6 @@ return [
     'If you have code please write in below' => 'If you have code please write in below',
     // WORKSHOP REGISTRATION
     'WORKSHOP REGISTRATION' => 'WORKSHOP REGISTRATION',
+    'WORKSHOP REGISTER' => 'WORKSHOP REGISTER',
     'Workshop_name' => 'Workshop name',
 ];
