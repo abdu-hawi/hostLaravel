@@ -29,9 +29,9 @@ return [
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'H.E. Mayor of Jeddah and Makkah Al Mukarrama',
     'Eng. Fahad Mohammed Aljubair' => 'Eng. Fahad Mohammed Aljubair',
     'H.E. Mayor of Eastern Province' => 'H.E. Mayor of Eastern Province',
-    // 10:45-11:00
+    // Session 1 10:45-11:00
     'Networking Coffee Break' => 'Networking Coffee Break',
-    // 11:00-12:15
+    // Session 1 11:00-12:15
     'Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom' => 'Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom',
 
     'Moderator:' => 'Moderators:',
@@ -48,27 +48,15 @@ return [
 
     'Eng. Mohammed Saleh Al-Buti' => 'Eng. Mohammed Saleh Al-Buti',
     'National_Housing_Company' => 'National Housing Company',
-    // 12:15-13:30
+    // Session 1 12:15-13:30
     'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals' => 'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals',
 
     'Dr. Samih Alorabi' => 'Dr. Samih Alorabi',
-
-    'Eng. Mohammed Al Mana' => 'Eng. Mohammed Al Mana',
-    'Chief Executive Officer - Jasara' => 'Chief Executive Officer - Jasara',
 
     'Mr_Abdulrahman_Al_Taweel' => 'Mr. Abdulrahman Al-Taweel',
     'Mr_Abdulrahman_Al_Taweel_bio' => 'Undersecretary of the Ministry of Municipal and Rural Affairs and Housing for Real Estate Development',
 
     'Mr_Hazem_Al_Aleeli' => 'Mr. Hazem Al-Aleeli',
-
-    'Dr. Sumaya Suleiman Alsulaiman' => 'Dr. Sumaya Suleiman Alsulaiman',
-    'Architecture Authority - Ministry of Culture' => 'Architecture Authority - Ministry of Culture',
-
-    'Dr. Adel Ezzat' => 'Dr. Adel Ezzat',
-    'Chief Executive Officer - Elaf' => 'Chief Executive Officer - Elaf',
-
-    'Mr. Hamad Hamoud Al-Hammad' => 'Mr. Hamad Hamoud Al-Hammad',
-    'Chairman_of the National Contractors Committee' => 'Chairman of the National Contractors Committee',
     // Session 2
     'Session 2: Shaping the Future of Saudi Arabia' => 'Session 2: Shaping the Future of Saudi Arabia',
     // 14:15-15:15
@@ -76,8 +64,6 @@ return [
 
     'Eng. Fahad Al-Anqari' => 'Eng. Fahad Al-Anqari',
 
-    'Dr. Saleh Alhathloul' => 'Dr. Saleh Alhathloul',
-    'Dr_Saleh_Alhathloul_bio' => 'Professor of Architecture & Urban Design - King Saud Univeristy',
     'King_Saud_University' => 'King Saud University',
 
     'Dr_Abdulaziz_Alzahrani' => 'Dr. Abdulaziz Alzahrani',
@@ -85,12 +71,6 @@ return [
 
     'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
     'Eng_Ali_Al_Shuaibi_bio' => 'Distinguished Saudi architect',
-
-    'Eng. Mohammed Bahaidara' => 'Eng. Mohammed Bahaidara',
-    'Urban Expert' => 'Urban Expert',
-
-    'Dr. Mishari Al-Naeem' => 'Dr. Mishari Al-Naeem',
-    'Dr_Mishari_Al_Naeem_bio' => 'Professor College of Architecture and Plannin - Imam Abdulrahman Bin Faisal University',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency',
 
@@ -104,6 +84,9 @@ return [
 
     'Mr. Medy Navani' => 'Mr. Medy Navani',
     'CEO- Design Haus Medy' => 'CEO- Design Haus Medy',
+
+    'Mr_Viktor_Lechman' => 'Mr. Viktor Lechman',
+    'Mr_Viktor_Lechman_bio' => 'CEO- GMP Tech',
     // Session 2 : 16:30-17:30
     'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow',
 
@@ -125,6 +108,9 @@ return [
     'Practical considerations for navigating the regulatory framework for mega infrastructure projects' => 'Practical considerations for navigating the regulatory framework for mega infrastructure projects',
     'Workshop 2:' => 'Workshop 2:',
     ' Developing and handling successful construction contracts' => ' Developing and handling successful construction contracts',
+    'Workshop 3:' => 'Workshop 3: ',
+    ' Achieving Construction Excellence Through the Materials Transition' => ' Achieving Construction Excellence Through the Materials Transition',
+    'Mr. Ahmed Al-Shammari' => 'Eng. Ahmed Al-Shammari',
     // day tow
     // session zero
     'Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects' => 'Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects',
@@ -135,9 +121,6 @@ return [
 
     'Eng. Saad Bin Saleh AlShuail' => 'Eng. Saad Bin Saleh AlShuail',
     'Secretary-General of the Saudi Building Code National Committee' => 'Secretary-General of the Saudi Building Code National Committee',
-
-    'Eng. Khaled Madkhali' => 'Eng. Khaled Madkhali',
-    'Royal Commission in Riyadh' => 'Royal Commission in Riyadh',
 
     'Eng_Abdulnasser_Saif_Al_Abdullatef' => 'Eng. Abdulnasser Saif Al-Abdullatef',
     'Eng_Abdulnasser_Saif_Al_Abdullatef_bio' => 'Secretary-general of Saudi Council of Engineers',
@@ -157,24 +140,14 @@ return [
     'Mr. Khattar Abdulkhalek' => 'Mr. Khattar Abdulkhalek',
     'Drone & Innovation Expert , Managing CBRE Saudi region' => 'Drone & Innovation Expert , Managing CBRE Saudi region',
 
-    'Dr. Hashim Alhamyani' => 'Dr. Hashim Alhamyani',
-    'Taif University' => 'Taif University',
-
     'Dr. Ali Malibari' => 'Dr. Ali Malibari',
     'Saudi Society for Civil Engineering' => 'Saudi Society for Civil Engineering',
 
-    'Mr. Mohab Mohammed Saleh Benten' => 'Mr. Mohab Mohammed Saleh Benten',
-    'Advisor to the Minister of Municipal and Rural Affairs and Housing' => 'Advisor to the Minister of Municipal and Rural Affairs and Housing',
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'Panel Discussion: Transformative innovation- Redefining the construction industry',
 
-    'Eng. Saleh Al-Rasheed' => 'Eng. Saleh Al-Rasheed',
-    'Royal Commission Makkah' => 'Royal Commission Makkah',
-
     'Dr. Abdulqader Amir' => 'Dr. Abdulqader Amir',
     'Aseer Authority' => 'Aseer Authority',
-
-    'Dr. Muhammad Bakr Malibari' => 'Dr. Muhammad Bakr Malibari',
 
     'Dr. Khaled Alskeet' => 'Dr. Khaled Alskeet',
     'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences' => 'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences',
@@ -188,30 +161,15 @@ return [
     'Eng. Muammar Al Atawi' => 'Eng. Muammar Al Atawi',
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'Chairman of the Urban Development Council - Jeddah Chamber',
 
-    'Eng_Assem_Raqban' => 'Eng. Assem Raqban',
-    'Eng_Assem_Raqban_bio' => 'Chief Executive Officer',
-
-    'Dr_Maher_Shira' => 'Dr. Maher Shira',
-
-    'Mr. Mohammed Saleh bin Laden' => 'Mr. Mohammed Saleh bin Laden',
-    'Executive Boss MBL' => 'Executive Boss MBL',
-
     'Dr. Abdullah bin Junaideb' => 'Dr. Abdullah bin Junaideb',
     'Construction Expert' => 'Construction Expert',
-
-    'Mr. Khalid Bin Debis Alharthi' => 'Mr. Khalid Bin Debis Alharthi',
-    'Vice Chairman of the National Contractors Committee' => 'Vice Chairman of the National Contractors Committee',
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector',
 
-    'Eng. Ahmed Al-Saleem' => 'Eng. Ahmed Al-Saleem',
-    'Chief Executive Officer - Central Jeddah Company' => 'Chief Executive Officer - Central Jeddah Company',
+    'Eng_Assem_Raqban' => 'Eng. Assem Raqban',
+    'Eng_Assem_Raqban_bio' => 'Chief Executive Officer - Maskan Arabia Investment and Development Company',
 
-    'Dr. Ibrahim Kutbkhana' => 'Dr. Ibrahim Kutbkhana',
-    'Consultant' => 'Consultant',
-
-    'Mr. Joseph Daher' => 'Mr. Joseph Daher',
-    'Chief Executive Officer- Mabanee' => 'Chief Executive Officer- Mabanee',
+    'Dr_Maher_Shira' => 'Dr. Maher Shira',
 
     'Mr. Ali Sawadi' => 'Mr. Ali Sawadi',
     'Chairman of the National Contractors Committee' => 'Chairman of the National Contractors Committee',
@@ -230,9 +188,6 @@ return [
     'King Saud University' => 'King Saud University',
     // workshop day 2
     'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs' => 'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs',
-    'Workshop 3: ' => 'Workshop 3: ',
-    'Saudi Construction Code for Safety and Buildings' => 'Saudi Construction Code for Safety and Buildings',
     'Workshop 4:' => 'Workshop 4:',
-    ' Achieving Construction Excellence Through the Materials Transition' => ' Achieving Construction Excellence Through the Materials Transition',
-    'Mr. Ahmed Al-Shammari' => 'Eng. Ahmed Al-Shammari',
+    'Saudi Construction Code for Safety and Buildings' => 'Saudi Construction Code for Safety and Buildings',
     ];

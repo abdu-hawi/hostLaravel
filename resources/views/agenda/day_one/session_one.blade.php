@@ -254,13 +254,6 @@
                                             {{ __('agenda.Speakers:') }}
                                         </p>
 
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng. Mohammed Al Mana') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Chief Executive Officer - Jasara') }}
-                                        </span><hr>
-
 
                                         <span class="black-600">
                                             {{ __('agenda.Mr_Abdulrahman_Al_Taweel') }}
@@ -279,24 +272,6 @@
                                         </span> --}}
                                         <hr>
 
-                                        <span class="black-600">
-                                            {{ __('agenda.Dr. Sumaya Suleiman Alsulaiman') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Architecture Authority - Ministry of Culture') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Dr. Adel Ezzat') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Chief Executive Officer - Elaf') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr. Hamad Hamoud Al-Hammad') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Chairman_of the National Contractors Committee') }}
-                                        </span>
                                     </span>
                                 </div>
                             </div>

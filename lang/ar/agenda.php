@@ -53,31 +53,16 @@ return [
 
     'Dr. Samih Alorabi' => 'د. سميح العرابي',
 
-    'Eng. Mohammed Al Mana' => 'م. محمد المانع',
-    'Chief Executive Officer - Jasara' => 'الرئيس التنفيذي - جسارة',
-
     'Mr_Abdulrahman_Al_Taweel' => 'أ. عبدالرحمن الطويل',
     'Mr_Abdulrahman_Al_Taweel_bio' => 'وكيل وزارة الشؤون البلدية والقروية والإسكان للتطوير العقاري',
 
     'Mr_Hazem_Al_Aleeli' => 'أ. حازم العليلي',
-
-    'Dr. Sumaya Suleiman Alsulaiman' => 'د. سمية سليمان السليمان ',
-    'Architecture Authority - Ministry of Culture' => 'هيئة العمارة - وزارة الثقافة',
-
-    'Dr. Adel Ezzat' => 'د. عادل عزت ',
-    'Chief Executive Officer - Elaf' => 'الرئيس التنفيذي - ايلاف',
-
-    'Mr. Hamad Hamoud Al-Hammad' => 'أ. حمد حمود الحماد',
-    'Chairman_of the National Contractors Committee' => 'رئيس اللجنة الوطنية للمقاولين',
     // Session 2
     'Session 2: Shaping the Future of Saudi Arabia' => 'جلسة 2: تشكيل مستقبل المملكة العربية السعودية',
     // 14:15-15:15
     'Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA' => 'جلسة مناقشة: المدن المستقبلية- تقوية النسيج الاقتصادي و الاجتماعي للمملكة العربية السعودية',
 
     'Eng. Fahad Al-Anqari' => 'م. فهد العنقري',
-
-    'Dr. Saleh Alhathloul' => 'د. صالح الهذلول',
-    'Dr_Saleh_Alhathloul_bio' => 'أستاذ الهندسة المعمارية والتصميم الحضاري بجامعة الملك سعود',
 
     'King_Saud_University' => 'جامعة الملك سعود',
 
@@ -86,12 +71,6 @@ return [
 
     'Eng_Ali_Al_Shuaibi' => 'م. علي الشعيبي',
     'Eng_Ali_Al_Shuaibi_bio' => 'معماري سعودي متميز',
-
-    'Eng. Mohammed Bahaidara' => 'م. محمد باحيدرة',
-    'Urban Expert' => 'خبير عمراني',
-
-    'Dr. Mishari Al-Naeem' => 'د. مشاري النعيم',
-    'Dr_Mishari_Al_Naeem_bio' => ' أستاذ النقد المعماري في كلية العمارة والتخطيط - جامعة الإمام عبدالرحمن بن فيصل',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'جلسة مناقشة: بناء مدن ذكية لتحقيق أهداف الاستدامة وكفاءة الطاقة',
 
@@ -104,7 +83,10 @@ return [
     'Ms_Jena_Ladhani_bio' => 'المديرة العامة لشركة CBRE في المملكة العربية السعودية',
 
     'Mr. Medy Navani' => 'أ. ميدي نافاني',
-    'CEO- Design Haus Medy' => 'المدير التنفيذي- ديزاين هاوس ميدي',
+    'CEO- Design Haus Medy' => 'المدير التنفيذي- Design Haus Medy',
+
+    'Mr_Viktor_Lechman' => 'أ. فيكتور ليتشمان',
+    'Mr_Viktor_Lechman_bio' => 'المدير التنفيذي - GMP Tech',
     // Session 2 : 16:30-17:30
     'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'جلسة الخبراء: الاتجاه نحو التفاعل بين الراغبين في اشغال المدن الجديدة',
 
@@ -126,6 +108,9 @@ return [
     'Practical considerations for navigating the regulatory framework for mega infrastructure projects' => 'اعتبارات عملية لتصفح الاطار التنظيمي لمشاريع البنتية التحتية الضخمة',
     'Workshop 2:' => 'ورشة العمل 2:',
     ' Developing and handling successful construction contracts' => ' تطوير و معالجة عقود البناء الناجحة',
+    'Workshop 3:' => 'ورشة العمل 3: ',
+    ' Achieving Construction Excellence Through the Materials Transition' => ' الامتياز في قطاع البناء و التشييد بالاستناد على تحول المواد',
+    'Mr. Ahmed Al-Shammari' => 'م. أحمد الشمري',
     // day tow
     // session zero
     'Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects' => 'اﻟﻜﻠﻤﺔ اﻟﺮﺋﻴﺴﻴﺔ: إﺗﺎﺣﺔ ﻓﺮص ﺗﻐﻴﻴﺮ اﻟﻠﻌﺒﺔ ﻓﻲ ﻣﺸﺎرﻳﻊ اﻟﺒﻨﻴﺔ اﻟﺘﺤﺘﻴﺔ اﻟﻤﺘﻜﺎﻣﻠﺔ',
@@ -136,9 +121,6 @@ return [
 
     'Eng. Saad Bin Saleh AlShuail' => 'م. سعد بن صالح الشعيل',
     'Secretary-General of the Saudi Building Code National Committee' => 'أمين عام اللجنة الوطنية لكود البناء السعودي',
-
-    'Eng. Khaled Madkhali' => 'م. خالد مدخلي ',
-    'Royal Commission in Riyadh' => 'الهيئة الملكية في الرياض',
 
     'Eng_Abdulnasser_Saif_Al_Abdullatef' => 'م. عبدالناصر العبد اللطيف',
     'Eng_Abdulnasser_Saif_Al_Abdullatef_bio' => 'امين الهيئة السعودية للمهندسين',
@@ -158,24 +140,13 @@ return [
     'Mr. Khattar Abdulkhalek' => 'أ. خطار عبد الخالق',
     'Drone & Innovation Expert , Managing CBRE Saudi region' => 'خبير الطائرات بدون طيار والابتكار (درون)، إدارة شركة CBRE في السعودية',
 
-    'Dr. Hashim Alhamyani' => 'د. هاشم الحمياني ',
-    'Taif University' => 'جامعة الطايف ',
-
     'Dr. Ali Malibari' => 'د. علي مليباري ',
     'Saudi Society for Civil Engineering' => 'الجمعية السعودية للهندسة المدنية',
-
-    'Mr. Mohab Mohammed Saleh Benten' => 'أ. مهاب محمد صالح بنتن',
-    'Advisor to the Minister of Municipal and Rural Affairs and Housing' => 'مستشار وزير الشؤون البلدية والقروية والإسكان',
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'حلقة نقاش: الابتكار التحويلي- اعادة تصميم صناعة البناء والتشييد',
 
-    'Eng. Saleh Al-Rasheed' => 'م. صالح الرشيد',
-    'Royal Commission Makkah' => 'الهيئة الملكية مكة',
-
     'Dr. Abdulqader Amir' => 'د. عبدالقادر امير ',
     'Aseer Authority' => 'هيئة عسير',
-
-    'Dr. Muhammad Bakr Malibari' => 'د. محمد بكر مليباري ',
 
     'Dr. Khaled Alskeet' => 'د. خالد السكيت ',
     'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences' => 'رئيس مجلس إدارة الجمعية السعودية لعلوم العقار ',
@@ -189,33 +160,18 @@ return [
     'Eng. Muammar Al Atawi' => 'م. معمر العطاوي',
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'رئيس مجلس التطوير العمراني - غرفة جدة',
 
-    'Mr. Mohammed Saleh bin Laden' => 'أ. محمد صالح بن لادن',
-    'Executive Boss MBL' => 'الرئيس التنفيذي MBL',
-
     'Dr. Abdullah bin Junaideb' => 'د. عبدالله بن جنيدب ',
     'Construction Expert' => 'خبير انشاءات',
-
-    'Mr. Khalid Bin Debis Alharthi' => 'أ. خالد بن دبيس الحارثي',
-    'Vice Chairman of the National Contractors Committee' => 'نائب رئيس اللجنة الوطنية للمقاولين',
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'جلسة نقاش: تحديات الصناعة- التخفيف من التحديات المتعلقة بالمنظمات العاملة داخل القطاع',
 
-    'Eng. Ahmed Al-Saleem' => 'م. أحمد السليم ',
-    'Chief Executive Officer - Central Jeddah Company' => 'الرئيس التنفيذي - شركة وسط جدة',
-
     'Eng_Assem_Raqban' => 'م. عاصم رقبان',
-    'Eng_Assem_Raqban_bio' => 'الرئيس التنفيذي',
+    'Eng_Assem_Raqban_bio' => 'الرئيس التنفيذي - شركة مسكن العربية',
 
     'Dr_Maher_Shira' => 'د. ماهر شيرة',
 
-    'Dr. Ibrahim Kutbkhana' => 'د. إبراهيم كتبخانة ',
-    'Consultant' => 'مستشار',
-
-    'Mr. Joseph Daher' => 'أ. جوزيف ضاهر',
-    'Chief Executive Officer- Mabanee' => 'الرئيس التنفيذي - المباني',
-
     'Mr. Ali Sawadi' => 'أ. علي سوادي',
-    'Chairman of the National Contractors Committee' => 'رئيس لجنة الوطنية للمقاولين ',
+    'Chairman of the National Contractors Committee' => 'رئيس اللجنة الوطنية للمقاولين',
     // Session 6:
     'Session 6: Evolving with Construction Technology' => 'جلسة 6: التطورات مع تكنولوجيا البناء',
     // 16:00-17:00
@@ -230,9 +186,6 @@ return [
     'Dr. Ammar Al-Ammar' => 'د. عمار العمار',
     // workshop day 2
     'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs' => 'عرض خاص: برنامج سكني للاسكان - تسهيل احتياجات الاسكان في المملكة العربية السعودية',
-    'Workshop 3: ' => 'ورشة العمل 3: ',
-    'Saudi Construction Code for Safety and Buildings' => 'كود البناء السعودي و دوره في سلامة واستدامة المباني',
     'Workshop 4:' => 'ورشة العمل 4:',
-    ' Achieving Construction Excellence Through the Materials Transition' => ' الامتياز في قطاع البناء و التشييد بالاستناد على تحول المواد',
-    'Mr. Ahmed Al-Shammari' => 'م. أحمد الشمري',
+    'Saudi Construction Code for Safety and Buildings' => 'كود البناء السعودي و دوره في سلامة واستدامة المباني',
     ];

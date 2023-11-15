@@ -55,22 +55,10 @@
                                             {{ __('agenda.Chairman of the Urban Development Council - Jeddah Chamber') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            {{ __('agenda.Mr. Mohammed Saleh bin Laden') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Executive Boss MBL') }}
-                                        </span><hr>
-                                        <span class="black-600">
                                             {{ __('agenda.Dr. Abdullah bin Junaideb') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Construction Expert') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr. Khalid Bin Debis Alharthi') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Vice Chairman of the National Contractors Committee') }}
                                         </span>
                                     </span>
                                 </div>
@@ -127,12 +115,6 @@
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng. Ahmed Al-Saleem') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Chief Executive Officer - Central Jeddah Company') }}
-                                        </span><hr>
 
 
                                         <span class="black-600">
@@ -146,19 +128,6 @@
                                             {{ __('agenda.Dr_Maher_Shira') }}
                                         </span><hr>
 
-
-                                        <span class="black-600">
-                                            {{ __('agenda.Dr. Ibrahim Kutbkhana') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Consultant') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr. Joseph Daher') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Chief Executive Officer- Mabanee') }}
-                                        </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Ali Sawadi') }}
                                         </span><br>

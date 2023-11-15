@@ -55,12 +55,6 @@
                                             {{ __('agenda.Secretary-General of the Saudi Building Code National Committee') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            {{ __('agenda.Eng. Khaled Madkhali') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Royal Commission in Riyadh') }}
-                                        </span><hr>
-                                        <span class="black-600">
                                             {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef') }}
                                         </span><br>
                                         <span>

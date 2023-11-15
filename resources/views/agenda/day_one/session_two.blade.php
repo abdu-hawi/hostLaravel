@@ -49,12 +49,6 @@
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            {{ __('agenda.Dr. Saleh Alhathloul') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Dr_Saleh_Alhathloul_bio') }}
-                                        </span><hr>
-                                        <span class="black-600">
                                             {{ __('agenda.Dr_Abdulaziz_Alzahrani') }}
                                         </span><br>
                                         <span>
@@ -65,18 +59,6 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Ali_Al_Shuaibi_bio') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng. Mohammed Bahaidara') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Urban Expert') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Dr. Mishari Al-Naeem') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Dr_Mishari_Al_Naeem_bio') }}
                                         </span>
                                     </span>
                                 </div>
@@ -150,6 +132,12 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.CEO- Design Haus Medy') }}
+                                        </span><hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr_Viktor_Lechman') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Mr_Viktor_Lechman_bio') }}
                                         </span>
                                     </span>
                                 </div>

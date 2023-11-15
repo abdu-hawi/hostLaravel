@@ -61,22 +61,10 @@
                                             {{ __('agenda.Drone & Innovation Expert , Managing CBRE Saudi region') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            {{ __('agenda.Dr. Hashim Alhamyani') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Taif University') }}
-                                        </span><hr>
-                                        <span class="black-600">
                                             {{ __('agenda.Dr. Ali Malibari') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Saudi Society for Civil Engineering') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr. Mohab Mohammed Saleh Benten') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Advisor to the Minister of Municipal and Rural Affairs and Housing') }}
                                         </span>
                                     </span>
                                 </div>
@@ -134,22 +122,10 @@
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            {{ __('agenda.Eng. Saleh Al-Rasheed') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Royal Commission Makkah') }}
-                                        </span><hr>
-                                        <span class="black-600">
                                             {{ __('agenda.Dr. Abdulqader Amir') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Aseer Authority') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Dr. Muhammad Bakr Malibari') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Consultant') }}
                                         </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Dr. Khaled Alskeet') }}
