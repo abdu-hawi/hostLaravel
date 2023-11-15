@@ -23,12 +23,7 @@ class WorkshopEmailRigester extends Mailable
 
     public function build()
     {
-        $subject = 'Thank you for register';
-        if ($this->data['vip']) {
-            $subject = 'Thank you for VIP register';
-        }
-
-        return $this->subject($subject)
+        return $this->subject(__('header.WORKSHOP REGISTRATION'))
             ->view('emails.workshop', [
                 'data' => $this->data,
                 'contact_us' => route('contact_us'),
