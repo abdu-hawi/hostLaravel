@@ -16,107 +16,107 @@ class SAJCoController extends Controller
     {
         $_data = [
             [
-                'name' => 'سليمان محمد سليمان',
-                'email' => 'suleiman@sajco.com.sa',
+                'name' => 'عدنان',
+                'email' => 'adnan@sajco.com.sa',
             ],
             [
-                'name' => 'يوسف أحمد عسيلان',
-                'email' => 'yousef@sajco.com.sa',
+                'name' => 'محمد الفاهوم',
+                'email' => 'mfahoum@sajco.com.sa',
             ],
             [
-                'name' => 'عماد محمد سليمان',
-                'email' => 'emws@sajco.com.sa',
+                'name' => 'الكيالي',
+                'email' => 'mkayyali@sajco.com.sa',
             ],
             [
-                'name' => 'مراد محمد سليمان',
-                'email' => 'murad@sajco.com.sa',
+                'name' => 'وقاص',
+                'email' => 'wakkas.ismail@sajco.com.sa',
             ],
             [
-                'name' => 'بدر وهبي سليمان',
-                'email' => 'bader@sajco.com.sa',
+                'name' => 'عاطف',
+                'email' => 'atef@sajco.com.sa',
             ],
             [
-                'name' => 'زياد وهبي سليمان',
-                'email' => 'ziad@sajco.com.sa',
+                'name' => 'هيثم',
+                'email' => 'haytham.fayed@sajco',
             ],
             [
-                'name' => 'أحمد عماد سليمان',
-                'email' => 'Ahmad@sajco.com.sa',
+                'name' => 'محمد العيسى',
+                'email' => 'malessa@sajco.com.sa',
             ],
             [
-                'name' => 'محمد وهبي سليمان',
-                'email' => 'mohammed.suleiman@sajco.com.sa',
+                'name' => 'فادي',
+                'email' => 'fadi.azazi@sajco.com.sa',
             ],
             [
-                'name' => 'فهد عماد سليمان',
-                'email' => 'Fahad@sajco.com.sa',
+                'name' => 'شادي',
+                'email' => 'shady.abbass@sajco.com.sa',
             ],
             [
-                'name' => 'سلطان سليمان سليمان',
-                'email' => 'sultan@sajco.com.sa',
+                'name' => 'خالد القلفاط',
+                'email' => 'kh.alkolfat@sajco.com.sa',
             ],
             [
-                'name' => 'عبدالعزيز سليمان سليمان',
-                'email' => 'abdulaziz@sajcoinvest.com',
+                'name' => 'عزام',
+                'email' => 'sazzam@sajco.com.sa',
             ],
             [
-                'name' => 'فيصل مراد سليمان',
-                'email' => 'faisal@sajco.com.sa',
+                'name' => 'aabulibdeh@sajco.com.sa',
+                'email' => 'علي ابو لبدة',
             ],
             [
-                'name' => 'فراس يوسف عسيلان',
-                'email' => 'f.osailan@sajco.com.sa',
+                'name' => 'عبدالمحسن',
+                'email' => 'aalrammah@sajco.com.sa',
             ],
             [
-                'name' => 'أنور',
-                'email' => 'anwar@sajco.com.sa',
+                'name' => 'امتياز',
+                'email' => 'imthiyaz@sajco.com.sa',
             ],
             [
-                'name' => 'نادية فارسي',
-                'email' => 'nadia.farsi@sajco.com.sa',
+                'name' => 'مشعل الحربي',
+                'email' => 'maeshal@sajco.com.sa',
             ],
             [
-                'name' => 'شذا',
-                'email' => 'salsarra@sajco.com.sa',
-            ],
-            [
-                'name' => 'خالد الموسى',
-                'email' => 'khaled.mkmk@hotmail.com',
+                'name' => 'عبدالكريم',
+                'email' => 'mabdulkarim@sajco.com.sa',
             ],
         ];
 
-        foreach ($_data as $data) {
-            $this->sendEmail($data);
-        }
+        // foreach ($_data as $data) {
+        //     $this->sendEmail($data);
+        // }
+
+        $this->sendEmail([
+            'name' => 'عبدالكريم',
+            'email' => 'ahhh42@gmail.com',
+        ]);
 
         Session::flash('success', 'The form send successfully');
+
         return redirect(route('register'));
     }
 
-    function sendEmail($_data){
+    public function sendEmail($_data)
+    {
         $data['first_name'] = $_data['name'];
         $data['last_name'] = 'NAN';
         $data['email'] = $_data['email'];
         $data['job_title'] = 'NAN';
         $data['company_name'] = 'SAJCo';
-        $data['mobile'] = "SAJ Company VIP";
+        $data['mobile'] = 'SAJ Company VIP';
         $data['industry'] = 'NAN';
         $data['interested'] = 'Vip Sponsors';
 
         try {
-
             $client = Client::query()->create($data);
-            $url = route('presence',[
+            $url = route('presence', [
                 'uuid' => \Str::uuid(),
-                'id' => $client->id
+                'id' => $client->id,
             ]);
 
             $qr = QrCode::size(300)
                 ->format('png')
-                ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
                 ->backgroundColor(246, 248, 250)
                 ->generate($url);
-
 
             $output_file = \Str::uuid().time().'.png';
             Storage::disk('public')->put('qr/'.$output_file, $qr);
@@ -127,26 +127,25 @@ class SAJCoController extends Controller
                 ->bcc(['rx_email@scesummit-sa.com', 'Dareen@xs-conferences.com'])
                 ->send(new SAJCoEmailRigester([
                 'name' => $data['first_name'],
-                'qr' => $qr
+                'qr' => $qr,
             ]))) {
                 $client->query()->update([
-                    'is_sent_email' => true
+                    'is_sent_email' => true,
                 ]);
             } else {
                 EmailFailer::query()->create([
                     'email' => $data['email'],
-                    'fails' => 'Unkown Error'
+                    'fails' => 'Unkown Error',
                 ]);
             }
 
             if (Storage::disk('public')->exists('qr/'.$output_file)) {
                 Storage::disk('public')->delete('qr/'.$output_file);
             }
-
         } catch (\Exception $ex) {
             EmailFailer::query()->create([
                 'email' => $data['email'],
-                'fails' => $ex->getMessage()
+                'fails' => $ex->getMessage(),
             ]);
         }
     }

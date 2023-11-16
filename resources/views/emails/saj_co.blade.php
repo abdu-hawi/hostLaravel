@@ -28,7 +28,7 @@
                                                         <tr>
                                                             <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;">
                                                                 <h1 style="text-align: center; font-size:22px; color:#a17202">
-                                                                    VIP Sponsor Invitation
+                                                                    Sponsor Invitation
                                                                 </h1>
                                                             </th>
                                                         </tr>
@@ -100,6 +100,44 @@
 
 
                                                                     </tr>
+
+                                                                    <td>&nbsp;</td>
+
+
+                                                                        <td style="direction:rtl; text-align:right; direction:ltr" dir="ltr">
+                                                                            <div style="direction:rtl; text-align:right; ">
+                                                                                <p>
+                                                                                    <b>
+                                                                                        مرحبا, {{ $data['name'] }}
+                                                                                    </b>
+                                                                                </p>
+                                                                                <p>
+                                                                                    نشكرك على التسجيل في المؤتمر السعودي للمقاولات المتميزة، والذي سيقام في الريتز كارلتون، الرياض من تاريخ 20 – 21 نوفمبر 2023 من الساعة 8 ص- 5:30 م
+                                                                                </p>
+                                                                                <p>
+                                                                                    تحت رعاية معالي وزير الشؤون البلدية والقروية والإسكان، الأستاذ ماجد بن عبدالله الحقيل
+                                                                                </p>
+                                                                                <p>
+                                                                                    <b>نرجوا منكم الاحتفاظ بهذا الايميل</b>
+                                                                                    وعرض الباركود الموجود بالاسفل في بوابات الدخول للمؤتمر
+                                                                                </p>
+                                                                                <p>
+                                                                                    <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">انقر هنا للوصول للموقع على الخريطة</a>
+                                                                                </p>
+                                                                                <p>
+                                                                                    في حالة وجود أي مقترحات أو استفسارات نرجوا منكم تعبئة نموذج التواصل على الرابط التالي
+                                                                                    <a href="{{ $contact_us }}" target="_blank">نموذج التواصل</a>
+                                                                                </p>
+
+                                                                                <p>
+                                                                                    انقر على الرابط التالي لرؤية جدول الأعمال
+                                                                                    <a href="{{ $agenda }}" target="_blank">جدول أعمال المؤتمر</a>
+                                                                                </p>
+
+                                                                            </div>
+                                                                        </td>
+
+
                                                                     <tr><td><p>&nbsp;&nbsp;</p></td></tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
