@@ -5,6 +5,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DiplomaticController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\SAJCoController;
 use App\Http\Controllers\WorkshopController;
 use App\Mail\SendEmailRigester;
 use App\Models\Client;
@@ -288,6 +289,4 @@ Route::get('admin/custome', function () {
     dd('dobe');
 })->middleware('auth');
 
-Route::get('sajco', function () {
-    
-});
+Route::get('sajco', [SAJCoController::class, 'save']);
