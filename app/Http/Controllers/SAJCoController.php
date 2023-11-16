@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\SAJCoEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
@@ -85,14 +86,19 @@ class SAJCoController extends Controller
         //     $this->sendEmail($data);
         // }
 
-        $this->sendEmail([
+        $send = $this->sendEmail([
             'name' => 'علي أبو لبدة',
             'email' => 'aabulibdeh@sajco.com.sa',
         ]);
 
-        Session::flash('success', 'The form send successfully');
-
+        if ($send) {
+            Session::flash('success', 'The form send successfully');
+        }
+        Session::flash('success', 'Error');
         return redirect(route('register'));
+
+
+
     }
 
     public function sendEmail($_data)
@@ -106,6 +112,7 @@ class SAJCoController extends Controller
         $data['industry'] = 'NAN';
         $data['interested'] = 'Vip Sponsors';
 
+        DB::beginTransaction();
         try {
             $client = Client::query()->create($data);
             $url = route('presence', [
@@ -133,20 +140,26 @@ class SAJCoController extends Controller
                     'is_sent_email' => true,
                 ]);
             } else {
+                DB::rollBack();
                 EmailFailer::query()->create([
                     'email' => $data['email'],
                     'fails' => 'Unkown Error',
                 ]);
+                return false;
             }
 
             if (Storage::disk('public')->exists('qr/'.$output_file)) {
                 Storage::disk('public')->delete('qr/'.$output_file);
             }
+            DB::commit();
         } catch (\Exception $ex) {
+            DB::rollBack();
             EmailFailer::query()->create([
                 'email' => $data['email'],
                 'fails' => $ex->getMessage(),
             ]);
+            return false;
         }
+        return true;
     }
 }
