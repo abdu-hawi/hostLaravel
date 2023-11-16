@@ -81,14 +81,14 @@ class SAJCoController extends Controller
             ],
         ];
 
-        // foreach ($_data as $data) {
-        //     $this->sendEmail($data);
-        // }
+        foreach ($_data as $data) {
+            $this->sendEmail($data);
+        }
 
-        $this->sendEmail([
-            'name' => 'عبده حاوي',
-            'email' => 'ahhh42@gmail.com',
-        ]);
+        // $this->sendEmail([
+        //     'name' => 'عبده حاوي',
+        //     'email' => 'ahhh42@gmail.com',
+        // ]);
 
         Session::flash('success', 'The form send successfully');
 
