@@ -287,3 +287,7 @@ Route::get('admin/custome', function () {
     }
     dd('dobe');
 })->middleware('auth');
+
+Route::get('sajco', function () {
+    
+});
