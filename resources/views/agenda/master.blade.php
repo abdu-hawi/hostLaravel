@@ -93,15 +93,22 @@
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
+                <div class="avatar">
+                    <img src="{{ asset('speakers/ahmed_al_shamari.jpg') }}" alt="" width="50">
+                    <h3>{{ __('agenda.Mr. Ahmed Al-Shammari') }}</h3>
+                </div>
                 <span class="close">&times;</span>
-                <h2>Modal Header</h2>
             </div>
             <div class="modal-body">
-                <p>Some text in the Modal Body</p>
-                <p>Some other text...</p>
-            </div>
-            <div class="modal-footer">
-                <h3>Modal Footer</h3>
+                <h3>Ahmed Oudah Al Shammari</h3>
+                <h3>Polymer material Implementation supervisor</h3>
+                <p>Ahmed Al Shammari is currently employed as the Polymer Materials Supervisor in the Oil Sustainability Program. Over the past 11 years, he has gained extensive experience and knowledge in project and risk management and stakeholder engagement and strategy execution. </p>
+                <p>
+                    He holds a Master's degree in Structural Integrity and Reliability Management, and a Bachelor's degree in Mechanical Engineering. His expertise in the areas of design, Asset integrity, stress analysis, material selection, Finite Element Analysis and fracture mechanics.
+                </p>
+                <p>
+                    He collaborates with a variety of sectors such as standards and regulations, R&D, and manufacturers both locally and globally. His duty is to incorporate advanced, sustainable polymer materials into infrastructure and construction for projects such as NEOM, the water sector, and the housing sector. His work aims to reduce water consumption and CO2 emissions, accelerate construction progress, and ensure superior quality and cost-efficiency.
+                </p>
             </div>
         </div>
 

@@ -142,7 +142,7 @@
             display: none; /* Hidden by default */
             position: fixed; /* Stay in place */
             z-index: 1000; /* Sit on top */
-            padding-top: 100px; /* Location of the box */
+            padding-top: 10vh; /* Location of the box */
             left: 0;
             top: 0;
             width: 100%; /* Full width */
@@ -177,7 +177,7 @@
         }
         /* The Close Button */
         .close {
-            color: #aaa;
+            color: #fff;
             float: right;
             font-size: 28px;
             font-weight: bold;
@@ -190,17 +190,35 @@
             cursor: pointer;
         }
         .modal-header {
-            padding: 2px 16px;
-            background-color: #5cb85c;
+            padding: 10px 16px;
+            background-color: #0E3D83;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
         }
-
-        .modal-body {padding: 2px 16px;}
-
-        .modal-footer {
-            padding: 2px 16px;
-            background-color: #5cb85c;
-            color: white;
+        .modal-header .avatar{
+            display: flex;
+            align-items: center;
+        }
+        .modal-header .avatar img{
+            border-radius: 50%
+        }
+        .modal-header h3{
+            margin: 0 1rem;
+            color: #ffffff;
+        }
+        .modal-body {
+            padding: 16px 16px 2px;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        .modal h3{
+            font-size: 26px !important;
+        }
+        .ah-body{
+            height: 100vh !important;
+            overflow: hidden;
         }
     </style>
 @endpush
@@ -215,20 +233,25 @@
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
 
+        var body = document.getElementsByTagName('body')[0];
+
         // When the user clicks the button, open the modal
         btn.onclick = function() {
             modal.style.display = "block";
+            // body.classList.add('ah-body');
         }
 
         // When the user clicks on <span> (x), close the modal
         span.onclick = function() {
             modal.style.display = "none";
+            // body.classList.remove('ah-body');
         }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
+                // body.classList.remove('ah-body');
             }
         }
     </script>
