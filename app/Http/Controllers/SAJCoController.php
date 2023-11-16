@@ -85,7 +85,15 @@ class SAJCoController extends Controller
             ],
         ];
 
+        foreach ($_data as $data) {
+            $this->sendEmail($data);
+        }
 
+        Session::flash('success', 'The form send successfully');
+        return redirect(route('register'));
+    }
+
+    function sendEmail($_data){
         $data['first_name'] = $_data['name'];
         $data['last_name'] = 'NAN';
         $data['email'] = $_data['email'];
@@ -103,8 +111,7 @@ class SAJCoController extends Controller
                 'id' => $client->id
             ]);
 
-            $vip = 'VIP SPONSORS';
-                $qr = QrCode::size(300)
+            $qr = QrCode::size(300)
                 ->format('png')
                 ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
                 ->backgroundColor(246, 248, 250)
@@ -142,7 +149,5 @@ class SAJCoController extends Controller
                 'fails' => $ex->getMessage()
             ]);
         }
-        Session::flash('success', 'The form send successfully');
-        return redirect(route('register'));
     }
 }
