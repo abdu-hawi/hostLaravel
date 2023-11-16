@@ -228,12 +228,12 @@ Route::get('admin/testEmail', function () {
 Route::get('admin/custome', function () {
     try {
         $data = [
-            'first_name' => 'Laura',
+            'first_name' => 'Fiona',
             'last_name' => 'Al-Shanbri',
             'job_title' => 'Second Secretary of the economic and commercial office',
             'company_name' => 'economic and commercial office',
             'mobile' => '+96650000000',
-            'email' => 'sa@mofcom.gov.cn',
+            'email' => 'sun.rong1211@gmail.com',
             'industry' => 'Government & Ministry',
             'interested' => 'Sponsorship',
             'registeration_code' => 'VIP-SCES',

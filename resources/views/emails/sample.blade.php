@@ -80,6 +80,10 @@
                                                                                 </p>
 
                                                                                 <p>
+                                                                                    Click on the link to see agenda
+                                                                                    <a href="{{ $agenda }}" target="_blank">AGENDA SUMMIT</a>
+                                                                                </p>
+                                                                                <p>
                                                                                     <b>Please save this e -mail</b>, and display the barcode below for entering the conference and register your presence.
                                                                                 </p>
                                                                                 <p>
@@ -118,6 +122,10 @@
                                                                                 </p>
                                                                                 <p>
                                                                                     تحت رعاية معالي وزير الشؤون البلدية والقروية والإسكان، الأستاذ ماجد بن عبدالله الحقيل
+                                                                                </p>
+                                                                                <p>
+                                                                                    انقر على الرابط التالي لرؤية جدول الأعمال
+                                                                                    <a href="{{ $agenda }}" target="_blank">جدول اعمال المؤتمر</a>
                                                                                 </p>
                                                                                 <p>
                                                                                     <b>نرجوا منكم الاحتفاظ بهذا الايميل</b>
