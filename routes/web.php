@@ -228,12 +228,12 @@ Route::get('admin/testEmail', function () {
 Route::get('admin/custome', function () {
     try {
         $data = [
-            'first_name' => 'Mohammed',
+            'first_name' => 'Laura',
             'last_name' => 'Al-Shanbri',
-            'job_title' => 'Sr. Specialist of Business Development',
-            'company_name' => 'El Seif Engineering Constructing',
-            'mobile' => '+966541988779',
-            'email' => 'm.alsanbri@el-seif.com.sa',
+            'job_title' => 'Second Secretary of the economic and commercial office',
+            'company_name' => 'economic and commercial office',
+            'mobile' => '+96650000000',
+            'email' => 'sa@mofcom.gov.cn',
             'industry' => 'Government & Ministry',
             'interested' => 'Sponsorship',
             'registeration_code' => 'VIP-SCES',
@@ -257,10 +257,9 @@ Route::get('admin/custome', function () {
         $qr = url('').'/storage/qr/'.$output_file;
 
         if (Mail::to($data['email'])
-        ->cc(['adel@xs-conferences.com'])
-        ->bcc('ahhh42@gmail.com')
+        ->bcc(['ahhh42@gmail.com', 'dareen@xs-conferences.com'])
         ->send(new SendEmailRigester([
-            'name' => $data['first_name'].' '.$data['last_name'],
+            'name' => $data['first_name'], //.' '.$data['last_name'],
             'qr' => $qr,
             'isEmail' => false,
             'vip' => $vip,
