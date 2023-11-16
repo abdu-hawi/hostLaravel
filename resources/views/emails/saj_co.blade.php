@@ -88,20 +88,16 @@
                                                                                     If you have any suggestions or inquiries, please fill out the contact form at the following link
                                                                                     <a href="{{ $contact_us }}" target="_blank">Contact form</a>
                                                                                 </p>
-                                                                                </p>
 
                                                                                 <p>
-                                                                                    Click link in below to see agenda
+                                                                                    Click link to see agenda
                                                                                     <a href="{{ $agenda }}" target="_blank">AGENDA SUMMIT</a>
                                                                                 </p>
 
                                                                             </div>
                                                                         </td>
 
-
-                                                                    </tr>
-
-                                                                    <td>&nbsp;</td>
+                                                                        <td>&nbsp;</td>
 
 
                                                                         <td style="direction:rtl; text-align:right; direction:ltr" dir="ltr">
@@ -128,16 +124,15 @@
                                                                                     في حالة وجود أي مقترحات أو استفسارات نرجوا منكم تعبئة نموذج التواصل على الرابط التالي
                                                                                     <a href="{{ $contact_us }}" target="_blank">نموذج التواصل</a>
                                                                                 </p>
-
                                                                                 <p>
                                                                                     انقر على الرابط التالي لرؤية جدول الأعمال
-                                                                                    <a href="{{ $agenda }}" target="_blank">جدول أعمال المؤتمر</a>
+                                                                                    <a href="{{ $agenda }}" target="_blank">جدول اعمال المؤتمر</a>
                                                                                 </p>
 
                                                                             </div>
                                                                         </td>
 
-
+                                                                    </tr>
                                                                     <tr><td><p>&nbsp;&nbsp;</p></td></tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">

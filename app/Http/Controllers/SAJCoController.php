@@ -86,7 +86,7 @@ class SAJCoController extends Controller
         // }
 
         $this->sendEmail([
-            'name' => 'عبدالكريم',
+            'name' => 'عبده حاوي',
             'email' => 'ahhh42@gmail.com',
         ]);
 
