@@ -126,7 +126,7 @@ class SAJCoController extends Controller
             if (Mail::to($data['email'])
                 ->bcc(['rx_email@scesummit-sa.com', 'Dareen@xs-conferences.com'])
                 ->send(new SAJCoEmailRigester([
-                'name' => $data['first_name'].' '.$data['last_name'],
+                'name' => $data['first_name'],
                 'qr' => $qr
             ]))) {
                 $client->query()->update([
