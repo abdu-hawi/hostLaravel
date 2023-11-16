@@ -73,6 +73,9 @@ return [
 
     'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
     'Eng_Ali_Al_Shuaibi_bio' => 'Distinguished Saudi architect',
+
+    'Eng_Assem_Raqban' => 'Eng. Assem Raqban',
+    'Eng_Assem_Raqban_bio' => 'Chief Executive Officer - Maskan Arabia Investment and Development Company',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency',
 
@@ -142,13 +145,13 @@ return [
     'Mr. Khattar Abdulkhalek' => 'Mr. Khattar Abdulkhalek',
     'Drone & Innovation Expert , Managing CBRE Saudi region' => 'Drone & Innovation Expert , Managing CBRE Saudi region',
 
-    'Dr. Ali Malibari' => 'Dr. Ali Malibari',
+    'Dr. Ali Malibari' => 'Dr. Ali Melibari',
     'Saudi Society for Civil Engineering' => 'Saudi Society for Civil Engineering',
 
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'Panel Discussion: Transformative innovation- Redefining the construction industry',
 
-    'Dr. Abdulqader Amir' => 'Dr. Abdulqader Amir',
+    'Dr. Abdulqader Amir' => 'Dr. Abdulqader Othman Amir',
     'Aseer Authority' => 'Aseer Authority',
 
     'Dr. Khaled Alskeet' => 'Dr. Khaled Alskeet',
@@ -162,9 +165,6 @@ return [
 
     'Eng. Muammar Al Atawi' => 'Eng. Muammar Al Atawi',
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'Chairman of the Urban Development Council - Jeddah Chamber',
-
-    'Dr. Abdullah bin Junaideb' => 'Dr. Abdullah bin Junaideb',
-    'Construction Expert' => 'Construction Expert',
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector',
 

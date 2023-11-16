@@ -59,6 +59,12 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Ali_Al_Shuaibi_bio') }}
+                                        </span><hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Eng_Assem_Raqban') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Eng_Assem_Raqban_bio') }}
                                         </span>
                                     </span>
                                 </div>

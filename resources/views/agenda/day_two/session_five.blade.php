@@ -53,12 +53,6 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Chairman of the Urban Development Council - Jeddah Chamber') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Dr. Abdullah bin Junaideb') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Construction Expert') }}
                                         </span>
                                     </span>
                                 </div>

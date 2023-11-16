@@ -27,7 +27,7 @@ return [
     'Speakers:' => 'المتحدثون',
     'Eng. Abdullah Mohammed Al-Budair' => 'م. عبدالله محمد البدير',
     'Vice Minister of Municipal and Rural Affairs and Housing' => 'نائب وزير الشؤون البلدية والقروية والاسكان',
-    'Mr. Salih Ali Al-Turki' => 'أ.  صالح التركي ',
+    'Mr. Salih Ali Al-Turki' => 'أ. صالح بن علي التركي',
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'معالي أمين جدة والعاصمة المقدسة',
     'Eng. Fahad Mohammed Aljubair' => 'م. فهد محمد الجبير',
     'H.E. Mayor of Eastern Province' => 'معالي أمين المنطقة الشرقية',
@@ -73,6 +73,9 @@ return [
 
     'Eng_Ali_Al_Shuaibi' => 'م. علي الشعيبي',
     'Eng_Ali_Al_Shuaibi_bio' => 'معماري سعودي متميز',
+
+    'Eng_Assem_Raqban' => 'م. عاصم طارق رقبان',
+    'Eng_Assem_Raqban_bio' => 'الرئيس التنفيذي - شركة مسكن العربية',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'جلسة مناقشة: بناء مدن ذكية لتحقيق أهداف الاستدامة وكفاءة الطاقة',
 
@@ -142,12 +145,12 @@ return [
     'Mr. Khattar Abdulkhalek' => 'أ. خطار عبد الخالق',
     'Drone & Innovation Expert , Managing CBRE Saudi region' => 'خبير الطائرات بدون طيار والابتكار (درون)، إدارة شركة CBRE في السعودية',
 
-    'Dr. Ali Malibari' => 'د. علي مليباري ',
-    'Saudi Society for Civil Engineering' => 'الجمعية السعودية للهندسة المدنية',
+    'Dr. Ali Malibari' => 'د. علي عثمان مليباري',
+    'Saudi Society for Civil Engineering' => 'مدير برنامج - استشاري مكاتب إدارة المشاريع بشركة دورش هولدنج بالسعودية',
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'حلقة نقاش: الابتكار التحويلي- اعادة تصميم صناعة البناء والتشييد',
 
-    'Dr. Abdulqader Amir' => 'د. عبدالقادر امير ',
+    'Dr. Abdulqader Amir' => 'د. عبدالقادر بن عثمان امير',
     'Aseer Authority' => 'هيئة عسير',
 
     'Dr. Khaled Alskeet' => 'د. خالد السكيت ',
@@ -161,9 +164,6 @@ return [
 
     'Eng. Muammar Al Atawi' => 'م. معمر العطاوي',
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'رئيس مجلس التطوير العمراني - غرفة جدة',
-
-    'Dr. Abdullah bin Junaideb' => 'د. عبدالله بن جنيدب ',
-    'Construction Expert' => 'خبير انشاءات',
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'جلسة نقاش: تحديات الصناعة- التخفيف من التحديات المتعلقة بالمنظمات العاملة داخل القطاع',
 

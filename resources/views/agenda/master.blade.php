@@ -68,7 +68,7 @@
                 @include('agenda.day_two.session_five')
                 @include('agenda.day_two.session_six')
 
-                <div class="elementor-element elementor-element-6143db6 elementor-widget elementor-widget-heading"
+                {{-- <div class="elementor-element elementor-element-6143db6 elementor-widget elementor-widget-heading"
                     data-id="6143db6" data-element_type="widget"
                     data-widget_type="heading.default">
                     <div class="elementor-widget-container">
@@ -78,9 +78,9 @@
                             <span>{{ __('agenda.21 NOV 2023') }}</span>
                         </h2>
                     </div>
-                </div>
+                </div> --}}
 
-                @include('agenda.day_two.workshops')
+                {{-- @include('agenda.day_two.workshops') --}}
 
             </div>
         </div>
@@ -88,14 +88,14 @@
     {{-- END -- Day Two --}}
 
     <!-- The Modal -->
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal" dir="ltr">
 
         <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
                 <div class="avatar">
                     <img src="{{ asset('speakers/ahmed_al_shamari.jpg') }}" alt="" width="50">
-                    <h3>{{ __('agenda.Mr. Ahmed Al-Shammari') }}</h3>
+                    <h3>Ahmed Oudah Al Shammari</h3>
                 </div>
                 <span class="close">&times;</span>
             </div>
