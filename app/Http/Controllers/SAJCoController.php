@@ -16,47 +16,47 @@ class SAJCoController extends Controller
     {
         $_data = [
             [
-                'name' => 'عدنان',
+                'name' => 'عدنان', // done
                 'email' => 'adnan@sajco.com.sa',
             ],
             [
-                'name' => 'محمد الفاهوم',
+                'name' => 'محمد الفاهوم', // done
                 'email' => 'mfahoum@sajco.com.sa',
             ],
             [
-                'name' => 'الكيالي',
+                'name' => 'الكيالي', // done
                 'email' => 'mkayyali@sajco.com.sa',
             ],
             [
-                'name' => 'وقاص',
+                'name' => 'وقاص', // done
                 'email' => 'wakkas.ismail@sajco.com.sa',
             ],
             [
-                'name' => 'عاطف',
+                'name' => 'عاطف', // done
                 'email' => 'atef@sajco.com.sa',
             ],
             [
-                'name' => 'هيثم',
+                'name' => 'هيثم', // done
                 'email' => 'haytham.fayed@sajco',
             ],
             [
-                'name' => 'محمد العيسى',
+                'name' => 'محمد العيسى', // done
                 'email' => 'malessa@sajco.com.sa',
             ],
             [
-                'name' => 'فادي',
+                'name' => 'فادي', // done
                 'email' => 'fadi.azazi@sajco.com.sa',
             ],
             [
-                'name' => 'شادي',
+                'name' => 'شادي', // done
                 'email' => 'shady.abbass@sajco.com.sa',
             ],
             [
-                'name' => 'خالد القلفاط',
+                'name' => 'خالد القلفاط', // done
                 'email' => 'kh.alkolfat@sajco.com.sa',
             ],
             [
-                'name' => 'عزام',
+                'name' => 'عزام', // done
                 'email' => 'sazzam@sajco.com.sa',
             ],
             [
@@ -64,31 +64,31 @@ class SAJCoController extends Controller
                 'email' => 'علي ابو لبدة',
             ],
             [
-                'name' => 'عبدالمحسن',
+                'name' => 'عبدالمحسن', // done
                 'email' => 'aalrammah@sajco.com.sa',
             ],
             [
-                'name' => 'امتياز',
+                'name' => 'امتياز', // done
                 'email' => 'imthiyaz@sajco.com.sa',
             ],
             [
-                'name' => 'مشعل الحربي',
+                'name' => 'مشعل الحربي', // done
                 'email' => 'maeshal@sajco.com.sa',
             ],
             [
-                'name' => 'عبدالكريم',
+                'name' => 'عبدالكريم', // done
                 'email' => 'mabdulkarim@sajco.com.sa',
             ],
         ];
 
-        foreach ($_data as $data) {
-            $this->sendEmail($data);
-        }
+        // foreach ($_data as $data) {
+        //     $this->sendEmail($data);
+        // }
 
-        // $this->sendEmail([
-        //     'name' => 'عبده حاوي',
-        //     'email' => 'ahhh42@gmail.com',
-        // ]);
+        $this->sendEmail([
+            'name' => 'علي أبو لبدة',
+            'email' => 'aabulibdeh@sajco.com.sa',
+        ]);
 
         Session::flash('success', 'The form send successfully');
 
