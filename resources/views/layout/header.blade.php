@@ -658,7 +658,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                 </div>
                             </div>
                         </div>
-                        @include('layout.dropdown_lang')
+                        {{-- @include('layout.dropdown_lang') --}}
                     </div>
                 </section>
                 <section
@@ -711,7 +711,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                             </div>
                                         </div> --}}
                                         <div style="display: flex; margin: 0 2rem;">
-                                            @include('layout.dropdown_lang')
+                                            {{-- @include('layout.dropdown_lang') --}}
                                             <div class="elementor-column elementor-inner-column elementor-element elementor-element-a69b6f7"
                                                 data-id="a69b6f7" data-element_type="column">
                                                 <div class="elementor-widget-wrap elementor-element-populated">
