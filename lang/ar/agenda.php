@@ -28,7 +28,7 @@ return [
     'Speakers:' => 'المتحدثون',
     'Eng. Abdullah Mohammed Al-Budair' => 'اﻟﻤﻬﻨﺪس عبدالله محمد البدير',
     'Vice Minister of Municipal and Rural Affairs and Housing' => 'نائب وزير الشؤون البلدية والقروية والاسكان',
-    'Mr. Salih Ali Al-Turki' => 'معالي الأستاذ صالح بن علي التركي',
+    'Mr. Salih Ali Al-Turki' => 'معالي الأستاذ صالح التركي',
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'معالي أمين جدة والعاصمة المقدسة',
     'Eng. Fahad Mohammed Aljubair' => 'معالي المهندس فهد الجبير',
     'H.E. Mayor of Eastern Province' => 'معالي أمين المنطقة الشرقية',
@@ -187,7 +187,7 @@ return [
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'جلسة نقاش: تحديات الصناعة- التخفيف من التحديات المتعلقة بالمنظمات العاملة داخل القطاع',
 
-    'Eng_Assem_Raqban' => 'سعادة اﻟﻤﻬﻨﺪس عاصم رقبان',
+    'Eng_Assem_Raqban' => 'سعادة الأستاذ عاصم رقبان',
     'Eng_Assem_Raqban_bio' => "ﺷﺮﻛﺔ ﻣﺴﻜﻦ - اﻟﺮﺋﻴﺲ اﻟﺘﻨﻔﻴﺬي",
 
     'Eng_Ali_Al_Qresha' => "ﺳﻌﺎدة اﻟﻤﻬﻨﺪس ﻋﻠﻲ آل ﻗﺮﻳﺸﺔ",
