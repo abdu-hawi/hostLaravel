@@ -42,14 +42,14 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <span class="black-600">
-                                            {{ __('agenda.Workshop 3:') }}
+                                            {{ __('agenda.Workshop 1: ') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda. Achieving Construction Excellence Through the Materials Transition') }}
+                                        </span><br>
+                                        <span class="blue-600">
+                                            {{ __('agenda.Speaker') }}
                                         </span>
-                                        <p class="blue-600">
-                                            {{ __('agenda.Speakers:') }}
-                                        </p>
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Ahmed Al-Shammari') }}
                                         </span>

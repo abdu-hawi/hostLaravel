@@ -48,11 +48,19 @@
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
+
                                         <span class="black-600">
                                             {{ __('agenda.Eng. Muammar Al Atawi') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Chairman of the Urban Development Council - Jeddah Chamber') }}
+                                        </span>
+                                        <hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr_Hamed_Al_Hamad') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Mr_Hamed_Al_Hamad_bio') }}
                                         </span>
                                     </span>
                                 </div>
@@ -110,23 +118,29 @@
                                             {{ __('agenda.Speakers:') }}
                                         </p>
 
-
                                         <span class="black-600">
                                             {{ __('agenda.Eng_Assem_Raqban') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Assem_Raqban_bio') }}
-                                        </span><hr>
+                                        </span>
+
+                                        <hr>
 
                                         <span class="black-600">
-                                            {{ __('agenda.Dr_Maher_Shira') }}
-                                        </span><hr>
-
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr. Ali Sawadi') }}
+                                            {{ __('agenda.Eng_Ali_Al_Qresha') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Chairman of the National Contractors Committee') }}
+                                            {{ __('agenda.Eng_Ali_Al_Qresha_bio') }}
+                                        </span>
+
+                                        <hr>
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Ms_Mariam_Telmesani') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Ms_Mariam_Telmesani_bio') }}
                                         </span>
                                     </span>
                                 </div>

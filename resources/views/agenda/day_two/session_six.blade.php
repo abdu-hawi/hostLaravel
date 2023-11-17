@@ -62,9 +62,6 @@
                                         </span><hr>
                                         <span class="black-600">
                                             {{ __('agenda.Dr. Ammar Al-Ammar') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.King_Saud_University') }}
                                         </span>
                                     </span>
                                 </div>

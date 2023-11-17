@@ -6,6 +6,7 @@ return [
     'Overview' => 'Overview',
     'READ_MORE' => 'READ MORE',
     'REGISTER' => 'REGISTER',
+    'Speaker' => 'Speaker: ',
     // Master blade
     'Day One' => 'Day One',
     '20 NOV 2023' => '20 NOV 2023',
@@ -31,6 +32,10 @@ return [
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'H.E. Mayor of Jeddah and Makkah Al Mukarrama',
     'Eng. Fahad Mohammed Aljubair' => 'Eng. Fahad Mohammed Aljubair',
     'H.E. Mayor of Eastern Province' => 'H.E. Mayor of Eastern Province',
+
+    'Mr_Abdulrahman_Al_Taweel' => 'Mr. Abdulrahman Al-Taweel',
+    'Mr_Abdulrahman_Al_Taweel_bio' => 'Undersecretary of the Ministry of Municipal and Rural Affairs and Housing for
+    Real Estate Development',
     // Session 1 10:45-11:00
     'Networking Coffee Break' => 'Networking Coffee Break',
     // Session 1 11:00-12:15
@@ -42,23 +47,30 @@ return [
     'Eng. Mohammad Al Tayyar' => 'Eng. Mohammad Al Tayyar',
     'Exective Program Director (Oil Sustainability Program)' => 'Exective Program Director (Oil Sustainability Program)',
 
-    'Eng. Ahmed Al-Sheikh' => 'Eng. Ahmed Al-Sheikh',
-    'Saudi Council of Engineers' => 'Saudi Council of Engineers',
-
     'Eng Saad Bin Saleh AlShuail' => 'Eng. Saad Bin Saleh AlShuail',
     'Secretary_General of the Saudi Building Code National Committee' => 'Secretary-General of the Saudi Building Code National Committee',
 
-    'Eng. Mohammed Saleh Al-Buti' => 'Eng. Mohammed Saleh Al-Buti',
-    'National_Housing_Company' => 'National Housing Company',
+    'Eng_Abdullah_Al_Ruwaidan' => 'Eng. Abdullah Al-Ruwaidan',
+    'Eng_Abdullah_Al_Ruwaidan_bio' => 'Head of the affordable housing sector',
+
+    'Eng_Ahmed_Al_Sheikh' => 'Eng. Ahmed Al-Sheikh',
+    'Eng_Ahmed_Al_Sheikh_bio' => '',
+
+    'Eng_Abdulnasser_Al_Abdullateef' => 'Eng. Abdulnasser Al-Abdullateef',
+    'Eng_Abdulnasser_Al_Abdullateef_bio' => 'Secretary-general of Saudi Council of Engineers',
     // Session 1 12:15-13:30
     'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals' => 'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals',
 
     'Dr. Samih Alorabi' => 'Dr. Samih Alorabi',
 
-    'Mr_Abdulrahman_Al_Taweel' => 'Mr. Abdulrahman Al-Taweel',
-    'Mr_Abdulrahman_Al_Taweel_bio' => 'Undersecretary of the Ministry of Municipal and Rural Affairs and Housing for Real Estate Development',
+    'Eng_Abdullah_Al_Jali' => 'Eng. Abdullah Al Jali',
+    'Eng_Abdullah_Al_Jali_bio' => 'Secretary of Asir Region',
 
-    'Mr_Hazem_Al_Aleeli' => 'Mr. Hazem Al-Aleeli',
+    'Mr_Sultan_Al_Zaidi' => 'Mr. Sultan Al Zaidi',
+    'Mr_Sultan_Al_Zaidi_bio' => 'Mayor of Hail Region',
+
+    'Mr_Essam_Al_Mulla' => 'Mr. Essam Al-Mulla',
+    'Mr_Essam_Al_Mulla_bio' => 'Mayor of Al-Ahsa Region',
     // Session 2
     'Session 2: Shaping the Future of Saudi Arabia' => 'Session 2: Shaping the Future of Saudi Arabia',
     // 14:15-15:15
@@ -71,11 +83,14 @@ return [
     'Dr_Abdulaziz_Alzahrani' => 'Dr. Abdulaziz Alzahrani',
     'Dr_Abdulaziz_Alzahrani_bio' => 'Professor and Urban Designer',
 
-    'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
-    'Eng_Ali_Al_Shuaibi_bio' => 'Distinguished Saudi architect',
+    'Dr. Khaled Alskeet' => 'Dr. Khaled Alskeet',
+    'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences' => 'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences',
 
-    'Eng_Assem_Raqban' => 'Eng. Assem Raqban',
-    'Eng_Assem_Raqban_bio' => 'Chief Executive Officer - Maskan Arabia Investment and Development Company',
+    'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
+    'Eng_Ali_Al_Shuaibi_bio' => '',
+
+    'Mr_Assem_Raqban' => 'Mr. Assem Raqban',
+    'Mr_Assem_Raqban_bio' => 'Chief Executive Officer - Maskan Arabia Investment and Development Company',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency',
 
@@ -95,16 +110,20 @@ return [
     // Session 2 : 16:30-17:30
     'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow',
 
-    'Eng_Saud_Al_Quwaifel' => 'Eng. Saud Al-Quwaifel',
+    // 'Eng_Saud_Al_Quwaifel' => 'Eng. Saud Al-Quwaifel',
+    'Ms_Nouf_Bin_Saedan' => "Ms. Nouf Bin Saedan",
 
-    'Eng. Yahya Siraj' => 'Eng. Yahya Siraj',
-    'Head of Partnerships Sector' => 'Head of Partnerships Sector',
+    'Eng_Abdullah_Al_Mubarak' => 'Eng. Abdullah Al Mubarak',
+    'Eng_Abdullah_Al_Mubarak_bio' => '',
 
-    'Mr. Saud Al-Ajmi' => 'Mr. Saud Al-Ajmi',
-    'National Housing Company' => 'National Housing Company',
+    // 'Eng. Yahya Siraj' => 'Eng. Yahya Siraj',
+    // 'Head of Partnerships Sector' => 'Head of Partnerships Sector',
 
-    'Mr. Sultan Alharazi' => 'Mr. Sultan Alharazi',
-    'General Manager of Project Management - Watana Housing' => 'General Manager of Project Management - Watana Housing',
+    // 'Mr. Saud Al-Ajmi' => 'Mr. Saud Al-Ajmi',
+    // 'National Housing Company' => 'National Housing Company',
+
+    // 'Mr. Sultan Alharazi' => 'Mr. Sultan Alharazi',
+    // 'General Manager of Project Management - Watana Housing' => 'General Manager of Project Management - Watana Housing',
     // Closing Remarks
     'Closing Remarks' => 'Closing Remarks',
     // Workshop 1:
@@ -127,9 +146,6 @@ return [
     'Eng. Saad Bin Saleh AlShuail' => 'Eng. Saad Bin Saleh AlShuail',
     'Secretary-General of the Saudi Building Code National Committee' => 'Secretary-General of the Saudi Building Code National Committee',
 
-    'Eng_Abdulnasser_Saif_Al_Abdullatef' => 'Eng. Abdulnasser Saif Al-Abdullatef',
-    'Eng_Abdulnasser_Saif_Al_Abdullatef_bio' => 'Secretary-general of Saudi Council of Engineers',
-
     'Eng_Zakaria_Al_Abdulqader' => 'Eng. Zakaria Al-Abdulqader',
     'Eng_Zakaria_Al_Abdulqader_bio' => 'Saudi Contractors Authority',
     // Session 4:
@@ -151,11 +167,11 @@ return [
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'Panel Discussion: Transformative innovation- Redefining the construction industry',
 
-    'Dr. Abdulqader Amir' => 'Dr. Abdulqader Othman Amir',
-    'Aseer Authority' => 'Aseer Authority',
+    'Prof_Khaled_Alskeet' => 'Prof. Khaled Alskeet',
+    'Prof_Khaled_Alskeet_bio' => 'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences',
 
-    'Dr. Khaled Alskeet' => 'Dr. Khaled Alskeet',
-    'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences' => 'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences',
+    'Dr_abdulqader_ameer' => '',
+    'Dr_abdulqader_ameer_bio' => '',
     // Session 5:
     'Session 5: Construction Sector Challenges' => 'Session 5: Construction Sector Challenges',
     // 13:45-14:45
@@ -165,16 +181,20 @@ return [
 
     'Eng. Muammar Al Atawi' => 'Eng. Muammar Al Atawi',
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'Chairman of the Urban Development Council - Jeddah Chamber',
+
+    'Mr_Hamed_Al_Hamad' => '',
+    'Mr_Hamed_Al_Hamad_bio' => "",
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector',
 
     'Eng_Assem_Raqban' => 'Eng. Assem Raqban',
     'Eng_Assem_Raqban_bio' => 'Chief Executive Officer - Maskan Arabia Investment and Development Company',
 
-    'Dr_Maher_Shira' => 'Dr. Maher Shira',
+    'Eng_Ali_Al_Qresha' => "",
+    'Eng_Ali_Al_Qresha_bio' => "",
 
-    'Mr. Ali Sawadi' => 'Mr. Ali Sawadi',
-    'Chairman of the National Contractors Committee' => 'Chairman of the National Contractors Committee',
+    'Ms_Mariam_Telmesani' => "",
+    'Ms_Mariam_Telmesani_bio' => "",
     // Session 6:
     'Session 6: Evolving with Construction Technology' => 'Session 6: Evolving with Construction Technology',
     // 16:00-17:00

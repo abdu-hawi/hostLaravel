@@ -53,18 +53,33 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Dr_Abdulaziz_Alzahrani_bio') }}
-                                        </span><hr>
+                                        </span>
+
+                                        <hr>
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Dr. Khaled Alskeet') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences') }}
+                                        </span>
+
+                                        <hr>
+
+                                        {{-- <span class="black-600">
+                                            {{ __('agenda.Mr_Assem_Raqban') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Mr_Assem_Raqban_bio') }}
+                                        </span>
+
+                                        <hr> --}}
+
                                         <span class="black-600">
                                             {{ __('agenda.Eng_Ali_Al_Shuaibi') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Ali_Al_Shuaibi_bio') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng_Assem_Raqban') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Eng_Assem_Raqban_bio') }}
                                         </span>
                                     </span>
                                 </div>
@@ -127,6 +142,14 @@
                                         <span>
                                             {{ __('agenda.Group Director, Strategy & Development - Dar Al Riyadh') }}
                                         </span><hr>
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Dr_Maher_Shira') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Dr_Maher_Shira_bio') }}
+                                        </span><hr>
+
                                         <span class="black-600">
                                            {{ __('agenda.Ms_Jena_Ladhani') }}
                                         </span><br>
@@ -138,13 +161,14 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.CEO- Design Haus Medy') }}
-                                        </span><hr>
+                                        </span>
+                                        {{-- <hr>
                                         <span class="black-600">
                                             {{ __('agenda.Mr_Viktor_Lechman') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Mr_Viktor_Lechman_bio') }}
-                                        </span>
+                                        </span> --}}
                                     </span>
                                 </div>
                             </div>
@@ -242,29 +266,43 @@
                                             {{ __('agenda.Expert Panel: Championing collaborative & people centric liveable cities of tomorrow') }}
                                         </p>
                                         <p class="blue-600">
-                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Eng_Saud_Al_Quwaifel') }}
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Ms_Nouf_Bin_Saedan') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng. Yahya Siraj') }}
+
+                                        {{-- <span class="black-600">
+                                            {{ __('agenda.Mr_Sultan_Al_Zaidi') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Head of Partnerships Sector') }}
-                                        </span><hr>
+                                            {{ __('agenda.Mr_Sultan_Al_Zaidi_bio') }}
+                                        </span>
+
+                                        <hr> --}}
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Eng_Abdullah_Al_Mubarak') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Eng_Abdullah_Al_Mubarak_bio') }}
+                                        </span>
+                                        {{--
+                                        <hr>
+
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Saud Al-Ajmi') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.National Housing Company') }}
-                                        </span><hr>
+                                        </span>
+                                        <hr>
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Sultan Alharazi') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.General Manager of Project Management - Watana Housing') }}
-                                        </span>
+                                        </span> --}}
                                     </span>
                                 </div>
                             </div>

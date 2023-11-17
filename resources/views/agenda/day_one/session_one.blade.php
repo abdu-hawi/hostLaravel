@@ -48,14 +48,15 @@
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
-                                        <span class="black-600">
-                                            {{-- {{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }} --}}
+
+                                        {{-- <span class="black-600">
                                             {{ __('agenda.Vice Minister of Municipal and Rural Affairs and Housing') }}
                                         </span><br>
                                         <span>
 
                                         </span>
-                                        <hr>
+                                        <hr> --}}
+
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Salih Ali Al-Turki') }}
                                         </span><br>
@@ -69,6 +70,17 @@
                                         <span>
                                             {{ __('agenda.H.E. Mayor of Eastern Province') }}
                                         </span>
+                                        <hr>
+
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr_Abdulrahman_Al_Taweel') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Mr_Abdulrahman_Al_Taweel_bio') }}
+                                        </span>
+
+
                                     </span>
                                 </div>
                             </div>
@@ -185,19 +197,31 @@
                                             {{ __('agenda.Secretary_General of the Saudi Building Code National Committee') }}
                                         </span>
                                         <hr>
+
                                         <span class="black-600">
-                                            {{ __('agenda.Eng. Mohammed Saleh Al-Buti') }}
+                                            {{ __('agenda.Eng_Abdullah_Al_Ruwaidan') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.National_Housing_Company') }}
+                                            {{ __('agenda.Eng_Abdullah_Al_Ruwaidan_bio') }}
                                         </span>
                                         <hr>
+
                                         <span class="black-600">
-                                            {{ __('agenda.Eng. Ahmed Al-Sheikh') }}
+                                            {{ __('agenda.Eng_Abdulnasser_Al_Abdullateef') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Saudi Council of Engineers') }}
+                                            {{ __('agenda.Eng_Abdulnasser_Al_Abdullateef_bio') }}
                                         </span>
+                                        {{--
+                                            <hr>
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Eng_Ahmed_Al_Sheikh') }}
+                                        </span>
+                                         <br>
+                                        <span>
+                                            {{ __('agenda.Eng_Abdulnasser_Al_Abdullateef_bio') }}
+                                        </span> --}}
                                     </span>
                                 </div>
                             </div>
@@ -247,30 +271,33 @@
                                         <p class="blue-600">
                                             {{ __('agenda.Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals') }}
                                         </p>
-                                        <p class="blue-600">
+                                        {{-- <p class="blue-600">
                                             {{ __('agenda.Moderator:') }} {{ __('agenda.Dr. Samih Alorabi') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
 
-
                                         <span class="black-600">
-                                            {{ __('agenda.Mr_Abdulrahman_Al_Taweel') }}
+                                            {{ __('agenda.Eng_Abdullah_Al_Jali') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Mr_Abdulrahman_Al_Taweel_bio') }}
+                                            {{ __('agenda.Eng_Abdullah_Al_Jali_bio') }}
                                         </span><hr>
 
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr_Sultan_Al_Zaidi') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Mr_Sultan_Al_Zaidi_bio') }}
+                                        </span><hr>
 
                                         <span class="black-600">
-                                            {{ __('agenda.Mr_Hazem_Al_Aleeli') }}
-                                        </span>
-                                        {{-- <br>
+                                            {{ __('agenda.Mr_Essam_Al_Mulla') }}
+                                        </span><br>
                                         <span>
-                                            {{ __('agenda.Mr_Hazem_Al_Aleeli_bio') }}
+                                            {{ __('agenda.Mr_Essam_Al_Mulla_bio') }}
                                         </span> --}}
-                                        <hr>
 
                                     </span>
                                 </div>

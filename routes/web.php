@@ -77,6 +77,14 @@ Route::group(['middleware' => 'Lang'], function () {
             'title' => __('header.WORKSHOP REGISTRATION').' - ',
         ]);
     })->name('workshop');
+
+
+    Route::get('speakers_draft', function () {
+        return view('speakers_draft', [
+            'title' => __('header.WORKSHOP REGISTRATION').' - ',
+        ]);
+    })->name('speakers_draft');
+
 });
 
 Route::get('/lang/{lang}', function ($lang) {

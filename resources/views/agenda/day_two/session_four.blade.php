@@ -43,7 +43,7 @@
                                             {{ __('agenda.Panel Discussion: Construction technology trends on the horizon for 2023 and beyond') }}
                                         </p>
                                         <p class="blue-600">
-                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Dr_Samar_Khan') }}
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr_Mohammed_Bakhriba') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
@@ -55,16 +55,16 @@
                                             {{ __('agenda.Chief Executive Officer - ASMO Company') }}
                                         </span><hr>
                                         <span class="black-600">
-                                            {{ __('agenda.Mr. Khattar Abdulkhalek') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Drone & Innovation Expert , Managing CBRE Saudi region') }}
-                                        </span><hr>
-                                        <span class="black-600">
                                             {{ __('agenda.Dr. Ali Malibari') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Saudi Society for Civil Engineering') }}
+                                        </span><hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr. Khattar Abdulkhalek') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Drone & Innovation Expert , Managing CBRE Saudi region') }}
                                         </span>
                                     </span>
                                 </div>
@@ -122,17 +122,20 @@
                                             {{ __('agenda.Speakers:') }}
                                         </p>
                                         <span class="black-600">
-                                            {{ __('agenda.Dr. Abdulqader Amir') }}
+                                            {{ __('agenda.Prof_Khaled_Alskeet') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Aseer Authority') }}
+                                            {{ __('agenda.Prof_Khaled_Alskeet_bio') }}
                                         </span><hr>
+
+
                                         <span class="black-600">
-                                            {{ __('agenda.Dr. Khaled Alskeet') }}
+                                            {{ __('agenda.Dr_abdulqader_ameer') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences') }}
+                                            {{ __('agenda.Dr_abdulqader_ameer_bio') }}
                                         </span>
+
                                     </span>
                                 </div>
                             </div>
