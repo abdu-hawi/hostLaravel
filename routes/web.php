@@ -228,14 +228,14 @@ Route::get('admin/testEmail', function () {
 Route::get('admin/custome', function () {
     try {
         $data = [
-            'first_name' => 'Fiona',
+            'first_name' => 'فهد بن ثاني',
             'last_name' => 'Al-Shanbri',
-            'job_title' => 'Second Secretary of the economic and commercial office',
-            'company_name' => 'economic and commercial office',
-            'mobile' => '+96650000000',
-            'email' => 'sun.rong1211@gmail.com',
-            'industry' => 'Government & Ministry',
-            'interested' => 'Sponsorship',
+            'job_title' => 'المؤسس والرئيس التنفيذي',
+            'company_name' => 'شركة دبرة الاماراتية العقارية',
+            'mobile' => '+966531404111',
+            'email' => 'fahad@dibrrah.com',
+            'industry' => 'VIP',
+            'interested' => 'VIP',
             'registeration_code' => 'VIP-SCES',
         ];
         $client = Client::query()->create($data);
