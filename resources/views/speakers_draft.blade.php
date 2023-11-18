@@ -173,6 +173,60 @@
                                         </div>
                                     </div>
 
+                                    {{-- Mr_John_Seed --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Mr_John_Seed.png') }}" alt="{{ __('agenda.Mr. John Seed') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Mr. John Seed') }}</h2>
+                                            <p>{{ __('agenda.Group Director, Strategy & Development - Dar Al Riyadh') }}</p>
+                                        </div>
+                                    </div>
+
+                                    {{-- Dr_Maher_Shira --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Maher_Shira.png') }}" alt="{{ __('agenda.Dr_Maher_Shira') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Dr_Maher_Shira') }}</h2>
+                                            <p>{{ __('agenda.Dr_Maher_Shira_bio') }}</p>
+                                        </div>
+                                    </div>
+
+                                    {{-- Ms_Jena_Ladhani --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Ms_Jena_Ladhani.png') }}" alt="{{ __('agenda.Ms_Jena_Ladhani') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Ms_Jena_Ladhani') }}</h2>
+                                            <p>{{ __('agenda.Ms_Jena_Ladhani_bio') }}</p>
+                                        </div>
+                                    </div>
+
+                                    {{-- Mr_Medy_Navani --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Mr_Medy_Navani.png') }}" alt="{{ __('agenda.Mr. Medy Navani') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Mr. Medy Navani') }}</h2>
+                                            <p>{{ __('agenda.CEO- Design Haus Medy') }}</p>
+                                        </div>
+                                    </div>
+
+                                    {{-- Eng_Saad_Bin_Saleh_AlShuail --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Saad_Bin_Saleh_AlShuail.png') }}" alt="{{ __('agenda.Eng. Saad Bin Saleh AlShuail') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Eng. Saad Bin Saleh AlShuail') }}</h2>
+                                            <p>{{ __('agenda.Secretary-General of the Saudi Building Code National Committee') }}</p>
+                                        </div>
+                                    </div>
+
+                                    {{-- Dr_Ali_Malibari --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Ali_Malibari.png') }}" alt="{{ __('agenda.Dr. Ali Malibari') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Dr. Ali Malibari') }}</h2>
+                                            <p>{{ __('agenda.Saudi Society for Civil Engineering') }}</p>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                             </div>
