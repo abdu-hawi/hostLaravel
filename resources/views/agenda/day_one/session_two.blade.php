@@ -58,10 +58,10 @@
                                         <hr>
 
                                         <span class="black-600">
-                                            {{ __('agenda.Dr. Khaled Alskeet') }}
+                                            {{ __('agenda.Prof_Khaled_Alskeet') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences') }}
+                                            {{ __('agenda.Prof_Khaled_Alskeet_bio') }}
                                         </span>
 
                                         <hr>

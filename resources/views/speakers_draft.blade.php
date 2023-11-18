@@ -97,6 +97,85 @@
             </div>
         </section>
 
+        @php
+            $speakersArr = [
+                [
+                    'img' => 'speakers/H_E_MAJED_AL HOGAIL.png',
+                    'name' => 'header.H.E MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL',
+                    'bio' => 'header.Minister of Municipal & Rural Affairs & Housing',
+                ],
+                [
+                    'img' => 'speakers/Eng_Abdullah_Al_Budair.png',
+                    'name' => 'agenda.Eng. Abdullah Mohammed Al-Budair',
+                    'bio' => 'agenda.Vice Minister of Municipal and Rural Affairs and Housing',
+                ],
+                [
+                    'img' => 'speakers/Mr_Salih_Ali_Al_Turki.png',
+                    'name' => 'agenda.Mr. Salih Ali Al-Turki',
+                    'bio' => 'agenda.H.E. Mayor of Jeddah and Makkah Al Mukarrama',
+                ],
+                [
+                    'img' => 'speakers/Eng_Fahad_Mohammed_Aljubair.png',
+                    'name' => 'agenda.Eng. Fahad Mohammed Aljubair',
+                    'bio' => 'agenda.H.E. Mayor of Eastern Province',
+                ],
+                [
+                    'img' => 'speakers/Eng_Mohammad_Al_Tayyar.png',
+                    'name' => 'agenda.Eng. Mohammad Al Tayyar',
+                    'bio' => 'agenda.Exective Program Director (Oil Sustainability Program)',
+                ],
+                [
+                    'img' => 'speakers/Dr_Abdulaziz_Alzahrani.png',
+                    'name' => 'agenda.Dr_Abdulaziz_Alzahrani',
+                    'bio' => 'agenda.Dr_Abdulaziz_Alzahrani_bio',
+                ],
+                [
+                    'img' => 'speakers/Dr_Khaled_Alskeet.png',
+                    'name' => 'agenda.Prof_Khaled_Alskeet',
+                    'bio' => 'agenda.Prof_Khaled_Alskeet_bio',
+                ],
+                [
+                    'img' => 'speakers/Mr_John_Seed.png',
+                    'name' => 'agenda.Mr. John Seed',
+                    'bio' => 'agenda.Group Director, Strategy & Development - Dar Al Riyadh',
+                ],
+                [
+                    'img' => 'speakers/Dr_Maher_Shira.png',
+                    'name' => 'agenda.Dr_Maher_Shira',
+                    'bio' => 'agenda.Dr_Maher_Shira_bio',
+                ],
+                [
+                    'img' => 'speakers/Ms_Jena_Ladhani.png',
+                    'name' => 'agenda.Ms_Jena_Ladhani',
+                    'bio' => 'agenda.Ms_Jena_Ladhani_bio',
+                ],
+                [
+                    'img' => 'speakers/Mr_Medy_Navani.png',
+                    'name' => 'agenda.Mr. Medy Navani',
+                    'bio' => 'agenda.CEO- Design Haus Medy',
+                ],
+                [
+                    'img' => 'speakers/Eng_Saad_Bin_Saleh_AlShuail.png',
+                    'name' => 'agenda.Eng. Saad Bin Saleh AlShuail',
+                    'bio' => 'agenda.Secretary-General of the Saudi Building Code National Committee',
+                ],
+                [
+                    'img' => 'speakers/Dr_Ali_Malibari.png',
+                    'name' => 'agenda.Dr. Ali Malibari',
+                    'bio' => 'agenda.Saudi Society for Civil Engineering',
+                ],
+                [
+                    'img' => 'speakers/Mr_Khattar_Abdulkhalek.png',
+                    'name' => 'agenda.Mr. Khattar Abdulkhalek',
+                    'bio' => 'agenda.Drone & Innovation Expert , Managing CBRE Saudi region',
+                ],
+                [
+                    'img' => 'speakers/',
+                    'name' => 'agenda.',
+                    'bio' => 'agenda.',
+                ],
+            ]
+        @endphp
         <section
             class="agenda-section elementor-section elementor-top-section elementor-element elementor-element-b31297d elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
             data-id="b31297d" data-element_type="section"
@@ -110,122 +189,18 @@
                             data-id="6143db6" data-element_type="widget"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-
                                 <div class="row">
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/H_E_MAJED_AL HOGAIL.png') }}" alt="{{ __('header.H.E MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('header.H.E MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL') }}</h2>
-                                            <p>{{ __('header.Minister of Municipal & Rural Affairs & Housing') }}</p>
-                                        </div>
-                                    </div>
-                                    {{-- Eng_Abdullah_Al_Budair --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Abdullah_Al_Budair.png') }}" alt="{{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }}</h2>
-                                            <p>{{ __('agenda.Vice Minister of Municipal and Rural Affairs and Housing') }}</p>
-                                        </div>
-                                    </div>
-                                    {{-- Mr_Salih_Ali_Al_Turki --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Mr_Salih_Ali_Al_Turki.png') }}" alt="{{ __('agenda.Mr. Salih Ali Al-Turki') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Mr. Salih Ali Al-Turki') }}</h2>
-                                            <p>{{ __('agenda.H.E. Mayor of Jeddah and Makkah Al Mukarrama') }}</p>
-                                        </div>
-                                    </div>
-                                    {{-- Eng_Fahad_Mohammed_Aljubair --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Fahad_Mohammed_Aljubair.png') }}" alt="{{ __('agenda.Eng. Fahad Mohammed Aljubair') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Eng. Fahad Mohammed Aljubair') }}</h2>
-                                            <p>{{ __('agenda.H.E. Mayor of Eastern Province') }}</p>
-                                        </div>
-                                    </div>
-                                    {{-- Eng_Fahad_Mohammed_Aljubair --}}
 
-
-                                    {{-- Eng_Mohammad_Al_Tayyar --}}
+                                    @foreach ($speakersArr as $speakerArr)
                                     <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Mohammad_Al_Tayyar.png') }}" alt="{{ __('agenda.Eng. Mohammad Al Tayyar') }}">
+                                        <img lazy decoding="async" src="{{ asset($speakerArr['img']) }}" alt="{{ __($speakerArr['name']) }}">
                                         <div class="container-ah">
-                                            <h2>{{ __('agenda.Eng. Mohammad Al Tayyar') }}</h2>
-                                            <p>{{ __('agenda.Exective Program Director (Oil Sustainability Program)') }}</p>
+                                            <h2>{{ __($speakerArr['name']) }}</h2>
+                                            <p>{{ __($speakerArr['bio']) }}</p>
                                         </div>
                                     </div>
+                                    @endforeach
 
-                                    {{-- Dr_Abdulaziz_Alzahrani --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Abdulaziz_Alzahrani.png') }}" alt="{{ __('agenda.Dr_Abdulaziz_Alzahrani') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Dr_Abdulaziz_Alzahrani') }}</h2>
-                                            <p>{{ __('agenda.Dr_Abdulaziz_Alzahrani_bio') }}</p>
-                                        </div>
-                                    </div>
-
-                                    {{-- Dr_Khaled_Alskeet --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Khaled_Alskeet.png') }}" alt="{{ __('agenda.Dr. Khaled Alskeet') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Dr. Khaled Alskeet') }}</h2>
-                                            <p>{{ __('agenda.Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences') }}</p>
-                                        </div>
-                                    </div>
-
-                                    {{-- Mr_John_Seed --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Mr_John_Seed.png') }}" alt="{{ __('agenda.Mr. John Seed') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Mr. John Seed') }}</h2>
-                                            <p>{{ __('agenda.Group Director, Strategy & Development - Dar Al Riyadh') }}</p>
-                                        </div>
-                                    </div>
-
-                                    {{-- Dr_Maher_Shira --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Maher_Shira.png') }}" alt="{{ __('agenda.Dr_Maher_Shira') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Dr_Maher_Shira') }}</h2>
-                                            <p>{{ __('agenda.Dr_Maher_Shira_bio') }}</p>
-                                        </div>
-                                    </div>
-
-                                    {{-- Ms_Jena_Ladhani --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Ms_Jena_Ladhani.png') }}" alt="{{ __('agenda.Ms_Jena_Ladhani') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Ms_Jena_Ladhani') }}</h2>
-                                            <p>{{ __('agenda.Ms_Jena_Ladhani_bio') }}</p>
-                                        </div>
-                                    </div>
-
-                                    {{-- Mr_Medy_Navani --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Mr_Medy_Navani.png') }}" alt="{{ __('agenda.Mr. Medy Navani') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Mr. Medy Navani') }}</h2>
-                                            <p>{{ __('agenda.CEO- Design Haus Medy') }}</p>
-                                        </div>
-                                    </div>
-
-                                    {{-- Eng_Saad_Bin_Saleh_AlShuail --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Saad_Bin_Saleh_AlShuail.png') }}" alt="{{ __('agenda.Eng. Saad Bin Saleh AlShuail') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Eng. Saad Bin Saleh AlShuail') }}</h2>
-                                            <p>{{ __('agenda.Secretary-General of the Saudi Building Code National Committee') }}</p>
-                                        </div>
-                                    </div>
-
-                                    {{-- Dr_Ali_Malibari --}}
-                                    <div class="column">
-                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Ali_Malibari.png') }}" alt="{{ __('agenda.Dr. Ali Malibari') }}">
-                                        <div class="container-ah">
-                                            <h2>{{ __('agenda.Dr. Ali Malibari') }}</h2>
-                                            <p>{{ __('agenda.Saudi Society for Civil Engineering') }}</p>
-                                        </div>
-                                    </div>
 
                                 </div>
 

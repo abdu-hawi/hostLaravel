@@ -76,9 +76,10 @@ return [
     'Dr_Abdulaziz_Alzahrani' => 'Dr. Abdulaziz Alzahrani',
     'Dr_Abdulaziz_Alzahrani_bio' => 'Professor and Urban Designer',
 
-    'Dr. Khaled Alskeet' => 'Dr. Khaled Alskeet',
-    'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences'
-    => 'Saudi Society for Real Estate Sciences Chairman of the Board of Directors',
+    'Prof_Khaled_Alskeet' => 'Prof. Khaled Alskeet',
+    'Prof_Khaled_Alskeet_bio' => 'Saudi Society for Real Estate Sciences Chairman of the Board of Directors',
+
+
 
     'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
     'Eng_Ali_Al_Shuaibi_bio' => 'Distinguished Saudi architect',
@@ -148,9 +149,6 @@ return [
 
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'Panel Discussion: Transformative innovation- Redefining the construction industry',
-
-    'Prof_Khaled_Alskeet' => 'Prof. Khaled Alskeet',
-    'Prof_Khaled_Alskeet_bio' => 'Saudi Society for Real Estate Sciences - Chairman of the Board of Directors',
 
     'Dr_abdulqader_ameer' => 'Dr. Abdulqader Amir',
     'Dr_abdulqader_ameer_bio' => 'University of Business and Technology / Jeddah - Dean of College of Engineering and Information Technology',
