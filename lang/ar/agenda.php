@@ -82,8 +82,8 @@ return [
     'Dr_Abdulaziz_Alzahrani' => 'سعادة الدكتور عبد العزيز الزهراني',
     'Dr_Abdulaziz_Alzahrani_bio' => 'أكاديمي متخصص في مجال التصميم العمراني',
 
-    'Dr. Khaled Alskeet' => 'سعادة الأستاذ الدكتور خالد السكيت ',
-    'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences' => 'رئيس مجلس إدارة الجمعية السعودية لعلوم العقار ',
+    'Prof_Khaled_Alskeet' => 'سعادة الأستاذ الدكتور خالد السكيت ',
+    'Prof_Khaled_Alskeet_bio' => 'رئيس مجلس إدارة الجمعية السعودية لعلوم العقار ',
 
     'Eng_Ali_Al_Shuaibi' => 'سعادة اﻟﻤﻬﻨﺪس علي الشعيبي',
     'Eng_Ali_Al_Shuaibi_bio' => 'ﻣﻌﻤﺎري وﻣﺨﻄﻂ ﻋﻤﺮاﻧﻲ',
@@ -158,9 +158,6 @@ return [
     'Drone & Innovation Expert , Managing CBRE Saudi region' => "شركة CBRE",
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'حلقة نقاش: الابتكار التحويلي- اعادة تصميم صناعة البناء والتشييد',
-
-    'Prof_Khaled_Alskeet' => 'ﺳﻌﺎدة الأستاذ اﻟﺪﻛﺘﻮر ﺧﺎﻟﺪ اﻟﺴﻜﻴﺖ',
-    'Prof_Khaled_Alskeet_bio' => 'رﺋﻴﺲ ﻣﺠﻠﺲ إدارة اﻟﺠﻤﻌﻴﺔ اﻟﺴﻌﻮدﻳﺔ ﻟﻌﻠﻮم اﻟﻌﻘﺎر',
 
     'Dr_abdulqader_ameer' => 'ﺳﻌﺎدة اﻟﺪﻛﺘﻮر ﻋﺒﺪاﻟﻘﺎدر أﻣﻴﺮ',
     'Dr_abdulqader_ameer_bio' => 'ﺟﺎﻣﻌﺔ الأعمال واﻟﺘﻘﻨﻴﺔ / ﺟﺪة - ﻋﻤﻴﺪ ﻛﻠﻴﺔ اﻟﻬﻨﺪﺳﺔ وﺗﻘﻨﻴﺔ اﻟﻤﻌﻠﻮﻣﺎت',
