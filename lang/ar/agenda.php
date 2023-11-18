@@ -148,10 +148,10 @@ return [
 
     'Dr_Samar_Khan' => 'الدكتور سمر خان',
 
-    'Eng. Essam Bin Ahmed Kalthoum' => 'ﺳﻌﺎدة اﻟﻤﻬﻨﺪس عصام كلثوم',
+    'Eng. Essam Bin Ahmed Kalthoum' => 'ﺳﻌﺎدة اﻟﻤﻬﻨﺪس ﻋﺼﺎم ﻛﻠﺜﻮم',
     'Chief Executive Officer - ASMO Company' => 'ﺷﺮﻛﺔ أﺳﻤﻮ- اﻟﺮﺋﻴﺲ اﻟﺘﻨﻔﻴﺬي',
 
-    'Dr. Ali Malibari' => 'ﺳﻌﺎدة الدكتور علي مليباري',
+    'Dr. Ali Malibari' => 'ﺳﻌﺎدة اﻟﺪﻛﺘﻮر ﻋﻠﻲ ﻣﻠﻴﺒﺎري',
     'Saudi Society for Civil Engineering' => "ﺷﺮﻛﺔ دورش ﻫﻮﻟﺪﻧﺞ ﺑﺎﻟﺴﻌﻮدﻳﺔ - ﻣﺪﻳﺮ ﺑﺮﻧﺎﻣﺞ, اﺳﺘﺸﺎري ﻣﻜﺎﺗﺐ إدارة اﻟﻤﺸﺎرﻳﻊ",
 
     'Mr. Khattar Abdulkhalek' => 'السيد خطار عبد الخالق',
@@ -160,14 +160,16 @@ return [
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'حلقة نقاش: الابتكار التحويلي- اعادة تصميم صناعة البناء والتشييد',
 
     'Prof_Khaled_Alskeet' => 'ﺳﻌﺎدة الأستاذ اﻟﺪﻛﺘﻮر ﺧﺎﻟﺪ اﻟﺴﻜﻴﺖ',
-    'Prof_Khaled_Alskeet_bio' => 'إدارة اﻟﺠﻤﻌﻴﺔ اﻟﺴﻌﻮدﻳﺔ ﻟﻌﻠﻮم اﻟﻌﻘﺎر- رﺋﻴﺲ ﻣﺠﻠﺲ',
+    'Prof_Khaled_Alskeet_bio' => 'رﺋﻴﺲ ﻣﺠﻠﺲ إدارة اﻟﺠﻤﻌﻴﺔ اﻟﺴﻌﻮدﻳﺔ ﻟﻌﻠﻮم اﻟﻌﻘﺎر',
 
     'Dr_abdulqader_ameer' => 'ﺳﻌﺎدة اﻟﺪﻛﺘﻮر ﻋﺒﺪاﻟﻘﺎدر أﻣﻴﺮ',
     'Dr_abdulqader_ameer_bio' => 'ﺟﺎﻣﻌﺔ الأعمال واﻟﺘﻘﻨﻴﺔ / ﺟﺪة - ﻋﻤﻴﺪ ﻛﻠﻴﺔ اﻟﻬﻨﺪﺳﺔ وﺗﻘﻨﻴﺔ اﻟﻤﻌﻠﻮﻣﺎت',
     // Session 5:
     'Session 5: Construction Sector Challenges' => 'جلسة 5: تحديات قطاع البناء',
     // 13:45-14:45
-    'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits' => 'جلسة نقاش: تحديات القوى العاملة- مناقشة التحديات المرتبطة بالمهارات و نقص الموارد و الاجور و المزايا',
+    'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits'
+    => 'جلسة نقاش: أهم اﻟﺘﺤﺪﻳﺎت ﻓﻲ ﻗﻄﺎع اﻟﻤﻘﺎوﻻت، ﺗﺤﺪﻳﺎت اﻟﻤﻮارد اﻟﺒﺸﺮﻳﺔ وﻣﺼﺎدر اﻟﻘﻮى اﻟﺒﺸﺮﻳﺔ،
+    ﺗﺤﺪﻳﺎت اﻟﻤﻮاد واﻟﺘﻮرﻳﺪات و ﺗﺤﺪﻳﺎت ﺗﺴﻠﻴﻢ اﻟﻤﺸﺮوع',
 
     'Eng_Majed_Malibari' => 'سعادة اﻟﻤﻬﻨﺪس ماجد مليباري',
 
@@ -184,8 +186,6 @@ return [
 
     'Eng_Ali_Al_Qresha' => "ﺳﻌﺎدة اﻟﻤﻬﻨﺪس ﻋﻠﻲ آل ﻗﺮﻳﺸﺔ",
     'Eng_Ali_Al_Qresha_bio' => "ﻏﺮﻓﺔ ﻧﺠﺮان - رﺋﻴﺲ ﻟﺠﻨﺔ اﻟﻤﻘﺎوﻟﻴﻦ",
-
-    'Chairman of the National Contractors Committee' => 'رئيس اللجنة الوطنية للمقاولين',
     // Session 6:
     'Session 6: Evolving with Construction Technology' => 'جلسة 6: التطورات مع تكنولوجيا البناء',
     // 16:00-17:00

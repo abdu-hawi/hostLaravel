@@ -146,56 +146,58 @@ return [
 
     'Dr_Samar_Khan' => 'Dr. Samar Khan',
 
-    'Eng. Essam Bin Ahmed Kalthoum' => 'Eng. Essam Bin Ahmed Kalthoum',
-    'Chief Executive Officer - ASMO Company' => 'Chief Executive Officer - ASMO Company',
+    'Eng. Essam Bin Ahmed Kalthoum' => 'Eng. Essam Kalthoum',
+    'Chief Executive Officer - ASMO Company' => 'ASMO Company - Chief Executive Officer',
 
     'Mr. Khattar Abdulkhalek' => 'Mr. Khattar Abdulkhalek',
-    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'Drone & Innovation Expert , Managing CBRE Saudi region',
+    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'CBRE Saudi Region - Drone & Innovation Expert',
 
     'Dr. Ali Malibari' => 'Dr. Ali Melibari',
-    'Saudi Society for Civil Engineering' => 'Saudi Society for Civil Engineering',
+    'Saudi Society for Civil Engineering' => 'Projects Managment Offices (PMOs), Dorsch Holding Saudi Arabia - Program Director',
 
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'Panel Discussion: Transformative innovation- Redefining the construction industry',
 
     'Prof_Khaled_Alskeet' => 'Prof. Khaled Alskeet',
-    'Prof_Khaled_Alskeet_bio' => 'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences',
+    'Prof_Khaled_Alskeet_bio' => 'Saudi Society for Real Estate Sciences - Chairman of the Board of Directors',
 
-    'Dr_abdulqader_ameer' => '',
-    'Dr_abdulqader_ameer_bio' => '',
+    'Dr_abdulqader_ameer' => 'Dr. Abdulqader Amir',
+    'Dr_abdulqader_ameer_bio' => 'University of Business and Technology / Jeddah - Dean of College of Engineering and Information Technology',
     // Session 5:
     'Session 5: Construction Sector Challenges' => 'Session 5: Construction Sector Challenges',
     // 13:45-14:45
-    'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits' => 'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits',
+    'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits'
+    => 'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits',
 
     'Eng_Majed_Malibari' => 'Eng. Majed Malibari',
 
-    'Eng. Muammar Al Atawi' => 'Eng. Muammar Al Atawi',
-    'Chairman of the Urban Development Council - Jeddah Chamber' => 'Chairman of the Urban Development Council - Jeddah Chamber',
+    'Eng. Muammar Al Atawi' => 'Eng. Muammar Alatawi',
+    'Chairman of the Urban Development Council - Jeddah Chamber' => 'Jeddah Chamber - Chairman of the Urban Development Council',
 
-    'Mr_Hamed_Al_Hamad' => '',
-    'Mr_Hamed_Al_Hamad_bio' => "",
+    'Mr_Hamed_Al_Hamad' => 'Mr. Hamad Alhammad',
+    'Mr_Hamed_Al_Hamad_bio' => "National Contractors Committee - Chairman",
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector',
 
-    'Eng_Assem_Raqban' => 'Eng. Assem Raqban',
-    'Eng_Assem_Raqban_bio' => 'Chief Executive Officer - Maskan Arabia Investment and Development Company',
+    'Eng_Assem_Raqban' => 'Mr. Assem Raqban',
+    'Eng_Assem_Raqban_bio' => 'Maskan Arabia Investment and Development Company - Chief Executive Officer',
 
-    'Eng_Ali_Al_Qresha' => "",
-    'Eng_Ali_Al_Qresha_bio' => "",
+    'Eng_Ali_Al_Qresha' => "Eng. Ali Al Quraisha",
+    'Eng_Ali_Al_Qresha_bio' => "National Contractors Committee - Najran Chamber",
     // Session 6:
     'Session 6: Evolving with Construction Technology' => 'Session 6: Evolving with Construction Technology',
     // 16:00-17:00
     'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety' => 'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety',
 
     'Dr. Muhammad Hamza Alabbasi' => 'Dr. Muhammad Hamza Alabbasi',
-    'Custodian of the Two Holy Mosques Institute for Hajj Research' => 'Custodian of the Two Holy Mosques Institute for Hajj Research',
+    'Custodian of the Two Holy Mosques Institute for Hajj Research'
+    => 'Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research - Faculty membe',
 
     'Dr. Abdulrahman Yamani' => 'Dr. Abdulrahman Yamani',
-    'Alfaisal University' => 'Alfaisal University',
+    'Alfaisal University' => 'Alfaisal University - Assistant Professor',
 
     'Dr. Ammar Al-Ammar' => 'Dr. Ammar Al-Ammar',
-    'King Saud University' => 'King Saud University',
+    'King Saud University' => '',
     // workshop day 2
     'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs' => 'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs',
     'Workshop 4:' => 'Workshop 4:',

@@ -43,7 +43,7 @@
                                             {{ __('agenda.AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety') }}
                                         </p>
                                         <p class="blue-600">
-                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Dr_Samar_Khan') }}
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr_Mohammed_Bakhriba') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
