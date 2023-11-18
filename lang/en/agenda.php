@@ -178,7 +178,7 @@ return [
     // 16:00-17:00
     'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety' => 'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety',
 
-    'Dr. Muhammad Hamza Alabbasi' => 'Dr. Muhammad Hamza Alabbasi',
+    'Dr. Muhammad Hamza Alabbasi' => 'Dr. Muhammad Alabbasi',
     'Custodian of the Two Holy Mosques Institute for Hajj Research'
     => 'Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research - Faculty membe',
 

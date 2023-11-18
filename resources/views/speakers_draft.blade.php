@@ -170,10 +170,40 @@
                     'bio' => 'agenda.Drone & Innovation Expert , Managing CBRE Saudi region',
                 ],
                 [
-                    'img' => 'speakers/',
-                    'name' => 'agenda.',
-                    'bio' => 'agenda.',
+                    'img' => 'speakers/Dr_abdulqader_ameer.png',
+                    'name' => 'agenda.Dr_abdulqader_ameer',
+                    'bio' => 'agenda.Dr_abdulqader_ameer_bio',
                 ],
+                [
+                    'img' => 'speakers/Eng_Muammar_Al_Atawi.png',
+                    'name' => 'agenda.Eng. Muammar Al Atawi',
+                    'bio' => 'agenda.Chairman of the Urban Development Council - Jeddah Chamber',
+                ],
+                [
+                    'img' => 'speakers/Mr_Hamed_Al_Hamad.png',
+                    'name' => 'agenda.Mr_Hamed_Al_Hamad',
+                    'bio' => 'agenda.Mr_Hamed_Al_Hamad_bio',
+                ],
+                [
+                    'img' => 'speakers/Eng_Assem_Raqban.png',
+                    'name' => 'agenda.Eng_Assem_Raqban',
+                    'bio' => 'agenda.Eng_Assem_Raqban_bio',
+                ],
+                [
+                    'img' => 'speakers/Dr_Muhammad_Hamza_Alabbasi.png',
+                    'name' => 'agenda.Dr. Muhammad Hamza Alabbasi',
+                    'bio' => 'agenda.Custodian of the Two Holy Mosques Institute for Hajj Research',
+                ],
+                [
+                    'img' => 'speakers/Dr_Abdulrahman_Yamani.png',
+                    'name' => 'agenda.Dr. Abdulrahman Yamani',
+                    'bio' => 'agenda.Alfaisal University',
+                ],
+                // [
+                //     'img' => 'speakers/.png',
+                //     'name' => 'agenda.',
+                //     'bio' => 'agenda.',
+                // ],
             ]
         @endphp
         <section
