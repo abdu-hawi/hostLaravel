@@ -54,19 +54,19 @@
                                         <span>
                                             {{ __('agenda.Secretary-General of the Saudi Building Code National Committee') }}
                                         </span>
-                                        {{-- <hr> --}}
+                                        <hr>
                                         {{-- <span class="black-600">
                                             {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef_bio') }}
                                         </span><hr> --}}
-                                        {{-- <span class="black-600">
+                                        <span class="black-600">
                                             {{ __('agenda.Eng_Zakaria_Al_Abdulqader') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Zakaria_Al_Abdulqader_bio') }}
-                                        </span> --}}
+                                        </span>
                                     </span>
                                 </div>
                             </div>

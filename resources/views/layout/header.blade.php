@@ -601,10 +601,10 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                             </li> --}}
                                                         </ul>
                                                     </li>
-                                                    {{-- <li id="menu-item-1334"
+                                                    <li id="menu-item-1334"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('speakers') }}"
-                                                            class="hfe-menu-item  {{ active_menu('speakers') }}">SPEAKERS</a></li> --}}
+                                                            class="hfe-menu-item  {{ active_menu('speakers') }}">{{ __('header.SPEAKERS') }}</a></li>
                                                     <li id="menu-item-1316"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('agenda') }}"
@@ -817,11 +817,11 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                             </li> --}}
                                                                                         </ul>
                                                                                     </li>
-                                                                                    {{-- <li id="menu-item-1334"
+                                                                                    <li id="menu-item-1334"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('speakers') }}"
-                                                                                            class="hfe-menu-item {{ active_menu('speakers') }}">SPEAKERS</a>
-                                                                                    </li> --}}
+                                                                                            class="hfe-menu-item {{ active_menu('speakers') }}">{{ __('header.SPEAKERS') }}</a>
+                                                                                    </li>
                                                                                     <li id="menu-item-1316"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('agenda') }}"

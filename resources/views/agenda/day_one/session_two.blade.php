@@ -282,10 +282,10 @@
                                         <hr> --}}
 
                                         <span class="black-600">
-                                            {{ __('agenda.Eng_Abdullah_Al_Mubarak') }}
+                                            {{ __('agenda.Faisal_Almubarak_PhD') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Eng_Abdullah_Al_Mubarak_bio') }}
+                                            {{ __('agenda.Faisal_Almubarak_PhD_bio') }}
                                         </span>
                                         {{--
                                         <hr>

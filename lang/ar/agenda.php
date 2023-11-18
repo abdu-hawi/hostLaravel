@@ -97,16 +97,16 @@ return [
     'Mr_Mohammed_Bakhriba' => 'سعادة الأستاذ محمد باخريبة',
 
     'Mr. John Seed' => 'السيد جون سييد',
-    'Group Director, Strategy & Development - Dar Al Riyadh' => "",
+    'Group Director, Strategy & Development - Dar Al Riyadh' => "دار الرياض - الاستراتيجية و التطوير، مدير المجموعة",
 
     'Dr_Maher_Shira' => 'سعادة الدكتور ماهر شيرة',
     'Dr_Maher_Shira_bio' => "اﻟﻬﻴﺌﺔ اﻟﻤﻠﻜﻴﺔ ﻟﻤﺪﻳﻨﺔ اﻟﺮﻳﺎض - ﻣﺪﻳﺮ اﻟﻤﺪن اﻟﺬﻛﻴﺔ",
 
     'Ms_Jena_Ladhani' => 'السيدة جينا لاداني',
-    'Ms_Jena_Ladhani_bio' => "",
+    'Ms_Jena_Ladhani_bio' => "شركة CBRE - المديرة العامة في المملكة العربية السعودية",
 
     'Mr. Medy Navani' => 'السيدة ميدي نافاني',
-    'CEO- Design Haus Medy' => "",
+    'CEO- Design Haus Medy' => "شركة Design Haus Medy - المدير التنفيذي",
 
     // 'Mr_Viktor_Lechman' => 'الأستاذ فيكتور ليتشمان',
     // 'Mr_Viktor_Lechman_bio' => 'المدير التنفيذي - GMP Tech',
@@ -117,8 +117,8 @@ return [
     // 'Eng_Saud_Al_Quwaifel' => 'اﻟﻤﻬﻨﺪس سعود القويفل',
     'Ms_Nouf_Bin_Saedan' => "ﺳﻌﺎدة الأستاذة ﻧﻮف ﺑﻦ ﺳﻌﻴﺪان",
 
-    'Eng_Abdullah_Al_Mubarak' => 'ﺳﻌﺎدة اﻟﻤﻬﻨﺪس عبدالله اﻟﻤﺒﺎرك',
-    'Eng_Abdullah_Al_Mubarak_bio' => '',
+    'Faisal_Almubarak_PhD' => 'سعادة الأستاذ الدكتور فيصل المبارك',
+    'Faisal_Almubarak_PhD_bio' => 'استاذ التصميم والتخطيط العمراني، قسم التخطيط العمراني، كلية العمارة والتخطيط، جامعة الملك سعود',
     // Closing Remarks
     'Closing Remarks' => 'ختام الجلسة',
     // Workshop 1:
@@ -155,7 +155,7 @@ return [
     'Saudi Society for Civil Engineering' => "ﺷﺮﻛﺔ دورش ﻫﻮﻟﺪﻧﺞ ﺑﺎﻟﺴﻌﻮدﻳﺔ - ﻣﺪﻳﺮ ﺑﺮﻧﺎﻣﺞ, اﺳﺘﺸﺎري ﻣﻜﺎﺗﺐ إدارة اﻟﻤﺸﺎرﻳﻊ",
 
     'Mr. Khattar Abdulkhalek' => 'السيد خطار عبد الخالق',
-    'Drone & Innovation Expert , Managing CBRE Saudi region' => "شركة CBRE",
+    'Drone & Innovation Expert , Managing CBRE Saudi region' => "شركة CBRR - خبير الطائرات بدون طيار والابتكار (درون)",
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'حلقة نقاش: الابتكار التحويلي- اعادة تصميم صناعة البناء والتشييد',
 
@@ -191,10 +191,8 @@ return [
     'Dr. Muhammad Hamza Alabbasi' => 'سعادة الدكتور محمد العباسي',
     'Custodian of the Two Holy Mosques Institute for Hajj Research' => "ﻣﻌﻬﺪ ﺧﺎدم اﻟﺤﺮﻣﻴﻦ ﻻﺑﺤﺎث اﻟﺤﺞ - ﻋﻀﻮ ﻫﻴﺌﺔ ﺗﺪرﻳﺲ",
 
-    'Dr. Abdulrahman Yamani' => 'سعادة الدكتور عبدالرحمن يماني',
+    'Dr. Abdulrahman Yamani' => 'سعادة الدكتور عبدالرحمن اليماني',
     'Alfaisal University' => "ﺟﺎﻣﻌﺔ اﻟﻔﻴﺼﻞ - أﺳﺘﺎذ ﻣﺴﺎﻋﺪ",
-
-    'Dr. Ammar Al-Ammar' => 'سعادة الدكتور عمار العمار',
     // workshop day 2
     'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs' => 'عرض خاص: برنامج سكني للاسكان - تسهيل احتياجات الاسكان في المملكة العربية السعودية',
     'Workshop 4:' => 'ورشة العمل 4:',

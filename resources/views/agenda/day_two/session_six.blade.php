@@ -59,9 +59,6 @@
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Alfaisal University') }}
-                                        </span><hr>
-                                        <span class="black-600">
-                                            {{ __('agenda.Dr. Ammar Al-Ammar') }}
                                         </span>
                                     </span>
                                 </div>

@@ -108,8 +108,8 @@ return [
     // 'Eng_Saud_Al_Quwaifel' => 'Eng. Saud Al-Quwaifel',
     'Ms_Nouf_Bin_Saedan' => "Ms. Nouf Bin Saedan",
 
-    'Eng_Abdullah_Al_Mubarak' => 'Eng. Abdullah Al Mubarak',
-    'Eng_Abdullah_Al_Mubarak_bio' => '',
+    'Faisal_Almubarak_PhD' => 'Prof. Faisal Almubarak',
+    'Faisal_Almubarak_PhD_bio' => 'KSU, College of Architecture & Planning - Professor of Urban Design & Planning',
 
     // Closing Remarks
     'Closing Remarks' => 'Closing Remarks',
@@ -182,11 +182,8 @@ return [
     'Custodian of the Two Holy Mosques Institute for Hajj Research'
     => 'Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research - Faculty membe',
 
-    'Dr. Abdulrahman Yamani' => 'Dr. Abdulrahman Yamani',
+    'Dr. Abdulrahman Yamani' => 'Dr. Abdulrahman Al Yamani',
     'Alfaisal University' => 'Alfaisal University - Assistant Professor',
-
-    'Dr. Ammar Al-Ammar' => 'Dr. Ammar Al-Ammar',
-    'King Saud University' => '',
     // workshop day 2
     'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs' => 'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs',
     'Workshop 4:' => 'Workshop 4:',

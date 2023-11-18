@@ -119,6 +119,19 @@
                     'name' => 'agenda.Eng. Fahad Mohammed Aljubair',
                     'bio' => 'agenda.H.E. Mayor of Eastern Province',
                 ],
+                // session 1 : 11:00 – 12:15
+                [
+                    'img' => 'speakers/Eng_Abdullah_Al_Ruwaidan.png',
+                    'name' => 'agenda.Eng_Abdullah_Al_Ruwaidan',
+                    'bio' => 'agenda.Eng_Abdullah_Al_Ruwaidan_bio',
+                ],
+                // session 1 : 12:15 – 13:30
+                [
+                    'img' => 'speakers/Ms_Mariam_Telmesani.png',
+                    'name' => 'agenda.Ms_Mariam_Telmesani',
+                    'bio' => 'agenda.Ms_Mariam_Telmesani_bio',
+                ],
+                // session 2 : 14:15 – 15:15
                 [
                     'img' => 'speakers/Eng_Mohammad_Al_Tayyar.png',
                     'name' => 'agenda.Eng. Mohammad Al Tayyar',
@@ -134,6 +147,7 @@
                     'name' => 'agenda.Prof_Khaled_Alskeet',
                     'bio' => 'agenda.Prof_Khaled_Alskeet_bio',
                 ],
+                // session 2 : 15:15 – 16:15
                 [
                     'img' => 'speakers/Mr_John_Seed.png',
                     'name' => 'agenda.Mr. John Seed',
@@ -154,10 +168,28 @@
                     'name' => 'agenda.Mr. Medy Navani',
                     'bio' => 'agenda.CEO- Design Haus Medy',
                 ],
+                // session 2 : 16: 30 – 17:30
+                [
+                    'img' => 'speakers/Faisal_Almubarak_PhD.png',
+                    'name' => 'agenda.Faisal_Almubarak_PhD',
+                    'bio' => 'agenda.Faisal_Almubarak_PhD_bio',
+                ],
+                // session 3
                 [
                     'img' => 'speakers/Eng_Saad_Bin_Saleh_AlShuail.png',
                     'name' => 'agenda.Eng. Saad Bin Saleh AlShuail',
                     'bio' => 'agenda.Secretary-General of the Saudi Building Code National Committee',
+                ],
+                [
+                    'img' => 'speakers/Eng_Zakaria_Al_Abdulqader.png',
+                    'name' => 'agenda.Eng_Zakaria_Al_Abdulqader',
+                    'bio' => 'agenda.Eng_Zakaria_Al_Abdulqader_bio',
+                ],
+                // session 4 : 11:30 – 12:15
+                [
+                    'img' => 'speakers/Eng_Essam_Kalthoum.png',
+                    'name' => 'agenda.Eng. Essam Bin Ahmed Kalthoum',
+                    'bio' => 'agenda.Chief Executive Officer - ASMO Company',
                 ],
                 [
                     'img' => 'speakers/Dr_Ali_Malibari.png',
@@ -169,11 +201,13 @@
                     'name' => 'agenda.Mr. Khattar Abdulkhalek',
                     'bio' => 'agenda.Drone & Innovation Expert , Managing CBRE Saudi region',
                 ],
+                // session 4 : 12:15 – 13:00
                 [
                     'img' => 'speakers/Dr_abdulqader_ameer.png',
                     'name' => 'agenda.Dr_abdulqader_ameer',
                     'bio' => 'agenda.Dr_abdulqader_ameer_bio',
                 ],
+                // session 5 : 13:45 – 14:45
                 [
                     'img' => 'speakers/Eng_Muammar_Al_Atawi.png',
                     'name' => 'agenda.Eng. Muammar Al Atawi',
@@ -184,11 +218,13 @@
                     'name' => 'agenda.Mr_Hamed_Al_Hamad',
                     'bio' => 'agenda.Mr_Hamed_Al_Hamad_bio',
                 ],
+                // session 5 : 14:45 – 15:45
                 [
                     'img' => 'speakers/Eng_Assem_Raqban.png',
                     'name' => 'agenda.Eng_Assem_Raqban',
                     'bio' => 'agenda.Eng_Assem_Raqban_bio',
                 ],
+                // session 6
                 [
                     'img' => 'speakers/Dr_Muhammad_Hamza_Alabbasi.png',
                     'name' => 'agenda.Dr. Muhammad Hamza Alabbasi',
