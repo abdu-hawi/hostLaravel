@@ -29,9 +29,9 @@ return [
     'Eng. Abdullah Mohammed Al-Budair' => 'اﻟﻤﻬﻨﺪس عبدالله محمد البدير',
     'Vice Minister of Municipal and Rural Affairs and Housing' => 'نائب وزير الشؤون البلدية والقروية والاسكان',
     'Mr. Salih Ali Al-Turki' => 'معالي الأستاذ صالح التركي',
-    'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'معالي أمين جدة والعاصمة المقدسة',
+    'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => "أﻣﻴﻦ ﻣﺤﺎﻓﻈﺔ ﺟﺪة والأمين اﻟﻤﻜﻠﻒ ﻟﻠﻌﺎﺻﻤﺔ اﻟﻤﻘﺪﺳﺔ",
     'Eng. Fahad Mohammed Aljubair' => 'معالي المهندس فهد الجبير',
-    'H.E. Mayor of Eastern Province' => 'معالي أمين المنطقة الشرقية',
+    'H.E. Mayor of Eastern Province' => 'أمين المنطقة الشرقية',
 
     'Mr_Abdulrahman_Al_Taweel' => 'ﺳﻌﺎدة الأستاذ ﻋﺒﺪاﻟﺮﺣﻤﻦ اﻟﻄﻮﻳﻞ',
     'Mr_Abdulrahman_Al_Taweel_bio' => 'وﻛﻴﻞ وزارة اﻟﺸﺆون اﻟﺒﻠﺪﻳﺔ واﻟﻘﺮوﻳﺔ والإسكان ﻟﻠﺘﻄﻮﻳﺮ اﻟﻌﻘﺎري',
@@ -58,18 +58,20 @@ return [
     'Eng_Abdulnasser_Al_Abdullateef' => 'سعادة اﻟﻤﻬﻨﺪس ﻋﺒﺪاﻟﻨﺎﺻﺮ اﻟﻌﺒﺪ اﻟﻠﻄﻴﻒ',
     'Eng_Abdulnasser_Al_Abdullateef_bio' => "اﻟﻬﻴﺌﺔ اﻟﺴﻌﻮدﻳﺔ ﻟﻠﻤﻬﻨﺪﺳﻴﻦ - الأمين اﻟﻌﺎم",
     // Session 1 --- 12:15-13:30
-    'Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals' => 'جلسة مناقشة: تطبيق معايير و لوائح تشغيل جديدة لدفع أهداف التنمية المستدامة',
+    'Keynote: Implementing new operating standards and regulations to drive sustainable development goals' => 'ﻣﺤﺎﺿﺮة: تطبيق معايير و لوائح تشغيل جديدة لدفع أهداف التنمية المستدامة',
 
-    'Dr. Samih Alorabi' => 'الدكتور سميح العرابي',
+    'Ms_Mariam_Telmesani' => "ﺳﻌﺎدة الأستاذة ﻣﺮﻳﻢ ﺗﻠﻤﺴﺎﻧﻲ",
+    'Ms_Mariam_Telmesani_bio' => "ﻛﺒﻴﺮ ﻣﺴﺆوﻟﻲ الإستدامة - ﺷﺮﻛﺔ MBL",
+    // 'Dr. Samih Alorabi' => 'الدكتور سميح العرابي',
 
-    'Eng_Abdullah_Al_Jali' => 'اﻟﻤﻬﻨﺪس عبدالله اﻟﺠﺎﻟﻲ',
-    'Eng_Abdullah_Al_Jali_bio' => 'أﻣﻴﻦ ﻣﻨﻄﻘﺔ ﻋﺴﻴﺮ',
+    // 'Eng_Abdullah_Al_Jali' => 'اﻟﻤﻬﻨﺪس عبدالله اﻟﺠﺎﻟﻲ',
+    // 'Eng_Abdullah_Al_Jali_bio' => 'أﻣﻴﻦ ﻣﻨﻄﻘﺔ ﻋﺴﻴﺮ',
 
-    'Mr_Sultan_Al_Zaidi' => 'الأستاذ ﺳﻠﻄﺎن اﻟﺰاﻳﺪي',
-    'Mr_Sultan_Al_Zaidi_bio' => 'أﻣﻴﻦ ﻣﻨﻄﻘﺔ ﺣﺎﺋﻞ',
+    // 'Mr_Sultan_Al_Zaidi' => 'الأستاذ ﺳﻠﻄﺎن اﻟﺰاﻳﺪي',
+    // 'Mr_Sultan_Al_Zaidi_bio' => 'أﻣﻴﻦ ﻣﻨﻄﻘﺔ ﺣﺎﺋﻞ',
 
-    'Mr_Essam_Al_Mulla' => 'الأستاذ ﻋﺼﺎم اﻟﻤﻼ',
-    'Mr_Essam_Al_Mulla_bio' => 'أﻣﻴﻦ ﻣﻨﻄﻘﺔ الأحساء',
+    // 'Mr_Essam_Al_Mulla' => 'الأستاذ ﻋﺼﺎم اﻟﻤﻼ',
+    // 'Mr_Essam_Al_Mulla_bio' => 'أﻣﻴﻦ ﻣﻨﻄﻘﺔ الأحساء',
     // Session 2
     'Session 2: Shaping the Future of Saudi Arabia' => 'جلسة 2: تشكيل مستقبل المملكة العربية السعودية',
     // 14:15-15:15
@@ -77,10 +79,8 @@ return [
 
     'Eng. Fahad Al-Anqari' => 'سعادة اﻟﻤﻬﻨﺪس فهد العنقري',
 
-    'King_Saud_University' => 'جامعة الملك سعود',
-
     'Dr_Abdulaziz_Alzahrani' => 'سعادة الدكتور عبد العزيز الزهراني',
-    'Dr_Abdulaziz_Alzahrani_bio' => 'أكاديمي و متخصص في مجال التصميم العمراني',
+    'Dr_Abdulaziz_Alzahrani_bio' => 'أكاديمي متخصص في مجال التصميم العمراني',
 
     'Dr. Khaled Alskeet' => 'سعادة الأستاذ الدكتور خالد السكيت ',
     'Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences' => 'رئيس مجلس إدارة الجمعية السعودية لعلوم العقار ',
@@ -91,7 +91,8 @@ return [
     'Mr_Assem_Raqban' => 'اﻟﻤﻬﻨﺪس عاصم طارق رقبان',
     'Mr_Assem_Raqban_bio' => 'الرئيس التنفيذي - شركة مسكن العربية',
     // Session 2 : 15:15 – 16:15
-    'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'جلسة مناقشة: بناء مدن ذكية لتحقيق أهداف الاستدامة وكفاءة الطاقة',
+    'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency'
+    => 'جلسة مناقشة: بناء مدن ذكية لتحقيق أهداف الاستدامة وكفاءة الطاقة',
 
     'Mr_Mohammed_Bakhriba' => 'سعادة الأستاذ محمد باخريبة',
 
@@ -110,31 +111,22 @@ return [
     // 'Mr_Viktor_Lechman' => 'الأستاذ فيكتور ليتشمان',
     // 'Mr_Viktor_Lechman_bio' => 'المدير التنفيذي - GMP Tech',
     // Session 2 : 16:30-17:30
-    'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'جلسة الخبراء: الاتجاه نحو التفاعل بين الراغبين في اشغال المدن الجديدة',
+    'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow'
+    => 'جلسة الخبراء: الاتجاه نحو التفاعل بين الراغبين في اشغال المدن الجديدة',
 
     // 'Eng_Saud_Al_Quwaifel' => 'اﻟﻤﻬﻨﺪس سعود القويفل',
     'Ms_Nouf_Bin_Saedan' => "ﺳﻌﺎدة الأستاذة ﻧﻮف ﺑﻦ ﺳﻌﻴﺪان",
 
     'Eng_Abdullah_Al_Mubarak' => 'ﺳﻌﺎدة اﻟﻤﻬﻨﺪس عبدالله اﻟﻤﺒﺎرك',
     'Eng_Abdullah_Al_Mubarak_bio' => '',
-    // 'Eng. Yahya Siraj' => 'اﻟﻤﻬﻨﺪس يحيى سراج',
-    // 'Head of Partnerships Sector' => 'رئيس قطاع شراكات',
-
-    // 'Mr. Saud Al-Ajmi' => 'الأستاذ سعود العجمي',
-    // 'National Housing Company' => 'الشركة الوطنية للاسكان',
-
-    // 'Mr. Sultan Alharazi' => 'الأستاذ سلطان الحرازي',
-    // 'General Manager of Project Management - Watana Housing' => 'مدير عام إدارة المشاريع - الوطنة للاسكان',
     // Closing Remarks
     'Closing Remarks' => 'ختام الجلسة',
     // Workshop 1:
     'Innovation Hub - Young Entrepreneurs Engagement' => "ﺟﻠﺴﺎت ورﺷﺔ اﻟﻌﻤﻞ اﻟﻤﻮازﻳﺔ",
     'Workshop 1: ' => 'ورشة العمل:',
-    'Practical considerations for navigating the regulatory framework for mega infrastructure projects' => 'اعتبارات عملية لتصفح الاطار التنظيمي لمشاريع البنتية التحتية الضخمة',
-    'Workshop 2:' => 'ورشة العمل 2:',
-    ' Developing and handling successful construction contracts' => ' تطوير و معالجة عقود البناء الناجحة',
-    'Workshop 3:' => 'ورشة العمل 3: ',
-    ' Achieving Construction Excellence Through the Materials Transition' => ' الامتياز في قطاع البناء و التشييد بالاستناد على تحول المواد',
+
+    ' Achieving Construction Excellence Through the Materials Transition'
+    => ' الامتياز في قطاع البناء و التشييد بالاستناد على تحول المواد',
     'Mr. Ahmed Al-Shammari' => 'اﻟﻤﻬﻨﺪس أحمد الشمري',
     // day tow
     // session zero
@@ -145,7 +137,7 @@ return [
     'Panel Discussion: Future of construction sector in Saudi Arabia – Upcoming Projects' => 'جلسة نقاش: مستقبل قطاع البناء في المملكة العربية السعودية- المشاريع القادمة',
 
     'Eng. Saad Bin Saleh AlShuail' => 'سعادة اﻟﻤﻬﻨﺪس سعد الشعيل',
-    'Secretary-General of the Saudi Building Code National Committee' => "اﻟﻠﺠﻨﺔ اﻟﻮﻃﻨﻴﺔ ﻟﻜﻮد اﻟﺒﻨﺎء - أﻣﻴﻦ ﻋﺎم",
+    'Secretary-General of the Saudi Building Code National Committee' => "أﻣﻴﻦ ﻋﺎم اﻟﻠﺠﻨﺔ اﻟﻮﻃﻨﻴﺔ ﻟﻜﻮد اﻟﺒﻨﺎء اﻟﺴﻌﻮدي",
 
     'Eng_Zakaria_Al_Abdulqader' => 'سعادة اﻟﻤﻬﻨﺪس زكريا العبد القادر',
     'Eng_Zakaria_Al_Abdulqader_bio' => "اﻟﻬﻴﺌﺔ اﻟﺴﻌﻮدﻳﺔ ﻟﻠﻤﻘﺎوﻟﻴﻦ - رﺋﻴﺲ ﻣﺠﻠﺲ إدارة",
@@ -193,8 +185,6 @@ return [
     'Eng_Ali_Al_Qresha' => "ﺳﻌﺎدة اﻟﻤﻬﻨﺪس ﻋﻠﻲ آل ﻗﺮﻳﺸﺔ",
     'Eng_Ali_Al_Qresha_bio' => "ﻏﺮﻓﺔ ﻧﺠﺮان - رﺋﻴﺲ ﻟﺠﻨﺔ اﻟﻤﻘﺎوﻟﻴﻦ",
 
-    'Ms_Mariam_Telmesani' => "ﺳﻌﺎدة الأستاذة ﻣﺮﻳﻢ ﺗﻠﻤﺴﺎﻧﻲ",
-    'Ms_Mariam_Telmesani_bio' => "ﻛﺒﻴﺮ ﻣﺴﺆوﻟﻲ الإستدامة - ﺷﺮﻛﺔ MBL",
     'Chairman of the National Contractors Committee' => 'رئيس اللجنة الوطنية للمقاولين',
     // Session 6:
     'Session 6: Evolving with Construction Technology' => 'جلسة 6: التطورات مع تكنولوجيا البناء',
@@ -212,4 +202,4 @@ return [
     'Special Showcase: Sakani housing program – Facilitating Saudi Arabia’s housing needs' => 'عرض خاص: برنامج سكني للاسكان - تسهيل احتياجات الاسكان في المملكة العربية السعودية',
     'Workshop 4:' => 'ورشة العمل 4:',
     'Saudi Construction Code for Safety and Buildings' => 'كود البناء السعودي و دوره في سلامة واستدامة المباني',
-    ];
+];

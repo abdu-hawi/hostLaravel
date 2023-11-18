@@ -17,7 +17,7 @@ class Lang
     {
         app()->setLocale(app('lang'));
         if (!session()->has('lang') || session('lang') != 'ar') {
-            if(session('lang') != 'ar'){
+            if (session('lang') != 'ar') {
                 session()->forget('lang');
             }
             session()->put('lang', 'ar');

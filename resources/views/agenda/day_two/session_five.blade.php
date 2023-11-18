@@ -134,14 +134,6 @@
                                             {{ __('agenda.Eng_Ali_Al_Qresha_bio') }}
                                         </span>
 
-                                        <hr>
-
-                                        <span class="black-600">
-                                            {{ __('agenda.Ms_Mariam_Telmesani') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Ms_Mariam_Telmesani_bio') }}
-                                        </span>
                                     </span>
                                 </div>
                             </div>

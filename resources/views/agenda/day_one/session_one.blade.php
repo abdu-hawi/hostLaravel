@@ -269,13 +269,20 @@
                                 <div class="elementor-icon-box-title">
                                     <span class="agenda-icon-box-title-span">
                                         <p class="blue-600">
-                                            {{ __('agenda.Panel Discussion: Implementing new operating standards and regulations to drive sustainable development goals') }}
-                                        </p>
-                                        {{-- <p class="blue-600">
-                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Dr. Samih Alorabi') }}
+                                            {{ __('agenda.Keynote: Implementing new operating standards and regulations to drive sustainable development goals') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
+                                        </p>
+
+                                        <span class="black-600">
+                                            {{ __('agenda.Ms_Mariam_Telmesani') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Ms_Mariam_Telmesani_bio') }}
+                                        </span>
+                                        {{-- <p class="blue-600">
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Dr. Samih Alorabi') }}
                                         </p>
 
                                         <span class="black-600">
@@ -298,6 +305,8 @@
                                         <span>
                                             {{ __('agenda.Mr_Essam_Al_Mulla_bio') }}
                                         </span> --}}
+
+
 
                                     </span>
                                 </div>
