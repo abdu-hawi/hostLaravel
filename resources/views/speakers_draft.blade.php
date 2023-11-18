@@ -31,10 +31,15 @@
         justify-content: space-around;
     }
     .speakers .column { /* inline: 31 */
-        width: 31%;
+        width: 24%;
         padding: 0.5rem 1rem 0;
         margin: 0.5rem;
         border-radius: 15px;
+    }
+    @media(max-width:992px){
+        .speakers .column {
+            width: 31%;
+        }
     }
     @media(max-width:772px){
         .speakers .column {
@@ -53,6 +58,12 @@
     .speakers .column h2{
         font-size: 28px;
         margin: 10px 0;
+    }
+    .speakers .column img {
+        max-width: 200px !important;
+        border: 3px solid #154a7e;
+        box-shadow: inset 0 0 0 20px #154a7e, inset 0 0 0 20px #154a7e;
+        border-radius: 50%;
     }
 </style>
 <main id="main" class="site-main clr speakers"  role="main">
@@ -73,7 +84,7 @@
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
                                 <h1 class="elementor-heading-title elementor-size-default">
-                                    {{ __('agenda.Agenda') }}
+                                    {{ __('header.Speakers') }}
                                 </h1>
                             </div>
                         </div>
@@ -98,36 +109,46 @@
 
                                 <div class="row">
                                     <div class="column">
-                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <img lazy decoding="async" src="{{ asset('speakers/H_E_MAJED_AL HOGAIL.png') }}" alt="{{ __('header.H.E MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL') }}">
                                         <div class="container-ah">
-                                            <h2>Dr. Maan Fares, MD</h2>
-                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                            <h2>{{ __('header.H.E MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL') }}</h2>
+                                            <p>{{ __('header.Minister of Municipal & Rural Affairs & Housing') }}</p>
                                         </div>
-                                        <span class="read-more has-tooltip" data-template="bio4"></span>
                                     </div>
+                                    {{-- Eng_Abdullah_Al_Budair --}}
                                     <div class="column">
-                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Abdullah_Al_Budair.png') }}" alt="{{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }}">
                                         <div class="container-ah">
-                                            <h2>Dr. Maan Fares, MD</h2>
-                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                            <h2>{{ __('agenda.Eng. Abdullah Mohammed Al-Budair') }}</h2>
+                                            <p>{{ __('agenda.Vice Minister of Municipal and Rural Affairs and Housing') }}</p>
                                         </div>
-                                        <span class="read-more has-tooltip" data-template="bio4"></span>
                                     </div>
+                                    {{-- Mr_Salih_Ali_Al_Turki --}}
                                     <div class="column">
-                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Mr_Salih_Ali_Al_Turki.png') }}" alt="{{ __('agenda.Mr. Salih Ali Al-Turki') }}">
                                         <div class="container-ah">
-                                            <h2>Dr. Maan Fares, MD</h2>
-                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                            <h2>{{ __('agenda.Mr. Salih Ali Al-Turki') }}</h2>
+                                            <p>{{ __('agenda.H.E. Mayor of Jeddah and Makkah Al Mukarrama') }}</p>
                                         </div>
-                                        <span class="read-more has-tooltip" data-template="bio4"></span>
                                     </div>
+                                    {{-- Eng_Fahad_Mohammed_Aljubair --}}
                                     <div class="column">
-                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Fahad_Mohammed_Aljubair.png') }}" alt="{{ __('agenda.Eng. Fahad Mohammed Aljubair') }}">
                                         <div class="container-ah">
-                                            <h2>Dr. Maan Fares, MD</h2>
-                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                            <h2>{{ __('agenda.Eng. Fahad Mohammed Aljubair') }}</h2>
+                                            <p>{{ __('agenda.H.E. Mayor of Eastern Province') }}</p>
                                         </div>
-                                        <span class="read-more has-tooltip" data-template="bio4"></span>
+                                    </div>
+                                    {{-- Eng_Fahad_Mohammed_Aljubair --}}
+
+
+                                    {{-- Eng_Mohammad_Al_Tayyar --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Eng_Mohammad_Al_Tayyar.png') }}" alt="{{ __('agenda.Eng. Mohammad Al Tayyar') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Eng. Mohammad Al Tayyar') }}</h2>
+                                            <p>{{ __('agenda.Exective Program Director (Oil Sustainability Program)') }}</p>
+                                        </div>
                                     </div>
                                 </div>
 

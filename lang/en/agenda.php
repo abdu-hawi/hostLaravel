@@ -28,8 +28,10 @@ return [
     'Speakers:' => 'Speakers:',
     'Eng. Abdullah Mohammed Al-Budair' => 'Eng. Abdullah Mohammed Al-Budair',
     'Vice Minister of Municipal and Rural Affairs and Housing' => 'Vice Minister of Municipal and Rural Affairs and Housing',
+
     'Mr. Salih Ali Al-Turki' => 'Mr. Salih Ali Al-Turki',
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => 'H.E. Mayor of Jeddah and Makkah Al Mukarrama',
+
     'Eng. Fahad Mohammed Aljubair' => 'Eng. Fahad Mohammed Aljubair',
     'H.E. Mayor of Eastern Province' => 'H.E. Mayor of Eastern Province',
 

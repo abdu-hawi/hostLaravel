@@ -15,6 +15,7 @@ return [
     'Who Will Attend?' => 'الحضور',
     'Venue' => 'موقع المؤتمر',
     'AGENDA' => 'جدول الأعمال',
+    'SPEAKERS' => 'المتحدثون',
     'MEDIA PARTNERS' => 'الشركاء الاعلاميون',
     'SPONSORS' => 'الرعاة',
     'CONTACT US' => 'اتصل بنا',

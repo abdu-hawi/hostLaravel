@@ -31,27 +31,27 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 Route::group(['middleware' => 'Lang'], function () {
     Route::get('/', function () {
         return view('welcome', [
-            'title' => __('header.HOME').' - ',
+            'title' => __('header.HOME') . ' - ',
         ]);
     })->name('index');
     Route::get('speakers', function () {
         return view('speakers', [
-            'title' => __('header.SPEAKERS').' - ',
+            'title' => __('header.SPEAKERS') . ' - ',
         ]);
     })->name('speakers');
     Route::get('agenda', function () {
         return view('agenda', [
-            'title' => __('header.AGENDA').' - ',
+            'title' => __('header.AGENDA') . ' - ',
         ]);
     })->name('agenda');
     Route::get('media_partners', function () {
         return view('media_partners', [
-            'title' => __('header.MEDIA PARTNERS').' - ',
+            'title' => __('header.MEDIA PARTNERS') . ' - ',
         ]);
     })->name('media_partners');
     Route::get('sponsors', function () {
         return view('sponsors', [
-            'title' => __('header.SPONSORS').' - ',
+            'title' => __('header.SPONSORS') . ' - ',
         ]);
     })->name('sponsors');
     Route::get('news', function () {
@@ -59,32 +59,31 @@ Route::group(['middleware' => 'Lang'], function () {
     })->name('news');
     Route::get('register', function () {
         return view('register', [
-            'title' => __('header.REGISTRATION').' - ',
+            'title' => __('header.REGISTRATION') . ' - ',
         ]);
     })->name('register');
     Route::get('contact_us', function () {
         return view('contact_us', [
-            'title' => __('header.CONTACT US').' - ',
+            'title' => __('header.CONTACT US') . ' - ',
         ]);
     })->name('contact_us');
     Route::get('competition', function () {
         return view('competition', [
-            'title' => __('competition.PITCH_COMPETITION').' - ',
+            'title' => __('competition.PITCH_COMPETITION') . ' - ',
         ]);
     })->name('competition');
     Route::get('workshop', function () {
         return view('workshop', [
-            'title' => __('header.WORKSHOP REGISTRATION').' - ',
+            'title' => __('header.WORKSHOP REGISTRATION') . ' - ',
         ]);
     })->name('workshop');
 
 
     Route::get('speakers_draft', function () {
         return view('speakers_draft', [
-            'title' => __('header.WORKSHOP REGISTRATION').' - ',
+            'title' => __('header.SPEAKERS') . ' - ',
         ]);
     })->name('speakers_draft');
-
 });
 
 Route::get('/lang/{lang}', function ($lang) {
@@ -131,17 +130,17 @@ Route::get('qr_email', function () {
         ->backgroundColor(246, 248, 250)
         ->generate($url);
 
-    $output_file = Str::uuid().time().'.png';
-    Storage::disk('public')->put('qr/'.$output_file, $qr);
+    $output_file = Str::uuid() . time() . '.png';
+    Storage::disk('public')->put('qr/' . $output_file, $qr);
 
-    $qr = url('').'/storage/qr/'.$output_file;
+    $qr = url('') . '/storage/qr/' . $output_file;
 
     Mail::to('ahhh42@gmail.com')->send(new SendEmailRigester([
         'name' => 'Abdu Hawi',
         'qr' => $qr,
     ]));
-    if (Storage::disk('public')->exists('qr/'.$output_file)) {
-        Storage::disk('public')->delete('qr/'.$output_file);
+    if (Storage::disk('public')->exists('qr/' . $output_file)) {
+        Storage::disk('public')->delete('qr/' . $output_file);
     }
 })->middleware('auth');
 
@@ -159,29 +158,29 @@ Route::get('email', function () {
                 ->backgroundColor(246, 248, 250)
                 ->generate($url);
 
-            $output_file = Str::uuid().time().'.png';
-            Storage::disk('public')->put('qr/'.$output_file, $qr);
+            $output_file = Str::uuid() . time() . '.png';
+            Storage::disk('public')->put('qr/' . $output_file, $qr);
 
-            $qr = url('').'/storage/qr/'.$output_file;
+            $qr = url('') . '/storage/qr/' . $output_file;
 
             if (Mail::to($data['email'])->send(new SendEmailRigester([
-                'name' => $data['first_name'].' '.$data['last_name'],
+                'name' => $data['first_name'] . ' ' . $data['last_name'],
                 'qr' => $qr,
                 'isEmail' => true,
             ]))) {
                 $data->query()->update([
                     'is_sent_email' => true,
                 ]);
-                echo $data['email'].Carbon::now().'<br>';
+                echo $data['email'] . Carbon::now() . '<br>';
             } else {
                 EmailFailer::query()->create([
                     'email' => $data['email'],
                     'fails' => 'Unkown Error',
                 ]);
-                echo 'Fails '.$data['email'].'<br>';
+                echo 'Fails ' . $data['email'] . '<br>';
             }
-            if (Storage::disk('public')->exists('qr/'.$output_file)) {
-                Storage::disk('public')->delete('qr/'.$output_file);
+            if (Storage::disk('public')->exists('qr/' . $output_file)) {
+                Storage::disk('public')->delete('qr/' . $output_file);
             }
         } catch (\Exception $ex) {
             // dd($ex->getMessage());
@@ -192,7 +191,7 @@ Route::get('email', function () {
         }
     }
 
-    return 'Done '.Carbon::now();
+    return 'Done ' . Carbon::now();
 })->middleware('auth');
 
 Route::get('clear_cache', function () {
@@ -204,9 +203,9 @@ Route::get('clear_cache', function () {
 
 Route::get('qr', function () {
     return QrCode::size(300)
-    ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
-    ->backgroundColor(246, 248, 250)
-    ->generate('A');
+        ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
+        ->backgroundColor(246, 248, 250)
+        ->generate('A');
 });
 
 Route::get('admin/testEmail', function () {
@@ -254,25 +253,26 @@ Route::get('admin/custome', function () {
 
         $vip = 'VIP SCES Invitation';
         $qr = QrCode::size(300)
-        ->format('png')
-        ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
-        ->backgroundColor(246, 248, 250)
-        ->generate($url);
+            ->format('png')
+            ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
+            ->backgroundColor(246, 248, 250)
+            ->generate($url);
 
-        $output_file = \Str::uuid().time().'.png';
-        Storage::disk('public')->put('qr/'.$output_file, $qr);
+        $output_file = \Str::uuid() . time() . '.png';
+        Storage::disk('public')->put('qr/' . $output_file, $qr);
 
-        $qr = url('').'/storage/qr/'.$output_file;
+        $qr = url('') . '/storage/qr/' . $output_file;
 
         if (Mail::to($data['email'])
-        ->bcc(['ahhh42@gmail.com', 'dareen@xs-conferences.com'])
-        ->send(new SendEmailRigester([
-            'name' => $data['first_name'], //.' '.$data['last_name'],
-            'qr' => $qr,
-            'isEmail' => false,
-            'vip' => $vip,
-            'cc' => 'cc',
-        ]))) {
+            ->bcc(['ahhh42@gmail.com', 'dareen@xs-conferences.com'])
+            ->send(new SendEmailRigester([
+                'name' => $data['first_name'], //.' '.$data['last_name'],
+                'qr' => $qr,
+                'isEmail' => false,
+                'vip' => $vip,
+                'cc' => 'cc',
+            ]))
+        ) {
             $client->query()->update([
                 'is_sent_email' => true,
             ]);
@@ -283,8 +283,8 @@ Route::get('admin/custome', function () {
             ]);
         }
 
-        if (Storage::disk('public')->exists('qr/'.$output_file)) {
-            Storage::disk('public')->delete('qr/'.$output_file);
+        if (Storage::disk('public')->exists('qr/' . $output_file)) {
+            Storage::disk('public')->delete('qr/' . $output_file);
         }
     } catch (\Exception $ex) {
         dd($ex->getMessage());

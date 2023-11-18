@@ -26,7 +26,7 @@ return [
     // Session 1 --- 9:45-10:45
     'Opening Panel: Construction is Saudi Arabia - Key Trends & Opportunities Beyond 2025' => 'الجلسة الافتتاحية: البناء في المملكة العربية السعودية-الاتجاهات و الفرص الرئيسية بعد عام 2025',
     'Speakers:' => 'المتحدثون',
-    'Eng. Abdullah Mohammed Al-Budair' => 'اﻟﻤﻬﻨﺪس عبدالله محمد البدير',
+    'Eng. Abdullah Mohammed Al-Budair' => 'اﻟﻤﻬﻨﺪس عبدالله بن محمد البدير',
     'Vice Minister of Municipal and Rural Affairs and Housing' => 'نائب وزير الشؤون البلدية والقروية والاسكان',
     'Mr. Salih Ali Al-Turki' => 'معالي الأستاذ صالح التركي',
     'H.E. Mayor of Jeddah and Makkah Al Mukarrama' => "أﻣﻴﻦ ﻣﺤﺎﻓﻈﺔ ﺟﺪة والأمين اﻟﻤﻜﻠﻒ ﻟﻠﻌﺎﺻﻤﺔ اﻟﻤﻘﺪﺳﺔ",
