@@ -119,11 +119,21 @@
                     'name' => 'agenda.Eng. Fahad Mohammed Aljubair',
                     'bio' => 'agenda.H.E. Mayor of Eastern Province',
                 ],
-                // session 1 : 11:00 – 12:15
+                // seission 1 : 11:00 – 12:15
+                [
+                    'img' => 'speakers/Eng_Mohammad_Al_Tayyar.png',
+                    'name' => 'agenda.Eng. Mohammad Al Tayyar',
+                    'bio' => 'agenda.Exective Program Director (Oil Sustainability Program)',
+                ],
                 [
                     'img' => 'speakers/Eng_Abdullah_Al_Ruwaidan.png',
                     'name' => 'agenda.Eng_Abdullah_Al_Ruwaidan',
                     'bio' => 'agenda.Eng_Abdullah_Al_Ruwaidan_bio',
+                ],
+                [
+                    'img' => 'speakers/Eng_Abdulnasser_Al_Abdullateef.png',
+                    'name' => 'agenda.Eng_Abdulnasser_Al_Abdullateef',
+                    'bio' => 'agenda.Eng_Abdulnasser_Al_Abdullateef_bio',
                 ],
                 // session 1 : 12:15 – 13:30
                 [
@@ -133,11 +143,6 @@
                 ],
                 // session 2 : 14:15 – 15:15
                 [
-                    'img' => 'speakers/Eng_Mohammad_Al_Tayyar.png',
-                    'name' => 'agenda.Eng. Mohammad Al Tayyar',
-                    'bio' => 'agenda.Exective Program Director (Oil Sustainability Program)',
-                ],
-                [
                     'img' => 'speakers/Dr_Abdulaziz_Alzahrani.png',
                     'name' => 'agenda.Dr_Abdulaziz_Alzahrani',
                     'bio' => 'agenda.Dr_Abdulaziz_Alzahrani_bio',
@@ -146,6 +151,11 @@
                     'img' => 'speakers/Dr_Khaled_Alskeet.png',
                     'name' => 'agenda.Prof_Khaled_Alskeet',
                     'bio' => 'agenda.Prof_Khaled_Alskeet_bio',
+                ],
+                [
+                    'img' => 'speakers/Eng_Ali_Al_Shuaibi.png',
+                    'name' => 'agenda.Eng_Ali_Al_Shuaibi',
+                    'bio' => 'agenda.Eng_Ali_Al_Shuaibi_bio',
                 ],
                 // session 2 : 15:15 – 16:15
                 [

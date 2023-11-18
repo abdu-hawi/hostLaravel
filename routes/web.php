@@ -35,7 +35,7 @@ Route::group(['middleware' => 'Lang'], function () {
         ]);
     })->name('index');
 
-    Route::get('speakers', function () {
+    Route::get('secs_speakers', function () {
         return view('speakers', [
             'title' => __('header.SPEAKERS').' - ',
         ]);

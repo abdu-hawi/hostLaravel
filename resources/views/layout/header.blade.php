@@ -139,131 +139,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
             <p class="main-title bhf-hidden" itemprop="headline"><a href="{{ route('index') }}"
                     title="Saudi Construction Excellence Summit 2023" rel="home">{{ __('header.Saudi Construction Excellence Summit 2023') }}</a></p>
             <div data-elementor-type="wp-post" data-elementor-id="10" class="elementor elementor-10">
-                {{--<section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-c38ed11 elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="c38ed11" data-element_type="section"
-                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                    <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c2f2647"
-                            data-id="c2f2647" data-element_type="column">
-                            <div class="elementor-widget-wrap elementor-element-populated">
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-63dd655 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                    data-id="63dd655" data-element_type="section">
-                                    <div class="elementor-container elementor-column-gap-default">
-                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-691eb00"
-                                            data-id="691eb00" data-element_type="column">
-                                            <div class="elementor-widget-wrap">
-                                            </div>
-                                        </div>
-                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-7b4e3e2"
-                                            data-id="7b4e3e2" data-element_type="column">
-                                            <div class="elementor-widget-wrap">
-                                            </div>
-                                        </div>
-                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-4693404"
-                                            data-id="4693404" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-246effc elementor-widget elementor-widget-heading"
-                                                    data-id="246effc" data-element_type="widget"
-                                                    data-widget_type="heading.default">
-                                                    <div class="elementor-widget-container">
-                                                        <style>
-                                                            /*! elementor - v3.11.3 - 07-03-2023 */
-                                                            .elementor-heading-title {
-                                                                padding: 0;
-                                                                margin: 0;
-                                                                line-height: 1
-                                                            }
 
-                                                            .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
-                                                                color: inherit;
-                                                                font-size: inherit;
-                                                                line-height: inherit
-                                                            }
-
-                                                            .elementor-widget-heading .elementor-heading-title.elementor-size-small {
-                                                                font-size: 15px
-                                                            }
-
-                                                            .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
-                                                                font-size: 19px
-                                                            }
-
-                                                            .elementor-widget-heading .elementor-heading-title.elementor-size-large {
-                                                                font-size: 29px
-                                                            }
-
-                                                            .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
-                                                                font-size: 39px
-                                                            }
-
-                                                            .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
-                                                                font-size: 59px
-                                                            }
-                                                        </style>
-                                                        <h6 class="elementor-heading-title elementor-size-default">
-                                                            FOLLOW US</h6>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-51f10c1"
-                                            data-id="51f10c1" data-element_type="column">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-9c50cc6 elementor-widget elementor-widget-elementskit-social-media"
-                                                    data-id="9c50cc6" data-element_type="widget"
-                                                    data-widget_type="elementskit-social-media.default">
-                                                    <div class="elementor-widget-container">
-                                                        <div class="ekit-wid-con">
-                                                            <ul class="ekit_social_media">
-                                                                <li class="elementor-repeater-item-879cea4">
-                                                                    <a href="javascript:void(0)"
-                                                                        target="_blank" aria-label="LinkedIn"
-                                                                        class="linkedin">
-
-                                                                        <i aria-hidden="true"
-                                                                            class="icon icon-linkedin"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="elementor-repeater-item-2a9413d">
-                                                                    <a href="javascript:void(0)" target="_blank"
-                                                                        aria-label="Twitter" class="twitter">
-
-                                                                        <i aria-hidden="true"
-                                                                            class="icon icon-twitter"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="elementor-repeater-item-89b9345">
-                                                                    <a href="javascript:void(0)"
-                                                                        target="_blank" aria-label="Facebook"
-                                                                        class="facebook">
-
-                                                                        <i aria-hidden="true"
-                                                                            class="icon icon-facebook"></i>
-                                                                    </a>
-                                                                </li>
-                                                                <li class="elementor-repeater-item-c4fb78a">
-                                                                    <a href="javascript:void(0)"
-                                                                        target="_blank" aria-label="instagram"
-                                                                        class="1">
-
-                                                                        <i aria-hidden="true"
-                                                                            class="icon icon-instagram-1"></i>
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                        </div>
-                    </div>
-                </section>--}}
                 <style>
                     /*! elementor - v3.11.3 - 07-03-2023 */
                     .elementor-heading-title {
@@ -601,10 +477,10 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                             </li> --}}
                                                         </ul>
                                                     </li>
-                                                    {{-- <li id="menu-item-1334"
+                                                    <li id="menu-item-1334"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('speakers') }}"
-                                                            class="hfe-menu-item  {{ active_menu('speakers') }}">{{ __('header.SPEAKERS') }}</a></li> --}}
+                                                            class="hfe-menu-item  {{ active_menu('speakers') }}">{{ __('header.SPEAKERS') }}</a></li>
                                                     <li id="menu-item-1316"
                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                         <a href="{{ route('agenda') }}"
@@ -817,11 +693,11 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                             </li> --}}
                                                                                         </ul>
                                                                                     </li>
-                                                                                    {{-- <li id="menu-item-1334"
+                                                                                    <li id="menu-item-1334"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('speakers') }}"
                                                                                             class="hfe-menu-item {{ active_menu('speakers') }}">{{ __('header.SPEAKERS') }}</a>
-                                                                                    </li> --}}
+                                                                                    </li>
                                                                                     <li id="menu-item-1316"
                                                                                         class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
                                                                                         <a href="{{ route('agenda') }}"
