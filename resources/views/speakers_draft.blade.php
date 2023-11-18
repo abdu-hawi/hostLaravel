@@ -8,6 +8,7 @@
     .speakers .column { /* inline: 1 */
         position: relative;
         padding-bottom: 10px;
+        border: 1px solid #154a7e39;
     }
     .speakers .row{ /* inline: 6 */
         --bs-gutter-x: 1.5rem;
@@ -28,12 +29,12 @@
         flex-wrap: wrap;
         margin-top: calc(0.25rem * -1);
         margin-left: calc(0.25rem * -.5);
-        justify-content: space-around;
+        justify-content: center;
     }
     .speakers .column { /* inline: 31 */
-        width: 24%;
+        width: 22%;
         padding: 0.5rem 1rem 0;
-        margin: 0.5rem;
+        margin: 1rem;
         border-radius: 15px;
     }
     @media(max-width:992px){
@@ -43,7 +44,7 @@
     }
     @media(max-width:772px){
         .speakers .column {
-            width: 48%;
+            width: 47%;
         }
     }
     @media(max-width:650px){
@@ -60,10 +61,12 @@
         margin: 10px 0;
     }
     .speakers .column img {
+        width: 90%;
         max-width: 200px !important;
         border: 3px solid #154a7e;
         box-shadow: inset 0 0 0 20px #154a7e, inset 0 0 0 20px #154a7e;
         border-radius: 50%;
+        margin-top: 1rem;
     }
 </style>
 <main id="main" class="site-main clr speakers"  role="main">
@@ -83,7 +86,7 @@
                             data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-                                <h1 class="elementor-heading-title elementor-size-default">
+                                <h1 class="elementor-heading-title elementor-size-default" style="margin-top: 2rem;">
                                     {{ __('header.Speakers') }}
                                 </h1>
                             </div>
@@ -150,6 +153,25 @@
                                             <p>{{ __('agenda.Exective Program Director (Oil Sustainability Program)') }}</p>
                                         </div>
                                     </div>
+
+                                    {{-- Dr_Abdulaziz_Alzahrani --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Abdulaziz_Alzahrani.png') }}" alt="{{ __('agenda.Dr_Abdulaziz_Alzahrani') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Dr_Abdulaziz_Alzahrani') }}</h2>
+                                            <p>{{ __('agenda.Dr_Abdulaziz_Alzahrani_bio') }}</p>
+                                        </div>
+                                    </div>
+
+                                    {{-- Dr_Khaled_Alskeet --}}
+                                    <div class="column">
+                                        <img lazy decoding="async" src="{{ asset('speakers/Dr_Khaled_Alskeet.png') }}" alt="{{ __('agenda.Dr. Khaled Alskeet') }}">
+                                        <div class="container-ah">
+                                            <h2>{{ __('agenda.Dr. Khaled Alskeet') }}</h2>
+                                            <p>{{ __('agenda.Chairman of the Board of Directors of the Saudi Society for Real Estate Sciences') }}</p>
+                                        </div>
+                                    </div>
+
                                 </div>
 
                             </div>

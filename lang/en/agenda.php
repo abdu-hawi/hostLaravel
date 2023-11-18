@@ -62,17 +62,6 @@ return [
     // Session 1 12:15-13:30
     'Keynote: Implementing new operating standards and regulations to drive sustainable development goals' => 'Keynote: Implementing new operating standards and regulations to drive sustainable development goals',
 
-    // 'Dr. Samih Alorabi' => 'Dr. Samih Alorabi',
-
-    // 'Eng_Abdullah_Al_Jali' => 'Eng. Abdullah Al Jali',
-    // 'Eng_Abdullah_Al_Jali_bio' => 'Secretary of Asir Region',
-
-    // 'Mr_Sultan_Al_Zaidi' => 'Mr. Sultan Al Zaidi',
-    // 'Mr_Sultan_Al_Zaidi_bio' => 'Mayor of Hail Region',
-
-    // 'Mr_Essam_Al_Mulla' => 'Mr. Essam Al-Mulla',
-    // 'Mr_Essam_Al_Mulla_bio' => 'Mayor of Al-Ahsa Region',
-
     'Ms_Mariam_Telmesani' => "Mrs. Maryam Tlemsani",
     'Ms_Mariam_Telmesani_bio' => "Chief Sustainability Officer - MBL Company",
     // Session 2
