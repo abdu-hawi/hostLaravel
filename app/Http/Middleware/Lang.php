@@ -16,13 +16,13 @@ class Lang
     public function handle(Request $request, Closure $next): Response
     {
         app()->setLocale(app('lang'));
-        if (!session()->has('lang') || session('lang') != 'ar') {
-            if (session('lang') != 'ar') {
-                session()->forget('lang');
-            }
-            session()->put('lang', 'ar');
-            return redirect(route('lang', 'ar'));
-        }
+        // if (!session()->has('lang') || session('lang') != 'ar') {
+        //     if (session('lang') != 'ar') {
+        //         session()->forget('lang');
+        //     }
+        //     session()->put('lang', 'ar');
+        //     return redirect(route('lang', 'ar'));
+        // }
 
         return $next($request);
     }

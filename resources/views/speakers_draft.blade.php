@@ -1,17 +1,58 @@
 @extends('layout.main')
 @section('content')
 <style>
-    .speakers .row{
+    :root {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+    }
+    .speakers .column { /* inline: 1 */
+        position: relative;
+        padding-bottom: 10px;
+    }
+    .speakers .row{ /* inline: 6 */
         --bs-gutter-x: 1.5rem;
         --bs-gutter-y: 0;
         display: flex;
     }
-    .speakers .row{
+    .speakers .row > * {  /* inline: 14 */
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        padding-left: calc(var(--bs-gutter-x) * .5);
+        padding-right: calc(var(--bs-gutter-x) * .5);
+        margin-top: var(--bs-gutter-y);
+    }
+    .speakers .row{ /* inline: 24 */
         display: flex;
         flex-wrap: wrap;
         margin-top: calc(0.25rem * -1);
         margin-left: calc(0.25rem * -.5);
-        justify-content: center;
+        justify-content: space-around;
+    }
+    .speakers .column { /* inline: 31 */
+        width: 31%;
+        padding: 0.5rem 1rem 0;
+        margin: 0.5rem;
+        border-radius: 15px;
+    }
+    @media(max-width:772px){
+        .speakers .column {
+            width: 48%;
+        }
+    }
+    @media(max-width:650px){
+        .speakers .column {
+            width: 100%;
+        }
+    }
+    .speakers .column { /* inline: 56 */
+        text-align: center;
+        box-shadow: 0 4px 8px 0 #154a7e39;
+    }
+    .speakers .column h2{
+        font-size: 28px;
+        margin: 10px 0;
     }
 </style>
 <main id="main" class="site-main clr speakers"  role="main">
@@ -54,7 +95,42 @@
                             data-id="6143db6" data-element_type="widget"
                             data-widget_type="heading.default">
                             <div class="elementor-widget-container">
-aa
+
+                                <div class="row">
+                                    <div class="column">
+                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <div class="container-ah">
+                                            <h2>Dr. Maan Fares, MD</h2>
+                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                        </div>
+                                        <span class="read-more has-tooltip" data-template="bio4"></span>
+                                    </div>
+                                    <div class="column">
+                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <div class="container-ah">
+                                            <h2>Dr. Maan Fares, MD</h2>
+                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                        </div>
+                                        <span class="read-more has-tooltip" data-template="bio4"></span>
+                                    </div>
+                                    <div class="column">
+                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <div class="container-ah">
+                                            <h2>Dr. Maan Fares, MD</h2>
+                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                        </div>
+                                        <span class="read-more has-tooltip" data-template="bio4"></span>
+                                    </div>
+                                    <div class="column">
+                                        <img decoding="async" src="http://sahf2023.com/wp-content/uploads/2023/08/Maan-Fares.png" alt="Dr. Maan Fares, MD">
+                                        <div class="container-ah">
+                                            <h2>Dr. Maan Fares, MD</h2>
+                                            <p>Chairman,<br>Global Patient Services,<br>The Cleveland Clinic;<br>C3 Board Advisor,<br>USA</p>
+                                        </div>
+                                        <span class="read-more has-tooltip" data-template="bio4"></span>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
