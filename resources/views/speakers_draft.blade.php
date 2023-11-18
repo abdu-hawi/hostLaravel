@@ -59,6 +59,7 @@
     .speakers .column h2{
         font-size: 28px;
         margin: 10px 0;
+        letter-spacing: normal;
     }
     .speakers .column img {
         width: 90%;
