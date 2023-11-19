@@ -243,6 +243,7 @@ Route::get('admin/testEmail', function () {
 });
 
 Route::get('admin/custome', function () {
+    dd("forbidden");
     try {
         $data = [
             'first_name' => 'Sami',
