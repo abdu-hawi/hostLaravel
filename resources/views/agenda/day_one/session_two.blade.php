@@ -162,13 +162,13 @@
                                         <span>
                                             {{ __('agenda.CEO- Design Haus Medy') }}
                                         </span>
-                                        {{-- <hr>
+                                        <hr>
                                         <span class="black-600">
                                             {{ __('agenda.Mr_Viktor_Lechman') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Mr_Viktor_Lechman_bio') }}
-                                        </span> --}}
+                                        </span>
                                     </span>
                                 </div>
                             </div>
@@ -288,14 +288,14 @@
                                             {{ __('agenda.Mr_Abdulrahman_Albassam_bio') }}
                                         </span>
 
-                                        {{--
+
                                             <hr>
                                         <span class="black-600">
-                                            {{ __('agenda.Mr. Sultan Alharazi') }}
+                                            {{ __('agenda.Dr_Mohammed_Almahmood') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.General Manager of Project Management - Watana Housing') }}
-                                        </span> --}}
+                                            {{ __('agenda.Dr_Mohammed_Almahmood_bio') }}
+                                        </span>
                                     </span>
                                 </div>
                             </div>

@@ -64,6 +64,35 @@
                                                         </h2>
                                                     </div>
                                                 </div>
+
+                                                {{-- SNB --}}
+                                                <section
+                                                    class="elementor-section elementor-inner-section elementor-element elementor-element-4eb82261 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+                                                    data-id="4eb82261" data-element_type="section"
+                                                    data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+                                                    <div class="elementor-container elementor-column-gap-default" style="justify-content: center;">
+                                                        <div class="elementor-column elementor-inner-column elementor-element elementor-element-37d232d0"
+                                                            data-id="37d232d0" data-element_type="column"
+                                                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                                                <div class="elementor-element elementor-element-5fbec846 elementor-widget elementor-widget-image"
+                                                                    data-id="5fbec846" data-element_type="widget"
+                                                                    data-widget_type="image.default">
+                                                                    <div class="elementor-widget-container">
+                                                                        <img decoding="async"
+                                                                            src="logo\sponsors\snb.png"
+                                                                            class="attachment-medium size-medium wp-image-2018 sponsors-img"
+                                                                            alt="" loading="lazy" />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </section>
+                                                {{-- END SNB --}}
+
+                                                {{-- SAJCO --}}
                                                 <section
                                                     class="elementor-section elementor-inner-section elementor-element elementor-element-4eb82261 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
                                                     data-id="4eb82261" data-element_type="section"

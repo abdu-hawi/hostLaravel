@@ -62,6 +62,13 @@
                                         <span>
                                             {{ __('agenda.Mr_Hamed_Al_Hamad_bio') }}
                                         </span>
+                                        <hr>
+                                        <span class="black-600">
+                                            {{ __('agenda.Eng_Mohammed_Aldhowayan') }}
+                                        </span><br>
+                                        <span>
+                                            {{ __('agenda.Eng_Mohammed_Aldhowayan_bio') }}
+                                        </span>
                                     </span>
                                 </div>
                             </div>
@@ -117,15 +124,6 @@
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
-
-                                        <span class="black-600">
-                                            {{ __('agenda.Ms_Mariam_Telmesani') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Ms_Mariam_Telmesani_bio') }}
-                                        </span>
-
-                                        <hr>
 
                                         <span class="black-600">
                                             {{ __('agenda.Eng_Assem_Raqban') }}

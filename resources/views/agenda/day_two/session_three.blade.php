@@ -62,10 +62,10 @@
                                             {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef_bio') }}
                                         </span><hr> --}}
                                         <span class="black-600">
-                                            {{ __('agenda.Eng_Zakaria_Al_Abdulqader') }}
+                                            {{ __('agenda.Eng_Ahmed_Al_Aboudi') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Eng_Zakaria_Al_Abdulqader_bio') }}
+                                            {{ __('agenda.Eng_Ahmed_Al_Aboudi_bio') }}
                                         </span>
                                     </span>
                                 </div>

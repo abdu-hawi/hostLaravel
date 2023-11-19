@@ -82,15 +82,14 @@ return [
     'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
     'Eng_Ali_Al_Shuaibi_bio' => 'Distinguished Saudi architect',
 
-    // 'Mr_Assem_Raqban' => 'Mr. Assem Raqban',
-    // 'Mr_Assem_Raqban_bio' => 'Chief Executive Officer - Maskan Arabia Investment and Development Company',
     // Session 2 : 15:15 – 16:15
     'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency' => 'Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency',
 
     'Mr_Mohammed_Bakhriba' => 'Mr. Mohammed Bakhriba',
 
     'Mr. John Seed' => 'Mr. John Seed',
-    'Group Director, Strategy & Development - Dar Al Riyadh' => 'Dar Al Riyadh - Group Director, Strategy & Development',
+    'Group Director, Strategy & Development - Dar Al Riyadh'
+    => 'Dar Al Riyadh - Group Director, Strategy & Development',
 
     'Dr_Maher_Shira' => 'Dr. Maher Shira',
     'Dr_Maher_Shira_bio' => 'Smart City Department, Royal Commission for Riyadh City - Director General',
@@ -100,8 +99,12 @@ return [
 
     'Mr. Medy Navani' => 'Mr. Medy Navani',
     'CEO- Design Haus Medy' => 'Design Haus Medy - CEO',
+
+    'Mr_Viktor_Lechman' => 'Mr. Viktor Lechman',
+    'Mr_Viktor_Lechman_bio' => 'Growth Partner at Lekvi Development, Real estate Development and Investment Company',
     // Session 2 : 16:30-17:30
-    'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow',
+    'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow'
+    => 'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow',
 
     // 'Eng_Saud_Al_Quwaifel' => 'Eng. Saud Al-Quwaifel',
     'Mr_Abdulrahman_Alsayel' => 'Mr. Abdulrahman Alsayel',
@@ -111,6 +114,9 @@ return [
 
     'Mr_Abdulrahman_Albassam' => 'Mr. Abdulrahman Albassam',
     'Mr_Abdulrahman_Albassam_bio' => 'Tilal Real Estate Development Company - CEO / Awn Enterprises - Executive Chairman',
+
+    'Dr_Mohammed_Almahmood' => 'Dr. Mohammed Almahmood',
+    'Dr_Mohammed_Almahmood_bio' => 'Architect and Urbanist Founder and Director of walkscapes urbanism studio',
 
     // Closing Remarks
     'Closing Remarks' => 'Closing Remarks',
@@ -128,31 +134,34 @@ return [
     'Panel Discussion: Future of construction sector in Saudi Arabia – Upcoming Projects' => 'Panel Discussion: Future of construction sector in Saudi Arabia – Upcoming Projects',
 
     'Eng. Saad Bin Saleh AlShuail' => 'Eng. Saad AlShuail',
-    'Secretary-General of the Saudi Building Code National Committee' => 'Saudi Building Code National Committee - Secretary General',
+    'Secretary-General of the Saudi Building Code National Committee'
+    => 'Saudi Building Code National Committee - Secretary General',
 
-    'Eng_Zakaria_Al_Abdulqader' => 'Eng. Zakaria Al-Abdulqader',
-    'Eng_Zakaria_Al_Abdulqader_bio' => 'Saudi Council of Engineers - Secretary General',
+    'Eng_Ahmed_Al_Aboudi' => 'Eng. Ahmed Al-Aboudi',
+    'Eng_Ahmed_Al_Aboudi_bio' => 'Deputy Secretary of the Saudi Contractors Authority',
+    // 'Eng_Zakaria_Al_Abdulqader' => 'Eng. Zakaria Al-Abdulqader',
+    // 'Eng_Zakaria_Al_Abdulqader_bio' => 'Saudi Council of Engineers - Secretary General',
     // Session 4:
     'Session 4: Technology The New Age of Construction' => 'Session 4: Technology The New Age of Construction',
     // 11:30-12:15
     'Panel Discussion: Construction technology trends on the horizon for 2023 and beyond' => 'Panel Discussion: Construction technology trends on the horizon for 2023 and beyond',
 
-    'Dr_Samar_Khan' => 'Dr. Samar Khan',
+    // 'Dr_Samar_Khan' => 'Dr. Samar Khan',
 
     'Eng. Essam Bin Ahmed Kalthoum' => 'Eng. Essam Kalthoum',
     'Chief Executive Officer - ASMO Company' => 'ASMO Company - Chief Executive Officer',
 
-    'Mr. Khattar Abdulkhalek' => 'Mr. Khattar Abdulkhalek',
-    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'CBRE Saudi Region - Drone & Innovation Expert',
-
     'Dr. Ali Malibari' => 'Dr. Ali Melibari',
     'Saudi Society for Civil Engineering' => 'Projects Managment Offices (PMOs), Dorsch Holding Saudi Arabia - Program Director',
+
+    'Mr. Khattar Abdulkhalek' => 'Mr. Khattar Abdulkhalek',
+    'Drone & Innovation Expert , Managing CBRE Saudi region' => 'CBRE Saudi Region - Drone & Innovation Expert',
 
     // 12:15-13:00
     'Panel Discussion: Transformative innovation- Redefining the construction industry' => 'Panel Discussion: Transformative innovation- Redefining the construction industry',
 
     'Dr_abdulqader_ameer' => 'Dr. Abdulqader Amir',
-    'Dr_abdulqader_ameer_bio' => 'University of Business and Technology / Jeddah - Dean of College of Engineering and Information Technology',
+    'Dr_abdulqader_ameer_bio' => 'Executive Vice President for Technical Affairs, Asir Development Authority',
     // Session 5:
     'Session 5: Construction Sector Challenges' => 'Session 5: Construction Sector Challenges',
     // 13:45-14:45
@@ -165,6 +174,10 @@ return [
 
     'Mr_Hamed_Al_Hamad' => 'Mr. Hamad Alhammad',
     'Mr_Hamed_Al_Hamad_bio' => 'National Contractors Committee - Chairman',
+
+    'Eng_Mohammed_Aldhowayan' => 'Eng. Mohammed Aldhowayan',
+    'Eng_Mohammed_Aldhowayan_bio' => 'Board Chairman Integrated Facilities Co',
+
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector',
 
@@ -179,7 +192,8 @@ return [
     'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety' => 'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety',
 
     'Dr. Muhammad Hamza Alabbasi' => 'Dr. Muhammad Alabbasi',
-    'Custodian of the Two Holy Mosques Institute for Hajj Research' => 'Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research - Faculty membe',
+    'Custodian of the Two Holy Mosques Institute for Hajj Research'
+    => 'Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research - Faculty membe',
 
     'Dr. Abdulrahman Yamani' => 'Dr. Abdulrahman Al Yamani',
     'Alfaisal University' => 'Alfaisal University - Assistant Professor',

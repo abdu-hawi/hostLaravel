@@ -183,6 +183,11 @@
                     'name' => 'agenda.Mr. Medy Navani',
                     'bio' => 'agenda.CEO- Design Haus Medy',
                 ],
+                [
+                    'img' => 'speakers/Mr_Viktor_Lechman.png',
+                    'name' => 'agenda.Mr_Viktor_Lechman',
+                    'bio' => 'agenda.Mr_Viktor_Lechman_bio',
+                ],
                 // session 2 : 16: 30 – 17:30
                 [
                     'img' => 'speakers/Mr_Hashim_Al_Dabbagh.png',
@@ -193,6 +198,11 @@
                     'img' => 'speakers/Mr_Abdulrahman_Albassam.png',
                     'name' => 'agenda.Mr_Abdulrahman_Albassam',
                     'bio' => 'agenda.Mr_Abdulrahman_Albassam_bio',
+                ],
+                [
+                    'img' => 'speakers/Dr_Mohammed_Almahmood.png',
+                    'name' => 'agenda.Dr_Mohammed_Almahmood',
+                    'bio' => 'agenda.Dr_Mohammed_Almahmood_bio',
                 ],
                 // session 3
                 [
