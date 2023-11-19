@@ -210,11 +210,11 @@
                     'name' => 'agenda.Eng. Saad Bin Saleh AlShuail',
                     'bio' => 'agenda.Secretary-General of the Saudi Building Code National Committee',
                 ],
-                [
-                    'img' => 'speakers/Eng_Zakaria_Al_Abdulqader.png',
-                    'name' => 'agenda.Eng_Zakaria_Al_Abdulqader',
-                    'bio' => 'agenda.Eng_Zakaria_Al_Abdulqader_bio',
-                ],
+                // [
+                //     'img' => 'speakers/Eng_Zakaria_Al_Abdulqader.png',
+                //     'name' => 'agenda.Eng_Zakaria_Al_Abdulqader',
+                //     'bio' => 'agenda.Eng_Zakaria_Al_Abdulqader_bio',
+                // ],
                 // session 4 : 11:30 – 12:15
                 [
                     'img' => 'speakers/Eng_Essam_Kalthoum.png',
@@ -270,11 +270,27 @@
                     'name' => 'agenda.Dr. Abdulrahman Yamani',
                     'bio' => 'agenda.Alfaisal University',
                 ],
-                // [
-                //     'img' => 'speakers/.png',
-                //     'name' => 'agenda.',
-                //     'bio' => 'agenda.',
-                // ],
+                // المتحدثون
+                [
+                    'img' => 'speakers/Mr_Ahmed_Al_Shammari.png',
+                    'name' => 'agenda.Mr. Ahmed Al-Shammari',
+                    'bio' => 'agenda.Mr_Ahmed_Al_Shammari_bio',
+                ],
+                [
+                    'img' => 'speakers/Eng_Majed_Malibari.png',
+                    'name' => 'agenda.Eng_Majed_Malibari',
+                    'bio' => null,
+                ],
+                [
+                    'img' => 'speakers/Mr_Mohammed_Bakhriba.png',
+                    'name' => 'agenda.Mr_Mohammed_Bakhriba',
+                    'bio' => null,
+                ],
+                [
+                    'img' => 'speakers/Mr_Abdulrahman_Alsayel.png',
+                    'name' => 'agenda.Mr_Abdulrahman_Alsayel',
+                    'bio' => null,
+                ],
             ]
         @endphp
         <section
@@ -297,7 +313,12 @@
                                         <img lazy decoding="async" src="{{ asset($speakerArr['img']) }}" alt="{{ __($speakerArr['name']) }}">
                                         <div class="container-ah">
                                             <h2>{{ __($speakerArr['name']) }}</h2>
+                                            @if ($speakerArr['bio'] == null)
+                                            <p></p>
+                                            @else
                                             <p>{{ __($speakerArr['bio']) }}</p>
+                                            @endif
+
                                         </div>
                                     </div>
                                     @endforeach

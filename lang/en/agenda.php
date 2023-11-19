@@ -125,6 +125,7 @@ return [
     'Workshop 1: ' => 'Workshop:',
     ' Achieving Construction Excellence Through the Materials Transition' => ' Achieving Construction Excellence Through the Materials Transition',
     'Mr. Ahmed Al-Shammari' => 'Eng. Ahmed Al-Shammari',
+    'Mr_Ahmed_Al_Shammari_bio' => 'Oil Sustainability Program - Polymer Materials Supervisor',
     // day tow
     // session zero
     'Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects' => 'Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects',

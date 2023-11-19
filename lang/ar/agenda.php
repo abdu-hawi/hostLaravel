@@ -124,6 +124,7 @@ return [
     ' Achieving Construction Excellence Through the Materials Transition'
     => ' الامتياز في قطاع البناء و التشييد بالاستناد على تحول المواد',
     'Mr. Ahmed Al-Shammari' => 'اﻟﻤﻬﻨﺪس أحمد الشمري',
+    'Mr_Ahmed_Al_Shammari_bio' => 'برنامج استدامة النفط - مشرف مواد البوليمر',
     // day tow
     // session zero
     'Keynote Speech: Enabling game changing opportunities in integrated infrastructure projects' => 'اﻟﻜﻠﻤﺔ اﻟﺮﺋﻴﺴﻴﺔ: إﺗﺎﺣﺔ ﻓﺮص ﺗﻐﻴﻴﺮ اﻟﻠﻌﺒﺔ ﻓﻲ ﻣﺸﺎرﻳﻊ اﻟﺒﻨﻴﺔ اﻟﺘﺤﺘﻴﺔ اﻟﻤﺘﻜﺎﻣﻠﺔ',
