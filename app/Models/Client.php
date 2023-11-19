@@ -18,6 +18,7 @@ class Client extends Model
         'industry',
         'interested',
         'is_sent_email',
-        'registeration_code'
+        'registeration_code',
+        'is_presence',
     ];
 }

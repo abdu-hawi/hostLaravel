@@ -100,8 +100,17 @@ Route::get('pdf', function () {
     return view('pdf');
 })->name('pdf');
 // read QR Code
-Route::get('presence/{uuid}/{id}', function () {
-    return view('welcome');
+Route::get('presence/{uuid}/{id}', function ($uuid, $id) {
+    $client = Client::find($id);
+    if(!is_null($client)){
+        $client->update([
+            'is_presence' => true
+        ]);
+        echo "<h1 style='text-align:center; padding: 2rem 1rem'>تم التحضير بنجاح</h1>";
+    }else{
+        echo "<h1 style='color:#f00; text-align:center; padding: 2rem 1rem'>هذا المستخدم غير مسجل</h1>";
+    }
+
 })->name('presence');
 
 Route::post('clients', [ClientController::class, 'save'])->name('clients');
@@ -236,12 +245,12 @@ Route::get('admin/testEmail', function () {
 Route::get('admin/custome', function () {
     try {
         $data = [
-            'first_name' => 'فهد بن ثاني',
-            'last_name' => 'Al-Shanbri',
-            'job_title' => 'المؤسس والرئيس التنفيذي',
-            'company_name' => 'شركة دبرة الاماراتية العقارية',
+            'first_name' => 'Sami',
+            'last_name' => 'Askaer',
+            'job_title' => 'nn',
+            'company_name' => 'alsaad',
             'mobile' => '+966531404111',
-            'email' => 'fahad@dibrrah.com',
+            'email' => 'Sashgar@alsaad.com.sa',
             'industry' => 'VIP',
             'interested' => 'VIP',
             'registeration_code' => 'VIP-SCES',
@@ -265,7 +274,7 @@ Route::get('admin/custome', function () {
         $qr = url('').'/storage/qr/'.$output_file;
 
         if (Mail::to($data['email'])
-            ->bcc(['ahhh42@gmail.com', 'dareen@xs-conferences.com'])
+            ->bcc(['ahhh42@gmail.com', 'dareen@xs-conferences.com', 'adel@xs-conferences.com'])
             ->send(new SendEmailRigester([
                 'name' => $data['first_name'], // .' '.$data['last_name'],
                 'qr' => $qr,
