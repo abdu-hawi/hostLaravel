@@ -119,6 +119,11 @@
                     'name' => 'agenda.Eng. Fahad Mohammed Aljubair',
                     'bio' => 'agenda.H.E. Mayor of Eastern Province',
                 ],
+                [
+                    'img' => 'speakers/Mr_Abdulrahman_Al_Taweel.png',
+                    'name' => 'agenda.Mr_Abdulrahman_Al_Taweel',
+                    'bio' => 'agenda.Mr_Abdulrahman_Al_Taweel_bio',
+                ],
                 // seission 1 : 11:00 – 12:15
                 [
                     'img' => 'speakers/Eng_Mohammad_Al_Tayyar.png',
@@ -180,9 +185,14 @@
                 ],
                 // session 2 : 16: 30 – 17:30
                 [
-                    'img' => 'speakers/Faisal_Almubarak_PhD.png',
-                    'name' => 'agenda.Faisal_Almubarak_PhD',
-                    'bio' => 'agenda.Faisal_Almubarak_PhD_bio',
+                    'img' => 'speakers/Mr_Hashim_Al_Dabbagh.png',
+                    'name' => 'agenda.Mr_Hashim_Al_Dabbagh',
+                    'bio' => 'agenda.Mr_Hashim_Al_Dabbagh_bio',
+                ],
+                [
+                    'img' => 'speakers/Mr_Abdulrahman_Albassam.png',
+                    'name' => 'agenda.Mr_Abdulrahman_Albassam',
+                    'bio' => 'agenda.Mr_Abdulrahman_Albassam_bio',
                 ],
                 // session 3
                 [
@@ -233,6 +243,11 @@
                     'img' => 'speakers/Eng_Assem_Raqban.png',
                     'name' => 'agenda.Eng_Assem_Raqban',
                     'bio' => 'agenda.Eng_Assem_Raqban_bio',
+                ],
+                [
+                    'img' => 'speakers/Eng_Ali_Al_Qresha.png',
+                    'name' => 'agenda.Eng_Ali_Al_Qresha',
+                    'bio' => 'agenda.Eng_Ali_Al_Qresha_bio',
                 ],
                 // session 6
                 [

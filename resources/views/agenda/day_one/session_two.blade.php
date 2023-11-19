@@ -266,37 +266,30 @@
                                             {{ __('agenda.Expert Panel: Championing collaborative & people centric liveable cities of tomorrow') }}
                                         </p>
                                         <p class="blue-600">
-                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Ms_Nouf_Bin_Saedan') }}
+                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Mr_Abdulrahman_Alsayel') }}
                                         </p>
                                         <p class="blue-600">
                                             {{ __('agenda.Speakers:') }}
                                         </p>
 
-                                        {{-- <span class="black-600">
-                                            {{ __('agenda.Mr_Sultan_Al_Zaidi') }}
+                                        <span class="black-600">
+                                            {{ __('agenda.Mr_Hashim_Al_Dabbagh') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Mr_Sultan_Al_Zaidi_bio') }}
+                                            {{ __('agenda.Mr_Hashim_Al_Dabbagh_bio') }}
                                         </span>
 
-                                        <hr> --}}
+                                        <hr>
 
                                         <span class="black-600">
-                                            {{ __('agenda.Faisal_Almubarak_PhD') }}
+                                            {{ __('agenda.Mr_Abdulrahman_Albassam') }}
                                         </span><br>
                                         <span>
-                                            {{ __('agenda.Faisal_Almubarak_PhD_bio') }}
+                                            {{ __('agenda.Mr_Abdulrahman_Albassam_bio') }}
                                         </span>
+
                                         {{--
-                                        <hr>
-
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr. Saud Al-Ajmi') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.National Housing Company') }}
-                                        </span>
-                                        <hr>
+                                            <hr>
                                         <span class="black-600">
                                             {{ __('agenda.Mr. Sultan Alharazi') }}
                                         </span><br>

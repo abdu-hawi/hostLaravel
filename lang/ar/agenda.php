@@ -114,11 +114,14 @@ return [
     'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow'
     => 'جلسة الخبراء: الاتجاه نحو التفاعل بين الراغبين في اشغال المدن الجديدة',
 
-    // 'Eng_Saud_Al_Quwaifel' => 'اﻟﻤﻬﻨﺪس سعود القويفل',
-    'Ms_Nouf_Bin_Saedan' => "ﺳﻌﺎدة الأستاذة ﻧﻮف ﺑﻦ ﺳﻌﻴﺪان",
+    'Mr_Abdulrahman_Alsayel' => 'سعادة الأستاذ عبدالرحمن الصايل',
 
-    'Faisal_Almubarak_PhD' => 'سعادة الأستاذ الدكتور فيصل المبارك',
-    'Faisal_Almubarak_PhD_bio' => 'استاذ التصميم والتخطيط العمراني، قسم التخطيط العمراني، كلية العمارة والتخطيط، جامعة الملك سعود',
+    'Mr_Hashim_Al_Dabbagh' => 'سعادة الأستاذ هاشم الدباغ',
+    'Mr_Hashim_Al_Dabbagh_bio' => 'هيئة تطوير منطقة عسير - الرئيس التنفيذي المكلف',
+
+    'Mr_Abdulrahman_Albassam' => 'سعادة الأستاذ عبدالرحمن البسام',
+    'Mr_Abdulrahman_Albassam_bio' => 'شركة تلال العقارية - الرئيس التنفيذي / إدارة شركة مشاريع عون - رئيس مجلس',
+
     // Closing Remarks
     'Closing Remarks' => 'ختام الجلسة',
     // Workshop 1:

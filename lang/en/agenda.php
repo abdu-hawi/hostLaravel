@@ -62,8 +62,8 @@ return [
     // Session 1 12:15-13:30
     'Keynote: Implementing new operating standards and regulations to drive sustainable development goals' => 'Keynote: Implementing new operating standards and regulations to drive sustainable development goals',
 
-    'Ms_Mariam_Telmesani' => "Mrs. Maryam Tlemsani",
-    'Ms_Mariam_Telmesani_bio' => "Chief Sustainability Officer - MBL Company",
+    'Ms_Mariam_Telmesani' => 'Mrs. Maryam Tlemsani',
+    'Ms_Mariam_Telmesani_bio' => 'Chief Sustainability Officer - MBL Company',
     // Session 2
     'Session 2: Shaping the Future of Saudi Arabia' => 'Session 2: Shaping the Future of Saudi Arabia',
     // 14:15-15:15
@@ -79,8 +79,6 @@ return [
     'Prof_Khaled_Alskeet' => 'Prof. Khaled Alskeet',
     'Prof_Khaled_Alskeet_bio' => 'Saudi Society for Real Estate Sciences Chairman of the Board of Directors',
 
-
-
     'Eng_Ali_Al_Shuaibi' => 'Eng. Ali Al-Shuaibi',
     'Eng_Ali_Al_Shuaibi_bio' => 'Distinguished Saudi architect',
 
@@ -95,7 +93,7 @@ return [
     'Group Director, Strategy & Development - Dar Al Riyadh' => 'Dar Al Riyadh - Group Director, Strategy & Development',
 
     'Dr_Maher_Shira' => 'Dr. Maher Shira',
-    'Dr_Maher_Shira_bio' => "Smart City Department, Royal Commission for Riyadh City - Director General",
+    'Dr_Maher_Shira_bio' => 'Smart City Department, Royal Commission for Riyadh City - Director General',
 
     'Ms_Jena_Ladhani' => 'Ms. Jena Ladhani',
     'Ms_Jena_Ladhani_bio' => 'CBRE Global Workplace Solutions (GWS) - Country Managing Director in Saudi Region',
@@ -106,10 +104,13 @@ return [
     'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow' => 'Expert Panel: Championing collaborative & people centric liveable cities of tomorrow',
 
     // 'Eng_Saud_Al_Quwaifel' => 'Eng. Saud Al-Quwaifel',
-    'Ms_Nouf_Bin_Saedan' => "Ms. Nouf Bin Saedan",
+    'Mr_Abdulrahman_Alsayel' => 'Mr. Abdulrahman Alsayel',
 
-    'Faisal_Almubarak_PhD' => 'Prof. Faisal Almubarak',
-    'Faisal_Almubarak_PhD_bio' => 'KSU, College of Architecture & Planning - Professor of Urban Design & Planning',
+    'Mr_Hashim_Al_Dabbagh' => 'Mr. Hashim Al Dabbagh',
+    'Mr_Hashim_Al_Dabbagh_bio' => 'Aseer Development Authority - Acting CEO',
+
+    'Mr_Abdulrahman_Albassam' => 'Mr. Abdulrahman Albassam',
+    'Mr_Abdulrahman_Albassam_bio' => 'Tilal Real Estate Development Company - CEO / Awn Enterprises - Executive Chairman',
 
     // Closing Remarks
     'Closing Remarks' => 'Closing Remarks',
@@ -155,8 +156,7 @@ return [
     // Session 5:
     'Session 5: Construction Sector Challenges' => 'Session 5: Construction Sector Challenges',
     // 13:45-14:45
-    'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits'
-    => 'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits',
+    'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits' => 'Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits',
 
     'Eng_Majed_Malibari' => 'Eng. Majed Malibari',
 
@@ -164,23 +164,22 @@ return [
     'Chairman of the Urban Development Council - Jeddah Chamber' => 'Jeddah Chamber - Chairman of the Urban Development Council',
 
     'Mr_Hamed_Al_Hamad' => 'Mr. Hamad Alhammad',
-    'Mr_Hamed_Al_Hamad_bio' => "National Contractors Committee - Chairman",
+    'Mr_Hamed_Al_Hamad_bio' => 'National Contractors Committee - Chairman',
     // 14:45-15:45
     'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector' => 'Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector',
 
     'Eng_Assem_Raqban' => 'Mr. Assem Raqban',
     'Eng_Assem_Raqban_bio' => 'Maskan Arabia Investment and Development Company - Chief Executive Officer',
 
-    'Eng_Ali_Al_Qresha' => "Eng. Ali Al Quraisha",
-    'Eng_Ali_Al_Qresha_bio' => "National Contractors Committee - Najran Chamber",
+    'Eng_Ali_Al_Qresha' => 'Eng. Ali Al Quraisha',
+    'Eng_Ali_Al_Qresha_bio' => 'National Contractors Committee - Najran Chamber',
     // Session 6:
     'Session 6: Evolving with Construction Technology' => 'Session 6: Evolving with Construction Technology',
     // 16:00-17:00
     'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety' => 'AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety',
 
     'Dr. Muhammad Hamza Alabbasi' => 'Dr. Muhammad Alabbasi',
-    'Custodian of the Two Holy Mosques Institute for Hajj Research'
-    => 'Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research - Faculty membe',
+    'Custodian of the Two Holy Mosques Institute for Hajj Research' => 'Custodian of the Two Holy Mosques Institute for Hajj and Umrah Research - Faculty membe',
 
     'Dr. Abdulrahman Yamani' => 'Dr. Abdulrahman Al Yamani',
     'Alfaisal University' => 'Alfaisal University - Assistant Professor',
