@@ -376,8 +376,9 @@ function workshopResend($_data){
     }
 }
 
-Route::get('admin/remember', function(){
-    $cls = Client::query()->offset(71)
+Route::get('admin/remember/{num?}', function($num = null){
+    $num = $num ?? 106;
+    $cls = Client::query()->offset($num)
                         ->limit(35)
                         ->get();
 
@@ -385,7 +386,7 @@ Route::get('admin/remember', function(){
         remember($cl);
     }
     echo "END: ". Carbon::now();
-})->middleware('auth');
+});//->middleware('auth');
 
 Route::get('admin/delete', function(){
     $clients = Client::query()->latest()->get();
