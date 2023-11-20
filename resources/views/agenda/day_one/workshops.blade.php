@@ -61,9 +61,9 @@
                                             </button>
                                             @endif
 
-                                            <a href="{{ route('workshop') }}">
+                                            {{-- <a href="{{ route('workshop') }}">
                                                 <button class="agend_btn_register">{{ __('agenda.REGISTER') }}</button>
-                                            </a>
+                                            </a> --}}
                                         </span>
                                     </span>
                                 </div>
