@@ -377,7 +377,7 @@ function workshopResend($_data){
 }
 
 Route::get('admin/remember', function(){
-    $cls = Client::query()->offset(25)
+    $cls = Client::query()->offset(40)
                         ->limit(35)
                         ->get();
 
@@ -438,7 +438,7 @@ function remember($data){
             'vip' => $vip,
             'cc' => false,
         ]))) {
-            echo $data->email . "<br>";
+            //echo $data->email . "<br>";
         } else {
             EmailFailer::query()->create([
                 'email' => $data['email'],
