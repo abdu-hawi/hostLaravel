@@ -377,13 +377,33 @@ function workshopResend($_data){
 }
 
 Route::get('admin/remember', function(){
-    $cls = Client::query()->offset(0)
+    $cls = Client::query()->offset(30)
                         ->limit(30)
                         ->get();
+    $uniqueClients = [];
+    $uniqueEmails = [];
     foreach ($cls as $cl) {
+        if (!in_array($cl->email, $uniqueEmails)) {
+            array_push($uniqueClients, $cl);
+            array_push($uniqueEmails, $cl->email);
+        }
+    }
+    foreach ($uniqueClients as $cl) {
         remember($cl);
     }
     echo "END: ". Carbon::now();
+})->middleware('auth');
+
+Route::get('admin/delete', function(){
+    $clients = Client::query()->latest()->get();
+    $uniqueEmails = [];
+    foreach ($clients as $cl) {
+        if (in_array($cl->email, $uniqueEmails)) {
+            Client::where('id', $cl->id)->delete();
+        }else{
+            array_push($uniqueEmails, $cl->email);
+        }
+    }
 })->middleware('auth');
 
 function remember($data){
@@ -425,12 +445,13 @@ function remember($data){
             'vip' => $vip,
             'cc' => false,
         ]))) {
+            echo $data->email . "<br>";
         } else {
             EmailFailer::query()->create([
                 'email' => $data['email'],
                 'fails' => 'Unkown Error',
             ]);
-            echo $data->email . ": Unkown Error<br><hr><br>";
+            echo $data->email . " Fail: Unkown Error<br><hr><br>";
         }
 
         // if (Storage::disk('public')->exists('qr/'.$output_file)) {
