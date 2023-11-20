@@ -378,7 +378,7 @@ function workshopResend($_data){
 
 Route::get('admin/remember', function(){
     $cls = Client::query()->offset(25)
-                        ->limit(30)
+                        ->limit(35)
                         ->get();
 
     foreach ($cls as $cl) {
