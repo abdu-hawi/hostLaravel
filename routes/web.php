@@ -8,6 +8,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\SAJCoController;
 use App\Http\Controllers\WorkshopController;
 use App\Mail\SendEmailRigester;
+use App\Mail\WorkshopEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
 use App\Models\Workshop;
@@ -315,3 +316,68 @@ Route::get('admin/custome', function () {
 })->middleware('auth');
 
 Route::get('sajco', [SAJCoController::class, 'save']);
+
+Route::get('workshop/custome', function(){
+    $emails = [
+        'sobeeh1@gmail.com',
+        'a.yousef@alqussie.com.sa',
+        'samlem.m@alosol.com.sa',
+        'abderahma.ss@mawared.com',
+        'nabil.hawari@stgc.com.sa',
+        'a.albassam@tilalre.com',
+        'alshehri@alamgad.com',
+        'mohmmed.sh@wajen.com.sa',
+        'a.gamdi3349@gmail.com',
+        'aymony777@hotmail.com',
+    ];
+    foreach ($emails as $email) {
+        $this->workshopResend($email);
+    }
+});
+
+function workshopResend($_data){
+    $data = Workshop::query()->where('email',$_data)->first();
+    try {
+        $url = route('presence', [
+            'uuid' => \Str::uuid(),
+            'id' => $data->id,
+        ]);
+
+        $qr = QrCode::size(300)
+            ->format('png')
+            ->gradient(77, 76, 78, 136, 135, 137, 'diagonal')
+            ->backgroundColor(246, 248, 250)
+            ->generate($url);
+
+        $output_file = \Str::uuid().time().'.png';
+        Storage::disk('public')->put('qr/'.$output_file, $qr);
+
+        $qr = url('').'/storage/qr/'.$output_file;
+
+        if (Mail::to($data['email'])
+            ->bcc(['rx_email@scesummit-sa.com', 'ahhh42@gmail.com'])
+            ->send(new WorkshopEmailRigester([
+            'name' => $data['first_name'].' '.$data['last_name'],
+            'qr' => $qr,
+        ]))) {
+            $data->update([
+                'is_sent_email' => true,
+            ]);
+        } else {
+            EmailFailer::query()->create([
+                'email' => $data['email'],
+                'fails' => 'Unkown Error',
+            ]);
+        }
+
+        if (Storage::disk('public')->exists('qr/'.$output_file)) {
+            Storage::disk('public')->delete('qr/'.$output_file);
+        }
+    } catch (\Exception $ex) {
+        dd($ex->getMessage());
+        EmailFailer::query()->create([
+            'email' => $data['email'],
+            'fails' => $ex->getMessage(),
+        ]);
+    }
+}
