@@ -15,6 +15,11 @@ class WorkshopController extends Controller
 {
     protected function save(Request $request)
     {
+        $workshopCount = Workshop::count();
+        if($workshopCount > 24){
+            Session::flash('err', 'Sorry: The number is full, registration has been closed');
+            return redirect(route('workshop'));
+        }
         $data = $request->validate([
             'first_name' => 'required | string',
             'last_name' => 'required | string',

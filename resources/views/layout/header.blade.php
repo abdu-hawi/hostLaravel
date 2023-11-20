@@ -6,6 +6,11 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) --> --}}
 
+
+    @php
+        $workshopCount = App\Models\Workshop::count();
+    @endphp
+
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
     style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
     <defs>
@@ -520,13 +525,16 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                             {{ __('header.REGISTER NOW') }}
                                                         </a>
                                                     </li>
-                                                    <li id="menu-item-755"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                        <a href="{{ route('workshop') }}"
-                                                            class="hfe-menu-item elementor-button" style="margin: 0 1rem;">
-                                                            {{ __('header.WORKSHOP REGISTER') }}
-                                                        </a>
-                                                    </li>
+                                                    @if ($workshopCount <= 25)
+                                                        <li id="menu-item-755"
+                                                            class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                            <a href="{{ route('workshop') }}"
+                                                                class="hfe-menu-item elementor-button" style="margin: 0 1rem;">
+                                                                {{ __('header.WORKSHOP REGISTER') }}
+                                                            </a>
+                                                        </li>
+                                                    @endif
+
                                                 </ul>
                                             </nav>
                                         </div>
@@ -733,13 +741,16 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
                                                                                             {{ __('header.REGISTER NOW') }}
                                                                                         </a>
                                                                                     </li>
-                                                                                    <li id="menu-item-755"
-                                                                                        class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
-                                                                                        <a href="{{ route('workshop') }}"
-                                                                                            class="hfe-menu-item elementor-button">
-                                                                                            {{ __('header.WORKSHOP REGISTER') }}
-                                                                                        </a>
-                                                                                    </li>
+                                                                                    @if ($workshopCount <= 25)
+                                                                                        <li id="menu-item-755"
+                                                                                            class="menu-item menu-item-type-post_type menu-item-object-page parent hfe-creative-menu">
+                                                                                            <a href="{{ route('workshop') }}"
+                                                                                                class="hfe-menu-item elementor-button">
+                                                                                                {{ __('header.WORKSHOP REGISTER') . $workshopCount }}
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    @endif
+
                                                                                 </ul>
                                                                             </nav>
                                                                             <div class="elementor-clickable hfe-flyout-close"

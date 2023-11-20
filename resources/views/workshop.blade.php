@@ -173,8 +173,24 @@
                                     padding: 0.5rem;">
                                         <strong>{{ Session::get('success') }}</strong>
                                     </div>
+                                @elseif (Session::has('err'))
+                                    <div class="alert alert-success fade in alert-dismissible"
+                                        style="height: 50vh;
+                                        display: flex;
+                                        align-items: center;
+                                        justify-content: center;">
+                                        <h1 style="
+                                        color: #610000;
+                                        background-color: #f0d8d8;
+                                        border-color: #f0d8d8;
+                                        opacity: 1;
+                                        padding: 1.5rem;
+                                        width: 100%;
+                                        text-align: center;">{{ Session::get('err') }}</h1>
+                                    </div>
                                 @endif
 
+                                @if (!Session::has('err'))
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-795f462 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="795f462" data-element_type="section"
@@ -417,6 +433,8 @@
                                         </div>
                                     </div>
                                 </section>
+                                @endif
+
                             </div>
 
 

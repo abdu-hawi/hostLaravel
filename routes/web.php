@@ -10,10 +10,12 @@ use App\Http\Controllers\WorkshopController;
 use App\Mail\SendEmailRigester;
 use App\Models\Client;
 use App\Models\EmailFailer;
+use App\Models\Workshop;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
@@ -75,6 +77,10 @@ Route::group(['middleware' => 'Lang'], function () {
         ]);
     })->name('competition');
     Route::get('workshop', function () {
+        $workshopCount = Workshop::count();
+        if($workshopCount > 24){
+            Session::flash('err', 'Sorry: The number is full, registration has been closed');
+        }
         return view('workshop', [
             'title' => __('header.WORKSHOP REGISTRATION').' - ',
         ]);
@@ -205,11 +211,12 @@ Route::get('email', function () {
 })->middleware('auth');
 
 Route::get('clear_cache', function () {
+    //dd(Client::query()->count());
     Artisan::call('migrate');
     Artisan::call('optimize:clear');
 
     dd('Cache is cleared');
-})->middleware('auth');
+});//->middleware('auth');
 
 Route::get('qr', function () {
     return QrCode::size(300)
