@@ -380,7 +380,7 @@ Route::get('admin/remember', function(){
     $cls = Client::query()->offset(0)
                         ->limit(30)
                         ->get();
-    foreach ($cls as $$cl) {
+    foreach ($cls as $cl) {
         remember($cl);
     }
     echo "END: ". Carbon::now();
