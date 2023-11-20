@@ -79,7 +79,7 @@ Route::group(['middleware' => 'Lang'], function () {
     Route::get('workshop', function () {
         $workshopCount = Workshop::count();
         if($workshopCount > 24){
-            Session::flash('err', 'Sorry: The number is full, registration has been closed');
+            Session::flash('err', __('header.Sorry: The number is full, registration has been closed'));
         }
         return view('workshop', [
             'title' => __('header.WORKSHOP REGISTRATION').' - ',

@@ -62,4 +62,6 @@ return [
     'WORKSHOP REGISTRATION' => 'WORKSHOP REGISTRATION',
     'WORKSHOP REGISTER' => 'WORKSHOP REGISTER',
     'Workshop_name' => 'Workshop name',
+    'Sorry: The number is full, registration has been closed'
+    => 'Sorry: The number is full, registration has been closed',
 ];

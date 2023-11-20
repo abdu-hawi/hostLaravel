@@ -179,14 +179,14 @@
                                         display: flex;
                                         align-items: center;
                                         justify-content: center;">
-                                        <h1 style="
+                                        <h3 style="
                                         color: #610000;
                                         background-color: #f0d8d8;
                                         border-color: #f0d8d8;
                                         opacity: 1;
                                         padding: 1.5rem;
                                         width: 100%;
-                                        text-align: center;">{{ Session::get('err') }}</h1>
+                                        text-align: center;">{{ Session::get('err') }}</h3>
                                     </div>
                                 @endif
 

@@ -62,4 +62,6 @@ return [
     'WORKSHOP REGISTRATION' => 'تسجيل ورش العمل',
     'WORKSHOP REGISTER' => 'تسجيل ورش العمل',
     'Workshop_name' => 'اسم ورشة العمل',
+    'Sorry: The number is full, registration has been closed'
+    => 'عذرا: العدد مكتمل, وتم إغلاق التسجيل',
 ];
