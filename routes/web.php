@@ -319,14 +319,6 @@ Route::get('sajco', [SAJCoController::class, 'save']);
 
 Route::get('workshop/custome', function(){
     $emails = [
-        'sobeeh1@gmail.com',
-        'a.yousef@alqussie.com.sa',
-        'samlem.m@alosol.com.sa',
-        'abderahma.ss@mawared.com',
-        'nabil.hawari@stgc.com.sa',
-        'a.albassam@tilalre.com',
-        'alshehri@alamgad.com',
-        'mohmmed.sh@wajen.com.sa',
         'a.gamdi3349@gmail.com',
         'aymony777@hotmail.com',
     ];
@@ -375,7 +367,7 @@ function workshopResend($_data){
             Storage::disk('public')->delete('qr/'.$output_file);
         }
     } catch (\Exception $ex) {
-        dd($ex->getMessage());
+        echo $_data . " : ". $ex->getMessage() . '<br><hr><br>';
         EmailFailer::query()->create([
             'email' => $data['email'],
             'fails' => $ex->getMessage(),
