@@ -414,7 +414,7 @@ function remember($data){
         $qr = url('').'/storage/qr/'.$output_file;
 
         if (Mail::to($data['email'])
-            ->bcc(['rx_remember@scesummit-sa.com'])
+            ->bcc(['rx_email@scesummit-sa.com'])
             ->send(new SendEmailRigester([
             'name' => '',
             'qr' => $qr,
