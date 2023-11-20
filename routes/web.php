@@ -378,7 +378,7 @@ function workshopResend($_data){
 
 Route::get('admin/remember/{num?}', function($num = null){
     $num = $num ?? 106;
-    $cls = Client::query()->offset($num)
+    $cls = Client::query()->whereNot('company_name','SAJCo')->offset($num)
                         ->limit(35)
                         ->get();
 
