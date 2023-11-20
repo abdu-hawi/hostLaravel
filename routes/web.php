@@ -377,18 +377,11 @@ function workshopResend($_data){
 }
 
 Route::get('admin/remember', function(){
-    $cls = Client::query()->offset(30)
+    $cls = Client::query()->offset(25)
                         ->limit(30)
                         ->get();
-    $uniqueClients = [];
-    $uniqueEmails = [];
+
     foreach ($cls as $cl) {
-        if (!in_array($cl->email, $uniqueEmails)) {
-            array_push($uniqueClients, $cl);
-            array_push($uniqueEmails, $cl->email);
-        }
-    }
-    foreach ($uniqueClients as $cl) {
         remember($cl);
     }
     echo "END: ". Carbon::now();
