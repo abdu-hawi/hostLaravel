@@ -331,8 +331,9 @@ Route::get('workshop/custome', function(){
         'aymony777@hotmail.com',
     ];
     foreach ($emails as $email) {
-        $this->workshopResend($email);
+        workshopResend($email);
     }
+    echo "END";
 });
 
 function workshopResend($_data){
