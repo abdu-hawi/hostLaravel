@@ -375,3 +375,69 @@ function workshopResend($_data){
         ]);
     }
 }
+
+Route::get('admin/remember', function(){
+    $cl = Client::query()->offset(0)
+                        ->limit(30)
+                        ->get();
+    dd($cl);
+})->middleware('auth');
+
+function remember($data){
+    try {
+
+        $url = route('presence', [
+            'uuid' => \Str::uuid(),
+            'id' => $data->id,
+        ]);
+
+        $vip = false;
+        $qr = '';
+        if ($data->registeration_code) {
+            $vip = 'VIP SCES Invitation';
+            $qr = QrCode::size(300)
+            ->format('png')
+            ->gradient(49, 49, 48, 192, 136, 2, 'diagonal')
+            ->backgroundColor(246, 248, 250)
+            ->generate($url);
+        } else {
+            $qr = QrCode::size(300)
+            ->format('png')
+            ->gradient(48, 48, 49, 99, 99, 197, 'diagonal')
+            ->backgroundColor(246, 248, 250)
+            ->generate($url);
+        }
+
+        $output_file = \Str::uuid().time().'.png';
+        Storage::disk('public')->put('qr/'.$output_file, $qr);
+
+        $qr = url('').'/storage/qr/'.$output_file;
+
+        if (Mail::to($data['email'])
+            ->bcc(['rx_remember@scesummit-sa.com'])
+            ->send(new SendEmailRigester([
+            'name' => '',
+            'qr' => $qr,
+            'isEmail' => true,
+            'vip' => $vip,
+            'cc' => false,
+        ]))) {
+        } else {
+            EmailFailer::query()->create([
+                'email' => $data['email'],
+                'fails' => 'Unkown Error',
+            ]);
+            echo $data->email . ": Unkown Error<br><hr><br>";
+        }
+
+        // if (Storage::disk('public')->exists('qr/'.$output_file)) {
+        //     Storage::disk('public')->delete('qr/'.$output_file);
+        // }
+    } catch (\Exception $ex) {
+        echo $data->email . ": " . $ex->getMessage(). '<br><hr><br>';
+        EmailFailer::query()->create([
+            'email' => $data['email'],
+            'fails' => $ex->getMessage(),
+        ]);
+    }
+}

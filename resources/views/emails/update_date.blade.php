@@ -24,6 +24,16 @@
                                                             </th>
                                                             <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;"></th>
                                                         </tr>
+                                                        @if ($data['vip'])
+                                                        <tr><th style="padding: 10px"></th></tr>
+                                                        <tr>
+                                                            <th style="Margin: 0; color: #3f3f44; font-family: Helvetica,Arial,sans-serif; font-size: 14px; font-weight: normal; line-height: 1.5; margin: 0; padding: 0 !important; text-align: left; width: 0; word-break: keep-all;">
+                                                                <h1 style="text-align: center; font-size:22px; color:#a17202">
+                                                                    SCES VIP Invitation
+                                                                </h1>
+                                                            </th>
+                                                        </tr>
+                                                        @endif
                                                         </tbody>
                                                     </table>
                                                 </th>
@@ -60,33 +70,43 @@
 
                                                                         <td style=" direction:ltr" dir="ltr">
                                                                             <div style="direction: ltr;">
-                                                                                <p><b>Hello, {{ $data['name'] }}</b></p>
+                                                                                <p><b>Dear, {{ $data['name'] }}</b></p>
                                                                                 <p>
-                                                                                    We would like to thank you for your registration in the “Saudi Contracting Excellence Summit” at the Ritz Carlton, Riyadh.
+                                                                                    Thank you for attending the Saudi Conference for Outstanding Contractors at The Ritz-Carlton, Riyadh. We look forward to seeing you on the second and final day, November 21, 2023, from 8 AM to 5:30 PM.
                                                                                 </p>
 
                                                                                 <p>
-                                                                                    This high level summit is hosted Under the Patronage of “H.E MR. MAJED BIN ABDULLAH BIN HAMAD AL HOGAIL, Minister of Municipal and Rural Affairs and Housing, Saudi Arabia”
+                                                                                    Under the patronage of His Excellency, the Minister of Municipal and Rural Affairs and Housing, Mr. Majed bin Abdullah Al-Haqil.
                                                                                 </p>
 
                                                                                 <p>
-                                                                                    We would like to inform you about the new date of the Summit which will be on November 20-21 2023.
+                                                                                    Click on the following link to view the conference agenda:
+                                                                                    <a href="{{ $agenda }}" target="_blank">Conference Agenda</a>
+                                                                                </p>
+                                                                                <p>
+                                                                                    Please keep this email and display the barcode below at the entrance gates of the conference.
+                                                                                </p>
+                                                                                <p>
+                                                                                    <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to access the location on the map</a>
                                                                                 </p>
 
                                                                                 <p>
-                                                                                    <b>Please save this e -mail</b>, and display the barcode below for entering the conference and register your presence.
-                                                                                </p>
-
-                                                                                <p>
-                                                                                    <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">Click here to reach location on the map</a>
-                                                                                </p>
-                                                                                <p>
-                                                                                    If you have any suggestions or inquiries, please fill out the contact form at the following link
+                                                                                    If you have any suggestions or inquiries, please fill out the contact form at the following link:
                                                                                     <a href="{{ $contact_us }}" target="_blank">Contact form</a>
                                                                                 </p>
+
+                                                                                @if ($data['cc'])
+                                                                                <p>
+                                                                                    <strong>Note: </strong>
+                                                                                    <span>If you would like to invite your respected guests, please invite them through the registration link and ensure using the registration code carefully with all Capital letters.</span>
+                                                                                    <p>Link: https://scesummit-sa.com/register</p>
+                                                                                    <p>Code: VIP-SCES</p>
+                                                                                </p>
+                                                                                @endif
                                                                             </div>
                                                                         </td>
 
+                                                                        @if (!$data['vip'])
                                                                         <td>&nbsp;</td>
 
 
@@ -98,22 +118,19 @@
                                                                                     </b>
                                                                                 </p>
                                                                                 <p>
-                                                                                    نشكرك على التسجيل في المؤتمر السعودي للمقاولات المتميزة، والذي سيقام في الريتز كارلتون، الرياض
+                                                                                    نشكرك على حضور المؤتمر السعودي للمقاولات المتميزة  في الريتز كارلتون، الرياض، ونتطلع للقائكم باليوم الثاني والاخير  21 نوفمبر 2023 من الساعة 8 ص- 5:30 م
                                                                                 </p>
-
                                                                                 <p>
                                                                                     تحت رعاية معالي وزير الشؤون البلدية والقروية والإسكان، الأستاذ ماجد بن عبدالله الحقيل
                                                                                 </p>
-
                                                                                 <p>
-                                                                                    نوعد إعلامكم بأنه تم تأجيل موعد المؤتمر وسيكون في الفترة 20 - 21 نوفمبر 2023
+                                                                                    انقر على الرابط التالي لرؤية جدول الأعمال
+                                                                                    <a href="{{ $agenda }}" target="_blank">جدول اعمال المؤتمر</a>
                                                                                 </p>
-
                                                                                 <p>
                                                                                     <b>نرجوا منكم الاحتفاظ بهذا الايميل</b>
                                                                                     وعرض الباركود الموجود بالاسفل في بوابات الدخول للمؤتمر
                                                                                 </p>
-
                                                                                 <p>
                                                                                     <a href="https://www.google.com/maps/dir//The+Ritz-Carlton,+Riyadh+Area+Makkah+Al+Mukarramah+Rd,+Al+Hada+Riyadh+11493/@24.6657249,46.6308668,11z/data=!4m5!4m4!1m0!1m2!1m1!1s0x3e2f1c622255f581:0x80406f7493cca11b" target="_blank">انقر هنا للوصول للموقع على الخريطة</a>
                                                                                 </p>
@@ -121,13 +138,17 @@
                                                                                     في حالة وجود أي مقترحات أو استفسارات نرجوا منكم تعبئة نموذج التواصل على الرابط التالي
                                                                                     <a href="{{ $contact_us }}" target="_blank">نموذج التواصل</a>
                                                                                 </p>
+
                                                                             </div>
                                                                         </td>
+                                                                        @endif
 
                                                                     </tr>
+                                                                    <tr><td><p>&nbsp;&nbsp;</p></td></tr>
                                                                     <tr>
                                                                         <td colspan="3" style="text-align: center; padding: 20px auto;">
                                                                             <img src="{!!$message->embed($data['qr'])!!}" width="100" height="100">
+                                                                            {{-- {{ $data['qr'] }} --}}
                                                                         </td>
                                                                     </tr>
                                                                 </table>

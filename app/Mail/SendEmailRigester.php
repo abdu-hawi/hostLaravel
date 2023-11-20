@@ -24,7 +24,7 @@ class SendEmailRigester extends Mailable
     public function build()
     {
         if ($this->data['isEmail']) {
-            return $this->subject('Notice: Postponing the date of the Saudi Contracting Excellence Summit 2023')
+            return $this->subject('تذكير لحضور المؤتمر السعودي للمقاولات المتميزه')
             ->view('emails.update_date', [
                 'data' => $this->data,
                 'contact_us' => route('contact_us'),
