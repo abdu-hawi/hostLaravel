@@ -377,10 +377,13 @@ function workshopResend($_data){
 }
 
 Route::get('admin/remember', function(){
-    $cl = Client::query()->offset(0)
+    $cls = Client::query()->offset(0)
                         ->limit(30)
                         ->get();
-    dd($cl);
+    foreach ($cls as $$cl) {
+        remember($cl);
+    }
+    echo "END: ". Carbon::now();
 })->middleware('auth');
 
 function remember($data){
