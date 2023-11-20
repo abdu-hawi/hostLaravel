@@ -318,9 +318,9 @@ Route::get('admin/custome', function () {
 Route::get('sajco', [SAJCoController::class, 'save']);
 
 Route::get('workshop/custome', function(){
+    abort(403);
     $emails = [
         'a.gamdi3349@gmail.com',
-        'aymony777@hotmail.com',
     ];
     foreach ($emails as $email) {
         workshopResend($email);
