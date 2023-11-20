@@ -78,6 +78,7 @@ Route::group(['middleware' => 'Lang'], function () {
         ]);
     })->name('competition');
     Route::get('workshop', function () {
+        abort(403);
         $workshopCount = Workshop::count();
         if($workshopCount > 24){
             Session::flash('err', __('header.Sorry: The number is full, registration has been closed'));
