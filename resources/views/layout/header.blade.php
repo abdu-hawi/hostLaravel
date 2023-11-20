@@ -8,7 +8,7 @@ itemscope="itemscope" itemtype="https://schema.org/WebPage">
 
 
     @php
-        $workshopCount = App\Models\Workshop::count();
+        $workshopCount = 30;
     @endphp
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
