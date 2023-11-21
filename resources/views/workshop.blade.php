@@ -176,8 +176,7 @@
                                 @endif
 
                                 <div class="alert alert-success fade in alert-dismissible"
-                                    style="height: 50vh;
-                                    display: flex;
+                                    style="display: flex;
                                     align-items: center;
                                     justify-content: center;">
                                     <h3 style="
