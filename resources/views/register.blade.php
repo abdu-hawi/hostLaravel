@@ -178,15 +178,26 @@
                                     </div>
                                 @endif
 
+                                <div class="alert alert-success fade in alert-dismissible"
+                                    style="height: 50vh;
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;">
+                                    <h3 style="
+                                    color: #610000;
+                                    background-color: #f0d8d8;
+                                    border-color: #f0d8d8;
+                                    opacity: 1;
+                                    padding: 1.5rem;
+                                    width: 100%;
+                                    text-align: center;">{{ __('header.The Summit has ended') }}</h3>
+                                </div>
+
                                 <section
                                     class="elementor-section elementor-top-section elementor-element elementor-element-795f462 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                     data-id="795f462" data-element_type="section"
                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                                     <div class="elementor-background-overlay"></div>
-
-
-
-
 
                                     <div class="elementor-container elementor-column-gap-default">
                                         <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-425a2d2f elementor-invisible"
@@ -207,7 +218,7 @@
                                                                             aria-atomic="true"></p>
                                                                         <ul></ul>
                                                                     </div>
-                                                                    <form action="{{ route('clients') }}"
+                                                                    <div action="{{ route('clients') }}"
                                                                         method="post" class="wpcf7-form init"
                                                                         aria-label="Contact form" novalidate="novalidate" id="ah_form_register"
                                                                         data-status="init">
@@ -551,12 +562,12 @@
 
                                                                         <div class="row-name">
                                                                             <div class="fname fbutton">
-                                                                                <button type="submit" class="btn-submit">{{ __('header.Submit') }}</button>
+                                                                                <button type="button" class="btn-submit">{{ __('header.Submit') }}</button>
                                                                             </div>
                                                                         </div>
                                                                         <div class="wpcf7-response-output"
                                                                             aria-hidden="true"></div>
-                                                                    </form>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>

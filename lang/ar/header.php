@@ -64,4 +64,5 @@ return [
     'Workshop_name' => 'اسم ورشة العمل',
     'Sorry: The number is full, registration has been closed'
     => 'عذرا: العدد مكتمل, وتم إغلاق التسجيل',
+    'The Summit has ended' => 'أنتهى المؤتمر',
 ];

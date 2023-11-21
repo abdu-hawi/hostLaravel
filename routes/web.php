@@ -78,21 +78,10 @@ Route::group(['middleware' => 'Lang'], function () {
         ]);
     })->name('competition');
     Route::get('workshop', function () {
-        abort(403);
-        $workshopCount = Workshop::count();
-        if($workshopCount > 24){
-            Session::flash('err', __('header.Sorry: The number is full, registration has been closed'));
-        }
         return view('workshop', [
             'title' => __('header.WORKSHOP REGISTRATION').' - ',
         ]);
     })->name('workshop');
-
-    // Route::get('speakers_draft', function () {
-    //     return view('speakers_draft', [
-    //         'title' => __('header.SPEAKERS') . ' - ',
-    //     ]);
-    // })->name('speakers_draft');
 });
 
 Route::get('/lang/{lang}', function ($lang) {
@@ -110,22 +99,33 @@ Route::get('pdf', function () {
 // read QR Code
 Route::get('presence/{uuid}/{id}', function ($uuid, $id) {
     $client = Client::find($id);
-    if(!is_null($client)){
+    if (!is_null($client)) {
         $client->update([
-            'is_presence' => true
+            'is_presence' => true,
         ]);
         echo "<h1 style='text-align:center; padding: 2rem 1rem'>تم التحضير بنجاح</h1>";
-    }else{
+    } else {
         echo "<h1 style='color:#f00; text-align:center; padding: 2rem 1rem'>هذا المستخدم غير مسجل</h1>";
     }
-
 })->name('presence');
 
-Route::post('clients', [ClientController::class, 'save'])->name('clients');
-Route::post('workshop', [WorkshopController::class, 'save'])->name('workshop');
-Route::post('admin/diplomatic', [DiplomaticController::class, 'save'])->name('admin.diplomatic')->middleware('auth');
+// Route::post('clients', [ClientController::class, 'save'])->name('clients');
+Route::post('clients', function(){
+    abort(403);
+})->name('clients');
+// Route::post('workshop', [WorkshopController::class, 'save'])->name('workshop');
+Route::post('workshop', function(){
+    abort(403);
+})->name('workshop');
+// Route::post('admin/diplomatic', [DiplomaticController::class, 'save'])->name('admin.diplomatic')->middleware('auth');
+Route::post('admin/diplomatic', function(){
+    abort(403);
+})->name('admin.diplomatic')->middleware('auth');
 
-Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
+// Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
+Route::post('contact_us', function(){
+    abort(403);
+})->name('contact_us');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('login', [LoginController::class, 'login']);
 Route::post('logout', [LoginController::class, 'logout'])->name('logout');
@@ -213,12 +213,12 @@ Route::get('email', function () {
 })->middleware('auth');
 
 Route::get('clear_cache', function () {
-    //dd(Client::query()->count());
+    // dd(Client::query()->count());
     Artisan::call('migrate');
     Artisan::call('optimize:clear');
 
     dd('Cache is cleared');
-});//->middleware('auth');
+})->middleware('auth');
 
 Route::get('qr', function () {
     return QrCode::size(300)
@@ -252,7 +252,7 @@ Route::get('admin/testEmail', function () {
 });
 
 Route::get('admin/custome', function () {
-    dd("forbidden");
+    dd('forbidden');
     try {
         $data = [
             'first_name' => 'Sami',
@@ -318,7 +318,7 @@ Route::get('admin/custome', function () {
 
 Route::get('sajco', [SAJCoController::class, 'save']);
 
-Route::get('workshop/custome', function(){
+Route::get('workshop/custome', function () {
     abort(403);
     $emails = [
         'a.gamdi3349@gmail.com',
@@ -326,11 +326,12 @@ Route::get('workshop/custome', function(){
     foreach ($emails as $email) {
         workshopResend($email);
     }
-    echo "END";
-});
+    echo 'END';
+})->middleware('auth');
 
-function workshopResend($_data){
-    $data = Workshop::query()->where('email',$_data)->first();
+function workshopResend($_data)
+{
+    $data = Workshop::query()->where('email', $_data)->first();
     try {
         $url = route('presence', [
             'uuid' => \Str::uuid(),
@@ -368,7 +369,7 @@ function workshopResend($_data){
             Storage::disk('public')->delete('qr/'.$output_file);
         }
     } catch (\Exception $ex) {
-        echo $_data . " : ". $ex->getMessage() . '<br><hr><br>';
+        echo $_data.' : '.$ex->getMessage().'<br><hr><br>';
         EmailFailer::query()->create([
             'email' => $data['email'],
             'fails' => $ex->getMessage(),
@@ -376,33 +377,33 @@ function workshopResend($_data){
     }
 }
 
-Route::get('admin/remember/{num?}', function($num = null){
+Route::get('admin/remember/{num?}', function ($num = null) {
     $num = $num ?? 106;
-    $cls = Client::query()->whereNot('company_name','SAJCo')->offset($num)
+    $cls = Client::query()->whereNot('company_name', 'SAJCo')->offset($num)
                         ->limit(35)
                         ->get();
 
     foreach ($cls as $cl) {
         remember($cl);
     }
-    echo "END: ". Carbon::now();
-});//->middleware('auth');
+    echo 'END: '.Carbon::now();
+})->middleware('auth');
 
-Route::get('admin/delete', function(){
+Route::get('admin/delete', function () {
     $clients = Client::query()->latest()->get();
     $uniqueEmails = [];
     foreach ($clients as $cl) {
         if (in_array($cl->email, $uniqueEmails)) {
             Client::where('id', $cl->id)->delete();
-        }else{
+        } else {
             array_push($uniqueEmails, $cl->email);
         }
     }
 })->middleware('auth');
 
-function remember($data){
+function remember($data)
+{
     try {
-
         $url = route('presence', [
             'uuid' => \Str::uuid(),
             'id' => $data->id,
@@ -439,20 +440,20 @@ function remember($data){
             'vip' => $vip,
             'cc' => false,
         ]))) {
-            //echo $data->email . "<br>";
+            // echo $data->email . "<br>";
         } else {
             EmailFailer::query()->create([
                 'email' => $data['email'],
                 'fails' => 'Unkown Error',
             ]);
-            echo $data->email . " Fail: Unkown Error<br><hr><br>";
+            echo $data->email.' Fail: Unkown Error<br><hr><br>';
         }
 
         // if (Storage::disk('public')->exists('qr/'.$output_file)) {
         //     Storage::disk('public')->delete('qr/'.$output_file);
         // }
     } catch (\Exception $ex) {
-        echo $data->email . ": " . $ex->getMessage(). '<br><hr><br>';
+        echo $data->email.': '.$ex->getMessage().'<br><hr><br>';
         EmailFailer::query()->create([
             'email' => $data['email'],
             'fails' => $ex->getMessage(),

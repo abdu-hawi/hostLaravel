@@ -64,4 +64,5 @@ return [
     'Workshop_name' => 'Workshop name',
     'Sorry: The number is full, registration has been closed'
     => 'Sorry: The number is full, registration has been closed',
+    'The Summit has ended' => 'The Summit has ended',
 ];
