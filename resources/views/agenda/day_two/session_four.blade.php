@@ -66,6 +66,15 @@
                                         <span>
                                             {{ __('agenda.Drone & Innovation Expert , Managing CBRE Saudi region') }}
                                         </span>
+
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                            title="{{ __('agenda.Panel Discussion: Construction technology trends on the horizon for 2023 and beyond') }}"
+                                            href="https://youtu.be/Dg-iXEcpyzQ"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>

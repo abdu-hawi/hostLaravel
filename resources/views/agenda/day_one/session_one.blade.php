@@ -80,6 +80,13 @@
                                             {{ __('agenda.Mr_Abdulrahman_Al_Taweel_bio') }}
                                         </span>
 
+                                        <hr>
+                                        <a class="elementor-button"
+                                            href="https://youtu.be/uX9z4r0SwWg"
+                                            title="{{ __('agenda.Opening Panel: Construction is Saudi Arabia - Key Trends & Opportunities Beyond 2025') }}"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
 
                                     </span>
                                 </div>
@@ -212,16 +219,13 @@
                                         <span>
                                             {{ __('agenda.Eng_Abdulnasser_Al_Abdullateef_bio') }}
                                         </span>
-                                        {{--
-                                            <hr>
-
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng_Ahmed_Al_Sheikh') }}
-                                        </span>
-                                         <br>
-                                        <span>
-                                            {{ __('agenda.Eng_Abdulnasser_Al_Abdullateef_bio') }}
-                                        </span> --}}
+                                        <hr>
+                                        <a class="elementor-button"
+                                            href="https://youtu.be/wTqGIu_mAi4"
+                                            title="{{ __('agenda.Industry Leaders Panel: KSA GIGA projects – Advancing Saudi’s construction boom') }}"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>
@@ -281,31 +285,16 @@
                                         <span>
                                             {{ __('agenda.Ms_Mariam_Telmesani_bio') }}
                                         </span>
-                                        {{-- <p class="blue-600">
-                                            {{ __('agenda.Moderator:') }} {{ __('agenda.Dr. Samih Alorabi') }}
-                                        </p>
 
-                                        <span class="black-600">
-                                            {{ __('agenda.Eng_Abdullah_Al_Jali') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Eng_Abdullah_Al_Jali_bio') }}
-                                        </span><hr>
 
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr_Sultan_Al_Zaidi') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Mr_Sultan_Al_Zaidi_bio') }}
-                                        </span><hr>
 
-                                        <span class="black-600">
-                                            {{ __('agenda.Mr_Essam_Al_Mulla') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Mr_Essam_Al_Mulla_bio') }}
-                                        </span> --}}
-
+                                        <hr>
+                                        <a class="elementor-button"
+                                            href="https://youtu.be/3qEhmYo6PYM"
+                                            title="{{ __('agenda.Keynote: Implementing new operating standards and regulations to drive sustainable development goals') }}"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
 
 
                                     </span>

@@ -7,6 +7,7 @@ return [
     'READ_MORE' => 'READ MORE',
     'REGISTER' => 'REGISTER',
     'Speaker' => 'Speaker: ',
+    "Watch the session video" => "Watch the session video",
     // Master blade
     'Day One' => 'Day One',
     '20 NOV 2023' => '20 NOV 2023',

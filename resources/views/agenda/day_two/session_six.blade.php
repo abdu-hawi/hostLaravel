@@ -60,6 +60,15 @@
                                         <span>
                                             {{ __('agenda.Alfaisal University') }}
                                         </span>
+
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                            title="{{ __('agenda.AI Use Cases: Overcoming Engineering & Construction’s greatest challenges – Cost, Schedule & Safety') }}"
+                                            href="https://youtu.be/dlgZ2TtDG_I"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>

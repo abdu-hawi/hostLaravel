@@ -69,6 +69,15 @@
                                         <span>
                                             {{ __('agenda.Eng_Mohammed_Aldhowayan_bio') }}
                                         </span>
+
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                            title="{{ __('agenda.Panel Discussion: Workforce Challenges- Discussing challenges associated with skills, resource shortage, wages & benefits') }}"
+                                            href="https://youtu.be/4xeYFjgvZy8"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>
@@ -140,6 +149,15 @@
                                         <span>
                                             {{ __('agenda.Eng_Ali_Al_Qresha_bio') }}
                                         </span>
+
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                            title="{{ __('agenda.Panel Discussion: Industry Challenges- Mitigating challenges related to organizations operating within the sector') }}"
+                                            href="https://youtu.be/z0USZ1RU6ZA"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
 
                                     </span>
                                 </div>

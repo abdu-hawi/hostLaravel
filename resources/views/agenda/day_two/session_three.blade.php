@@ -55,18 +55,22 @@
                                             {{ __('agenda.Secretary-General of the Saudi Building Code National Committee') }}
                                         </span>
                                         <hr>
-                                        {{-- <span class="black-600">
-                                            {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Eng_Abdulnasser_Saif_Al_Abdullatef_bio') }}
-                                        </span><hr> --}}
+
                                         <span class="black-600">
                                             {{ __('agenda.Eng_Ahmed_Al_Aboudi') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Ahmed_Al_Aboudi_bio') }}
                                         </span>
+
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                            title="{{ __('agenda.Panel Discussion: Future of construction sector in Saudi Arabia – Upcoming Projects') }}"
+                                            href="https://youtu.be/k1uhSu2pjd4"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>

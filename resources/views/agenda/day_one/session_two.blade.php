@@ -66,21 +66,21 @@
 
                                         <hr>
 
-                                        {{-- <span class="black-600">
-                                            {{ __('agenda.Mr_Assem_Raqban') }}
-                                        </span><br>
-                                        <span>
-                                            {{ __('agenda.Mr_Assem_Raqban_bio') }}
-                                        </span>
-
-                                        <hr> --}}
-
                                         <span class="black-600">
                                             {{ __('agenda.Eng_Ali_Al_Shuaibi') }}
                                         </span><br>
                                         <span>
                                             {{ __('agenda.Eng_Ali_Al_Shuaibi_bio') }}
                                         </span>
+
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                            href="https://youtu.be/xNNcEk9_YoE"
+                                            title="{{ __('agenda.Panel Discussion: Futuristic cities - Strengthening both the economic & social fabric of KSA') }}"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>
@@ -169,6 +169,15 @@
                                         <span>
                                             {{ __('agenda.Mr_Viktor_Lechman_bio') }}
                                         </span>
+
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                            href="https://youtu.be/A1HvzNaA4Kk"
+                                            title="{{ __('agenda.Panel Discussion: Building smart cities to meet sustainability goals & energy efficiency') }}"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>
@@ -296,6 +305,14 @@
                                         <span>
                                             {{ __('agenda.Dr_Mohammed_Almahmood_bio') }}
                                         </span>
+
+                                        <hr>
+                                        <a class="elementor-button"
+                                        title="{{ __('agenda.Expert Panel: Championing collaborative & people centric liveable cities of tomorrow') }}"
+                                            href="https://youtu.be/cS3LyBGrYL4"
+                                            target="_blank" style="margin-top: 2rem;font-weight: 400;">
+                                            {{ __('agenda.Watch the session video') }}
+                                        </a>
                                     </span>
                                 </div>
                             </div>

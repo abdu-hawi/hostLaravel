@@ -7,6 +7,7 @@ return [
     'READ_MORE' => 'إقرأ المزيد',
     'REGISTER' => 'التسجيل بالورشة',
     'Speaker' => 'المتحدث: ',
+    "Watch the session video" => "مشاهدة فيديو الجلسة",
     // Master blade
     'Day One' => 'اليوم الأول',
     '20 NOV 2023' => '20 نوفمبر 2023',
