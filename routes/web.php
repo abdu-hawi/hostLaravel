@@ -16,7 +16,6 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
@@ -30,7 +29,24 @@ use SimpleSoftwareIO\QrCode\Facades\QrCode;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+Route::get('r', function () {
+    $startX = 10;
+    $startY = 10;
+    $MAX_CIRCULAR_STEPS = 100;
+    $postion = [];
+    for($c=0 ; $c < $MAX_CIRCULAR_STEPS ; $c++){
+        $angle = $c * 2 * 3.14159;
+        $nextX = $startX + 8 * cos($angle);
+        $nextY = $startY + 8 * sin($angle);
 
+        $postion[$c][0] = $nextX;
+        $postion[$c][1] = $nextY;
+    }
+    echo count($postion[0]);
+    // for($i=0; $i<20; $i++){
+    //     for($j=0; )
+    // }
+});
 Route::group(['middleware' => 'Lang'], function () {
     Route::get('/', function () {
         return view('welcome', [
@@ -110,20 +126,20 @@ Route::get('presence/{uuid}/{id}', function ($uuid, $id) {
 })->name('presence');
 
 // Route::post('clients', [ClientController::class, 'save'])->name('clients');
-Route::post('clients', function(){
+Route::post('clients', function () {
     abort(403);
 })->name('clients');
 // Route::post('workshop', [WorkshopController::class, 'save'])->name('workshop');
-Route::post('workshop', function(){
+Route::post('workshop', function () {
     abort(403);
 })->name('workshop');
 // Route::post('admin/diplomatic', [DiplomaticController::class, 'save'])->name('admin.diplomatic')->middleware('auth');
-Route::post('admin/diplomatic', function(){
+Route::post('admin/diplomatic', function () {
     abort(403);
 })->name('admin.diplomatic')->middleware('auth');
 
 // Route::post('contact_us', [ContactController::class, 'save'])->name('contact_us');
-Route::post('contact_us', function(){
+Route::post('contact_us', function () {
     abort(403);
 })->name('contact_us');
 Route::get('login', [LoginController::class, 'showLoginForm'])->name('login');

@@ -64,7 +64,7 @@
 
                 @include('agenda.day_two.session_zero')
                 @include('agenda.day_two.session_three')
-                @include('agenda.day_two.session_four')
+                {{-- @include('agenda.day_two.session_four') --}}
                 @include('agenda.day_two.session_five')
                 @include('agenda.day_two.session_six')
 
